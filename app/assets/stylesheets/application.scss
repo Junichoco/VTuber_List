@@ -10,3 +10,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.vtuber-card {
+  border: 3px, black;
+  box-shadow: 0 5px 5px 0 rgp(0,0,0,0.5);
+  margin: 5px;
+  padding: 5px;
+}
+
+.vtuber-pic {
+  width: 200px;
+}

@@ -1,0 +1,29 @@
+<div class="container col-6">
+  <h1><%= @list.name %></h1>
+  <ul>
+    <% @list.bookmarks.each do |bookmark| %>
+      <li class="card vtuber-card">
+        <p><%= bookmark.vtuber.name %></p>
+        <%= image_tag bookmark.vtuber.photo_url, class: "vtuber-pic" if bookmark.vtuber.photo_url %>
+        <p><%= bookmark.vtuber.agency.name %></p>
+        <p><%= bookmark.vtuber.description %></p>
+        <%= link_to "Channel", bookmark.vtuber.channel %>
+
+      </li>
+    <% end %>
+  </ul>
+</div>
+<div class="container col-4">
+</div>
+<div class = "container col-6">
+  <%= link_to "Go back", :home %>
+</div>
+<div class="container form col-4">
+  <h2>Add VTuber</h2>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.association :vtuber %>
+    <div class="form-actions">
+    <%= f.button :submit %>
+    </div>
+  <% end %>
+</div>

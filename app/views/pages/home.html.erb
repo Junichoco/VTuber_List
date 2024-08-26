@@ -1,2 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container col-6">
+  <h1>VTubers</h1>
+  <% @lists.each do |list| %>
+    <div class="card">
+      <%= list.name %>
+      <p><%= list.vtubers.length %> VTubers</p>
+      <%= link_to "Show this list", list %>
+    </div>
+  <% end %>
+</div>
