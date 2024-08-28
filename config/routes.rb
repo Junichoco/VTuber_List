@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  root to: "pages#home", as: :home
+  devise_for :users, controllers: {
+    registrations: "registrations",
+    sessions: "sessions"
+  }
+  root to: "pages#home"
+  get 'home', to: 'pages#home', as: :home
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -9,10 +14,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  resources :lists do
-    resources :bookmarks, only: [:new, :create, :destroy]
-  end
+  resources :users
+  resources :vtubers
+  resources :lists
+  resources :agencies
 
-  resources :bookmarks, only: [:index, :destroy]
+  resources :vtuber_markers
+  resources :list_markers
 
 end
