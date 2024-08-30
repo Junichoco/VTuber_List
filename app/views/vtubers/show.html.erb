@@ -1,0 +1,42 @@
+<div class="container col-6">
+  <%= link_to "Go back", :back %>
+  <div class="container-2">
+      <div class="vtuber-card">
+        <%= image_tag @vtuber.photo_url, class: "vtuber-pic" if @vtuber.photo_url %>
+        <div class="card-body">
+          <div class="badge-group">
+            <span class="fw-bold"><%= @vtuber.name %></span>
+          </div>
+          <div class="card-content">
+            <p><%= @vtuber.agency.name %></p>
+            <p class="text"><%= @vtuber.description %></p>
+            <div class="card-birthday">
+              <p>Birthday: <%= @vtuber.birthday %>
+              <p>Debut date: <%= @vtuber.debut_date %>
+              <p>Gender: <%= @vtuber.gender.capitalize %></p>
+              <p>Main language: <%= @vtuber.main_language %></p>
+              <% if !@vtuber.active %>
+                <p><%= @vtuber.name %> is not active.</p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+            <%= link_to @vtuber.yt_channel do %>
+              <h4><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></h4>
+            <% end %>
+            <%= link_to @vtuber.twitch_channel do %>
+              <h4><i class="fa-brands fa-twitch" style="color: #7d52ff;"></i></h4>
+            <% end %>
+          </div>
+        <h4>Add this VTuber to a list</h4>
+        <%= simple_form_for @marker do |f| %>
+          <%= f.hidden_field :vtuber_id, value: Vtuber.find(params[:id]).id %>
+          <%= f.association :list, collection: @lists%>
+          <div class="form-actions">
+            <%= f.button :submit, value: "Add VTuber", class: "btn btn-info" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+</div>

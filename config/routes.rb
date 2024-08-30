@@ -16,10 +16,14 @@ Rails.application.routes.draw do
 
   resources :users
   resources :vtubers
+  # resources :lists do
+  #  resources :vtuber_markers, only: [:new, :create, :destroy]
+  # end
   resources :lists
+  resources :vtuber_markers
   resources :agencies
 
-  resources :vtuber_markers
-  resources :list_markers
+  # resources :vtuber_markers
+  # resources :list_markers
 
 end

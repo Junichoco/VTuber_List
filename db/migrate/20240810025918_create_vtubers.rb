@@ -4,13 +4,14 @@ class CreateVtubers < ActiveRecord::Migration[7.1]
       t.string :name
       t.text :description
       t.references :agency, foreign_key: true
-      t.string :channel
+      t.string :yt_channel
+      t.string :twitch_channel
       t.string :photo_url
       t.string :gender
       t.datetime :birthday
       t.datetime :debut_date
       t.string :main_language
-      t.boolean :active
+      t.boolean :active, default: true
 
       t.timestamps
     end

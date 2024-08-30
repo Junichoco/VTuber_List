@@ -3,7 +3,7 @@
   <% @lists.each do |list| %>
     <div class="card">
       <%= list.name %>
-      <p><%= list.all_favorites.length %> VTubers</p>
+      <p><%= list.vtuber_markers.length %> VTubers</p>
       <%= link_to "Show this list", list %>
     </div>
   <% end %>

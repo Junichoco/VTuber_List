@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_28_070452) do
+ActiveRecord::Schema[7.1].define(version: 2024_08_30_001252) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -45,10 +45,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_28_070452) do
   create_table "agencies", force: :cascade do |t|
     t.string "name"
     t.string "country"
+    t.string "website"
     t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "home_page"
   end
 
   create_table "favorites", force: :cascade do |t|
@@ -86,24 +86,47 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_28_070452) do
     t.index ["user_id"], name: "index_lists_on_user_id"
   end
 
+  create_table "parents", force: :cascade do |t|
+    t.string "name"
+    t.string "website"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
+    t.string "role", default: "user"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "vtuber_markers", force: :cascade do |t|
+    t.bigint "vtuber_id", null: false
+    t.bigint "list_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["list_id"], name: "index_vtuber_markers_on_list_id"
+    t.index ["vtuber_id"], name: "index_vtuber_markers_on_vtuber_id"
   end
 
   create_table "vtubers", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.bigint "agency_id"
-    t.string "channel"
+    t.string "yt_channel"
+    t.string "twitch_channel"
     t.string "photo_url"
     t.string "gender"
     t.datetime "birthday"
@@ -120,5 +143,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_28_070452) do
   add_foreign_key "list_markers", "lists"
   add_foreign_key "list_markers", "users"
   add_foreign_key "lists", "users"
+  add_foreign_key "vtuber_markers", "lists"
+  add_foreign_key "vtuber_markers", "vtubers"
   add_foreign_key "vtubers", "agencies"
 end

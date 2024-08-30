@@ -11,6 +11,7 @@
 Vtuber.destroy_all
 Agency.destroy_all
 List.destroy_all
+User.destroy_all
 # VtuberMarker.destroy_all
 
 indie = Agency.create!(
@@ -19,6 +20,26 @@ indie = Agency.create!(
 
 hololive = Agency.create!(
   name: "Hololive",
+  country: "Japan"
+)
+
+holoen = Agency.create!(
+  name: "Hololive EN",
+  country: "Japan"
+)
+
+holoid = Agency.create!(
+  name: "Hololive Indonesia",
+  country: "Japan"
+)
+
+holostars = Agency.create!(
+  name: "Holostars",
+  country: "Japan"
+)
+
+holostarsen = Agency.create!(
+  name: "Holostars EN",
   country: "Japan"
 )
 
@@ -37,8 +58,8 @@ niji = Agency.create!(
   country: "Japan"
 )
 
-holostars = Agency.create!(
-  name: "Holostars",
+nijien = Agency.create!(
+  name: "Nijisanji EN",
   country: "Japan"
 )
 
@@ -48,7 +69,7 @@ kawaii = Agency.create!(
 )
 
 vshojo = Agency.create!(
-  name: "Vshojo",
+  name: "VShojo",
   country: "United States"
 )
 
@@ -77,19 +98,93 @@ v4mirai = Agency.create!(
   country: "Japan"
 )
 
-mixt = Agency.create!(
-  name: "Mixt",
+mixst = Agency.create!(
+  name: "Mixst",
   country: "Japan"
 )
 
+vdere = Agency.create!(
+  name: "V-Dere",
+  country: "United States"
+)
+
+vallure = Agency.create!(
+  name: "VAllure",
+  country: "United States"
+)
+
+hasu = Agency.create!(
+  name: "Hasu no Sora Jogakuin",
+  country: "Japan"
+)
+
+
 puts "Agencies created"
+
+
+sora = Vtuber.create!(
+  name: "Tokino Sora",
+  description: "monkey",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
+)
+
+suisei = Vtuber.create!(
+  name: "Hoshimachi Suisei",
+  description: "monkey",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
+)
+
+mel = Vtuber.create!(
+  name: "Yozora Mel",
+  description: "monkey",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
+)
+
+subaru = Vtuber.create!(
+  name: "Oozora Subaru",
+  description: "monkey",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
+)
+
+ayame = Vtuber.create!(
+  name: "Nakiri Ayame",
+  description: "monkey",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
+)
+
+shion = Vtuber.create!(
+  name: "Murasaki Shion",
+  description: "monkey",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
+)
+
+okayu = Vtuber.create!(
+  name: "Nekomata Okayu",
+  description: "monkey",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
+)
 
 miko = Vtuber.create!(
   name: "Sakura Miko",
   description: "A shrine maiden from the Virtual Sakura Shrine. With a vivid admiration for idols, she constantly pushes herself to greater heights to become a top elite shrine maiden-idol like no other!\nWell... a self-proclaimed 'elite,' to be exact. Fans would think \"clutz\" fits her better...",
   agency: hololive,
   gender: "female",
-  main_language: "Japanese"
+  main_language: "Japanese",
+  photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/02/Sakura-Miko_pr-img_01.png"
 )
 
 aqua = Vtuber.create!(
@@ -130,7 +225,7 @@ iguchi = Vtuber.create!(
   agency: indie,
   gender: "female",
   main_language: "Japanese",
-  channel: "https://www.youtube.com/@iguchisun"
+  yt_channel: "https://www.youtube.com/@iguchisun"
 )
 
 ironmouse = Vtuber.create!(
@@ -165,8 +260,8 @@ amelie = Vtuber.create!(
   main_language: "Japanese"
 )
 
-ririsha = Vtuber.create!(
-  name: "Ririsha",
+ririsya = Vtuber.create!(
+  name: "Ririsya",
   description: "A zombie Vsinger",
   agency: indie,
   gender: "female",
@@ -181,15 +276,30 @@ hoshimiya = Vtuber.create!(
   main_language: "Japanese"
 )
 
-
+ray = Vtuber.create!(
+  name: "Otsuka Ray",
+  description: "A mom VTuber",
+  agency: indie,
+  gender: "female",
+  main_language: "Japanese"
+)
 
 puts "VTubers created"
 
 user = User.create!(
-  username: "monkey",
+  username: "Yatsuhashi",
   email: "sunjun.software@gmail.com",
   password: "123123"
 )
+
+user2 = User.create!(
+  username: "monkey",
+  email: "monkey@monkey.com",
+  password: "123123"
+)
+
+puts "Users created"
+
 
 cute = List.create!(
   name: "Cute",
@@ -197,11 +307,26 @@ cute = List.create!(
 )
 
 puts "List created"
-
-cute.favorite(miko)
-
 puts "Cute: #{cute}"
+puts "Users: #{user.username}, #{user2.username}"
 
-user.favorite(cute)
+vm = VtuberMarker.new
+vm.vtuber = miko
+vm.list = cute
 
-puts "User: #{user}"
+puts "VTuber marker created: #{vm.vtuber.name}, #{vm.list.name}" if vm.save
+
+VtuberMarker.create!(
+  vtuber: ami,
+  list: cute
+)
+VtuberMarker.create!(
+  vtuber: amelie,
+  list: cute
+)
+
+lm = ListMarker.new
+lm.user = user2
+lm.list = cute
+
+puts "List marker created: #{lm.user.username}, #{lm.list.name}"

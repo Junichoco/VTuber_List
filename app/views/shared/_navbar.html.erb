@@ -1,0 +1,14 @@
+<div class="navbar-container d-flex justify-content-between align-items-center">
+  <div class="banner-container">
+  <h5>VTuber List
+    <% if user_signed_in? %>
+      <div>
+        <%= current_user.username %>
+        <%= link_to "Log out", destroy_user_session_path, data: { turbo_method: :delete }, class: "dropdown-item" %>
+      </div>
+    <% else %>
+      <%= link_to "Log in", new_user_session_path %>
+    <% end %>
+    </h5>
+  </div>
+</div>
