@@ -1,5 +1,14 @@
 class VtubersController < ApplicationController
 
+  def index
+    @vtubers = []
+    # raise
+    if params[:query].present?
+      @vtubers = Vtuber.search_by_name_and_description(params[:query])
+    end
+  end
+
+
   def new
     @vtuber = Vtuber.new
   end
@@ -27,6 +36,15 @@ class VtubersController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
+  end
+
+  def search
+    @vtubers = []
+    raise
+    if params[:query].present?
+      @vtubers = Vtuber.search_by_name_and_description(:query)
+    end
+    raise
   end
 
   private

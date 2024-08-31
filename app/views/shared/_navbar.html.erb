@@ -9,6 +9,14 @@
     <% else %>
       <%= link_to "Log in", new_user_session_path %>
     <% end %>
+    <%= form_with url: vtubers_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form",
+        placeholder: "Look for a VTuber"
+        %>
+      <%= submit_tag "Search", name: "", class:"btn btn-primary" %>
+    <% end %>
     </h5>
   </div>
 </div>

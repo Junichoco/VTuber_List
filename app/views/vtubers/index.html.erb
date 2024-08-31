@@ -1,0 +1,28 @@
+<div class="container col-6">
+  <h2>Search results</h2>
+  <%= link_to "Go back", :back %>
+  <% if @vtubers.empty? %>
+    <p>No VTubers matched your search</p>
+  <% else %>
+    <div class="list-cards">
+      <% @vtubers.each do |vtuber| %>
+        <div class="vtuber-card">
+          <div class="vtuber-card-body">
+            <p><%= link_to vtuber.name, vtuber_path(vtuber) %></p>
+            <div class="vtuber-card-footer">
+              <%= link_to vtuber.yt_channel do %>
+                <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+              <% end %>
+            </div>
+          </div>
+          <% if vtuber.photo_url %>
+            <div>
+              <%= image_tag vtuber.photo_url, class: "list-card-image" %>
+            </div>
+          <% end %>
+
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+<div>

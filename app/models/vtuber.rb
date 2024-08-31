@@ -10,4 +10,11 @@ class Vtuber < ApplicationRecord
   validates :description, presence: true
   validates_uniqueness_of :name, scope: :agency
 
+  include PgSearch::Model
+  pg_search_scope :search_by_name_and_description,
+  against: [ :name, :description, :main_language ],
+  using: {
+    tsearch: { prefix: true } # <-- now `superman batm` will return something!
+  }
+
 end

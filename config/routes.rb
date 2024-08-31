@@ -24,6 +24,6 @@ Rails.application.routes.draw do
   resources :agencies
 
   # resources :vtuber_markers
-  # resources :list_markers
+  resources :list_markers
 
 end

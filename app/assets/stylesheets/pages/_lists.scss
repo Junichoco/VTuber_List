@@ -1,7 +1,7 @@
 .list-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 6px;
 }
 
 .list-card-image {
@@ -9,9 +9,12 @@
   height: 100%;
 }
 
-.card-category {
+.vtuber-card {
   // background-size: cover;
   // background-position: center;
+  position: relative;
+  text-align: center;
+
   height: 180px;
   width: 180px;
   display: flex;
@@ -28,19 +31,68 @@
   overflow: hidden;
 }
 
-.card-category-body {
-  position: absolute;
-  top: 150px;
-  text-decoration: none;
+.vtuber-card:hover {
+  // background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  // transition: 0.5s ease;
 }
 
-.card-category-body a {
-  text-decoration: none;
+.vtuber-card-pic:hover {
+  // height: 120%;
+  // width: 120%;
+  // // display: flex;
+  // // justify-content: center;
+  // // align-items: center;
+  // transition: 0.5s ease;
 }
 
-.card-category-footer {
+.vtuber-card-body {
   position: absolute;
-  top: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 99%;
+
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  opacity: 0;
+
+  height: 100%;
+  width: 100%;
+
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.vtuber-card-body a {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-decoration: none;
+  // position: absolute;
+  // bottom: 50%;
+  // left: 50%;
+  // top: 25%;
+  // right: 25%
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.vtuber-card-body i {
+  text-shadow: 0 0 10px white;
+}
+
+.vtuber-card-body:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+// .vtuber-card-body:hover::after {
+//   opacity: 0;
+// }
+
+
+.vtuber-card-footer {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

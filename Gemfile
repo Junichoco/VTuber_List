@@ -77,3 +77,4 @@ end
 
 gem 'acts_as_favoritor'
 gem "devise"
+gem "pg_search"
