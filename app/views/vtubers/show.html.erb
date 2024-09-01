@@ -1,16 +1,16 @@
 <div class="container col-6">
   <%= link_to "Go back", :back %>
   <div class="container-2">
-      <div class="vtuber-card">
+      <div class="show-card">
         <%= image_tag @vtuber.photo_url, class: "vtuber-pic" if @vtuber.photo_url %>
-        <div class="card-body">
+        <div class="show-card-body">
           <div class="badge-group">
             <span class="fw-bold"><%= @vtuber.name %></span>
           </div>
-          <div class="card-content">
+          <div class="show-card-content">
             <p><%= @vtuber.agency.name %></p>
             <p class="text"><%= @vtuber.description %></p>
-            <div class="card-birthday">
+            <div class="show-card-dates">
               <p>Birthday: <%= @vtuber.birthday %>
               <p>Debut date: <%= @vtuber.debut_date %>
               <p>Gender: <%= @vtuber.gender.capitalize %></p>
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="card-footer">
+        <div class="show-card-footer">
             <%= link_to @vtuber.yt_channel do %>
               <h4><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></h4>
             <% end %>

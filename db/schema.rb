@@ -132,7 +132,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_30_001252) do
     t.datetime "birthday"
     t.datetime "debut_date"
     t.string "main_language"
-    t.boolean "active"
+    t.boolean "active", default: true
+    t.string "jp_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["agency_id"], name: "index_vtubers_on_agency_id"
