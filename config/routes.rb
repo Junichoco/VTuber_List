@@ -25,5 +25,6 @@ Rails.application.routes.draw do
 
   # resources :vtuber_markers
   resources :list_markers
+  resources :tags
 
 end

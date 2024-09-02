@@ -1,6 +1,6 @@
 <div class="navbar-container d-flex justify-content-between align-items-center">
   <div class="banner-container">
-  <h5>VTuber List
+  <h5><%= link_to "VTuber List", :home, class: "logo" %>
     <% if user_signed_in? %>
       <div>
         <%= current_user.username %>

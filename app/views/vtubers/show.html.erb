@@ -1,8 +1,13 @@
 <div class="container col-6">
   <%= link_to "Go back", :back %>
+  <%= link_to "Edit VTuber info", edit_vtuber_path %>
   <div class="container-2">
       <div class="show-card">
-        <%= image_tag @vtuber.photo_url, class: "vtuber-pic" if @vtuber.photo_url %>
+
+        <%= render "shared/vtuber_picture", vtuber: @vtuber %>
+        <%#= image_tag @vtuber.photo_url, class: "vtuber-pic" if @vtuber.photo_url %>
+
+
         <div class="show-card-body">
           <div class="badge-group">
             <span class="fw-bold"><%= @vtuber.name %></span>
@@ -11,8 +16,8 @@
             <p><%= @vtuber.agency.name %></p>
             <p class="text"><%= @vtuber.description %></p>
             <div class="show-card-dates">
-              <p>Birthday: <%= @vtuber.birthday %>
-              <p>Debut date: <%= @vtuber.debut_date %>
+              <p>Birthday: <%= @vtuber.get_birthday %></p>
+              <p>Debut date: <%= @vtuber.get_debut_date %>
               <p>Gender: <%= @vtuber.gender.capitalize %></p>
               <p>Main language: <%= @vtuber.main_language %></p>
               <% if !@vtuber.active %>
@@ -22,10 +27,10 @@
           </div>
         </div>
         <div class="show-card-footer">
-            <%= link_to @vtuber.yt_channel do %>
+            <%= link_to @vtuber.yt_channel, target: :blank do %>
               <h4><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></h4>
             <% end %>
-            <%= link_to @vtuber.twitch_channel do %>
+            <%= link_to @vtuber.twitch_channel, target: :blank do %>
               <h4><i class="fa-brands fa-twitch" style="color: #7d52ff;"></i></h4>
             <% end %>
           </div>

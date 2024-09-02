@@ -11,9 +11,16 @@ class VtubersController < ApplicationController
 
   def new
     @vtuber = Vtuber.new
+    @agencies = Agency.all
   end
 
   def create
+    @vtuber = Vtuber.new(vtuber_params)
+    if @vtuber.save
+      redirect_to vtuber_path(@vtuber)
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def show

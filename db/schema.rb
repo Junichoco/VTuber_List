@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_30_001252) do
+ActiveRecord::Schema[7.1].define(version: 2024_09_01_123530) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -49,6 +49,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_30_001252) do
     t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "yt_channel"
+    t.text "description"
   end
 
   create_table "favorites", force: :cascade do |t|
@@ -89,6 +91,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_30_001252) do
   create_table "parents", force: :cascade do |t|
     t.string "name"
     t.string "website"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

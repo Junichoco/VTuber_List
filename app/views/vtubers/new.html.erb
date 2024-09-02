@@ -1,9 +1,10 @@
 <div class="container col-6">
-  <h2>Edit VTuber</h2>
+  <h2>Make New VTuber Entry</h2>
   <%= simple_form_for(@vtuber) do |f| %>
     <%= f.input :name %>
     <%= f.association :agency, collection: @agencies %>
-    <%= f.input :gender, collection: ["female", "male"] %>
+    <p><%= f.radio_button :gender, 'male' %> Male
+    <%= f.radio_button :gender, 'female' %> Female</p>
     <%= f.input :birthday, discard_year: true, discard_time: true %>
     <%= f.input :debut_date %>
     <%= f.input :description, as: :text %>

@@ -17,4 +17,20 @@ class Vtuber < ApplicationRecord
     tsearch: { prefix: true } # <-- now `superman batm` will return something!
   }
 
+  def get_birthday
+    if birthday
+      birthday.strftime("%B %d")
+    else
+      "Not available"
+    end
+  end
+
+  def get_debut_date
+    if debut_date
+      debut_date.strftime("%B %d, %Y")
+    else
+      "Not available"
+    end
+  end
+
 end
