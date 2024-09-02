@@ -3,7 +3,7 @@
   <%= simple_form_for(@agency) do |f| %>
     <%= f.input :name %>
     <%= f.input :description, as: :text %>
-    <%= f.input :country %>
+    <%= f.input :location, label: "Country" %>
     <%= f.input :website %>
     <%= f.input :yt_channel, label: "YouTube Channel" %>
     <%= f.input :active, as: :boolean %>

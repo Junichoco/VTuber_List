@@ -20,107 +20,107 @@ indie = Agency.create!(
 
 hololive = Agency.create!(
   name: "Hololive",
-  country: "Japan"
+  location: "Japan"
 )
 
 holoen = Agency.create!(
   name: "Hololive EN",
-  country: "Japan"
+  location: "Japan"
 )
 
 holoid = Agency.create!(
   name: "Hololive Indonesia",
-  country: "Japan"
+  location: "Japan"
 )
 
 holostars = Agency.create!(
   name: "Holostars",
-  country: "Japan"
+  location: "Japan"
 )
 
 holostarsen = Agency.create!(
   name: "Holostars EN",
-  country: "Japan"
+  location: "Japan"
 )
 
 pixellink = Agency.create!(
   name: "PixelLink",
-  country: "United States"
+  location: "United States"
 )
 
 phase = Agency.create!(
   name: "Phase Connect",
-  country: "Canada"
+  location: "Canada"
 )
 
 niji = Agency.create!(
   name: "Nijisanji",
-  country: "Japan"
+  location: "Japan"
 )
 
 nijien = Agency.create!(
   name: "Nijisanji EN",
-  country: "Japan"
+  location: "Japan"
 )
 
 kawaii = Agency.create!(
   name: "Production Kawaii",
-  country: "United States"
+  location: "United States"
 )
 
 vshojo = Agency.create!(
   name: "VShojo",
-  country: "United States"
+  location: "United States"
 )
 
 idol = Agency.create!(
   name: "idol",
-  country: "Japan"
+  location: "Japan"
 )
 
 vlash = Agency.create!(
   name: "Vlash",
-  country: "Japan"
+  location: "Japan"
 )
 
 fsp = Agency.create!(
   name: "First Stage Production",
-  country: "United States"
+  location: "United States"
 )
 
 globie = Agency.create!(
   name: "globie",
-  country: "Japan"
+  location: "Japan"
 )
 
 v4mirai = Agency.create!(
   name: "V4Mirai",
-  country: "Japan"
+  location: "Japan"
 )
 
 mixst = Agency.create!(
   name: "Mixst",
-  country: "Japan"
+  location: "Japan"
 )
 
 vdere = Agency.create!(
   name: "V-Dere",
-  country: "United States"
+  location: "United States"
 )
 
 vallure = Agency.create!(
   name: "VAllure",
-  country: "United States"
+  location: "United States"
 )
 
 hasu = Agency.create!(
   name: "Hasu no Sora Jogakuin",
-  country: "Japan"
+  location: "Japan"
 )
 
 univirtual = Agency.create!(
   name: "UniVIRTUAL",
-  country: "Japan",
+  location: "Japan",
   website: "https://univirtual.jp/"
 )
 
@@ -424,3 +424,11 @@ lm.user = user2
 lm.list = cute
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
+
+tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "big boobs", "deep singing voice"]
+
+tags.each do |tag|
+  Tag.create!(
+    name: tag
+  )
+end

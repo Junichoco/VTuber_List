@@ -33,6 +33,12 @@
             <%= link_to @vtuber.twitch_channel, target: :blank do %>
               <h4><i class="fa-brands fa-twitch" style="color: #7d52ff;"></i></h4>
             <% end %>
+            <div class="tags-container">
+            <p>Tags</p>
+            <% @vtuber.favorites.where(favoritable_type: "Tag").each do |tag| %>
+              <%= Tag.find(tag.favoritable_id).name %>
+            <% end %>
+            </div>
           </div>
         <h4>Add this VTuber to a list</h4>
         <%= simple_form_for @marker do |f| %>

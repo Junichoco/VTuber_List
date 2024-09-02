@@ -1,7 +1,7 @@
 <div class="container col-6">
   <h2><%= @agency.name %></h2>
   <p><%= @agency.description %></p>
-  <p><%= @agency.country %></p>
+  <p><%= @agency.location %></p>
   <%# number of vtubers: %>
   <%= link_to "Website", @agency.website, target: :blank %>
   <%= link_to @agency.yt_channel, target: :blank do %>

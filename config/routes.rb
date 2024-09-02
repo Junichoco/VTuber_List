@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :users
-  resources :vtubers
+  resources :vtubers do
+    patch :add_tag
+  end
   # resources :lists do
   #  resources :vtuber_markers, only: [:new, :create, :destroy]
   # end

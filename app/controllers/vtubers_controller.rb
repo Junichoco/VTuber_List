@@ -54,6 +54,11 @@ class VtubersController < ApplicationController
     raise
   end
 
+  def add_tag
+    @vtuber = Vtuber.find(params[:id])
+    @vtuber.favorite
+  end
+
   private
 
   def vtuber_params
