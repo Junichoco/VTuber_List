@@ -1,0 +1,103 @@
+.list-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6px;
+}
+
+.list-card-image {
+  width: 180px;
+  height: 100%;
+}
+
+.vtuber-card {
+  // background-size: cover;
+  // background-position: center;
+  position: relative;
+  text-align: center;
+
+  height: 180px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  overflow: hidden;
+}
+
+.vtuber-card:hover {
+  // background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  // transition: 0.5s ease;
+}
+
+.vtuber-card-pic:hover {
+  // height: 120%;
+  // width: 120%;
+  // // display: flex;
+  // // justify-content: center;
+  // // align-items: center;
+  // transition: 0.5s ease;
+}
+
+.vtuber-card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 99%;
+
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  opacity: 0;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vtuber-card-body a {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-decoration: none;
+  // position: absolute;
+  // bottom: 50%;
+  // left: 50%;
+  // top: 25%;
+  // right: 25%
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.vtuber-card-body i {
+  text-shadow: 0 0 20px white;
+}
+
+.vtuber-card-body i:hover {
+  text-shadow: 0 0 10px white;
+  transition: 0.5s ease;
+}
+
+.vtuber-card-body:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+// .vtuber-card-body:hover::after {
+//   opacity: 0;
+// }
+
+
+.vtuber-card-footer {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

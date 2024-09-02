@@ -1,0 +1,19 @@
+<% list.vtuber_markers.each do |marker| %>
+  <div class="vtuber-card">
+    <div class="vtuber-card-pic">
+        <%= render "shared/vtuber_picture", vtuber: marker.vtuber %>
+    </div>
+
+      <div class="vtuber-card-body">
+        <p><%= link_to marker.vtuber.name, vtuber_path(marker.vtuber) %></p>
+        <div class="vtuber-card-footer">
+          <%= link_to marker.vtuber.yt_channel, target: :blank do %>
+            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+          <% end %>
+          <%= link_to marker.vtuber.twitch_channel, target: :blank do %>
+            <i class="fa-brands fa-twitch" style="color: #7d52ff;"></i>
+          <% end %>
+        </div>
+      </div>
+  </div>
+<% end %>

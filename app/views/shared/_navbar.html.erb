@@ -1,0 +1,22 @@
+<div class="navbar-container d-flex justify-content-between align-items-center">
+  <div class="banner-container">
+  <h5><%= link_to "VTuber List", :home, class: "logo" %>
+    <% if user_signed_in? %>
+      <div>
+        <%= current_user.username %>
+        <%= link_to "Log out", destroy_user_session_path, data: { turbo_method: :delete }, class: "dropdown-item" %>
+      </div>
+    <% else %>
+      <%= link_to "Log in", new_user_session_path %>
+    <% end %>
+    <%= form_with url: vtubers_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form",
+        placeholder: "Look for a VTuber"
+        %>
+      <%= submit_tag "Search", name: "", class:"btn btn-primary" %>
+    <% end %>
+    </h5>
+  </div>
+</div>

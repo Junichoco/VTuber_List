@@ -1,0 +1,17 @@
+<div class="container col-6">
+  <h2>Make Agency Entry</h2>
+  <%= simple_form_for(@agency) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description, as: :text %>
+    <%= f.input :country %>
+    <%= f.input :website %>
+    <%= f.input :yt_channel, label: "YouTube Channel" %>
+    <%= f.input :active, as: :boolean %>
+
+    <%#= f.input :photos, as: :file, input_html: { multiple: true } %>
+    <div class="form-actions">
+      <%= f.button :submit, class:"btn btn-info my-3" %>
+    </div>
+  <% end %>
+
+</div>
