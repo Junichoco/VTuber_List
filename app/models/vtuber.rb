@@ -4,6 +4,10 @@ class Vtuber < ApplicationRecord
 
   belongs_to :agency
   has_many :vtuber_markers, dependent: :destroy
+  has_many :tag_markers, dependent: :destroy
+  has_many :group_markers, dependent: :destroy
+  has_many :tags, through: :tag_markers, source_type: "Tag"
+  has_many :groups, through: :group_markers, source_type: "Group"
   has_many_attached :photos
 
   validates :name, presence: true

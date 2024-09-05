@@ -29,6 +29,8 @@ class VtubersController < ApplicationController
     @lists = List.all
     @list = List.new
     @marker = VtuberMarker.new
+    @tag = Tag.new
+    @tags = Tag.all
   end
 
   def edit
@@ -52,6 +54,12 @@ class VtubersController < ApplicationController
       @vtubers = Vtuber.search_by_name_and_description(:query)
     end
     raise
+  end
+
+  def add_tag
+    raise
+    @vtuber = Vtuber.find(params[:id])
+    # @vtuber.favorite()
   end
 
   private

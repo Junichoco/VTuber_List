@@ -20,107 +20,107 @@ indie = Agency.create!(
 
 hololive = Agency.create!(
   name: "Hololive",
-  country: "Japan"
+  location: "Japan"
 )
 
 holoen = Agency.create!(
   name: "Hololive EN",
-  country: "Japan"
+  location: "Japan"
 )
 
 holoid = Agency.create!(
   name: "Hololive Indonesia",
-  country: "Japan"
+  location: "Japan"
 )
 
 holostars = Agency.create!(
   name: "Holostars",
-  country: "Japan"
+  location: "Japan"
 )
 
 holostarsen = Agency.create!(
   name: "Holostars EN",
-  country: "Japan"
+  location: "Japan"
 )
 
 pixellink = Agency.create!(
   name: "PixelLink",
-  country: "United States"
+  location: "United States"
 )
 
 phase = Agency.create!(
   name: "Phase Connect",
-  country: "Canada"
+  location: "Canada"
 )
 
 niji = Agency.create!(
   name: "Nijisanji",
-  country: "Japan"
+  location: "Japan"
 )
 
 nijien = Agency.create!(
   name: "Nijisanji EN",
-  country: "Japan"
+  location: "Japan"
 )
 
 kawaii = Agency.create!(
   name: "Production Kawaii",
-  country: "United States"
+  location: "United States"
 )
 
 vshojo = Agency.create!(
   name: "VShojo",
-  country: "United States"
+  location: "United States"
 )
 
 idol = Agency.create!(
   name: "idol",
-  country: "Japan"
+  location: "Japan"
 )
 
 vlash = Agency.create!(
   name: "Vlash",
-  country: "Japan"
+  location: "Japan"
 )
 
 fsp = Agency.create!(
   name: "First Stage Production",
-  country: "United States"
+  location: "United States"
 )
 
 globie = Agency.create!(
   name: "globie",
-  country: "Japan"
+  location: "Japan"
 )
 
 v4mirai = Agency.create!(
   name: "V4Mirai",
-  country: "Japan"
+  location: "Japan"
 )
 
 mixst = Agency.create!(
   name: "Mixst",
-  country: "Japan"
+  location: "Japan"
 )
 
 vdere = Agency.create!(
   name: "V-Dere",
-  country: "United States"
+  location: "United States"
 )
 
 vallure = Agency.create!(
   name: "VAllure",
-  country: "United States"
+  location: "United States"
 )
 
 hasu = Agency.create!(
   name: "Hasu no Sora Jogakuin",
-  country: "Japan"
+  location: "Japan"
 )
 
 univirtual = Agency.create!(
   name: "UniVIRTUAL",
-  country: "Japan",
+  location: "Japan",
   website: "https://univirtual.jp/"
 )
 
@@ -193,6 +193,14 @@ miko = Vtuber.create!(
   gender: "female",
   main_language: "Japanese",
   photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/02/Sakura-Miko_pr-img_01.png"
+)
+
+pekora = Vtuber.create!(
+  name: "Usada Pekora",
+  description: "The princess of Pekoland",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
 )
 
 aqua = Vtuber.create!(
@@ -372,6 +380,47 @@ yutoha = Vtuber.create!(
   photo_url: "https://yt3.googleusercontent.com/RlFlN3aZ1-CMwrtYLrAStjzLIL601gFeyrQ64VDdPoJFG-PTsxSXLpJaqH1Ky2O8nHk6oylEzw=s160-c-k-c0x00ffffff-no-rj"
 )
 
+meimi = Vtuber.create!(
+  name: "Meimi Majokko",
+  jp_name: "魔女っ子めいみ",
+  description: "monkey",
+  agency: kawaii,
+  gender: "female",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@MajokkoMeimi",
+  photo_url: "https://yt3.googleusercontent.com/gNIwRzrllQnbVJUr85xsoX1jWpkI1DCR39th93XM96iu4wfT_KAarwZaMugWS3mmDavuyshTbw=s160-c-k-c0x00ffffff-no-rj"
+)
+
+toi = Vtuber.create!(
+  name: "Itoi Toi",
+  jp_name: "絲依とい",
+  description: "monkey",
+  agency: indie,
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@itoitoi_Q",
+  photo_url: "https://yt3.googleusercontent.com/XyCogGnGdro6r6va6enGjLKPks1xrqi_OlGgWBVYk_AQ6fTgxTT4x7MqztPWuIHpXi2J98quSg=s160-c-k-c0x00ffffff-no-rj"
+)
+
+sanso = Vtuber.create!(
+  name: "Sanso-chan",
+  jp_name: "さんそちゃん",
+  description: "monkey",
+  agency: indie,
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@Sansochan",
+  photo_url: "https://yt3.googleusercontent.com/XyCogGnGdro6r6va6enGjLKPks1xrqi_OlGgWBVYk_AQ6fTgxTT4x7MqztPWuIHpXi2J98quSg=s160-c-k-c0x00ffffff-no-rj"
+)
+
+phoebe = Vtuber.create!(
+  name: "Phoebe Chan",
+  description: "monkey",
+  agency: indie,
+  gender: "female",
+  main_language: "English"
+)
+
 puts "VTubers created"
 
 
@@ -410,17 +459,33 @@ vm.list = cute
 
 puts "VTuber marker created: #{vm.vtuber.name}, #{vm.list.name}" if vm.save
 
-VtuberMarker.create!(
-  vtuber: ami,
-  list: cute
-)
-VtuberMarker.create!(
-  vtuber: amelie,
-  list: cute
-)
+oshis = [ami, pekora, amelie, raki, yutoha, meimi, amana, phoebe, nuino]
+
+oshis.each do |oshi|
+  VtuberMarker.create!(
+    vtuber: oshi,
+    list: cute
+  )
+end
+
+puts "Oshis added"
+
 
 lm = ListMarker.new
 lm.user = user2
 lm.list = cute
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
+
+tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "League of Legends", "big boobs", "deep singing voice",
+        "baby girl failure", "baby", "saxophone", "loli", "flat chest", "heavy metal", "thighs", "French",
+        "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
+        "hag", "bald", "kusogaki", "fluffy", "animal ears", "southern accent", "mom", "violin", "ASMR",
+        "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
+        "singing voice completely different from normal voice", "furry"]
+
+tags.each do |tag|
+  Tag.create!(
+    name: tag
+  )
+end

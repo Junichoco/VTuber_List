@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {
-    registrations: "registrations",
-    sessions: "sessions"
-  }
+  devise_for :users
+  # , controllers: {
+  #   registrations: "registrations",
+  #   sessions: "sessions"
+  # }
   root to: "pages#home"
   get 'home', to: 'pages#home', as: :home
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -15,7 +16,9 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :users
-  resources :vtubers
+  resources :vtubers do
+    patch :add_tag
+  end
   # resources :lists do
   #  resources :vtuber_markers, only: [:new, :create, :destroy]
   # end

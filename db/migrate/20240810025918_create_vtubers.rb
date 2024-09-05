@@ -8,8 +8,8 @@ class CreateVtubers < ActiveRecord::Migration[7.1]
       t.string :twitch_channel
       t.string :photo_url
       t.string :gender
-      t.datetime :birthday
-      t.datetime :debut_date
+      t.date :birthday
+      t.date :debut_date
       t.string :main_language
       t.boolean :active, default: true
       t.string :jp_name
