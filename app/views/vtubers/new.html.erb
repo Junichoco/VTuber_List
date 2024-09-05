@@ -3,8 +3,8 @@
   <%= simple_form_for(@vtuber) do |f| %>
     <%= f.input :name %>
     <%= f.association :agency, collection: @agencies %>
-    <p><%= f.radio_button :gender, 'male' %> Male
-    <%= f.radio_button :gender, 'female' %> Female</p>
+    <p><%= f.radio_button :gender, 'female' %> Female
+    <%= f.radio_button :gender, 'male' %> Male</p>
     <%= f.input :birthday, discard_year: true, discard_time: true %>
     <%= f.input :debut_date %>
     <%= f.input :description, as: :text %>

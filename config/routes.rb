@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {
-    registrations: "registrations",
-    sessions: "sessions"
-  }
+  devise_for :users
+  # , controllers: {
+  #   registrations: "registrations",
+  #   sessions: "sessions"
+  # }
   root to: "pages#home"
   get 'home', to: 'pages#home', as: :home
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

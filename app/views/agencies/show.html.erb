@@ -4,9 +4,9 @@
   <p><%= @agency.location %></p>
   <%# number of vtubers: %>
   <%= link_to "Website", @agency.website, target: :blank %>
-  <%= link_to @agency.yt_channel, target: :blank do %>
-    <h4><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></h4>
-  <% end %>
+  <h4><%= link_to @agency.yt_channel, target: :blank do %>
+    <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+  <% end %></h4>
 
 
     <% if !@agency.active %>
