@@ -124,6 +124,20 @@ univirtual = Agency.create!(
   website: "https://univirtual.jp/"
 )
 
+dotlive = Agency.create!(
+  name: ".LIVE",
+  location: "Japan",
+  website: "https://appland.co.jp/talents/",
+  yt_channel: "https://www.youtube.com/channel/UC7-YM5BhR-FCZloquRE7XGw",
+  description: "A VTuber agency owned by Appland, Inc. It includes the VTuber group VPI (Pronounced \"Vee-pai\")",
+)
+
+
+# palepro = Agency.create!(
+#   name: "Palette Project",
+#   location: "Japan"
+# )
+
 
 puts "Agencies created"
 
@@ -419,6 +433,32 @@ phoebe = Vtuber.create!(
   agency: indie,
   gender: "female",
   main_language: "English"
+)
+
+iku = Vtuber.create!(
+  name: "Hoshifuri Iku",
+  jp_name: "星降いく",
+  description: "A former member of PRISM Project's 1st gen.",
+  agency: indie,
+  gender: "female",
+  main_language: "English",
+  birthday: "10/01",
+  debut_date: "2021/01/30",
+  yt_channel: "https://www.youtube.com/@IkuHoshifuri",
+  photo_url: "https://pbs.twimg.com/media/Erk3Z1MVcAAGPbL?format=jpg&name=large"
+)
+
+himaji = Vtuber.create!(
+  name: "Himaji Pane",
+  jp_name: "秘間慈ぱね",
+  description: "No description available.",
+  agency: dotlive,
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "08/30",
+  debut_date: "2023/06/16",
+  yt_channel: "https://www.youtube.com/@IkuHoshifuri",
+  photo_url: "https://pbs.twimg.com/media/Erk3Z1MVcAAGPbL?format=jpg&name=large"
 )
 
 puts "VTubers created"
