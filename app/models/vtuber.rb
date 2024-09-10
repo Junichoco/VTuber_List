@@ -37,4 +37,20 @@ class Vtuber < ApplicationRecord
     end
   end
 
+  def tags
+    arr = []
+    TagMarker.where(vtuber_id: id).each do |tm|
+      arr << Tag.find(tm.tag_id)
+    end
+    return arr
+  end
+
+  def add_tag(tag_name)
+    tm = TagMarker.new
+    tm.vtuber_id = id
+    tm.tag = Tag.where(name: tag_name).first
+
+    return tm.save
+  end
+
 end

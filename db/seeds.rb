@@ -458,8 +458,22 @@ himaji = Vtuber.create!(
   birthday: "08/30",
   debut_date: "2023/06/16",
   yt_channel: "https://www.youtube.com/@IkuHoshifuri",
-  photo_url: "https://pbs.twimg.com/media/Erk3Z1MVcAAGPbL?format=jpg&name=large"
+  photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_pane.png"
 )
+
+usagi= Vtuber.create!(
+  name: "Usagi Sora",
+  jp_name: "宇佐木そら",
+  description: "No description available.",
+  agency: indie,
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "09/06",
+  debut_date: "2020/05/21",
+  yt_channel: "https://www.youtube.com/@usagisora",
+  photo_url: "https://pbs.twimg.com/media/GPn78HHbcAAwEy8?format=jpg&name=large"
+)
+
 
 puts "VTubers created"
 
@@ -514,6 +528,7 @@ puts "Oshis added"
 lm = ListMarker.new
 lm.user = user2
 lm.list = cute
+lm.save
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 
@@ -529,3 +544,8 @@ tags.each do |tag|
     name: tag
   )
 end
+
+tm = TagMarker.new
+tm.vtuber = miko
+tm.tag = Tag.where(name: "baby").first
+tm.save

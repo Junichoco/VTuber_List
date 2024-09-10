@@ -35,8 +35,10 @@
             <% end %>
             <div class="tags-container">
             <p>Tags</p>
-            <% @vtuber.favorites.where(favoritable_type: "Tag").each do |tag| %>
-              <%= Tag.find(tag.favoritable_id).name %>
+            <% @vtuber.tags.each do |tag| %>
+              <div class="tag">
+              <%= tag.name %>
+              </div>
             <% end %>
             </div>
           </div>

@@ -17,7 +17,7 @@ class VtuberMarkersController < ApplicationController
       redirect_to list_path(List.find(marker_params[:list_id]))
     else
       # raise
-      render :new, status: :unprocessable_entity
+      # render :new, status: :unprocessable_entity
     end
   end
 
