@@ -1,4 +1,9 @@
 class AgenciesController < ApplicationController
+
+  def index
+    @agencies = Agency.all.order('LOWER(name)')
+  end
+
   def new
     @agency = Agency.new
   end
@@ -14,6 +19,7 @@ class AgenciesController < ApplicationController
 
   def show
     @agency = Agency.find(params[:id])
+    @vtubers = Vtuber.where(agency: @agency)
   end
 
   private

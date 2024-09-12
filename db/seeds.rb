@@ -133,6 +133,14 @@ dotlive = Agency.create!(
   description: "A VTuber agency owned by Appland, Inc. It includes the VTuber group VPI (Pronounced \"Vee-pai\")",
 )
 
+rkmusic = Agency.create!(
+  name: "RK Music",
+  location: "Japan",
+  website: "https://liveunion.jp/",
+  yt_channel: "https://www.youtube.com/c/RKMusic_inc",
+  description: "A music label and production company that specializes in virtual artists."
+)
+
 
 # palepro = Agency.create!(
 #   name: "Palette Project",
@@ -148,6 +156,17 @@ puts "Agencies created"
 sora = Vtuber.create!(
   name: "Tokino Sora",
   description: "monkey",
+  agency: hololive,
+  gender: "female",
+  main_language: "Japanese"
+)
+
+roboco = Vtuber.create!(
+  name: "Robocosan",
+  jp_name: "ロボ子さん",
+  description: "Hellobo! It's me, the high-spec hololive VTuber Roboco! I showed up from a faraway wasteland having lost all my memories.\n
+    I believe I'm pretty high-spec, but some rumors say that it'd be more accurate to call me \"broken\"... lol. I'm a gamer gal whose defining trait is a very human, emotional singing voice!\n
+    Am I really a robot? Whoops, looks like my arm came off...\n(Source: Hololive website)",
   agency: hololive,
   gender: "female",
   main_language: "Japanese"
@@ -212,18 +231,30 @@ miko = Vtuber.create!(
 
 pekora = Vtuber.create!(
   name: "Usada Pekora",
-  description: "The princess of Pekoland",
+  jp_name: "兎田ぺこら",
+  description: "A lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.\n(Source: Hololive website)",
   agency: hololive,
   gender: "female",
-  main_language: "Japanese"
+  main_language: "Japanese",
+  birthday: "01/12",
+  debut_date: "2019/07/17",
+  yt_channel: "https://www.youtube.com/@usadapekora",
+  twitch_channel: "https://www.twitch.tv/usadapekora_hololive",
+  photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/04/Usada-Pekora_pr-img_01-718x1440.png"
 )
 
 aqua = Vtuber.create!(
   name: "Minato Aqua",
+  jp_name: "湊あくあ",
   description: "A marine maid-styled virtual maid. She is trying her very best, yet is still sometimes awkward and clumsy.",
   agency: hololive,
   gender: "female",
-  main_language: "Japanese"
+  birthday: "12/01",
+  debut_date: "2018/08/08",
+  yt_channel: "https://www.youtube.com/@MinatoAqua",
+  main_language: "Japanese",
+  photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/04/Minato-Aqua_pr-img_01b-762x1440.png"
+
 )
 
 korone = Vtuber.create!(
@@ -255,8 +286,8 @@ ami = Vtuber.create!(
   gender: "female",
   main_language: "English",
   yt_channel: "https://www.youtube.com/@amamiAmi",
-  twitch_channel: "https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbXJEOWFBcGFONV92LVRwNTJzaU1Nc0JWOGJNQXxBQ3Jtc0tsWE9LNTU5cWNJNXRUdElhWDJrRkRHMmhNQm5pOEh6SHM4OEZ5TGRTVVExaVZkX3Y3ckFrd1VrYjlzOEl6OVZEOHdsT1kyYUpIVVdCeVBxSWp2Z1VCNGRCV1ZRMzVzVTdJUDRyY1U4dUhKRk5fM2pxdw&q=https%3A%2F%2Ftwitch.tv%2Famiamami",
-  photo_url: "https://static.wikia.nocookie.net/virtualyoutuber/images/8/87/Amami_Ami_Portrait.png/revision/latest?cb=20230422003330",
+  twitch_channel: "twitch.tv/amiamami",
+  photo_url: "https://vtubernewsdrop.com/content/images/2023/04/Ami-Amami.jpg",
   debut_date: "2023/04/29",
   birthday: "04/03"
 )
@@ -272,6 +303,45 @@ calli = Vtuber.create!(
   photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2022/04/4001_Mori-Calliope.png",
   debut_date: "2020/09/12",
   birthday: "04/04"
+)
+
+axel = Vtuber.create!(
+  name: "Axel Syrios",
+  jp_name: "アクセル・シリオス",
+  description: "The chief of human resources in Adventurer's Guild TEMPUS. He is the owner of the combat arena, and a gladiator himself. He joined TEMPUS on a whim, only to take a real liking to it. Has always swiftly resolved any problems he has faced by sheer instinct, and thus considers himself somewhat of a doctor.\n(Source: Holostars website)",
+  agency: holostars,
+  gender: "male",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@AxelSyrios",
+  photo_url: "https://holostars.hololivepro.com/wp-content/uploads/2021/12/Axel-Syrios_pr-img_01.png",
+  debut_date: "2022/07/24",
+  birthday: "11/01"
+)
+
+bettel = Vtuber.create!(
+  name: "Gavis Bettel",
+  jp_name: "ガビス・ベッテル",
+  description: "The jester of Adventurer's Guild TEMPUS. Visited Xenokuni in the past to learn its traditional performing arts, and used that experience to draw up and lead the expedition into the land eventually.\nCurrently performs in the combat arena, but is planning to take his talents global someday. His diverse clientele has given him an undeniably keen eye for aesthetics, and he can sometimes be a wise guy who goes straight for the jugular.\n(Source: Holostars website)",
+  agency: holostars,
+  gender: "male",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@GavisBettel",
+  photo_url: "https://holostars.hololivepro.com/wp-content/uploads/2024/06/Gavis-Bettel_pr-img_02.png",
+  debut_date: "2023/01/08",
+  birthday: "05/17"
+)
+
+hakka = Vtuber.create!(
+  name: "Banzoin Hakka",
+  jp_name: "万象院ハッカ",
+  description: "The exorcist of Adventurer's Guild TEMPUS. Dual wielding spears, he is the latest of a long line of exorcists who have defended Xenokuni from the evils of the world.\nHe fights not only out of a sense of duty, but also because he feels a special kind of excitement when on the frontlines. Unfortunately, his right hand is being eroded by the scourge of Records Corruption. Has inherited Karasutengu data, and thus possesses otherworldly leaping ability and endurance.\nJoined TEMPUS after the battle in Xenokuni.\n(Source: Holostars website)",
+  agency: holostars,
+  gender: "male",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@BanzoinHakka",
+  photo_url: "https://holostars.hololivepro.com/wp-content/uploads/2024/01/Banzoin-Hakka_pr-img_02.png",
+  debut_date: "2023/01/08",
+  birthday: "04/21"
 )
 
 iguchi = Vtuber.create!(
@@ -511,6 +581,68 @@ eve = Vtuber.create!(
   photo_url: "https://yt3.ggpht.com/a/AGF-l79cAh97L_rSW7kigUUEtiC6Qdak5Puaxhco6g=s200"
 )
 
+enma = Vtuber.create!(
+  name: "Ruri Enma",
+  jp_name: "焔魔るり",
+  description: "A VSinger part of RK Music's Live Union project.",
+  agency: rkmusic,
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "09/03",
+  yt_channel: "https://www.youtube.com/@EnmaRuri",
+  photo_url: "https://liveunion.jp/assets/img/page/home/picture-RuriEnma-large.png"
+)
+
+hachi = Vtuber.create!(
+  name: "HACHI",
+  jp_name: "ハチ",
+  description: "No description available.",
+  agency: rkmusic,
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "01/16",
+  yt_channel: "https://www.youtube.com/@HACHIVSinger",
+  photo_url: "https://liveunion.jp/assets/img/page/home/picture-HACHI-large.png"
+)
+
+meda = Vtuber.create!(
+  name: "MEDA",
+  agency: rkmusic,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@MEDAzcd",
+  photo_url: "https://pbs.twimg.com/media/GWeZW6QXwAM06SU?format=jpg&name=large"
+)
+
+neun = Vtuber.create!(
+  name: "NEUN",
+  jp_name: "ノイン",
+  agency: rkmusic,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  debut_date: "2024/05/25",
+  yt_channel: "https://www.youtube.com/@NEUN09",
+  photo_url: "https://pbs.twimg.com/media/GPn84K8aMAAM_16?format=jpg&name=medium"
+)
+
+neno = Vtuber.create!(
+  name: "Aoi Neno",
+  jp_name: "碧生ねの",
+  agency: indie,
+  description: "A virtual siren. Her full name is Neonoah S. Valentine.",
+  gender: "female",
+  main_language: "Japanese",
+  debut_date: "2023/11/11",
+  yt_channel: "https://www.youtube.com/@aoineno",
+  twitch_channel: "https://www.twitch.tv/aoineno",
+  photo_url: "https://pbs.twimg.com/media/GIefBAFbQAEfCIJ?format=jpg&name=large"
+)
+
+
+
+
 puts "VTubers created"
 
 
@@ -534,36 +666,47 @@ user2 = User.create!(
 puts "Users created"
 
 
-cute = List.create!(
-  name: "Cute",
-  user: user
+oshis = List.create!(
+  name: "My Oshis",
+  user: user2
 )
 
-puts "List created"
-puts "Cute: #{cute}"
+singers = List.create!(
+  name: "Great Singers",
+  user: user2
+)
+
+puts "List created: #{oshis.name}"
 puts "Users: #{user.username}, #{user2.username}"
 
-vm = VtuberMarker.new
-vm.vtuber = miko
-vm.list = cute
 
-puts "VTuber marker created: #{vm.vtuber.name}, #{vm.list.name}" if vm.save
 
-oshis = [ami, pekora, amelie, raki, yutoha, meimi, amana, phoebe, nuino]
 
-oshis.each do |oshi|
-  VtuberMarker.create!(
-    vtuber: oshi,
-    list: cute
-  )
+[raki, pekora, miko, ami, amelie, calli, axel, bettel].each do |oshi|
+  # VtuberMarker.create!(
+  #   vtuber: oshi,
+  #   list: oshis
+  # )
+  if oshis.add_vtuber(oshi)
+    puts "Added #{oshi.name} to #{oshis.name}"
+  else
+    puts task.errors.full_messages
+  end
 end
 
 puts "Oshis added"
 
+[nuino, amana, yutoha, sanso, himaji, enma, neno, iguchi].each do |oshi|
+  if singers.add_vtuber(oshi)
+    puts "Added #{oshi.name} to #{singers.name}"
+  else
+    puts task.errors.full_messages
+  end
+end
 
 lm = ListMarker.new
 lm.user = user2
-lm.list = cute
+lm.list = oshis
 lm.save
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
@@ -573,7 +716,7 @@ tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "League of Legends", "bi
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
-        "furry", "lewd", "short", "tall"]
+        "furry", "lewd", "short", "tall", "drama"]
 
 tags.each do |tag|
   Tag.create!(
@@ -590,11 +733,13 @@ tm.save
   ami.add_tag(tag)
 end
 
-["baby girl failure", "thighs", "Southern accent", "ASMR", "animal ears"].each do |tag|
+["baby girl failure", "thighs", "Southern accent", "ASMR", "animal ears", "heavy metal"].each do |tag|
   raki.add_tag(tag)
 end
 
 [sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
-  sanso, phoebe, iku, himaji, usagi, shiro].each do |vtuber|
+  sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka].each do |vtuber|
     vtuber.add_tag("singer")
 end
+
+puts "Tags added"

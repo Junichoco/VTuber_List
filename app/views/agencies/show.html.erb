@@ -1,15 +1,26 @@
 <div class="container col-6">
   <h2><%= @agency.name %></h2>
+  <p>Country: <%= @agency.location %></p>
+  <% if @agency.website %>
+    <%= link_to "Website", @agency.website, target: :blank %>
+  <% end %>
+  <% if @agency.yt_channel%>
+    <h4><%= link_to @agency.yt_channel, target: :blank do %>
+        <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+      <% end %></h4>
+  <% end %>
+  <% if !@agency.active %>
+    <p><%= @agency.name %> is not active.</p>
+  <% end %>
   <p><%= @agency.description %></p>
-  <p><%= @agency.location %></p>
-  <%# number of vtubers: %>
-  <%= link_to "Website", @agency.website, target: :blank %>
-  <h4><%= link_to @agency.yt_channel, target: :blank do %>
-    <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
-  <% end %></h4>
-
-
-    <% if !@agency.active %>
-      <p><%= @agency.name %> is not active.</p>
+  <% if !@vtubers %>
+    <p>This agency has no VTubers</p>
+  <% else %>
+    <% if @agency.name == "Indie" %>
+      <p>Number of indie VTubers in this database: <%= @vtubers.length %></p>
+    <% else %>
+      <p>Number of VTubers from this agency in this database: <%= @vtubers.length %></p>
     <% end %>
+    <%= render "shared/vtuber_grid_display", vtubers: @vtubers %>
+  <% end %>
 </div>

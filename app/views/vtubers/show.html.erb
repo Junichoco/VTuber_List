@@ -10,10 +10,21 @@
 
         <div class="show-card-body">
           <div class="badge-group">
-            <span class="fw-bold"><%= @vtuber.name %></span>
+            <h3><span class="fw-bold show-card-name"><%= @vtuber.name %></span>
+            <% if @vtuber.yt_channel %>
+              <%= link_to @vtuber.yt_channel, target: :blank do %>
+                <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+              <% end %>
+            <% end %>
+            <% if @vtuber.twitch_channel %>
+              <%= link_to @vtuber.twitch_channel, target: :blank do %>
+                <i class="fa-brands fa-twitch" style="color: #7d52ff;"></i>
+              <% end %>
+            <% end %>
+            </h3>
           </div>
           <div class="show-card-content">
-            <p><%= @vtuber.agency.name %></p>
+            <h4><%= @vtuber.agency.name %></h4>
             <p class="text"><%= @vtuber.description %></p>
             <div class="show-card-dates">
               <p>Birthday: <%= @vtuber.get_birthday %></p>
@@ -27,14 +38,8 @@
           </div>
         </div>
         <div class="show-card-footer">
-            <%= link_to @vtuber.yt_channel, target: :blank do %>
-              <h4><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></h4>
-            <% end %>
-            <%= link_to @vtuber.twitch_channel, target: :blank do %>
-              <h4><i class="fa-brands fa-twitch" style="color: #7d52ff;"></i></h4>
-            <% end %>
-            <div class="tags-container">
-            <p>Tags</p>
+          <div class="tags-container">
+            <h4>Tags</h4>
             <% @vtuber.tags.each do |tag| %>
               <span class="tag"><%= link_to tag.name, tag_path(tag) %></span>
             <% end %>

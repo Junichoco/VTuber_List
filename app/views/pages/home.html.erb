@@ -1,5 +1,6 @@
 <div class="container col-6">
-  <h1>VTubers</h1>
+  <h1 style="font-family: 'Patrick Hand';">VTuber List</h1>
+  <h2>Your lists</h2>
   <% @lists.each do |list| %>
     <div class="card">
       <%= list.name %>
@@ -7,6 +8,9 @@
       <%= link_to "Show this list", list %>
     </div>
   <% end %>
+  <%= link_to "See Agencies", agencies_path %>
+  <%= link_to "See Tags", tags_path %>
+  <h4>Admin only</h4>
   <%= link_to "Add VTuber Entry", new_vtuber_path %>
   <%= link_to "Add Agency Entry", new_agency_path %>
 </div>

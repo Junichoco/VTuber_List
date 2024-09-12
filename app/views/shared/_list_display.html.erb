@@ -1,4 +1,4 @@
-<% list.vtuber_markers.each do |marker| %>
+<% list.vtuber_markers.order(id: :asc).each do |marker| %>
   <div class="vtuber-card">
     <div class="vtuber-card-pic">
         <%= render "shared/vtuber_picture", vtuber: marker.vtuber %>

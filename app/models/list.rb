@@ -9,4 +9,20 @@ class List < ApplicationRecord
   has_one_attached :photo
 
   validates :name, presence: true
+
+  def add_vtuber(vtuber)
+    vm = VtuberMarker.new
+    vm.list_id = id
+    vm.vtuber = vtuber
+
+    return vm.save
+  end
+
+  def get_vtuber_names
+    vtubers = []
+    vtuber_markers.each do |vm|
+      vtubers << vm.vtuber.name
+    end
+    return vtubers
+  end
 end
