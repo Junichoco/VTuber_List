@@ -13,6 +13,7 @@ class CreateVtubers < ActiveRecord::Migration[7.1]
       t.string :main_language
       t.boolean :active, default: true
       t.string :jp_name
+      t.string :thumbnail
 
       t.timestamps
     end

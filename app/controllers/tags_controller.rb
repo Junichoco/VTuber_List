@@ -1,7 +1,7 @@
 class TagsController < ApplicationController
 
   def index
-    @tags = Tag.all
+    @tags = Tag.all.order(name: :asc)
   end
 
   def show
@@ -10,5 +10,6 @@ class TagsController < ApplicationController
     TagMarker.where(tag: @tag).each do |tm|
       @vtubers << tm.vtuber
     end
+    @vtubers.sort
   end
 end

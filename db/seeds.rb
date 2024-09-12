@@ -12,6 +12,7 @@ Vtuber.destroy_all
 Agency.destroy_all
 List.destroy_all
 User.destroy_all
+Tag.destroy_all
 # VtuberMarker.destroy_all
 
 indie = Agency.create!(
@@ -567,12 +568,12 @@ lm.save
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 
-tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "League of Legends", "big boobs", "deep singing voice",
-        "baby girl failure", "baby", "saxophone", "violin", "loli", "flat chest", "heavy metal", "thighs", "French",
-        "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
-        "hag", "bald", "kusogaki", "fluffy", "animal ears", "southern accent", "mom", "violin", "ASMR",
-        "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
-         "furry", "lewd", "short", "tall"]
+tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "League of Legends", "big chest", "deep singing voice",
+        "baby girl failure", "baby", "saxophone", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs",
+        "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
+        "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom",
+        "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
+        "furry", "lewd", "short", "tall"]
 
 tags.each do |tag|
   Tag.create!(
@@ -584,3 +585,16 @@ tm = TagMarker.new
 tm.vtuber = miko
 tm.tag = Tag.where(name: "baby").first
 tm.save
+
+["baby", "loli", "flat chest", "Filipino", "short", "voice actor"].each do |tag|
+  ami.add_tag(tag)
+end
+
+["baby girl failure", "thighs", "Southern accent", "ASMR", "animal ears"].each do |tag|
+  raki.add_tag(tag)
+end
+
+[sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
+  sanso, phoebe, iku, himaji, usagi, shiro].each do |vtuber|
+    vtuber.add_tag("singer")
+end
