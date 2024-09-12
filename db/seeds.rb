@@ -461,7 +461,7 @@ himaji = Vtuber.create!(
   photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_pane.png"
 )
 
-usagi= Vtuber.create!(
+usagi = Vtuber.create!(
   name: "Usagi Sora",
   jp_name: "宇佐木そら",
   description: "No description available.",
@@ -474,6 +474,41 @@ usagi= Vtuber.create!(
   photo_url: "https://pbs.twimg.com/media/GPn78HHbcAAwEy8?format=jpg&name=large"
 )
 
+amagami = Vtuber.create!(
+  name: "Amagami Ame",
+  jp_name: "甘噛あめ",
+  description: "No description available.",
+  agency: dotlive,
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@AmagamiAme-my2uv",
+  photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_ame.png"
+)
+
+shiro = Vtuber.create!(
+  name: "Dennou Shojo Shiro",
+  jp_name: "電脳少女シロ",
+  description: "No description available.",
+  agency: dotlive,
+  gender: "female",
+  main_language: "Japanese",
+  debut_date: "2017/06/28",
+  birthday: "08/12",
+  yt_channel: "https://www.youtube.com/@CyberGirlSiro",
+  photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_siro.png"
+)
+
+eve = Vtuber.create!(
+  name: "EvE Varlaine",
+  jp_name: "イヴ・ヴァルレーヌ",
+  description: "A succubus-in-training who is known for her lewd ASMR and JOI videos. In 2021, she privated all of her videos to avoid being banned on YouTube. Around the same time, she made an account on Fantia where she uploads lewd voice recordings and another channel on YouTube where she does normal game and ASMR livestreams.",
+  agency: indie,
+  gender: "female",
+  main_language: "Japanese",
+  debut_date: "2018/05/31",
+  yt_channel: "https://www.youtube.com/@user-eg6us6os5r",
+  photo_url: "https://yt3.ggpht.com/a/AGF-l79cAh97L_rSW7kigUUEtiC6Qdak5Puaxhco6g=s200"
+)
 
 puts "VTubers created"
 
@@ -533,11 +568,11 @@ lm.save
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 
 tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "League of Legends", "big boobs", "deep singing voice",
-        "baby girl failure", "baby", "saxophone", "loli", "flat chest", "heavy metal", "thighs", "French",
+        "baby girl failure", "baby", "saxophone", "violin", "loli", "flat chest", "heavy metal", "thighs", "French",
         "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "hag", "bald", "kusogaki", "fluffy", "animal ears", "southern accent", "mom", "violin", "ASMR",
         "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
-        "singing voice completely different from normal voice", "furry"]
+         "furry", "lewd", "short", "tall"]
 
 tags.each do |tag|
   Tag.create!(

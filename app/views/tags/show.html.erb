@@ -1,0 +1,10 @@
+<div class="container col-6">
+  <h4>You searched for <span class="tag"><%= @tag.name %></span></h4>
+  <% if !@vtubers %>
+    <p>No VTubers matched your search</p>
+  <% else %>
+    <% @vtubers.each do |vtuber| %>
+      <%= link_to vtuber.name, vtuber_path(vtuber) %>
+    <% end %>
+  <% end %>
+</div>
