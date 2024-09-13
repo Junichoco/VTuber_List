@@ -23,7 +23,7 @@ class Vtuber < ApplicationRecord
 
   def get_birthday
     if birthday
-      birthday.strftime("%B %d")
+      birthday.strftime("%B %-d")
     else
       "Not available"
     end
@@ -31,7 +31,7 @@ class Vtuber < ApplicationRecord
 
   def get_debut_date
     if debut_date
-      debut_date.strftime("%B %d, %Y")
+      debut_date.strftime("%B %-d, %Y")
     else
       "Not available"
     end

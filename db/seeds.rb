@@ -101,7 +101,8 @@ v4mirai = Agency.create!(
 
 mixst = Agency.create!(
   name: "Mixst",
-  location: "Japan"
+  location: "Japan",
+  website: "https://mixstgirls.com/"
 )
 
 vdere = Agency.create!(
@@ -139,6 +140,22 @@ rkmusic = Agency.create!(
   website: "https://liveunion.jp/",
   yt_channel: "https://www.youtube.com/c/RKMusic_inc",
   description: "A music label and production company that specializes in virtual artists."
+)
+
+react = Agency.create!(
+  name: "Re:Act",
+  location: "Japan",
+  website: "https://v-react.com/",
+  yt_channel: "https://www.youtube.com/@react3709",
+  description: "A VTuber agency owned by mikai inc."
+)
+
+nebula = Agency.create!(
+  name: "Project Nebula",
+  location: "Japan",
+  website: "https://www.project-nebula.com/",
+  yt_channel: "https://www.youtube.com/@PROJECTNEBULA",
+  description: "A VTuber agency owned by RISEUP Inc."
 )
 
 
@@ -185,7 +202,8 @@ mel = Vtuber.create!(
   description: "monkey",
   agency: hololive,
   gender: "female",
-  main_language: "Japanese"
+  main_language: "Japanese",
+  active: false
 )
 
 subaru = Vtuber.create!(
@@ -253,8 +271,8 @@ aqua = Vtuber.create!(
   debut_date: "2018/08/08",
   yt_channel: "https://www.youtube.com/@MinatoAqua",
   main_language: "Japanese",
-  photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/04/Minato-Aqua_pr-img_01b-762x1440.png"
-
+  photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/04/Minato-Aqua_pr-img_01b-762x1440.png",
+  active: false
 )
 
 korone = Vtuber.create!(
@@ -350,7 +368,9 @@ iguchi = Vtuber.create!(
   agency: indie,
   gender: "female",
   main_language: "Japanese",
-  yt_channel: "https://www.youtube.com/@iguchisun"
+  debut_date: "2024/01/28",
+  yt_channel: "https://www.youtube.com/@iguchisun",
+  photo_url: "https://pbs.twimg.com/media/GXCrBH6aEAA5g0t?format=jpg&name=large"
 )
 
 ironmouse = Vtuber.create!(
@@ -466,7 +486,7 @@ yutoha = Vtuber.create!(
 )
 
 meimi = Vtuber.create!(
-  name: "Meimi Majokko",
+  name: "Majokko Meimi",
   jp_name: "魔女っ子めいみ",
   description: "monkey",
   agency: kawaii,
@@ -640,7 +660,200 @@ neno = Vtuber.create!(
   photo_url: "https://pbs.twimg.com/media/GIefBAFbQAEfCIJ?format=jpg&name=large"
 )
 
+leona = Vtuber.create!(
+  name: "Shishigami Leona",
+  jp_name: "獅子神レオナ",
+  agency: react,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@Leona_Shishigami",
+  twitch_channel: "https://twitch.tv/leona_shishigami",
+  photo_url: "https://www.v-react.com/wp-content/uploads/2022/07/8c05d65eae34d5bd961818d88863c3c5.png"
+)
 
+kaf = Vtuber.create!(
+  name: "KAF",
+  jp_name: "花譜",
+  agency: indie,
+  description: "A VSinger signed with the creative label Kamitsubaki Studio. She is a member of the VSinger group V.W.P -Virtual Witch Phenomenon-. In August 2022, she became the first VTuber to perform at the Nippon Budokan.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@virtual_kaf",
+  photo_url: "https://kaf3rdanniversary.kamitsubaki.jp/assets/img/common/kaf.png"
+)
+
+rim = Vtuber.create!(
+  name: "RIM",
+  jp_name: "理芽",
+  agency: indie,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@RIM_virtual",
+  photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpiapro.jp%2Fcharacters%2Frim&psig=AOvVaw1LK7H0y9fyZtsXhRaIkP1q&ust=1726289269154000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiF8-iOv4gDFQAAAAAdAAAAABAE"
+)
+
+
+yayamugi = Vtuber.create!(
+  name: "yayamugi",
+  jp_name: "稍麦",
+  agency: indie,
+  description: "A shumai reborn as a VTuber. She was born in China and knows some Chinese.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@yayamugi222",
+  photo_url: "https://pbs.twimg.com/media/GQk4DKxakAAqzJM?format=jpg&name=large"
+)
+
+nina = Vtuber.create!(
+  name: "Momose Nina",
+  jp_name: "桃瀬にな",
+  agency: nebula,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  debut_date: "2022/07/16",
+  yt_channel: "https://www.youtube.com/@MomoseNina",
+  photo_url: "https://www.project-nebula.com/static/Nina2-d9cae35830a1e0d7cec43baf5f6d08c2.png"
+)
+
+yura = Vtuber.create!(
+  name: "Usui Yura",
+  jp_name: "碓氷ゆら",
+  agency: nebula,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@yurayurausui",
+  photo_url: "https://www.project-nebula.com/static/yura_key-01c09a7e6e8d2f3fbb7c88313ce4dc29.png"
+)
+
+suzuri = Vtuber.create!(
+  name: "Suzuri Ren",
+  jp_name: "鈴莉れん",
+  agency: nebula,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@RenSuzuri",
+  photo_url: "https://www.project-nebula.com/static/ren_key-9a07bbb77a0e5620f69f1d01876994d8.png"
+)
+
+hinatori = Vtuber.create!(
+  name: "Hinata Natori",
+  jp_name: "菜鳥ひなた",
+  agency: nebula,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@natori_hinata",
+  photo_url: "https://pbs.twimg.com/media/GW--yHDaIAAJLCd?format=jpg&name=4096x4096"
+)
+
+sorakana = Vtuber.create!(
+  name: "Sorakana Ito",
+  jp_name: "空奏イト",
+  agency: mixst,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "10/01",
+  debut_date: "2024/06/23",
+  yt_channel: "https://www.youtube.com/@Ito_Mixstgirls",
+  photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E7%A9%BA%E5%A5%8F%E3%82%A4%E3%83%88-2.png"
+)
+
+shichi = Vtuber.create!(
+  name: "Nagisawa Shichi",
+  jp_name: "渚沢シチ",
+  agency: mixst,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "11/07",
+  debut_date: "2024/06/23",
+  yt_channel: "https://www.youtube.com/@Shichi_Mixstgirls",
+  photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E6%B8%9A%E6%B2%A2%E3%82%B7%E3%83%81-2.png"
+)
+
+qalu = Vtuber.create!(
+  name: "Yukishiro Qalu",
+  jp_name: "雪白キャル",
+  agency: mixst,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "12/07",
+  debut_date: "2024/06/23",
+  yt_channel: "https://www.youtube.com/@Qalu_Mixstgirls",
+  photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E9%9B%AA%E7%99%BD%E3%82%AD%E3%83%A3%E3%83%AB-2.png"
+)
+
+rimu = Vtuber.create!(
+  name: "Hoshino Rimu",
+  jp_name: "星乃りむ",
+  agency: mixst,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "09/20",
+  debut_date: "2024/06/23",
+  yt_channel: "https://www.youtube.com/@Rimu_Mixstgirls",
+  photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E6%98%9F%E4%B9%83%E3%82%8A%E3%82%80-2.png"
+)
+
+iori_mixst = Vtuber.create!(
+  name: "Kotomiya Iori",
+  jp_name: "琴宮いおり",
+  agency: mixst,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "02/22",
+  debut_date: "2024/06/23",
+  yt_channel: "https://www.youtube.com/@Iori_Mixstgirls",
+  photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E7%90%B4%E5%AE%AE%E3%81%84%E3%81%8A%E3%82%8A-2.png"
+)
+
+lian = Vtuber.create!(
+  name: "Kosuzu Lian",
+  jp_name: "小鈴りあん",
+  agency: mixst,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "01/23",
+  debut_date: "2024/06/23",
+  yt_channel: "https://www.youtube.com/@Lian_Mixstgirls",
+  photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E5%B0%8F%E9%88%B4%E3%82%8A%E3%81%82%E3%82%93-2.png"
+)
+
+myao = Vtuber.create!(
+  name: "Narumi Myao",
+  jp_name: "成海ミャオ",
+  agency: mixst,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "04/28",
+  debut_date: "2024/06/23",
+  yt_channel: "https://www.youtube.com/@Myao_Mixstgirls",
+  photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E6%88%90%E6%B5%B7%E3%83%9F%E3%83%A3%E3%82%AA-2.png"
+)
+
+san = Vtuber.create!(
+  name: "Amabuki San",
+  jp_name: "天吹サン",
+  agency: mixst,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "03/20",
+  debut_date: "2024/06/23",
+  yt_channel: "https://www.youtube.com/@San_Mixstgirls",
+  photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E5%A4%A9%E5%90%B9%E3%82%B5%E3%83%B3-2.png"
+)
 
 
 puts "VTubers created"
@@ -682,7 +895,7 @@ puts "Users: #{user.username}, #{user2.username}"
 
 
 
-[raki, pekora, miko, ami, amelie, calli, axel, bettel].each do |oshi|
+[raki, pekora, miko, ami, amelie, calli, axel, bettel, kaf].each do |oshi|
   # VtuberMarker.create!(
   #   vtuber: oshi,
   #   list: oshis
@@ -696,7 +909,7 @@ end
 
 puts "Oshis added"
 
-[nuino, amana, yutoha, sanso, himaji, enma, neno, iguchi].each do |oshi|
+[nuino, amana, yutoha, sanso, himaji, enma, neno, iguchi, sorakana, rim].each do |oshi|
   if singers.add_vtuber(oshi)
     puts "Added #{oshi.name} to #{singers.name}"
   else
@@ -738,7 +951,7 @@ end
 end
 
 [sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
-  sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka].each do |vtuber|
+  sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka, leona, kaf, rim, sorakana].each do |vtuber|
     vtuber.add_tag("singer")
 end
 
