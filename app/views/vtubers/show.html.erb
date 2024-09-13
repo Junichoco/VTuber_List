@@ -24,7 +24,7 @@
             </h3>
           </div>
           <div class="show-card-content">
-            <h4><%= @vtuber.agency.name %></h4>
+            <h4><span class="agency-button"><%= link_to @vtuber.agency.name, agency_path(@vtuber.agency) %></span></h4>
             <p class="text"><%= @vtuber.description %></p>
             <div class="show-card-dates">
               <p>Birthday: <%= @vtuber.get_birthday %></p>
@@ -41,7 +41,7 @@
           <div class="tags-container">
             <h4>Tags</h4>
             <% @vtuber.tags.each do |tag| %>
-              <span class="tag"><%= link_to tag.name, tag_path(tag) %></span>
+              <span class="tag-button"><%= link_to tag.name, tag_path(tag) %></span>
             <% end %>
             </div>
           </div>

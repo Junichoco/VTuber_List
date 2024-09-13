@@ -2,7 +2,7 @@
   <h2>Agencies</h2>
     <% @agencies.each do |agency| %>
       <div class="agency">
-        <p><%= link_to agency.name, agency_path(agency) %></p>
+        <p><span class="agency-button"><%= link_to agency.name, agency_path(agency) %></span> (<%= agency.vtuber_count %>)</p>
         <% vtubers = Vtuber.where(agency: agency).order(name: :asc) %>
         <% if vtubers != [] %>
           <%#= render "shared/vtuber_picture", vtuber: vtubers.sample %>

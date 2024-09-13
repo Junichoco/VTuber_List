@@ -158,6 +158,13 @@ nebula = Agency.create!(
   description: "A VTuber agency owned by RISEUP Inc."
 )
 
+neoporte = Agency.create!(
+  name: "Neo-Porte",
+  location: "Japan",
+  website: "https://neo-porte.jp/"
+  yt_channel: "https://www.youtube.com/@neoporte-office",
+  description: "No description available."
+)
 
 # palepro = Agency.create!(
 #   name: "Palette Project",
@@ -499,12 +506,12 @@ meimi = Vtuber.create!(
 toi = Vtuber.create!(
   name: "Itoi Toi",
   jp_name: "絲依とい",
-  description: "monkey",
-  agency: indie,
+  description: "No description available.",
+  agency: neoporte,
   gender: "female",
   main_language: "Japanese",
   yt_channel: "https://www.youtube.com/@itoitoi_Q",
-  photo_url: "https://yt3.googleusercontent.com/XyCogGnGdro6r6va6enGjLKPks1xrqi_OlGgWBVYk_AQ6fTgxTT4x7MqztPWuIHpXi2J98quSg=s160-c-k-c0x00ffffff-no-rj"
+  photo_url: "https://neo-porte.jp/wp-content/uploads/2023/09/ccd772d1067b93d933bd42005cbd3527.png"
 )
 
 sanso = Vtuber.create!(
@@ -515,7 +522,7 @@ sanso = Vtuber.create!(
   gender: "female",
   main_language: "Japanese",
   yt_channel: "https://www.youtube.com/@Sansochan",
-  photo_url: "https://yt3.googleusercontent.com/XyCogGnGdro6r6va6enGjLKPks1xrqi_OlGgWBVYk_AQ6fTgxTT4x7MqztPWuIHpXi2J98quSg=s160-c-k-c0x00ffffff-no-rj"
+  photo_url: "https://pbs.twimg.com/media/GVvAzvMa8AQocYM?format=jpg&name=large"
 )
 
 phoebe = Vtuber.create!(
@@ -855,6 +862,65 @@ san = Vtuber.create!(
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E5%A4%A9%E5%90%B9%E3%82%B5%E3%83%B3-2.png"
 )
 
+ekopi = Vtuber.create!(
+  name: "Himeno Ekopi",
+  jp_name: "姫乃えこぴ",
+  agency: indie,
+  description: "A VTuber who does anime reaction videos. Usually does watchalongs of currently airing anime.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@ekopi"
+)
+
+rikako = Vtuber.create!(
+  name: "Aida Rikako",
+  jp_name: "逢田梨香子",
+  agency: indie,
+  description: "A voice actress famous for her role as Sakurauchi Riko from Love Live! Sunshine!! She debuted her 2D VTuber model on August 21, 2024 and livestreams games on her channel.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "2000/08/08",
+  yt_channel: "https://www.youtube.com/@rikakoaida",
+  debut_date: "2024/08/01",
+  photo_url: "https://pbs.twimg.com/media/GVgjqfbW8AAQW7L?format=jpg&name=large"
+)
+
+figaro = Vtuber.create!(
+  name: "Figaro",
+  agency: indie,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@Figaro_qpt",
+  photo_url: "https://pbs.twimg.com/media/GWWxpBobQAIkiyo?format=jpg&name=large"
+)
+
+misora = Vtuber.create!(
+  name: "Misora Sora",
+  jp_name: "ミソラソラ",
+  agency: indie,
+  description: "A singing blue ghost.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "2000/08/01",
+  debut_date: "2024/07/01",
+  yt_channel: "https://www.youtube.com/@misorasoraCH",
+  photo_url: "https://pbs.twimg.com/media/GSAj1LDa4AA-w8G?format=jpg&name=large"
+)
+
+youri = Vtuber.create!(
+  name: "Hiiragi Youri",
+  jp_name: "柊木 悠利",
+  agency: indie,
+  description: "A girl posessed by a 500-year-old fox who has lost her memories.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "2000/08/01",
+  debut_date: "2024/01/27",
+  yt_channel: "https://www.youtube.com/@youriofficialchannel",
+  photo_url: "https://pbs.twimg.com/media/GUS_KJ8aQAAqLa2?format=jpg&name=4096x4096"
+)
+
 
 puts "VTubers created"
 
@@ -909,7 +975,7 @@ end
 
 puts "Oshis added"
 
-[nuino, amana, yutoha, sanso, himaji, enma, neno, iguchi, sorakana, rim].each do |oshi|
+[nuino, amana, yutoha, himaji, enma, neno, iguchi, sorakana, rim, figaro, misora, youri].each do |oshi|
   if singers.add_vtuber(oshi)
     puts "Added #{oshi.name} to #{singers.name}"
   else
@@ -929,7 +995,7 @@ tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "League of Legends", "bi
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
-        "furry", "lewd", "short", "tall", "drama"]
+        "furry", "lewd", "short", "tall", "drama", "alcohol"]
 
 tags.each do |tag|
   Tag.create!(
@@ -951,7 +1017,8 @@ end
 end
 
 [sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
-  sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka, leona, kaf, rim, sorakana].each do |vtuber|
+  sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka, leona, kaf, rim, sorakana, rikako,
+  figaro, misora, youri].each do |vtuber|
     vtuber.add_tag("singer")
 end
 

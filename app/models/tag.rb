@@ -4,4 +4,9 @@ class Tag < ApplicationRecord
 
   validates :name, presence: true
   validates :name, uniqueness: true
+
+  def vtuber_count
+    TagMarker.where(tag_id: id).length
+  end
+
 end

@@ -1,8 +1,9 @@
 <div class="container page-container col-6">
-  <h4>You searched for <span class="tag"><%= @tag.name %></span></h4>
+  <h4>You searched for <span class="tag-button"><%= @tag.name %></span></h4>
   <% if !@vtubers %>
     <p>No VTubers matched your search</p>
   <% else %>
+    <p><%= @vtubers.length %> search results</p>
     <%= render "shared/vtuber_grid_display", vtubers: @vtubers %>
   <% end %>
 </div>

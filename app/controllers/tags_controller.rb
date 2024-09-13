@@ -1,7 +1,7 @@
 class TagsController < ApplicationController
 
   def index
-    @tags = Tag.all.order(name: :asc)
+    @tags = Tag.all.order("LOWER(name)")
   end
 
   def show
