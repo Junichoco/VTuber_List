@@ -921,6 +921,71 @@ youri = Vtuber.create!(
   photo_url: "https://pbs.twimg.com/media/GUS_KJ8aQAAqLa2?format=jpg&name=4096x4096"
 )
 
+hanatan = Vtuber.create!(
+  name: "HaNaTan",
+  jp_name: "花たん",
+  agency: indie,
+  description: "A VSinger. She performed the ending theme of the anime \"The Do-Over Damsel Conquers the Dragon Emperor\"",
+  gender: "female",
+  main_language: "Japanese",
+  debut_date: "2022/01/22",
+  yt_channel: "https://www.youtube.com/@HaNaTaN_MUSiC",
+  photo_url: "https://pbs.twimg.com/media/GXHspm8WUAEfMSj?format=jpg&name=medium"
+)
+
+stronny = Vtuber.create!(
+  name: "Stronny Cuttles",
+  agency: vallure,
+  description: "A siren with a devastating goal to wipe out humanity. Will you fall for her spell (Source: VAllure website)",
+  gender: "female",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@StronnyCuttles"
+)
+
+azura = Vtuber.create!(
+  name: "Azura Dulait",
+  agency: vallure,
+  description: "A goat goddess from eons before finally returns to humanity that she once created. Will she be accepted or shunned? (Source: VAllure website)",
+  gender: "female",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@AzuraDulait"
+)
+
+icey = Vtuber.create!(
+  name: "Icey Snowpaws",
+  agency: vallure,
+  description: "A feral polar bear finds her way back to civilization. Will she be able to understand humans or give into her wild side? (Source: VAllure website)",
+  gender: "female",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@IceySnowpaws"
+)
+
+immy = Vtuber.create!(
+  name: "Immy Bisou",
+  agency: vallure,
+  description: "A hex maniac whose destiny is tied within a forbidden love. Will you watch over her until the very end? (Source: VAllure website)",
+  gender: "female",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@ImmyBisou"
+)
+
+mercy = Vtuber.create!(
+  name: "Mercy Modiste",
+  agency: vallure,
+  description: "A yandere that truly has no understanding of her deeds. Will she be able to cut through the competition to your heart? (Source: VAllure website)",
+  gender: "female",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@MercyModiste"
+)
+
+shibi = Vtuber.create!(
+  name: "Shibi Cottonbum",
+  agency: vallure,
+  description: "A madam of a brothel and acceptor of degenerates. Will she take control of your desires? (Source: VAllure website)",
+  gender: "female",
+  main_language: "English",
+  yt_channel: "https://www.youtube.com/@ShibiCottonbum"
+)
 
 puts "VTubers created"
 
@@ -990,12 +1055,12 @@ lm.save
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 
-tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "League of Legends", "big chest", "deep singing voice",
+tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
         "baby girl failure", "baby", "saxophone", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs",
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
-        "furry", "lewd", "short", "tall", "drama", "alcohol"]
+        "furry", "lewd", "short", "tall", "drama", "alcohol", "Japanese and English"]
 
 tags.each do |tag|
   Tag.create!(
@@ -1018,7 +1083,7 @@ end
 
 [sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
   sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka, leona, kaf, rim, sorakana, rikako,
-  figaro, misora, youri].each do |vtuber|
+  figaro, misora, youri, hanatan].each do |vtuber|
     vtuber.add_tag("singer")
 end
 

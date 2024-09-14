@@ -1,7 +1,12 @@
+.list-page{
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
 .list-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 6px;
+  justify-items: center;
 }
 
 .list-card-image {

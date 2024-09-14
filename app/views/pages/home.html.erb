@@ -2,12 +2,28 @@
   <h1 style="font-family: 'Patrick Hand';">VTuber List</h1>
   <h2>Your lists</h2>
   <% @lists.each do |list| %>
-    <div class="card">
-      <%= list.name %>
-      <p><%= list.vtuber_markers.length %> VTubers</p>
-      <%= link_to "Show this list", list %>
+    <div class="home-list-card">
+      <div class="home-list-vtuber-row">
+        <% 5.times do |i| %>
+          <div class="home-vtuber-card">
+            <div class="vtuber-card-pic">
+                <%= render "shared/vtuber_picture", vtuber: list.get_random_vtuber %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="home-list-text">
+        <h4><%= list.name %></h4>
+        <p><%= list.vtuber_markers.length %> VTubers</p>
+        <%= link_to "Show this list", list %>
+      </div>
+
+
+
     </div>
   <% end %>
+
   <%= link_to "See Agencies", agencies_path %>
   <%= link_to "See Tags", tags_path %>
   <h4>Admin only</h4>

@@ -18,11 +18,31 @@ class List < ApplicationRecord
     return vm.save
   end
 
+  def get_vtubers
+    vtubers = []
+    vtuber_markers.each do |vm|
+      vtubers << vm.vtuber
+    end
+    return vtubers
+  end
+
   def get_vtuber_names
     vtubers = []
     vtuber_markers.each do |vm|
       vtubers << vm.vtuber.name
     end
     return vtubers
+  end
+
+  def get_random_vtuber
+    vtuber_markers.sample.vtuber
+
+    # vtubers = []
+    # pics_per_row = 5
+
+    # pics_per_row.times do |i|
+    #   vtubers << vtuber_markers.sample.vtuber
+    # end
+    # return vtubers
   end
 end
