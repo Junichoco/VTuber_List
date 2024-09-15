@@ -987,6 +987,29 @@ shibi = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@ShibiCottonbum"
 )
 
+samayoi = Vtuber.create!(
+  name: "Samayoi Suzu",
+  jp_name: "彷徨鈴",
+  agency: indie,
+  description: "A half jiangshi, half demoness VSinger.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@SamayoiSuzu",
+  twitch_channel: "twitch.tv/samayoisuzu",
+  photo_url: "https://pbs.twimg.com/media/F3jr-0_a8AAm58f?format=jpg&name=large"
+)
+
+nakuru = Vtuber.create!(
+  name: "Aitsuki Nakuru",
+  jp_name: "藍月なくる",
+  agency: indie,
+  description: "No description available."
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@AitsukiNakuru",
+  photo_url: "https://pbs.twimg.com/media/F_S5C-EbYAApaT6?format=jpg&name=small"
+)
+
 puts "VTubers created"
 
 
@@ -1068,10 +1091,7 @@ tags.each do |tag|
   )
 end
 
-tm = TagMarker.new
-tm.vtuber = miko
-tm.tag = Tag.where(name: "baby").first
-tm.save
+
 
 ["baby", "loli", "flat chest", "Filipino", "short", "voice actor"].each do |tag|
   ami.add_tag(tag)
@@ -1083,7 +1103,7 @@ end
 
 [sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
   sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka, leona, kaf, rim, sorakana, rikako,
-  figaro, misora, youri, hanatan].each do |vtuber|
+  figaro, misora, youri, hanatan, samayoi].each do |vtuber|
     vtuber.add_tag("singer")
 end
 

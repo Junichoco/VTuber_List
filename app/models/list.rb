@@ -9,6 +9,7 @@ class List < ApplicationRecord
   has_one_attached :photo
 
   validates :name, presence: true
+  validates_length_of :name, maximum: 30
 
   def add_vtuber(vtuber)
     vm = VtuberMarker.new

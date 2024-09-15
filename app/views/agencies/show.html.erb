@@ -1,5 +1,5 @@
 <div class="container col-6">
-  <%= link_to "Go back", :back %>
+  <%#= link_to "Go back", :back %>
   <h2><%= @agency.name %></h2>
   <p>Country: <%= @agency.location %></p>
   <% if @agency.website %>
@@ -18,9 +18,9 @@
     <p>This agency has no VTubers</p>
   <% else %>
     <% if @agency.name == "Indie" %>
-      <p>Number of indie VTubers in this database: <%= @vtubers.length %></p>
+      <p><%= @vtubers.length %> indie VTubers in this database.</p>
     <% else %>
-      <p>Number of VTubers from this agency in this database: <%= @vtubers.length %></p>
+      <p><span class="search-result-number"><%= @vtubers.length %></span> VTubers from this agency in this database.</p>
     <% end %>
     <%= render "shared/vtuber_grid_display", vtubers: @vtubers %>
   <% end %>

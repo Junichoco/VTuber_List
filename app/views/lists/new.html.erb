@@ -1,0 +1,10 @@
+<div class="container col-6">
+  <h2>Make New VTuber List</h2>
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %>
+    <div class="form-actions">
+      <%= f.button :submit, class:"btn btn-info my-3" %>
+    </div>
+  <% end %>
+
+</div>

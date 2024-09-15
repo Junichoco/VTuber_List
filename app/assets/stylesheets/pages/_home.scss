@@ -5,9 +5,14 @@
   height: 100%;
   width: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: white;
   // grid-template-columns: 1fr 1fr 1fr 1fr;
   // grid-gap: 6px;
   // justify-items: center;
+}
+
+.home-list-vtuber-row:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0);
 }
 
 .home-list-card {
@@ -18,14 +23,28 @@
   // text-align: center;
 }
 
+.home-list-card:hover {
+  background-color: yellow;
+  transition: all 0.5s;
+}
+
 .home-list-text {
   // display: flex;
   position: absolute;
   top: 10px;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
   // box-shadow: 0 15px 15px rgba(0,0,0,0.3);
   color: white;
   padding: 6px;
+}
+
+.home-list-text p {
+  margin-bottom: 0.0rem;
+}
+
+.home-list-text h4 {
+  margin-bottom: 0.1rem;
+  font-weight: bold;
 }
 
 .home-vtuber-pic {
