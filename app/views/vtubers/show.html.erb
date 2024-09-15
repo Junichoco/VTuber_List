@@ -1,5 +1,5 @@
 <div class="container col-6">
-  <%= link_to "Go back", :back %>
+  <%#= link_to "Go back", :back %>
   <%= link_to "Edit VTuber info", edit_vtuber_path %>
   <div class="container-2">
       <div class="show-card">
@@ -24,8 +24,8 @@
             </h3>
           </div>
           <div class="show-card-content">
-            <h4><span class="agency-button"><%= link_to @vtuber.agency.name, agency_path(@vtuber.agency) %></span></h4>
-            <p class="text"><%= @vtuber.description %></p>
+            <p><span class="agency-button"><%= link_to @vtuber.agency.name, agency_path(@vtuber.agency) %></span></p>
+            <p><%= @vtuber.description %></p>
             <div class="show-card-dates">
               <p>Birthday: <%= @vtuber.get_birthday %></p>
               <p>Debut date: <%= @vtuber.get_debut_date %>

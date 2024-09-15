@@ -18,11 +18,16 @@
   // text-align: center;
 }
 
+.home-list-card:hover {
+  background-color: rgb(174, 255, 188);
+  transition: all 0.5s;
+}
+
 .home-list-text {
   // display: flex;
   position: absolute;
   top: 10px;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
   // box-shadow: 0 15px 15px rgba(0,0,0,0.3);
   color: white;
   padding: 6px;

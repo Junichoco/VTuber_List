@@ -1,4 +1,4 @@
-<div class="container col-6">
+<div class="container col-12 col-lg-6">
   <h1 style="font-family: 'Patrick Hand';">VTuber List</h1>
   <h2>Your lists</h2>
   <% @lists.each do |list| %>
@@ -16,11 +16,13 @@
       <div class="home-list-text">
         <h4><%= list.name %></h4>
         <p><%= list.vtuber_markers.length %> VTubers</p>
-        <%= link_to "Show this list", list %>
       </div>
 
 
-
+      <%= link_to list do %>
+        <div class="click-box">
+        </div>
+      <% end %>
     </div>
   <% end %>
 
