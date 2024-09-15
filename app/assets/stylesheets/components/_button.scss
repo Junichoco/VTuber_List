@@ -4,8 +4,11 @@
   font-weight: bold;
 }
 
-.main-button a {
-  text-decoration: none;
+.main-button:hover {
+  // background-color: $vtuber-purple;
+  color: $vtuber-purple;
+  // text-decoration: underline;
+  transition: all 0.5s;
 }
 
 .tag-button {

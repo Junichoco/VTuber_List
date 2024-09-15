@@ -46,4 +46,26 @@ class List < ApplicationRecord
     # end
     # return vtubers
   end
+
+  def get_vtuber_row
+    vtubers = []
+    pic_count = 0
+
+    vtuber_markers.each do |vm|
+      pic_count +=1 if vm.vtuber.photo_url
+    end
+
+    if pic_count <= 5
+      return get_vtubers
+    else
+      while vtubers.length < 5
+        vtuber = get_random_vtuber
+        if !vtubers.include?(vtuber)
+          vtubers << vtuber
+        end
+      end
+    end
+    return vtubers
+  end
+
 end
