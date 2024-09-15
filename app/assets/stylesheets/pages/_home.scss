@@ -24,11 +24,11 @@
 }
 
 .home-list-card:hover {
-  background-color: yellow;
+  background-color: $vtuber-purple;
   transition: all 0.5s;
 }
 
-.home-list-text {
+.home-list-name {
   // display: flex;
   position: absolute;
   top: 10px;
@@ -36,13 +36,35 @@
   // box-shadow: 0 15px 15px rgba(0,0,0,0.3);
   color: white;
   padding: 6px;
+
 }
 
-.home-list-text p {
+.home-list-count {
+  position: absolute;
+  top: 53px;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  color: white;
+  padding: 6px;
+}
+
+.home-list-name p {
   margin-bottom: 0.0rem;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
-.home-list-text h4 {
+.home-list-name h4 {
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+
+.home-list-count p {
+  margin-bottom: 0.0rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.home-list-count h4 {
   margin-bottom: 0.1rem;
   font-weight: bold;
 }
