@@ -15,6 +15,22 @@ User.destroy_all
 Tag.destroy_all
 # VtuberMarker.destroy_all
 
+tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
+        "baby girl failure", "baby", "saxophone", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs",
+        "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
+        "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom", "comedian",
+        "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
+        "furry", "lewd", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "fortune telling"]
+
+tags.each do |tag|
+  Tag.create!(
+    name: tag
+  )
+end
+
+puts "Tags created"
+
+
 indie = Agency.create!(
   name: "Indie"
 )
@@ -161,8 +177,16 @@ nebula = Agency.create!(
 neoporte = Agency.create!(
   name: "Neo-Porte",
   location: "Japan",
-  website: "https://neo-porte.jp/"
+  website: "https://neo-porte.jp/",
   yt_channel: "https://www.youtube.com/@neoporte-office",
+  description: "No description available."
+)
+
+nextopia = Agency.create!(
+  name: "Nextopia",
+  location: "Japan",
+  website: "https://nextopia.jp/",
+  yt_channel: "https://www.youtube.com/@nextopia_jp",
   description: "No description available."
 )
 
@@ -184,6 +208,9 @@ sora = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["singer"].each do |tag|
+  sora.add_tag(tag)
+end
 
 roboco = Vtuber.create!(
   name: "Robocosan",
@@ -195,6 +222,9 @@ roboco = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["singer"].each do |tag|
+  roboco.add_tag(tag)
+end
 
 suisei = Vtuber.create!(
   name: "Hoshimachi Suisei",
@@ -203,6 +233,9 @@ suisei = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["singer", "flat chest"].each do |tag|
+  suisei.add_tag(tag)
+end
 
 mel = Vtuber.create!(
   name: "Yozora Mel",
@@ -212,6 +245,9 @@ mel = Vtuber.create!(
   main_language: "Japanese",
   active: false
 )
+["singer"].each do |tag|
+  mel.add_tag(tag)
+end
 
 subaru = Vtuber.create!(
   name: "Oozora Subaru",
@@ -228,6 +264,9 @@ ayame = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["singer"].each do |tag|
+  ayame.add_tag(tag)
+end
 
 shion = Vtuber.create!(
   name: "Murasaki Shion",
@@ -236,6 +275,9 @@ shion = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["singer", "kusogaki", "loli", "flat chest"].each do |tag|
+  shion.add_tag(tag)
+end
 
 okayu = Vtuber.create!(
   name: "Nekomata Okayu",
@@ -253,6 +295,9 @@ miko = Vtuber.create!(
   main_language: "Japanese",
   photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/02/Sakura-Miko_pr-img_01.png"
 )
+["singer", "baby", "pon"].each do |tag|
+  miko.add_tag(tag)
+end
 
 pekora = Vtuber.create!(
   name: "Usada Pekora",
@@ -267,6 +312,9 @@ pekora = Vtuber.create!(
   twitch_channel: "https://www.twitch.tv/usadapekora_hololive",
   photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/04/Usada-Pekora_pr-img_01-718x1440.png"
 )
+["singer", "comedian", "animal ears"].each do |tag|
+  pekora.add_tag(tag)
+end
 
 aqua = Vtuber.create!(
   name: "Minato Aqua",
@@ -281,6 +329,9 @@ aqua = Vtuber.create!(
   photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2023/04/Minato-Aqua_pr-img_01b-762x1440.png",
   active: false
 )
+["singer", "pon"].each do |tag|
+  aqua.add_tag(tag)
+end
 
 korone = Vtuber.create!(
   name: "Inugami Korone",
@@ -289,6 +340,9 @@ korone = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["singer", "animal ears", "fluffy"].each do |tag|
+  korone.add_tag(tag)
+end
 
 raki = Vtuber.create!(
   name: "Raki Kazuki",
@@ -302,6 +356,9 @@ raki = Vtuber.create!(
   birthday: "08/24",
   debut_date: "2023/06/16"
 )
+["baby girl failure", "thighs", "Southern accent", "ASMR", "animal ears", "heavy metal", "pon"].each do |tag|
+  raki.add_tag(tag)
+end
 
 ami = Vtuber.create!(
   name: "Ami Amami",
@@ -316,6 +373,9 @@ ami = Vtuber.create!(
   debut_date: "2023/04/29",
   birthday: "04/03"
 )
+["baby", "loli", "flat chest", "Filipino", "short", "voice actor"].each do |tag|
+  ami.add_tag(tag)
+end
 
 calli = Vtuber.create!(
   name: "Mori Calliope",
@@ -329,6 +389,9 @@ calli = Vtuber.create!(
   debut_date: "2020/09/12",
   birthday: "04/04"
 )
+["singer", "rap", "big chest", "Southern accent"].each do |tag|
+  calli.add_tag(tag)
+end
 
 axel = Vtuber.create!(
   name: "Axel Syrios",
@@ -342,6 +405,9 @@ axel = Vtuber.create!(
   debut_date: "2022/07/24",
   birthday: "11/01"
 )
+["singer", "FPS"].each do |tag|
+  axel.add_tag(tag)
+end
 
 bettel = Vtuber.create!(
   name: "Gavis Bettel",
@@ -355,6 +421,9 @@ bettel = Vtuber.create!(
   debut_date: "2023/01/08",
   birthday: "05/17"
 )
+["singer", "comedian", "baby girl failure", "guitar"].each do |tag|
+  bettel.add_tag(tag)
+end
 
 hakka = Vtuber.create!(
   name: "Banzoin Hakka",
@@ -368,6 +437,9 @@ hakka = Vtuber.create!(
   debut_date: "2023/01/08",
   birthday: "04/21"
 )
+["singer", "heavy metal", "Spanish"].each do |tag|
+  hakka.add_tag(tag)
+end
 
 iguchi = Vtuber.create!(
   name: "Iguchi-san",
@@ -379,6 +451,9 @@ iguchi = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@iguchisun",
   photo_url: "https://pbs.twimg.com/media/GXCrBH6aEAA5g0t?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  iguchi.add_tag(tag)
+end
 
 ironmouse = Vtuber.create!(
   name: "Iron Mouse",
@@ -387,6 +462,9 @@ ironmouse = Vtuber.create!(
   gender: "female",
   main_language: "English"
 )
+["Spanish", "singer", "deep singing voice"].each do |tag|
+  ironmouse.add_tag(tag)
+end
 
 igasaki = Vtuber.create!(
   name: "Igasaki Ayaka",
@@ -395,6 +473,9 @@ igasaki = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["ASMR", "lewd", "voice actor"].each do |tag|
+  igasaki.add_tag(tag)
+end
 
 amana = Vtuber.create!(
   name: "Amana Nia",
@@ -408,6 +489,9 @@ amana = Vtuber.create!(
   birthday: "10/05",
   debut_date: "2020/02/02"
 )
+["singer"].each do |tag|
+  amana.add_tag(tag)
+end
 
 amelie = Vtuber.create!(
   name: "Amelie Kanon",
@@ -421,6 +505,7 @@ amelie = Vtuber.create!(
   photo_url: "https://ameliekanon.carrd.co/assets/images/image07.jpg?v=44bc4152"
 )
 
+
 ririsya = Vtuber.create!(
   name: "Ririsya",
   description: "A zombie Vsinger",
@@ -428,6 +513,9 @@ ririsya = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["singer", "guitar"].each do |tag|
+  ririsya.add_tag(tag)
+end
 
 hoshimiya = Vtuber.create!(
   name: "Hoshimiya Choco",
@@ -436,6 +524,9 @@ hoshimiya = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["cosplayer"].each do |tag|
+  hoshimiya.add_tag(tag)
+end
 
 ray = Vtuber.create!(
   name: "Otsuka Ray",
@@ -444,6 +535,9 @@ ray = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
+["singer", "mom", "baby"].each do |tag|
+  ray.add_tag(tag)
+end
 
 lottie = Vtuber.create!(
   name: "Lottie Shinju",
@@ -467,6 +561,9 @@ delutaya = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@delutaya",
   twitch_channel: "https://www.twitch.tv/delutaya_ch"
 )
+["singer"].each do |tag|
+  delutaya.add_tag(tag)
+end
 
 nuino = Vtuber.create!(
   name: "Kohaku Nuino",
@@ -479,6 +576,9 @@ nuino = Vtuber.create!(
   photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2F%40KOHAKU_NUINO&psig=AOvVaw1iTxSrKZmYqqgMrFwYV3nz&ust=1725179725532000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMD6rrvpnogDFQAAAAAdAAAAABAE",
   debut_date: "2022/08/22"
 )
+["singer"].each do |tag|
+  nuino.add_tag(tag)
+end
 
 yutoha = Vtuber.create!(
   name: "Takanashi Yutoha",
@@ -491,6 +591,9 @@ yutoha = Vtuber.create!(
   twitch_channel: "https://www.twitch.tv/yutohatakanashi",
   photo_url: "https://yt3.googleusercontent.com/RlFlN3aZ1-CMwrtYLrAStjzLIL601gFeyrQ64VDdPoJFG-PTsxSXLpJaqH1Ky2O8nHk6oylEzw=s160-c-k-c0x00ffffff-no-rj"
 )
+["singer"].each do |tag|
+  yutoha.add_tag(tag)
+end
 
 meimi = Vtuber.create!(
   name: "Majokko Meimi",
@@ -502,6 +605,9 @@ meimi = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@MajokkoMeimi",
   photo_url: "https://yt3.googleusercontent.com/gNIwRzrllQnbVJUr85xsoX1jWpkI1DCR39th93XM96iu4wfT_KAarwZaMugWS3mmDavuyshTbw=s160-c-k-c0x00ffffff-no-rj"
 )
+["singer", "thighs", "fortune telling"].each do |tag|
+  meimi.add_tag(tag)
+end
 
 toi = Vtuber.create!(
   name: "Itoi Toi",
@@ -513,6 +619,9 @@ toi = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@itoitoi_Q",
   photo_url: "https://neo-porte.jp/wp-content/uploads/2023/09/ccd772d1067b93d933bd42005cbd3527.png"
 )
+["singer", "FPS"].each do |tag|
+  toi.add_tag(tag)
+end
 
 sanso = Vtuber.create!(
   name: "Sanso-chan",
@@ -524,6 +633,9 @@ sanso = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@Sansochan",
   photo_url: "https://pbs.twimg.com/media/GVvAzvMa8AQocYM?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  sanso.add_tag(tag)
+end
 
 phoebe = Vtuber.create!(
   name: "Phoebe Chan",
@@ -532,6 +644,9 @@ phoebe = Vtuber.create!(
   gender: "female",
   main_language: "English"
 )
+["singer", "Filipino"].each do |tag|
+  phoebe.add_tag(tag)
+end
 
 iku = Vtuber.create!(
   name: "Hoshifuri Iku",
@@ -545,6 +660,9 @@ iku = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@IkuHoshifuri",
   photo_url: "https://pbs.twimg.com/media/Erk3Z1MVcAAGPbL?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  iku.add_tag(tag)
+end
 
 himaji = Vtuber.create!(
   name: "Himaji Pane",
@@ -558,6 +676,9 @@ himaji = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@IkuHoshifuri",
   photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_pane.png"
 )
+["singer"].each do |tag|
+  himaji.add_tag(tag)
+end
 
 usagi = Vtuber.create!(
   name: "Usagi Sora",
@@ -571,6 +692,9 @@ usagi = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@usagisora",
   photo_url: "https://pbs.twimg.com/media/GPn78HHbcAAwEy8?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  usagi.add_tag(tag)
+end
 
 amagami = Vtuber.create!(
   name: "Amagami Ame",
@@ -582,6 +706,9 @@ amagami = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@AmagamiAme-my2uv",
   photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_ame.png"
 )
+["singer"].each do |tag|
+  amagami.add_tag(tag)
+end
 
 shiro = Vtuber.create!(
   name: "Dennou Shojo Shiro",
@@ -595,6 +722,9 @@ shiro = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@CyberGirlSiro",
   photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_siro.png"
 )
+["singer"].each do |tag|
+  shiro.add_tag(tag)
+end
 
 eve = Vtuber.create!(
   name: "EvE Varlaine",
@@ -607,6 +737,9 @@ eve = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@user-eg6us6os5r",
   photo_url: "https://yt3.ggpht.com/a/AGF-l79cAh97L_rSW7kigUUEtiC6Qdak5Puaxhco6g=s200"
 )
+["ASMR", "lewd"].each do |tag|
+  eve.add_tag(tag)
+end
 
 enma = Vtuber.create!(
   name: "Ruri Enma",
@@ -619,6 +752,9 @@ enma = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@EnmaRuri",
   photo_url: "https://liveunion.jp/assets/img/page/home/picture-RuriEnma-large.png"
 )
+["singer"].each do |tag|
+  enma.add_tag(tag)
+end
 
 hachi = Vtuber.create!(
   name: "HACHI",
@@ -631,6 +767,9 @@ hachi = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@HACHIVSinger",
   photo_url: "https://liveunion.jp/assets/img/page/home/picture-HACHI-large.png"
 )
+["singer"].each do |tag|
+  hachi.add_tag(tag)
+end
 
 meda = Vtuber.create!(
   name: "MEDA",
@@ -641,6 +780,9 @@ meda = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@MEDAzcd",
   photo_url: "https://pbs.twimg.com/media/GWeZW6QXwAM06SU?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  meda.add_tag(tag)
+end
 
 neun = Vtuber.create!(
   name: "NEUN",
@@ -653,6 +795,9 @@ neun = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@NEUN09",
   photo_url: "https://pbs.twimg.com/media/GPn84K8aMAAM_16?format=jpg&name=medium"
 )
+["singer"].each do |tag|
+  neun.add_tag(tag)
+end
 
 neno = Vtuber.create!(
   name: "Aoi Neno",
@@ -666,6 +811,9 @@ neno = Vtuber.create!(
   twitch_channel: "https://www.twitch.tv/aoineno",
   photo_url: "https://pbs.twimg.com/media/GIefBAFbQAEfCIJ?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  neno.add_tag(tag)
+end
 
 leona = Vtuber.create!(
   name: "Shishigami Leona",
@@ -678,6 +826,9 @@ leona = Vtuber.create!(
   twitch_channel: "https://twitch.tv/leona_shishigami",
   photo_url: "https://www.v-react.com/wp-content/uploads/2022/07/8c05d65eae34d5bd961818d88863c3c5.png"
 )
+["singer", "animal ears"].each do |tag|
+  leona.add_tag(tag)
+end
 
 kaf = Vtuber.create!(
   name: "KAF",
@@ -689,6 +840,9 @@ kaf = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@virtual_kaf",
   photo_url: "https://kaf3rdanniversary.kamitsubaki.jp/assets/img/common/kaf.png"
 )
+["singer"].each do |tag|
+  kaf.add_tag(tag)
+end
 
 rim = Vtuber.create!(
   name: "RIM",
@@ -700,7 +854,9 @@ rim = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@RIM_virtual",
   photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpiapro.jp%2Fcharacters%2Frim&psig=AOvVaw1LK7H0y9fyZtsXhRaIkP1q&ust=1726289269154000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiF8-iOv4gDFQAAAAAdAAAAABAE"
 )
-
+["singer"].each do |tag|
+  rim.add_tag(tag)
+end
 
 yayamugi = Vtuber.create!(
   name: "yayamugi",
@@ -712,6 +868,9 @@ yayamugi = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@yayamugi222",
   photo_url: "https://pbs.twimg.com/media/GQk4DKxakAAqzJM?format=jpg&name=large"
 )
+["singer", "Chinese"].each do |tag|
+  yayamugi.add_tag(tag)
+end
 
 nina = Vtuber.create!(
   name: "Momose Nina",
@@ -724,6 +883,9 @@ nina = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@MomoseNina",
   photo_url: "https://www.project-nebula.com/static/Nina2-d9cae35830a1e0d7cec43baf5f6d08c2.png"
 )
+["singer"].each do |tag|
+  nina.add_tag(tag)
+end
 
 yura = Vtuber.create!(
   name: "Usui Yura",
@@ -735,6 +897,9 @@ yura = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@yurayurausui",
   photo_url: "https://www.project-nebula.com/static/yura_key-01c09a7e6e8d2f3fbb7c88313ce4dc29.png"
 )
+["singer"].each do |tag|
+  yura.add_tag(tag)
+end
 
 suzuri = Vtuber.create!(
   name: "Suzuri Ren",
@@ -770,6 +935,9 @@ sorakana = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@Ito_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E7%A9%BA%E5%A5%8F%E3%82%A4%E3%83%88-2.png"
 )
+["singer"].each do |tag|
+  sorakana.add_tag(tag)
+end
 
 shichi = Vtuber.create!(
   name: "Nagisawa Shichi",
@@ -884,6 +1052,9 @@ rikako = Vtuber.create!(
   debut_date: "2024/08/01",
   photo_url: "https://pbs.twimg.com/media/GVgjqfbW8AAQW7L?format=jpg&name=large"
 )
+["singer", "voice actor"].each do |tag|
+  rikako.add_tag(tag)
+end
 
 figaro = Vtuber.create!(
   name: "Figaro",
@@ -894,6 +1065,9 @@ figaro = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@Figaro_qpt",
   photo_url: "https://pbs.twimg.com/media/GWWxpBobQAIkiyo?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  figaro.add_tag(tag)
+end
 
 misora = Vtuber.create!(
   name: "Misora Sora",
@@ -907,6 +1081,9 @@ misora = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@misorasoraCH",
   photo_url: "https://pbs.twimg.com/media/GSAj1LDa4AA-w8G?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  misora.add_tag(tag)
+end
 
 youri = Vtuber.create!(
   name: "Hiiragi Youri",
@@ -920,6 +1097,9 @@ youri = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@youriofficialchannel",
   photo_url: "https://pbs.twimg.com/media/GUS_KJ8aQAAqLa2?format=jpg&name=4096x4096"
 )
+["singer"].each do |tag|
+  youri.add_tag(tag)
+end
 
 hanatan = Vtuber.create!(
   name: "HaNaTan",
@@ -932,6 +1112,9 @@ hanatan = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@HaNaTaN_MUSiC",
   photo_url: "https://pbs.twimg.com/media/GXHspm8WUAEfMSj?format=jpg&name=medium"
 )
+["singer"].each do |tag|
+  hanatan.add_tag(tag)
+end
 
 stronny = Vtuber.create!(
   name: "Stronny Cuttles",
@@ -941,6 +1124,9 @@ stronny = Vtuber.create!(
   main_language: "English",
   yt_channel: "https://www.youtube.com/@StronnyCuttles"
 )
+["ASMR"].each do |tag|
+  stronny.add_tag(tag)
+end
 
 azura = Vtuber.create!(
   name: "Azura Dulait",
@@ -950,6 +1136,9 @@ azura = Vtuber.create!(
   main_language: "English",
   yt_channel: "https://www.youtube.com/@AzuraDulait"
 )
+["ASMR"].each do |tag|
+  azura.add_tag(tag)
+end
 
 icey = Vtuber.create!(
   name: "Icey Snowpaws",
@@ -959,6 +1148,9 @@ icey = Vtuber.create!(
   main_language: "English",
   yt_channel: "https://www.youtube.com/@IceySnowpaws"
 )
+["ASMR"].each do |tag|
+  icey.add_tag(tag)
+end
 
 immy = Vtuber.create!(
   name: "Immy Bisou",
@@ -968,6 +1160,9 @@ immy = Vtuber.create!(
   main_language: "English",
   yt_channel: "https://www.youtube.com/@ImmyBisou"
 )
+["ASMR"].each do |tag|
+  immy.add_tag(tag)
+end
 
 mercy = Vtuber.create!(
   name: "Mercy Modiste",
@@ -977,6 +1172,9 @@ mercy = Vtuber.create!(
   main_language: "English",
   yt_channel: "https://www.youtube.com/@MercyModiste"
 )
+["ASMR"].each do |tag|
+  mercy.add_tag(tag)
+end
 
 shibi = Vtuber.create!(
   name: "Shibi Cottonbum",
@@ -986,6 +1184,9 @@ shibi = Vtuber.create!(
   main_language: "English",
   yt_channel: "https://www.youtube.com/@ShibiCottonbum"
 )
+["ASMR"].each do |tag|
+  shibi.add_tag(tag)
+end
 
 samayoi = Vtuber.create!(
   name: "Samayoi Suzu",
@@ -998,17 +1199,70 @@ samayoi = Vtuber.create!(
   twitch_channel: "twitch.tv/samayoisuzu",
   photo_url: "https://pbs.twimg.com/media/F3jr-0_a8AAm58f?format=jpg&name=large"
 )
+["singer"].each do |tag|
+  samayoi.add_tag(tag)
+end
 
 nakuru = Vtuber.create!(
   name: "Aitsuki Nakuru",
   jp_name: "藍月なくる",
   agency: indie,
-  description: "No description available."
+  description: "No description available.",
   gender: "female",
   main_language: "Japanese",
   yt_channel: "https://www.youtube.com/@AitsukiNakuru",
   photo_url: "https://pbs.twimg.com/media/F_S5C-EbYAApaT6?format=jpg&name=small"
 )
+["singer"].each do |tag|
+  nakuru.add_tag(tag)
+end
+
+pona = Vtuber.create!(
+  name: "Nikoniko Pona",
+  jp_name: "笑々ぽな",
+  agency: nextopia,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "2000/07/03",
+  yt_channel: "https://www.youtube.com/@Nikoniko_Pona",
+  photo_url: "https://pbs.twimg.com/media/F9_2lcobwAAb8jh?format=jpg&name=large"
+)
+["singer", "guitar"].each do |tag|
+  pona.add_tag(tag)
+end
+
+hoshikawa = Vtuber.create!(
+  name: "Hoshikawa Sara",
+  jp_name: "星川 サラ",
+  agency: niji,
+  description: "A self-proclaimed influencer aiming to spread her cuteness worldwide.\nHalf British and half Japanese, she loves anything new, anything fun, and talking about romance. (Source: Nijisanji Official Store)",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "2000/08/07",
+  debut_date: "2019/10/19",
+  yt_channel: "https://www.youtube.com/@HoshikawaSara",
+  photo_url: "https://nijisanji-store.com/cdn/shop/collections/ZKmeMsgA1OCaIPQV_x400.jpg?v=1678329347"
+)
+["singer", "scream"].each do |tag|
+  hoshikawa.add_tag(tag)
+end
+
+kurumizawa = Vtuber.create!(
+  name: "Kurumizawa Momo",
+  jp_name: "胡桃澤もも",
+  agency: indie,
+  description: "A magical girl attending a magical girl school. Formerly a member of NoriPro.",
+  gender: "female",
+  main_language: "Japanese",
+  debut_date: "2021/04/09",
+  yt_channel: "https://www.youtube.com/@kurumizawamomo",
+  photo_url: "https://www.phsmdcshineresidences.com/wp-content/uploads/2021/04/rxbest_20211525_01.jpg"
+)
+["singer"].each do |tag|
+  kurumizawa.add_tag(tag)
+end
+
 
 puts "VTubers created"
 
@@ -1078,33 +1332,9 @@ lm.save
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 
-tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
-        "baby girl failure", "baby", "saxophone", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs",
-        "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
-        "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom",
-        "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
-        "furry", "lewd", "short", "tall", "drama", "alcohol", "Japanese and English"]
 
-tags.each do |tag|
-  Tag.create!(
-    name: tag
-  )
-end
-
-
-
-["baby", "loli", "flat chest", "Filipino", "short", "voice actor"].each do |tag|
-  ami.add_tag(tag)
-end
-
-["baby girl failure", "thighs", "Southern accent", "ASMR", "animal ears", "heavy metal"].each do |tag|
-  raki.add_tag(tag)
-end
-
-[sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
-  sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka, leona, kaf, rim, sorakana, rikako,
-  figaro, misora, youri, hanatan, samayoi].each do |vtuber|
-    vtuber.add_tag("singer")
-end
-
-puts "Tags added"
+# [sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
+#   sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka, leona, kaf, rim, sorakana, rikako,
+#   figaro, misora, youri, hanatan, samayoi].each do |vtuber|
+#     vtuber.add_tag("singer")
+# end

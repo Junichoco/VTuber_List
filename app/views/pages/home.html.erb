@@ -13,9 +13,11 @@
         <% end %>
       </div>
 
-      <div class="home-list-text">
+      <div class="home-list-name">
         <h4><%= list.name %></h4>
-        <p><%= list.vtuber_markers.length %> VTubers</p>
+      </div>
+      <div class="home-list-count">
+        <p><i class="fa-solid fa-chalkboard-user" style="color: #ffffff;"></i> <%= list.vtuber_markers.length %></p>
       </div>
 
 
@@ -26,8 +28,12 @@
     </div>
   <% end %>
 
-  <%= link_to "See Agencies", agencies_path %>
-  <%= link_to "See Tags", tags_path %>
+  <%= link_to agencies_path do %>
+    <span class="main-button"><i class="fa-solid fa-building"></i> <span style="text-decoration: none;">Search by agency</span></span>
+  <% end %>
+  <%= link_to tags_path do %>
+    <span class="main-button"><i class="fa-solid fa-hashtag"></i> Search by tag</span>
+  <% end %>
   <h4>Admin only</h4>
   <%= link_to "Add VTuber Entry", new_vtuber_path %>
   <%= link_to "Add Agency Entry", new_agency_path %>
