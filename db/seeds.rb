@@ -16,7 +16,7 @@ Tag.destroy_all
 # VtuberMarker.destroy_all
 
 tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
-        "baby girl failure", "baby", "saxophone", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs",
+        "baby girl failure", "baby", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs",
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom", "comedian",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
@@ -187,6 +187,14 @@ nextopia = Agency.create!(
   location: "Japan",
   website: "https://nextopia.jp/",
   yt_channel: "https://www.youtube.com/@nextopia_jp",
+  description: "No description available."
+)
+
+shinengumi = Agency.create!(
+  name: "Shinengumi",
+  location: "Japan",
+  website: "https://shinengumi.com/",
+  yt_channel: "https://www.youtube.com/@shinengumivtg",
   description: "No description available."
 )
 
@@ -1262,6 +1270,66 @@ kurumizawa = Vtuber.create!(
 ["singer"].each do |tag|
   kurumizawa.add_tag(tag)
 end
+
+hanabasami = Vtuber.create!(
+  name: "Hanabasami Kyo",
+  jp_name: "花鋏キョウ",
+  agency: react,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@Kyo_Hanabasami",
+  photo_url: "https://www.v-react.com/wp-content/uploads/2020/05/hanabasamiKyo.jpg"
+)
+["singer"].each do |tag|
+  hanabasami.add_tag(tag)
+end
+
+yuni = Vtuber.create!(
+  name: "Harusame Yuni",
+  jp_name: "春雨ゆに",
+  agency: shinengumi,
+  description: "A mage with a legendary dragon sealed within her. Enjoys games and alcohol.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "2000/09/27",
+  yt_channel: "https://www.youtube.com/@harusame_uni",
+  photo_url: "https://pbs.twimg.com/media/FuuPj_CaEAAqY-A?format=jpg&name=4096x4096"
+)
+["singer", "Chinese", "alcohol"].each do |tag|
+  yuni.add_tag(tag)
+end
+
+narumi = Vtuber.create!(
+  name: "Narumi Koko",
+  jp_name: "なるみここ",
+  agency: indie,
+  description: "A voice actress who has acted in many adult doujin voice works. Also known as Aisaka Narumi.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@narumicoco",
+  photo_url: "https://pbs.twimg.com/media/GWnObDFWwAAXJIP?format=jpg&name=small"
+)
+["lewd", "voice actor", "ASMR"].each do |tag|
+  narumi.add_tag(tag)
+end
+
+shu = Vtuber.create!(
+  name: "Uchida Shuu",
+  jp_name: "内田秀",
+  agency: indie,
+  description: "A voice actress who has played characters in various anime, including Mia Taylor from \"Love Live! Nijigasaki School Idol Doukoukai\". She has a YouTube channel on which she sometimes streams with her VTuber model.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "1996/05/24",
+  debut_date: "2023/01/21",
+  yt_channel: "https://www.youtube.com/@ShuUchidaShuTube",
+  photo_url: "https://x.com/fujimatakuya/status/1617507063839723522/photo/1"
+)
+["singer", "voice actor", "Australian", "guitar", "Japanese and English"].each do |tag|
+  shu.add_tag(tag)
+end
+
 
 
 puts "VTubers created"

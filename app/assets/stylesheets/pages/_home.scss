@@ -1,4 +1,21 @@
 // Specific CSS for your home-page
+.home-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.home-top-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.your-lists-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .home-list-vtuber-row {
   display: flex;
   justify-content: center;
@@ -16,7 +33,7 @@
 }
 
 .home-list-card {
-  height: 240px;
+  height: 200px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   padding: 10px;
   margin-bottom: 10px;
@@ -42,7 +59,7 @@
 
 .home-list-count {
   position: absolute;
-  top: 53px;
+  top: 52px;
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
   color: white;
   padding: 6px;

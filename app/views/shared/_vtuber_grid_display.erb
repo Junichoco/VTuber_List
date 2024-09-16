@@ -5,7 +5,11 @@
             <%= render "shared/vtuber_picture", vtuber: vtuber %>
         </div>
         <div class="vtuber-card-body">
-          <p><%= link_to vtuber.name, vtuber_path(vtuber) %></p>
+          <p><%= vtuber.name %></p>
+          <%= link_to vtuber_path(vtuber) do %>
+            <div class="click-box">
+            </div>
+          <% end %>
           <div class="vtuber-card-footer">
             <%= link_to vtuber.yt_channel, target: :blank do %>
               <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>

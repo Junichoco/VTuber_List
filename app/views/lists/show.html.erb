@@ -1,4 +1,4 @@
-<div class="container list-page col-6">
+<div class="container list-page col-12 col-lg-6">
   <h1><%= @list.name %></h1>
   <%= link_to "Delete this list",
     list_path(@list),
@@ -6,10 +6,7 @@
     class: "btn"
     %>
   <div class="list-cards">
-
-      <%# link_to vtuber_path do %>
-        <%= render "shared/list_display", list: @list %>
-    <%# end %>
+    <%= render "shared/list_display", list: @list %>
   </div>
 
   <div class="form col-4">

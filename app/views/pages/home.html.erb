@@ -1,6 +1,17 @@
 <div class="container col-12 col-lg-6">
-  <h1 style="font-family: 'Patrick Hand';">VTuber List</h1>
-  <h2>Your lists</h2>
+  <div class="home-top">
+    <h1 style="font-family: 'Patrick Hand';">VTuber List</h1>
+
+    <div class="home-top-links">
+
+    </div>
+  </div>
+  <div class="your-lists-header">
+    <h2><strong>Your lists</strong></h2>
+    <%= link_to new_list_path do %>
+      <span class="main-button"><i class="fa-solid fa-file-circle-plus"></i> Make a new list</span>
+    <% end %>
+  </div>
   <% @lists.each do |list| %>
     <div class="home-list-card">
       <div class="home-list-vtuber-row">
@@ -28,14 +39,7 @@
       <% end %>
     </div>
   <% end %>
-
-  <%= link_to agencies_path do %>
-    <span class="main-button"><i class="fa-solid fa-building"></i> <span style="text-decoration: none;">Search by agency</span></span>
-  <% end %>
-  <%= link_to tags_path do %>
-    <span class="main-button"><i class="fa-solid fa-hashtag"></i> Search by tag</span>
-  <% end %>
   <h4>Admin only</h4>
-  <%= link_to "Add VTuber Entry", new_vtuber_path %>
-  <%= link_to "Add Agency Entry", new_agency_path %>
+  <%= link_to "Add VTuber Entry", new_vtuber_path, class: "main-button" %>
+  <%= link_to "Add Agency Entry", new_agency_path, class: "main-button" %>
 </div>
