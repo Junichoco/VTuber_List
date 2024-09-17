@@ -16,7 +16,7 @@ Tag.destroy_all
 # VtuberMarker.destroy_all
 
 tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
-        "baby girl failure", "baby", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs",
+        "baby girl failure", "baby", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs", "piano", "cooking",
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom", "comedian",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
@@ -1326,9 +1326,49 @@ shu = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@ShuUchidaShuTube",
   photo_url: "https://x.com/fujimatakuya/status/1617507063839723522/photo/1"
 )
-["singer", "voice actor", "Australian", "guitar", "Japanese and English"].each do |tag|
+["singer", "voice actor", "Australian", "guitar"].each do |tag|
   shu.add_tag(tag)
 end
+
+mokan = Vtuber.create!(
+  name: "Mokan",
+  jp_name: "もかん",
+  agency: indie,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@mokankamo"
+)
+["singer"].each do |tag|
+  mokan.add_tag(tag)
+end
+
+ruki = Vtuber.create!(
+  name: "Ohga Ruki",
+  jp_name: "凰牙るき",
+  agency: univirtual,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@OHGARUKIch"
+)
+["singer", "flute", "piano"].each do |tag|
+  ruki.add_tag(tag)
+end
+
+jangarian = Vtuber.create!(
+  name: "Jyangarian",
+  jp_name: "じゃんがりいあん",
+  agency: indie,
+  description: "No description available.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@jyangaria_n"
+)
+["singer"].each do |tag|
+  jangarian.add_tag(tag)
+end
+
 
 
 
@@ -1365,6 +1405,11 @@ singers = List.create!(
   user: user2
 )
 
+witches = List.create!(
+  name: "Witch Hats",
+  user: user2
+)
+
 puts "List created: #{oshis.name}"
 puts "Users: #{user.username}, #{user2.username}"
 
@@ -1383,11 +1428,56 @@ puts "Users: #{user.username}, #{user2.username}"
   end
 end
 
-puts "Oshis added"
-
-[nuino, amana, yutoha, himaji, enma, neno, iguchi, sorakana, rim, figaro, misora, youri].each do |oshi|
+[nuino, amana, yutoha, himaji, enma, neno, iguchi, sorakana, rim, figaro, misora, youri, hanatan].each do |oshi|
   if singers.add_vtuber(oshi)
     puts "Added #{oshi.name} to #{singers.name}"
+  else
+    puts task.errors.full_messages
+  end
+end
+
+[raki, shion, meimi, yuni].each do |oshi|
+  if witches.add_vtuber(oshi)
+    puts "Added #{oshi.name} to #{witches.name}"
+  else
+    puts task.errors.full_messages
+  end
+end
+
+
+funny = List.create!(
+  name: "Funny",
+  user: user2
+)
+[pekora, miko, bettel, axel, raki, lottie].each do |oshi|
+  if funny.add_vtuber(oshi)
+    puts "Added #{oshi.name} to #{funny.name}"
+  else
+    puts task.errors.full_messages
+  end
+end
+
+english = List.create!(
+  name: "JP VTubers who know English",
+  user: user2
+)
+
+[neno, youri].each do |oshi|
+  if english.add_vtuber(oshi)
+    puts "Added #{oshi.name} to #{english.name}"
+  else
+    puts task.errors.full_messages
+  end
+end
+
+flood = List.create!(
+  name: "Flooded Apartment",
+  user: user2
+)
+
+[bettel, meimi].each do |oshi|
+  if flood.add_vtuber(oshi)
+    puts "Added #{oshi.name} to #{flood.name}"
   else
     puts task.errors.full_messages
   end

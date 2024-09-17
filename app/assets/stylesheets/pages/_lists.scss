@@ -2,6 +2,13 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.list-show-header {
+  display: flex;
+  justify-content: space-between;
+  // align-items: flex-end;
+  margin-bottom: 5px;
+}
+
 .list-cards {
   display: flex;
   flex-wrap: wrap;

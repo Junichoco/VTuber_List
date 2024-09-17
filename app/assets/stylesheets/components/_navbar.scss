@@ -7,11 +7,17 @@
 .navbar-logo {
   text-decoration: none;
   font-family: 'Patrick Hand';
-  // font-size: 40;
+  font-size: 2rem;
   color: black;
 }
 .navbar-logo:hover {
   color: $vtuber-purple;
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
 }
 
 .navbar-search {
@@ -40,8 +46,12 @@
 
 }
 
-.navbar-username {
+.navbar-user {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.navbar-username {
+  display: inline-block;
+
 }

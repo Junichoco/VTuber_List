@@ -1,7 +1,7 @@
 <div class="container col-12 col-lg-10">
   <div class="navbar-container">
     <div class="navbar-logo">
-      <h3><%= link_to "VTuber List", :home, class: "navbar-logo" %></h3>
+      <%= link_to "VTuber List", :home, class: "navbar-logo" %>
     </div>
 
     <div class="navbar-search">
@@ -25,9 +25,9 @@
       </div>
     </div>
 
-    <div class="navbar-username">
+    <div class="navbar-user">
     <% if user_signed_in? %>
-          <div style="align-self: flex-end;">
+          <div class="username">
             <i class="fa-solid fa-user-large"></i>
             <%= current_user.username %>
           </div>
