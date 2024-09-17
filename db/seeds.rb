@@ -16,11 +16,11 @@ Tag.destroy_all
 # VtuberMarker.destroy_all
 
 tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
-        "baby girl failure", "baby", "violin", "flute", "loli", "flat chest", "heavy metal", "thighs", "piano", "cooking",
+        "baby girl failure", "baby", "violin", "flute", "loli", "small chest", "heavy metal", "thighs", "piano", "cooking",
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom", "comedian",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
-        "furry", "lewd", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "fortune telling"]
+        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "fortune telling"]
 
 tags.each do |tag|
   Tag.create!(
@@ -241,7 +241,7 @@ suisei = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
-["singer", "flat chest"].each do |tag|
+["singer", "small chest"].each do |tag|
   suisei.add_tag(tag)
 end
 
@@ -283,7 +283,7 @@ shion = Vtuber.create!(
   gender: "female",
   main_language: "Japanese"
 )
-["singer", "kusogaki", "loli", "flat chest"].each do |tag|
+["singer", "kusogaki", "loli", "small chest"].each do |tag|
   shion.add_tag(tag)
 end
 
@@ -381,7 +381,7 @@ ami = Vtuber.create!(
   debut_date: "2023/04/29",
   birthday: "04/03"
 )
-["baby", "loli", "flat chest", "Filipino", "short", "voice actor"].each do |tag|
+["baby", "loli", "small chest", "Filipino", "short", "voice actor"].each do |tag|
   ami.add_tag(tag)
 end
 
@@ -1369,6 +1369,18 @@ jangarian = Vtuber.create!(
   jangarian.add_tag(tag)
 end
 
+pepero = Vtuber.create!(
+  name: "Nekoda Pepero",
+  jp_name: "猫田ぺぺろ",
+  agency: indie,
+  description: "A VTuber from the 2nd generation of Masquerade. Like the other members, she does sexy webcam ASMR streams and posts R18 pictures on Twitter.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@peperoch.6650"
+)
+["singer", "ASMR", "adult content"].each do |tag|
+  jangarian.add_tag(tag)
+end
 
 
 
@@ -1389,7 +1401,8 @@ user = User.create!(
 user2 = User.create!(
   username: "monkey",
   email: "monkey@monkey.com",
-  password: "123123"
+  password: "123123",
+  role: "admin"
 )
 
 puts "Users created"
@@ -1458,7 +1471,7 @@ funny = List.create!(
 end
 
 english = List.create!(
-  name: "JP VTubers who know English",
+  name: "JP VTubers who know some English",
   user: user2
 )
 
@@ -1490,9 +1503,24 @@ lm.save
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 
+file = File.open(File.join(Rails.root,"app/assets/images/raki thumb.jpg"))
+raki.thumbnail.attach(
+  io: file,
+  filename: "thumb.png"
+)
+if raki.save
+  puts "Raki's thumbnail saved"
+else
+  puts raki.errors.full_messages
+end
 
-# [sora, suisei, ayame, shion, pekora, aqua, ami, raki, iguchi, calli, amana, ririsya, ray, delutaya, nuino, yutoha, meimi, toi,
-#   sanso, phoebe, iku, himaji, usagi, shiro, enma, hachi, neun, meda, neno, roboco, bettel, hakka, leona, kaf, rim, sorakana, rikako,
-#   figaro, misora, youri, hanatan, samayoi].each do |vtuber|
-#     vtuber.add_tag("singer")
+# raki.thumbnail.attach(
+#   io: File.open(Rails.root.join('app', 'assets', 'images', 'avatars', 'sunjun_avatar.png')),
+#   filename: 'sunjun_avatar.png',
+#   content_type: 'image/png'
+# )
+# if sunjun.save
+#   puts "Sunjun OK"
+# else
+#   puts sunjun.errors.full_messages
 # end

@@ -1,3 +1,5 @@
+require "open-uri"
+
 class Vtuber < ApplicationRecord
   acts_as_favoritable
   acts_as_favoritor
@@ -9,6 +11,8 @@ class Vtuber < ApplicationRecord
   has_many :tags, through: :tag_markers, source_type: "Tag"
   has_many :groups, through: :group_markers, source_type: "Group"
   has_many_attached :photos
+  has_one_attached :thumbnail
+  has_one_attached :vertical_picture
 
   validates :name, presence: true
   validates :description, presence: true
@@ -52,5 +56,25 @@ class Vtuber < ApplicationRecord
 
     return tm.save
   end
+
+  def set_thumbnail(url)
+    file = URI.parse(url).open
+    thumbnail.attach(
+    io: file,
+    filename: "thumbnail.png",
+    content_type: "image/png"
+    )
+    return save
+  end
+
+  def set_vertical_picture(url)
+    file = URI.parse(url).open
+    vertical_picture.attach(
+    io: file,
+    filename: "vertical_picture.png"
+    )
+    return save
+  end
+
 
 end

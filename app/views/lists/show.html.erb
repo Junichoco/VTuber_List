@@ -1,4 +1,4 @@
-<div class="container list-page col-12 col-lg-6">
+<div class="container col-12 col-lg-6">
   <div class="list-show-header">
     <h2><%= @list.name %></h2>
     <div style="align-self: flex-end; margin-bottom: 10px; padding-bottom: 0;">
@@ -11,15 +11,5 @@
   </div>
   <div class="list-cards">
     <%= render "shared/list_display", list: @list %>
-  </div>
-
-  <div class="form col-4">
-    <%# <h2>Add VTuber</h2> %>
-    <%#simple_form_for [@list] do |f| %>
-      <%#= f.association :vtuber %>
-      <%# <div class="form-actions"> %>
-      <%#= f.button :submit %>
-      <%# </div> %>
-    <%# end %>
   </div>
 </div>
