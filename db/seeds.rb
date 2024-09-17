@@ -1315,7 +1315,7 @@ narumi = Vtuber.create!(
 end
 
 shu = Vtuber.create!(
-  name: "Uchida Shuu",
+  name: "Uchida Shu",
   jp_name: "内田秀",
   agency: indie,
   description: "A voice actress who has played characters in various anime, including Mia Taylor from \"Love Live! Nijigasaki School Idol Doukoukai\". She has a YouTube channel on which she sometimes streams with her VTuber model.",
