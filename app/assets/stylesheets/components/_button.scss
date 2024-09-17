@@ -2,21 +2,27 @@
   color: black;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
+  // margin-bottom: 0.5rem;
+}
+.main button a {
+  margin-bottom: 0.5rem;
 }
 
 .main-button:hover {
   // background-color: $vtuber-purple;
   color: $vtuber-purple;
   // text-decoration: underline;
-  transition: all 0.5s;
+  // transition: all 0.5s;
 }
 
 .tag-button {
-  padding: 2px 8px 2px 8px;
-  margin: 5px;
+  padding: 0 8px 0 8px;
+  margin: 1px;
   color: white;
   border-radius: 15px;
   background-color: #0d21a1;
+  display: inline-block;
   // text-decoration: none;
 }
 
@@ -25,9 +31,13 @@
   color: white;
 }
 
+.tag-button:hover {
+  background-color: #0d21a1;
+}
+
 .agency-button {
-  padding: 3px 8px 3px 8px;
-  margin: 5px;
+  padding: 0px 8px 0px 8px;
+  margin: 1px;
   // color: white;
   border-radius: 15px;
   background-color: #843285;
@@ -37,4 +47,13 @@
 .agency-button a {
   text-decoration: none;
   color: white;
+}
+
+.agency-button:hover {
+  background-color: #843285;
+}
+
+
+.btn:hover {
+  transition: none;
 }

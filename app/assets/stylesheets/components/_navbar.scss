@@ -1,12 +1,57 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-logo {
+  text-decoration: none;
+  font-family: 'Patrick Hand';
+  font-size: 2rem;
+  color: black;
+}
+.navbar-logo:hover {
+  color: $vtuber-purple;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+@media (max-width: 576px) {
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+}
+
+.navbar-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-searchbar {
+  line-height: 1rem;
+}
+.search-button {
+  // height: 1rem;
+  line-height: rem;
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+.search-button:hover {
+  background-color: $vtuber-purple;
+  // transition: all 0.5s;
+}
+
+.navbar-buttons {
+
+}
+
+.navbar-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.navbar-username {
+  display: inline-block;
+
 }
