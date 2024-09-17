@@ -20,7 +20,7 @@ tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom", "comedian",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
-        "furry", "lewd", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "fortune telling"]
+        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "fortune telling"]
 
 tags.each do |tag|
   Tag.create!(
@@ -1369,6 +1369,18 @@ jangarian = Vtuber.create!(
   jangarian.add_tag(tag)
 end
 
+pepero = Vtuber.create!(
+  name: "Nekoda Pepero",
+  jp_name: "猫田ぺぺろ",
+  agency: indie,
+  description: "A VTuber from the 2nd generation of Masquerade. Like the other members, she does sexy webcam ASMR streams and posts R18 pictures on Twitter.",
+  gender: "female",
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@peperoch.6650"
+)
+["singer", "ASMR", "adult content"].each do |tag|
+  jangarian.add_tag(tag)
+end
 
 
 
