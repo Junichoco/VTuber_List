@@ -77,6 +77,8 @@ class VtubersController < ApplicationController
       :debut_date,
       :main_language,
       :active,
+      :thumbnail,
+      :vertical_picture,
       photos: []
     )
   end

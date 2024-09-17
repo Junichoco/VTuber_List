@@ -11,12 +11,18 @@
           </div>
         <% end %>
         <div class="vtuber-card-footer">
-          <%= link_to marker.vtuber.yt_channel, target: :blank do %>
-            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+          <% if marker.vtuber.yt_channel %>
+            <%= link_to marker.vtuber.yt_channel, target: :blank do %>
+              <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+            <% end %>
           <% end %>
-          <%= link_to marker.vtuber.twitch_channel, target: :blank do %>
-            <i class="fa-brands fa-twitch" style="color: #7d52ff;"></i>
+          <% if marker.vtuber.twitch_channel %>
+            <%= link_to marker.vtuber.twitch_channel, target: :blank do %>
+              <i class="fa-brands fa-twitch" style="color: #7d52ff;"></i>
+            <% end %>
           <% end %>
+
+
         </div>
       </div>
   </div>

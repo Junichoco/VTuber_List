@@ -4,7 +4,11 @@
   <div class="container-2">
       <div class="show-card">
 
-        <%= render "shared/vtuber_picture", vtuber: @vtuber %>
+        <% if @vtuber.vertical_picture.attached? %>
+          <%= cl_image_tag @vtuber.vertical_picture.key, class: "vtuber-pic" %>
+        <% elsif @vtuber.photo_url %>
+          <%= image_tag @vtuber.photo_url, class: "vtuber-pic" %>
+        <% end %>
         <%#= image_tag @vtuber.photo_url, class: "vtuber-pic" if @vtuber.photo_url %>
 
 
