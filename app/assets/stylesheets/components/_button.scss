@@ -9,6 +9,10 @@
   margin-bottom: 0.5rem;
 }
 
+.btn:hover {
+  transition: none;
+}
+
 .main-button:hover {
   // background-color: $vtuber-purple;
   color: $vtuber-purple;
@@ -53,7 +57,13 @@
   background-color: #843285;
 }
 
-
-.btn:hover {
-  transition: none;
+.submit-button {
+  color: white;
+  background-color: $vtuber-purple;
+}
+.submit-button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  transition: all 0.5s;
 }

@@ -18,7 +18,7 @@
     <p>This agency has no VTubers</p>
   <% else %>
     <% if @agency.name == "Indie" %>
-      <p><%= @vtubers.length %> indie VTubers in this database.</p>
+      <p><span class="search-result-number"><%= @vtubers.length %></span> indie VTubers in this database.</p>
     <% else %>
       <p><span class="search-result-number"><%= @vtubers.length %></span> VTubers from this agency in this database.</p>
     <% end %>
