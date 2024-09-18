@@ -25,6 +25,10 @@ class Vtuber < ApplicationRecord
     tsearch: { prefix: true } # <-- now `superman batm` will return something!
   }
 
+  def self.find_by_name(name)
+    Vtuber.where(name: name).first
+  end
+
   def get_birthday
     if birthday
       birthday.strftime("%B %-d")

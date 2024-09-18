@@ -314,7 +314,7 @@ pekora = Vtuber.create!(
   agency: hololive,
   gender: "female",
   main_language: "Japanese",
-  birthday: "01/12",
+  birthday: "2023/01/12",
   debut_date: "2019/07/17",
   yt_channel: "https://www.youtube.com/@usadapekora",
   twitch_channel: "https://www.twitch.tv/usadapekora_hololive",
@@ -330,7 +330,7 @@ aqua = Vtuber.create!(
   description: "A marine maid-styled virtual maid. She is trying her very best, yet is still sometimes awkward and clumsy.",
   agency: hololive,
   gender: "female",
-  birthday: "12/01",
+  birthday: "2023/12/01",
   debut_date: "2018/08/08",
   yt_channel: "https://www.youtube.com/@MinatoAqua",
   main_language: "Japanese",
@@ -361,7 +361,7 @@ raki = Vtuber.create!(
   main_language: "English",
   photo_url: "https://cdn.sanity.io/images/2ihqd0kb/production/e43d6f92c16e26bf1c3a18ed3fe8011d2eda199e-3000x5000.png",
   yt_channel: "https://www.youtube.com/@RakiKazuki",
-  birthday: "08/24",
+  birthday: "2023/08/24",
   debut_date: "2023/06/16"
 )
 ["baby girl failure", "thighs", "Southern accent", "ASMR", "animal ears", "heavy metal", "pon"].each do |tag|
@@ -379,7 +379,7 @@ ami = Vtuber.create!(
   twitch_channel: "twitch.tv/amiamami",
   photo_url: "https://vtubernewsdrop.com/content/images/2023/04/Ami-Amami.jpg",
   debut_date: "2023/04/29",
-  birthday: "04/03"
+  birthday: "2023/04/03"
 )
 ["baby", "loli", "small chest", "Filipino", "short", "voice actor"].each do |tag|
   ami.add_tag(tag)
@@ -395,7 +395,7 @@ calli = Vtuber.create!(
   yt_channel: "https://www.youtube.com/channel/UCL_qhgtOy0dy1Agp8vkySQg",
   photo_url: "https://hololive.hololivepro.com/wp-content/uploads/2022/04/4001_Mori-Calliope.png",
   debut_date: "2020/09/12",
-  birthday: "04/04"
+  birthday: "2023/04/04"
 )
 ["singer", "rap", "big chest", "Southern accent"].each do |tag|
   calli.add_tag(tag)
@@ -411,7 +411,7 @@ axel = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@AxelSyrios",
   photo_url: "https://holostars.hololivepro.com/wp-content/uploads/2021/12/Axel-Syrios_pr-img_01.png",
   debut_date: "2022/07/24",
-  birthday: "11/01"
+  birthday: "2023/11/01"
 )
 ["singer", "FPS"].each do |tag|
   axel.add_tag(tag)
@@ -427,7 +427,7 @@ bettel = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@GavisBettel",
   photo_url: "https://holostars.hololivepro.com/wp-content/uploads/2024/06/Gavis-Bettel_pr-img_02.png",
   debut_date: "2023/01/08",
-  birthday: "05/17"
+  birthday: "2023/05/17"
 )
 ["singer", "comedian", "baby girl failure", "guitar"].each do |tag|
   bettel.add_tag(tag)
@@ -443,7 +443,7 @@ hakka = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@BanzoinHakka",
   photo_url: "https://holostars.hololivepro.com/wp-content/uploads/2024/01/Banzoin-Hakka_pr-img_02.png",
   debut_date: "2023/01/08",
-  birthday: "04/21"
+  birthday: "2023/04/21"
 )
 ["singer", "heavy metal", "Spanish"].each do |tag|
   hakka.add_tag(tag)
@@ -494,7 +494,7 @@ amana = Vtuber.create!(
   main_language: "Japanese",
   yt_channel: "https://www.youtube.com/channel/UC3KldSym-HTLMkvitStsNTw",
   photo_url: "https://yt3.googleusercontent.com/VhPEjVw-A4NsYYHE5Ol-V9bZP2UcCZ1oBAzgQ5-LAR8KDekApywdlq6SCX5w5NAW0Kc1V0Im1A=s900-c-k-c0x00ffffff-no-rj",
-  birthday: "10/05",
+  birthday: "2023/10/05",
   debut_date: "2020/02/02"
 )
 ["singer"].each do |tag|
@@ -556,7 +556,7 @@ lottie = Vtuber.create!(
   main_language: "English",
   yt_channel: "https://www.youtube.com/@LottieShinju",
   photo_url: "https://cdn.sanity.io/images/2ihqd0kb/production/437363011d1cb341efbd90b7587a8a796e73f364-4093x5787.png",
-  birthday: "08/23",
+  birthday: "2023/08/23",
   debut_date: "2023/06/16"
 )
 
@@ -663,7 +663,7 @@ iku = Vtuber.create!(
   agency: indie,
   gender: "female",
   main_language: "English",
-  birthday: "10/01",
+  birthday: "2023/10/01",
   debut_date: "2021/01/30",
   yt_channel: "https://www.youtube.com/@IkuHoshifuri",
   photo_url: "https://pbs.twimg.com/media/Erk3Z1MVcAAGPbL?format=jpg&name=large"
@@ -679,7 +679,7 @@ himaji = Vtuber.create!(
   agency: dotlive,
   gender: "female",
   main_language: "Japanese",
-  birthday: "08/30",
+  birthday: "2023/08/30",
   debut_date: "2023/06/16",
   yt_channel: "https://www.youtube.com/@IkuHoshifuri",
   photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_pane.png"
@@ -695,7 +695,7 @@ usagi = Vtuber.create!(
   agency: indie,
   gender: "female",
   main_language: "Japanese",
-  birthday: "09/06",
+  birthday: "2023/09/06",
   debut_date: "2020/05/21",
   yt_channel: "https://www.youtube.com/@usagisora",
   photo_url: "https://pbs.twimg.com/media/GPn78HHbcAAwEy8?format=jpg&name=large"
@@ -726,7 +726,7 @@ shiro = Vtuber.create!(
   gender: "female",
   main_language: "Japanese",
   debut_date: "2017/06/28",
-  birthday: "08/12",
+  birthday: "2023/08/12",
   yt_channel: "https://www.youtube.com/@CyberGirlSiro",
   photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_siro.png"
 )
@@ -756,7 +756,7 @@ enma = Vtuber.create!(
   agency: rkmusic,
   gender: "female",
   main_language: "Japanese",
-  birthday: "09/03",
+  birthday: "2023/09/03",
   yt_channel: "https://www.youtube.com/@EnmaRuri",
   photo_url: "https://liveunion.jp/assets/img/page/home/picture-RuriEnma-large.png"
 )
@@ -771,7 +771,7 @@ hachi = Vtuber.create!(
   agency: rkmusic,
   gender: "female",
   main_language: "Japanese",
-  birthday: "01/16",
+  birthday: "2023/01/16",
   yt_channel: "https://www.youtube.com/@HACHIVSinger",
   photo_url: "https://liveunion.jp/assets/img/page/home/picture-HACHI-large.png"
 )
@@ -938,7 +938,7 @@ sorakana = Vtuber.create!(
   description: "No description available.",
   gender: "female",
   main_language: "Japanese",
-  birthday: "10/01",
+  birthday: "2023/10/01",
   debut_date: "2024/06/23",
   yt_channel: "https://www.youtube.com/@Ito_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E7%A9%BA%E5%A5%8F%E3%82%A4%E3%83%88-2.png"
@@ -954,7 +954,7 @@ shichi = Vtuber.create!(
   description: "No description available.",
   gender: "female",
   main_language: "Japanese",
-  birthday: "11/07",
+  birthday: "2023/11/07",
   debut_date: "2024/06/23",
   yt_channel: "https://www.youtube.com/@Shichi_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E6%B8%9A%E6%B2%A2%E3%82%B7%E3%83%81-2.png"
@@ -967,7 +967,7 @@ qalu = Vtuber.create!(
   description: "No description available.",
   gender: "female",
   main_language: "Japanese",
-  birthday: "12/07",
+  birthday: "2023/12/07",
   debut_date: "2024/06/23",
   yt_channel: "https://www.youtube.com/@Qalu_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E9%9B%AA%E7%99%BD%E3%82%AD%E3%83%A3%E3%83%AB-2.png"
@@ -980,7 +980,7 @@ rimu = Vtuber.create!(
   description: "No description available.",
   gender: "female",
   main_language: "Japanese",
-  birthday: "09/20",
+  birthday: "2023/09/20",
   debut_date: "2024/06/23",
   yt_channel: "https://www.youtube.com/@Rimu_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E6%98%9F%E4%B9%83%E3%82%8A%E3%82%80-2.png"
@@ -993,7 +993,7 @@ iori_mixst = Vtuber.create!(
   description: "No description available.",
   gender: "female",
   main_language: "Japanese",
-  birthday: "02/22",
+  birthday: "2023/02/22",
   debut_date: "2024/06/23",
   yt_channel: "https://www.youtube.com/@Iori_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E7%90%B4%E5%AE%AE%E3%81%84%E3%81%8A%E3%82%8A-2.png"
@@ -1006,7 +1006,7 @@ lian = Vtuber.create!(
   description: "No description available.",
   gender: "female",
   main_language: "Japanese",
-  birthday: "01/23",
+  birthday: "2023/01/23",
   debut_date: "2024/06/23",
   yt_channel: "https://www.youtube.com/@Lian_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E5%B0%8F%E9%88%B4%E3%82%8A%E3%81%82%E3%82%93-2.png"
@@ -1019,7 +1019,7 @@ myao = Vtuber.create!(
   description: "No description available.",
   gender: "female",
   main_language: "Japanese",
-  birthday: "04/28",
+  birthday: "2023/04/28",
   debut_date: "2024/06/23",
   yt_channel: "https://www.youtube.com/@Myao_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E6%88%90%E6%B5%B7%E3%83%9F%E3%83%A3%E3%82%AA-2.png"
@@ -1032,7 +1032,7 @@ san = Vtuber.create!(
   description: "No description available.",
   gender: "female",
   main_language: "Japanese",
-  birthday: "03/20",
+  birthday: "2023/03/20",
   debut_date: "2024/06/23",
   yt_channel: "https://www.youtube.com/@San_Mixstgirls",
   photo_url: "https://mixstgirls.com/wp/wp-content/uploads/2024/06/%E7%AB%8B%E3%81%A1%E7%B5%B5_%E5%A4%A9%E5%90%B9%E3%82%B5%E3%83%B3-2.png"
