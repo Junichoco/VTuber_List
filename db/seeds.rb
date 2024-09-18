@@ -651,7 +651,7 @@ phoebe = Vtuber.create!(
   agency: indie,
   gender: "female",
   main_language: "English",
-  yt_channel: ""
+  yt_channel: "https://www.youtube.com/@feebeechanchibi"
 )
 ["singer", "Filipino"].each do |tag|
   phoebe.add_tag(tag)
