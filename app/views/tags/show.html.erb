@@ -3,7 +3,7 @@
   <% if !@vtubers %>
     <p>No VTubers matched your search</p>
   <% else %>
-    <p><%= @vtubers.length %> search results</p>
+    <p><span class="search-result-number"><%= @vtubers.length %></span> search results</p>
     <%= render "shared/vtuber_grid_display", vtubers: @vtubers %>
   <% end %>
 </div>

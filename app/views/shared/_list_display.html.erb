@@ -16,7 +16,7 @@
               <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
             <% end %>
           <% end %>
-          <% if marker.vtuber.twitch_channel %>
+          <% if marker.vtuber.twitch_channel && marker.vtuber.twitch_channel != "" %>
             <%= link_to marker.vtuber.twitch_channel, target: :blank do %>
               <i class="fa-brands fa-twitch" style="color: #7d52ff;"></i>
             <% end %>

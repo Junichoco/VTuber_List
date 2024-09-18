@@ -1,12 +1,27 @@
-.show-card{
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  padding: 18px;
-  margin: 10px 0 10px 0;
-  width: 100%;
-  // display: flex;
+.vtuber-show-container {
+  display: flex;
   // justify-content: center;
   // align-items: center;
 }
+
+.vtuber-show-picture-card {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.vtuber-tall-picture {
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.vtuber-show-body {
+  width: 55%;
+  padding-left: 5px;
+}
+
+
 
 .show-card-name {
 
@@ -17,19 +32,48 @@
 
 }
 
-.show-card-content {
+.vtuber-show-card-content {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 6px;
 }
 
-.show-card-dates {
-
+.vtuber-show-card-content p {
+  margin-bottom: 0;
 }
 
-.show-card-footer {
+.vtuber-show-card-info td {
+  padding: 5px;
+}
+
+.vtuber-show-footer {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.vtuber-show-tags {
+  margin: 10px 0 10px 0;
+}
+
+@media (max-width: 576px) {
+  .vtuber-show-picture-card {
+    width: 60%;
+  }
+  .vtuber-tall-picture {
+    max-width: 100%;
+    max-height: 600px;
+  }
+  .vtuber-show-container {
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
+  .vtuber-show-picture-card {
+    max-width: 100%;
+  }
+  .vtuber-show-body {
+    width: 100%;
+  }
 }

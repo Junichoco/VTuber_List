@@ -16,11 +16,11 @@ Tag.destroy_all
 # VtuberMarker.destroy_all
 
 tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
-        "baby girl failure", "baby", "violin", "flute", "loli", "small chest", "heavy metal", "thighs", "piano", "cooking",
+        "baby girl failure", "baby", "violin", "flute", "small chest", "heavy metal", "thighs", "piano", "cooking",
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
-        "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "Southern accent", "mom", "comedian",
+        "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
-        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "fortune telling"]
+        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon"]
 
 tags.each do |tag|
   Tag.create!(
@@ -413,7 +413,7 @@ axel = Vtuber.create!(
   debut_date: "2022/07/24",
   birthday: "2023/11/01"
 )
-["singer", "FPS"].each do |tag|
+["singer", "FPS", "Australian"].each do |tag|
   axel.add_tag(tag)
 end
 
@@ -613,7 +613,7 @@ meimi = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@MajokkoMeimi",
   photo_url: "https://yt3.googleusercontent.com/gNIwRzrllQnbVJUr85xsoX1jWpkI1DCR39th93XM96iu4wfT_KAarwZaMugWS3mmDavuyshTbw=s160-c-k-c0x00ffffff-no-rj"
 )
-["singer", "thighs", "fortune telling"].each do |tag|
+["singer", "thighs", "fortune telling", "Chinese"].each do |tag|
   meimi.add_tag(tag)
 end
 
@@ -647,10 +647,11 @@ end
 
 phoebe = Vtuber.create!(
   name: "Phoebe Chan",
-  description: "monkey",
+  description: "A 2.5-D idol based in Los Angeles. She performs IRL concerts and can transform into her VTuber self in the virtual world. She temporarily went on a hiatus from her YouTube activities when she became Ami Amami from Prism Project. After the dissolution of Prism Project, she returned to being Phoebe Chan and now switches between being Phoebe and Ami, who she treats as two different people.",
   agency: indie,
   gender: "female",
-  main_language: "English"
+  main_language: "English",
+  yt_channel: ""
 )
 ["singer", "Filipino"].each do |tag|
   phoebe.add_tag(tag)
@@ -681,7 +682,7 @@ himaji = Vtuber.create!(
   main_language: "Japanese",
   birthday: "2023/08/30",
   debut_date: "2023/06/16",
-  yt_channel: "https://www.youtube.com/@IkuHoshifuri",
+  yt_channel: "https://www.youtube.com/@HimajiPane-qt3zv",
   photo_url: "https://appland.co.jp/wp-content/uploads/2023/06/talent_pane.png"
 )
 ["singer"].each do |tag|
@@ -788,7 +789,7 @@ meda = Vtuber.create!(
   yt_channel: "https://www.youtube.com/@MEDAzcd",
   photo_url: "https://pbs.twimg.com/media/GWeZW6QXwAM06SU?format=jpg&name=large"
 )
-["singer"].each do |tag|
+["singer", "guitar"].each do |tag|
   meda.add_tag(tag)
 end
 
@@ -1455,7 +1456,7 @@ puts "Users: #{user.username}, #{user2.username}"
 
 
 
-[raki, pekora, miko, ami, amelie, calli, axel, bettel, kaf].each do |oshi|
+[raki, pekora, miko, ami, phoebe, amelie, calli, axel, bettel, kaf].each do |oshi|
   # VtuberMarker.create!(
   #   vtuber: oshi,
   #   list: oshis
