@@ -70,6 +70,7 @@ funny = List.create!(
   "Gavis Bettel",
   "Axel Syrios",
   "Sakura Miko",
+  "Non Anon",
   "Lottie Shinju",
   "Raki Kazuki"
 ].each do |name|
