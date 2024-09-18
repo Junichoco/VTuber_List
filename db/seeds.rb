@@ -1378,9 +1378,35 @@ pepero = Vtuber.create!(
   main_language: "Japanese",
   yt_channel: "https://www.youtube.com/@peperoch.6650"
 )
-["singer", "ASMR", "adult content"].each do |tag|
-  jangarian.add_tag(tag)
+["singer", "ASMR", "adult content", "animal ears"].each do |tag|
+  pepero.add_tag(tag)
 end
+
+nemune = Vtuber.create!(
+  name: "Nemuta Nemune",
+  jp_name: "音夢多ねむね",
+  agency: indie,
+  description: "A 222-year-old nekomata VTuber. She loves Hololive and does Hololive-themed karaoke streams and Hololive concert watchalongs.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "2000/02/22",
+  yt_channel: "https://www.youtube.com/@nemuch.5483"
+)
+["singer", "animal ears"].each do |tag|
+  nemune.add_tag(tag)
+end
+
+chiroru = Vtuber.create!(
+  name: "Maou Chirorunia",
+  jp_name: "魔王チロルニア",
+  agency: indie,
+  description: "A demon lord voice actress VTuber aiming to be a harem lord. She does work as a voice actress for many doujin voice works under the name Ooyama Chiroru.",
+  gender: "female",
+  main_language: "Japanese",
+  birthday: "2000/02/22",
+  yt_channel: "https://www.youtube.com/@nemuch.5483"
+)
+
 
 
 
@@ -1503,16 +1529,7 @@ lm.save
 
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 
-file = File.open(File.join(Rails.root,"app/assets/images/raki thumb.jpg"))
-raki.thumbnail.attach(
-  io: file,
-  filename: "thumb.png"
-)
-if raki.save
-  puts "Raki's thumbnail saved"
-else
-  puts raki.errors.full_messages
-end
+
 
 # raki.thumbnail.attach(
 #   io: File.open(Rails.root.join('app', 'assets', 'images', 'avatars', 'sunjun_avatar.png')),
