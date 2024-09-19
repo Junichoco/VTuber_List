@@ -71,6 +71,10 @@ class Vtuber < ApplicationRecord
     return false
   end
 
+  def has_jp_name?
+    (jp_name && jp_name != "")
+  end
+
   def num_of_people_tagged
     count = 0
     arr = []

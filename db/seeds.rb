@@ -580,6 +580,7 @@ nuino = Vtuber.create!(
   agency: univirtual,
   gender: "female",
   main_language: "Japanese",
+  birthday: "2020/04/08",
   yt_channel: "https://www.youtube.com/@KOHAKU_NUINO",
   photo_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2F%40KOHAKU_NUINO&psig=AOvVaw1iTxSrKZmYqqgMrFwYV3nz&ust=1725179725532000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMD6rrvpnogDFQAAAAAdAAAAABAE",
   debut_date: "2022/08/22"

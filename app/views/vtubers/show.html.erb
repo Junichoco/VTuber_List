@@ -17,6 +17,9 @@
       <div class="vtuber-show-body">
         <div class="badge-group">
           <h3><span class="fw-bold show-card-name"><%= @vtuber.name %></span></h3>
+          <% if @vtuber.has_jp_name? %>
+            <h5><span class="show-card-name"><%= @vtuber.jp_name %></span></h5>
+          <% end %>
           <h3>
           <% if @vtuber.yt_channel %>
             <%= link_to @vtuber.yt_channel, target: :blank do %>
