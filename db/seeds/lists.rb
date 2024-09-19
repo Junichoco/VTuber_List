@@ -113,6 +113,17 @@ bilingual = List.create!(
   end
 end
 
+graduated = List.create!(
+  name: "Oshis who graduated",
+  user: user
+)
+["Minato Aqua"]each do |name|
+  if graduated.add_vtuber(Vtuber.find_by_name(name))
+    puts "Added #{name} to #{graduated.name}"
+  else
+    puts task.errors.full_messages
+  end
+end
 
 flood = List.create!(
   name: "Flooded Apartment",

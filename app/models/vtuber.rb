@@ -61,6 +61,30 @@ class Vtuber < ApplicationRecord
     return tm.save
   end
 
+  def has_tag?(tag_name)
+    tms = TagMarker.where(vtuber_id: id)
+    tms.each do |tm|
+      if tm.tag.name.downcase == tag_name.downcase
+        return true
+      end
+    end
+    return false
+  end
+
+  def num_of_people_tagged
+    count = 0
+    arr = []
+    tms = VtuberMarker.where(vtuber_id: id)
+    tms.each do |tm|
+      puts tm.list.name
+      if !arr.include?(tm.list.user)
+        arr << tm.list.user
+        count += 1
+      end
+    end
+    return count
+  end
+
   def set_thumbnail(url)
     file = URI.parse(url).open
     thumbnail.attach(
