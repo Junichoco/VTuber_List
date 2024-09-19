@@ -52,7 +52,7 @@ class List < ApplicationRecord
     pic_count = 0
 
     vtuber_markers.each do |vm|
-      pic_count +=1 if vm.vtuber.photo_url
+      pic_count +=1 if vm.vtuber.photo_url || vm.vtuber.thumbnail.attached?
     end
 
     if pic_count <= 5
@@ -60,7 +60,7 @@ class List < ApplicationRecord
     else
       while vtubers.length < 5
         vtuber = get_random_vtuber
-        if !vtubers.include?(vtuber)
+        if !vtubers.include?(vtuber) && (vtuber.thumbnail.attached? || (vtuber.photo_url && vtuber.photo_url != ""))
           vtubers << vtuber
         end
       end
