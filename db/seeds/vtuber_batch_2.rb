@@ -9,6 +9,7 @@ indie = Agency.find_by_name("Indie")
 puts indie.name
 pixellink = Agency.find_by_name("PixelLink")
 holostars = Agency.find_by_name("Holostars")
+univirtual = Agency.find_by_name("UniVIRTUAL")
 
 if (!Vtuber.find_by_name("Non Anon"))
   non = Vtuber.create!(
@@ -83,6 +84,16 @@ end
     birthday: "2020/06/23",
     debut_date: "2023/01/08",
     yt_channel: "https://www.youtube.com/@JosuijiShinri"
+  },
+  {
+    name: "Shiratama Utano",
+    jp_name: "白玖ウタノ",
+    description: "A virtual utaite.",
+    agency: univirtual,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/09/03",
+    yt_channel: "https://www.youtube.com/@UTANOch"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
