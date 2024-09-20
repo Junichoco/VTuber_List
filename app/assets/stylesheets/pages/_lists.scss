@@ -46,6 +46,20 @@
   margin: 0 10px 10px 10px;
 }
 
+.vtuber-delete {
+  position: absolute;
+  line-height: 0.8rem;
+  top: 5px;
+  right: 5px;
+  // transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.vtuber-delete i {
+  color: black;
+  background-color: white;
+  padding: 5px;
+}
+
 
 @media (max-width: 776px) {
   .vtuber-card {

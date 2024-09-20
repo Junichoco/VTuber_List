@@ -8,8 +8,10 @@
   </div>
   <div class="your-lists-header">
     <h2><strong>Your lists</strong></h2>
-    <%= link_to new_list_path do %>
-      <span class="main-button"><i class="fa-solid fa-file-circle-plus" style="align-self: center;"></i> Make a new list</span>
+    <% if user_signed_in? %>
+      <%= link_to new_list_path do %>
+        <span class="main-button"><i class="fa-solid fa-file-circle-plus" style="align-self: center;"></i> Make a new list</span>
+      <% end %>
     <% end %>
   </div>
   <% @lists.each do |list| %>
@@ -39,7 +41,9 @@
       <% end %>
     </div>
   <% end %>
-  <h4>Admin only</h4>
-  <%= link_to "Add VTuber Entry", new_vtuber_path, class: "main-button" %>
-  <%= link_to "Add Agency Entry", new_agency_path, class: "main-button" %>
+  <% if user_signed_in? && current_user.role == "admin" %>
+    <h4>Admin only</h4>
+    <%= link_to "Add VTuber Entry", new_vtuber_path, class: "main-button" %>
+    <%= link_to "Add Agency Entry", new_agency_path, class: "main-button" %>
+  <% end %>
 </div>
