@@ -9,6 +9,14 @@
   margin-bottom: 5px;
 }
 
+.list-show-delete p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.list-show-delete a {
+  cursor: pointer;
+}
+
 .list-cards {
   display: flex;
   flex-wrap: wrap;
@@ -48,17 +56,27 @@
 
 .vtuber-delete {
   position: absolute;
-  line-height: 0.8rem;
-  top: 5px;
-  right: 5px;
+  font-size: 2rem;
+  top: 0;
+  right: 0;
   // transform: translate(-50%, -50%);
   z-index: 1;
+
+}
+.vtuber-delete a {
+  border-radius: 50%;
+  margin-right: 5px;
 }
 .vtuber-delete i {
   color: black;
-  background-color: white;
-  padding: 5px;
+  // background-color: white;
 }
+.vtuber-delete:hover i {
+  // background-color: black;
+  // color: rgb(0, 0, 0);
+  // transition: all 0.5s
+}
+
 
 
 @media (max-width: 776px) {
@@ -152,4 +170,14 @@
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

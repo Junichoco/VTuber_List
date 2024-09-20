@@ -1,9 +1,9 @@
 <% list.vtuber_markers.order(id: :asc).each do |marker| %>
   <div class="vtuber-card">
-    <div class="vtuber-delete">
+    <div class="vtuber-delete d-none" data-delete-button-target="button">
       <%= link_to vtuber_marker_path(marker),
         data: { turbo_method: :delete, turbo_confirm: "Delete this VTuber from this list?" } do %>
-          <i class="fas fa-trash"></i>
+          <i class="fa-solid fa-square-xmark"></i>
         <% end %>
     </div>
     <div class="vtuber-card-pic">
