@@ -22,7 +22,11 @@ class VtuberMarkersController < ApplicationController
   end
 
   def destroy
-
+    # raise
+    @marker = VtuberMarker.find(params[:id])
+    list = @marker.list
+    @marker.destroy
+    redirect_to list_path(list)
   end
 
   private
