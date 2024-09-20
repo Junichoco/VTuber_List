@@ -19,6 +19,9 @@
   // text-decoration: underline;
   // transition: all 0.5s;
 }
+.main-button:active {
+  color: black;
+}
 
 .tag-button {
   padding: 0 8px 0 8px;
@@ -45,7 +48,7 @@
   // color: white;
   border-radius: 15px;
   background-color: #843285;
-  // text-decoration: none;
+  display: inline-block;
 }
 
 .agency-button a {
