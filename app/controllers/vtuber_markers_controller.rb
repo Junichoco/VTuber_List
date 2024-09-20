@@ -22,6 +22,7 @@ class VtuberMarkersController < ApplicationController
   end
 
   def destroy
+
   end
 
   private

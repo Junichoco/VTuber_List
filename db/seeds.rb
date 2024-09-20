@@ -223,9 +223,9 @@ end
 roboco = Vtuber.create!(
   name: "Robocosan",
   jp_name: "ロボ子さん",
-  description: "Hellobo! It's me, the high-spec hololive VTuber Roboco! I showed up from a faraway wasteland having lost all my memories.\n
-    I believe I'm pretty high-spec, but some rumors say that it'd be more accurate to call me \"broken\"... lol. I'm a gamer gal whose defining trait is a very human, emotional singing voice!\n
-    Am I really a robot? Whoops, looks like my arm came off...\n(Source: Hololive website)",
+  description: "Hellobo! It's me, the high-spec hololive VTuber Roboco! I showed up from a faraway wasteland having lost all my memories.\n\n
+    I believe I'm pretty high-spec, but some rumors say that it'd be more accurate to call me \"broken\"... lol. I'm a gamer gal whose defining trait is a very human, emotional singing voice!\n\n
+    Am I really a robot? Whoops, looks like my arm came off...\n\n(Source: Hololive website)",
   agency: hololive,
   gender: "female",
   main_language: "Japanese"
@@ -297,7 +297,7 @@ okayu = Vtuber.create!(
 
 miko = Vtuber.create!(
   name: "Sakura Miko",
-  description: "A shrine maiden from the Virtual Sakura Shrine. With a vivid admiration for idols, she constantly pushes herself to greater heights to become a top elite shrine maiden-idol like no other!\nWell... a self-proclaimed 'elite,' to be exact. Fans would think \"clutz\" fits her better...",
+  description: "A shrine maiden from the Virtual Sakura Shrine. With a vivid admiration for idols, she constantly pushes herself to greater heights to become a top elite shrine maiden-idol like no other!\n\nWell... a self-proclaimed 'elite,' to be exact. Fans would think \"clutz\" fits her better...",
   agency: hololive,
   gender: "female",
   main_language: "Japanese",
@@ -310,7 +310,7 @@ end
 pekora = Vtuber.create!(
   name: "Usada Pekora",
   jp_name: "兎田ぺこら",
-  description: "A lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.\n(Source: Hololive website)",
+  description: "A lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.\n\n(Source: Hololive website)",
   agency: hololive,
   gender: "female",
   main_language: "Japanese",
@@ -388,7 +388,7 @@ end
 calli = Vtuber.create!(
   name: "Mori Calliope",
   jp_name: "森カリオペ",
-  description: "The Grim Reaper's first apprentice. Due to modern medical care causing a decline in the reaping business, Calliope decided to become a VTuber to harvest souls instead. It seems that the ascended souls of the people who are vaporized by the wholesome interactions between VTubers go to her as well.\nThat being said, despite the image her hardcore vocals and manner of speech gives off, she's actually a gentle-hearted girl who cares greatly for her friends.",
+  description: "The Grim Reaper's first apprentice. Due to modern medical care causing a decline in the reaping business, Calliope decided to become a VTuber to harvest souls instead. It seems that the ascended souls of the people who are vaporized by the wholesome interactions between VTubers go to her as well.\n\nThat being said, despite the image her hardcore vocals and manner of speech gives off, she's actually a gentle-hearted girl who cares greatly for her friends.",
   agency: hololive,
   gender: "female",
   main_language: "English",
@@ -404,7 +404,7 @@ end
 axel = Vtuber.create!(
   name: "Axel Syrios",
   jp_name: "アクセル・シリオス",
-  description: "The chief of human resources in Adventurer's Guild TEMPUS. He is the owner of the combat arena, and a gladiator himself. He joined TEMPUS on a whim, only to take a real liking to it. Has always swiftly resolved any problems he has faced by sheer instinct, and thus considers himself somewhat of a doctor.\n(Source: Holostars website)",
+  description: "The chief of human resources in Adventurer's Guild TEMPUS. He is the owner of the combat arena, and a gladiator himself. He joined TEMPUS on a whim, only to take a real liking to it. Has always swiftly resolved any problems he has faced by sheer instinct, and thus considers himself somewhat of a doctor.\n\n(Source: Holostars website)",
   agency: holostars,
   gender: "male",
   main_language: "English",
@@ -420,7 +420,7 @@ end
 bettel = Vtuber.create!(
   name: "Gavis Bettel",
   jp_name: "ガビス・ベッテル",
-  description: "The jester of Adventurer's Guild TEMPUS. Visited Xenokuni in the past to learn its traditional performing arts, and used that experience to draw up and lead the expedition into the land eventually.\nCurrently performs in the combat arena, but is planning to take his talents global someday. His diverse clientele has given him an undeniably keen eye for aesthetics, and he can sometimes be a wise guy who goes straight for the jugular.\n(Source: Holostars website)",
+  description: "The jester of Adventurer's Guild TEMPUS. Visited Xenokuni in the past to learn its traditional performing arts, and used that experience to draw up and lead the expedition into the land eventually.\n\nCurrently performs in the combat arena, but is planning to take his talents global someday. His diverse clientele has given him an undeniably keen eye for aesthetics, and he can sometimes be a wise guy who goes straight for the jugular.\n\n(Source: Holostars website)",
   agency: holostars,
   gender: "male",
   main_language: "English",
@@ -436,7 +436,7 @@ end
 hakka = Vtuber.create!(
   name: "Banzoin Hakka",
   jp_name: "万象院ハッカ",
-  description: "The exorcist of Adventurer's Guild TEMPUS. Dual wielding spears, he is the latest of a long line of exorcists who have defended Xenokuni from the evils of the world.\nHe fights not only out of a sense of duty, but also because he feels a special kind of excitement when on the frontlines. Unfortunately, his right hand is being eroded by the scourge of Records Corruption. Has inherited Karasutengu data, and thus possesses otherworldly leaping ability and endurance.\nJoined TEMPUS after the battle in Xenokuni.\n(Source: Holostars website)",
+  description: "The exorcist of Adventurer's Guild TEMPUS. Dual wielding spears, he is the latest of a long line of exorcists who have defended Xenokuni from the evils of the world.\n\nHe fights not only out of a sense of duty, but also because he feels a special kind of excitement when on the frontlines. Unfortunately, his right hand is being eroded by the scourge of Records Corruption. Has inherited Karasutengu data, and thus possesses otherworldly leaping ability and endurance.\n\nJoined TEMPUS after the battle in Xenokuni.\n\n(Source: Holostars website)",
   agency: holostars,
   gender: "male",
   main_language: "English",
@@ -752,7 +752,7 @@ eve = Vtuber.create!(
 end
 
 enma = Vtuber.create!(
-  name: "Ruri Enma",
+  name: "Enma Ruri",
   jp_name: "焔魔るり",
   description: "A VSinger part of RK Music's Live Union project.",
   agency: rkmusic,
@@ -1246,7 +1246,7 @@ hoshikawa = Vtuber.create!(
   name: "Hoshikawa Sara",
   jp_name: "星川 サラ",
   agency: niji,
-  description: "A self-proclaimed influencer aiming to spread her cuteness worldwide.\nHalf British and half Japanese, she loves anything new, anything fun, and talking about romance. (Source: Nijisanji Official Store)",
+  description: "A self-proclaimed influencer aiming to spread her cuteness worldwide.\n\nHalf British and half Japanese, she loves anything new, anything fun, and talking about romance. (Source: Nijisanji Official Store)",
   gender: "female",
   main_language: "Japanese",
   birthday: "2000/08/07",

@@ -1,29 +1,32 @@
 <% list.vtuber_markers.order(id: :asc).each do |marker| %>
   <div class="vtuber-card">
+    <div class="vtuber-delete">
+      <%= link_to vtuber_marker_path(marker),
+        data: { turbo_method: :delete, turbo_confirm: "Delete this VTuber from this list?" } do %>
+          <i class="fas fa-trash"></i>
+        <% end %>
+    </div>
     <div class="vtuber-card-pic">
         <%= render "shared/vtuber_picture", vtuber: marker.vtuber %>
     </div>
-
-      <div class="vtuber-card-body">
-        <p><%= marker.vtuber.name %></p>
-        <%= link_to vtuber_path(marker.vtuber) do %>
-          <div class="click-box">
-          </div>
-        <% end %>
-        <div class="vtuber-card-footer">
-          <% if marker.vtuber.yt_channel %>
-            <%= link_to marker.vtuber.yt_channel, target: :blank do %>
-              <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
-            <% end %>
-          <% end %>
-          <% if marker.vtuber.twitch_channel && marker.vtuber.twitch_channel != "" %>
-            <%= link_to marker.vtuber.twitch_channel, target: :blank do %>
-              <i class="fa-brands fa-twitch" style="color: #7d52ff;"></i>
-            <% end %>
-          <% end %>
-
-
+    <div class="vtuber-card-body">
+      <p><%= marker.vtuber.name %></p>
+      <%= link_to vtuber_path(marker.vtuber) do %>
+        <div class="click-box">
         </div>
+      <% end %>
+      <div class="vtuber-card-footer">
+        <% if marker.vtuber.yt_channel %>
+          <%= link_to marker.vtuber.yt_channel, target: :blank do %>
+            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+          <% end %>
+        <% end %>
+        <% if marker.vtuber.twitch_channel && marker.vtuber.twitch_channel != "" %>
+          <%= link_to marker.vtuber.twitch_channel, target: :blank do %>
+            <i class="fa-brands fa-twitch" style="color: #7d52ff;"></i>
+          <% end %>
+        <% end %>
       </div>
+    </div>
   </div>
 <% end %>

@@ -1,6 +1,6 @@
 <div class="container col-12 col-lg-6"">
   <%#= link_to "Go back", :back %>
-  <% if current_user && current_user.role == "admin" %>
+  <% if user_signed_in? && current_user.role == "admin" %>
     <%= link_to "Edit VTuber info", edit_vtuber_path %>
   <% end %>
   <div class="vtuber-show-container">
@@ -26,7 +26,7 @@
               <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
             <% end %>
           <% end %>
-          <% if @vtuber.twitch_channel %>
+          <% if @vtuber.twitch_channel && @vtuber.twitch_channel != "" %>
             <%= link_to @vtuber.twitch_channel, target: :blank do %>
               <i class="fa-brands fa-twitch" style="color: #7d52ff;"></i>
             <% end %>
@@ -58,7 +58,7 @@
                 <p><%= @vtuber.name %> is not active.</p>
               <% end %>
           </div>
-          <p><%= @vtuber.description %></p>
+          <p style="white-space: pre-line;"><%= @vtuber.description %></p>
         </div>
       </div>
     </div>
@@ -71,8 +71,10 @@
         </div>
       </div>
       <div class="vtuber-show-add">
-        <% if !current_user %>
+        <% if !user_signed_in? %>
           <h5><%= link_to "Log in", new_user_session_path, class: "main-button" %> to add this VTuber to a list</h5>
+        <% elsif @lists.empty? %>
+          <h5><%= link_to "Make a new list", new_list_path, class: "main-button" %> to add this VTuber</h5>
         <% else %>
           <h4>Add this VTuber to a list</h4>
           <%= simple_form_for @marker do |f| %>

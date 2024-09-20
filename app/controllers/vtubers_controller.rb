@@ -26,11 +26,15 @@ class VtubersController < ApplicationController
   def show
     @vtuber = Vtuber.find(params[:id])
     # current user's lists that do not include VTuber
-    @lists = List.all
+
+    if user_signed_in?
+      @lists = current_user.lists
+    end
+
     @list = List.new
     @marker = VtuberMarker.new
-    @tag = Tag.new
-    @tags = Tag.all
+    # @tag = Tag.new
+    # @tags = Tag.all
   end
 
   def edit

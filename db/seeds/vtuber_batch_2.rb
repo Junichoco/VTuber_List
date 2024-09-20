@@ -77,7 +77,7 @@ end
   {
     name: "Josuiji Shinri",
     jp_name: "定水寺シンリ",
-    description: "A ronin who is part of Adventurer's Guild TEMPUS.\nHas the appearance of a wandering samurai, but was widely renowned as a master of the longbow.\nSo famed was his prowess, they would say he could use anything as an arrow and yet never fail to hit his mark.\nHe went into isolation for a while, lamenting the futility of war,\nbut took up his bow and arrow once again after witnessing the young men fighting a pack of Corruption Beasts.\n(Source: Holostars website)",
+    description: "A ronin who is part of Adventurer's Guild TEMPUS.\n\nHas the appearance of a wandering samurai, but was widely renowned as a master of the longbow.\n\nSo famed was his prowess, they would say he could use anything as an arrow and yet never fail to hit his mark.\n\nHe went into isolation for a while, lamenting the futility of war,\n\nbut took up his bow and arrow once again after witnessing the young men fighting a pack of Corruption Beasts.\n\n(Source: Holostars website)",
     agency: holostars,
     gender: "male",
     main_language: "English",

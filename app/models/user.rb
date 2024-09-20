@@ -29,5 +29,8 @@ def validate_username
   end
 end
 
+def lists
+  List.where(user_id: id)
+end
 
 end
