@@ -198,6 +198,14 @@ shinengumi = Agency.create!(
   description: "No description available."
 )
 
+siropro = Agency.create!(
+  name: "Siropro",
+  location: "Japan",
+  website: "https://siragamico.com/siroproduction/",
+  yt_channel: "https://www.youtube.com/@siro_pro",
+  description: "A VTuber agency operated by siragami."
+)
+
 # palepro = Agency.create!(
 #   name: "Palette Project",
 #   location: "Japan"
@@ -450,12 +458,14 @@ hakka = Vtuber.create!(
 end
 
 iguchi = Vtuber.create!(
-  name: "Iguchi-san",
-  description: "monkey",
-  agency: indie,
+  name: "Iguchi Sun",
+  jp_name: "井口さん",
+  description: "No description available.",
+  agency: siropro,
   gender: "female",
   main_language: "Japanese",
   debut_date: "2024/01/28",
+  birthday: "2020/09/29",
   yt_channel: "https://www.youtube.com/@iguchisun",
   photo_url: "https://pbs.twimg.com/media/GXCrBH6aEAA5g0t?format=jpg&name=large"
 )
