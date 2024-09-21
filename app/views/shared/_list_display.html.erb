@@ -1,15 +1,15 @@
 <% list.vtuber_markers.order(id: :asc).each do |marker| %>
-  <div class="vtuber-card">
+  <div class="vtuber-card" data-controller="zoom-in">
     <div class="vtuber-delete d-none" data-delete-button-target="button">
       <%= link_to vtuber_marker_path(marker),
         data: { turbo_method: :delete, turbo_confirm: "Delete this VTuber from this list?" } do %>
           <i class="fa-solid fa-square-xmark"></i>
         <% end %>
     </div>
-    <div class="vtuber-card-pic">
+    <div class="vtuber-card-pic" data-zoom-in-target="image">
         <%= render "shared/vtuber_picture", vtuber: marker.vtuber %>
     </div>
-    <div class="vtuber-card-body">
+    <div class="vtuber-card-body" data-action="mouseover->zoom-in#zoom_in mouseout->zoom-in#zoom_out">
       <p><%= marker.vtuber.name %></p>
       <%= link_to vtuber_path(marker.vtuber) do %>
         <div class="click-box" data-delete-button-target="link">
