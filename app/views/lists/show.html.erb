@@ -13,6 +13,10 @@
   <div>
     <p>Made by <%= @list.user.username %></p>
   <div class="list-cards">
-    <%= render "shared/list_display", list: @list %>
+    <% if @list.get_vtubers.empty? %>
+      <p>There are no VTubers in this list</p>
+    <% else %>
+      <%= render "shared/list_display", list: @list %>
+    <% end %>
   </div>
 </div>

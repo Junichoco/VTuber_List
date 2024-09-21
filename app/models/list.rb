@@ -27,6 +27,10 @@ class List < ApplicationRecord
     return vtubers
   end
 
+  def has_vtuber?(vtuber)
+    get_vtubers.include?(vtuber)
+  end
+
   def get_vtuber_names
     vtubers = []
     vtuber_markers.each do |vm|
