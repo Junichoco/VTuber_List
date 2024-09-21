@@ -38,12 +38,18 @@ images = [
   { name: "Ririsya", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726856589/ririsya_thumb_qri0yb.png"},
   { name: "Iguchi Sun", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726898642/iguchi_thumb_ruvnev.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726898642/iguchi_sun_wlnjzn.jpg"},
   { name: "yayamugi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726899536/yayamugi_thumb_fi196y.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726899537/yayamugi_5_rjwwn1.png"},
-  { name: "figaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900299/figaro_thumb_tlpfty.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900298/figaro_lixgkv.jpg"},
-  { name: "Hiiragi Youri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900604/youri_thumb_jkxxwg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900587/youri_uqsw24.jpg"}
+  { name: "Figaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900299/figaro_thumb_tlpfty.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900298/figaro_lixgkv.jpg"},
+  { name: "Hiiragi Youri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900604/youri_thumb_jkxxwg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900587/youri_uqsw24.jpg"},
+  { name: "Sorakana Ito", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900079/sorakana_thumb_zwy57t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900080/sorakana_zmqan9.png"}
 ]
 
 images.each do |t|
   vtuber = Vtuber.find_by_name(t[:name])
+  if !vtuber
+    puts "Cannot find #{t[:name]}"
+    abort
+  end
+
   if !vtuber.thumbnail.attached?
     if vtuber.set_thumbnail(t[:thumb])
       puts "#{vtuber.name}'s thumbnail attached"

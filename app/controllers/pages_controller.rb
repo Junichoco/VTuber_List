@@ -1,6 +1,9 @@
 class PagesController < ApplicationController
   def home
-    @lists = List.all
+    @lists = []
+    if user_signed_in?
+      @lists = current_user.lists
+    end
     @list = List.new
   end
 end
