@@ -31,10 +31,11 @@
 // }
 
 body {
-  background: linear-gradient(0deg, #ffa3d1 0%, #ffffff 100%);
+  // background: linear-gradient(0deg, #ffa3d1 0%, #ffffff 100%);
+  background-image: url("cool-background purple.png");
   height: 100vh;
   // width: 100vh;
-  background-size: 100;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
