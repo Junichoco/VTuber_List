@@ -26,9 +26,13 @@ class VtubersController < ApplicationController
   def show
     @vtuber = Vtuber.find(params[:id])
     # current user's lists that do not include VTuber
-
+    @lists = []
     if user_signed_in?
-      @lists = current_user.lists
+      current_user.lists.each do |list|
+        if !list.has_vtuber?(@vtuber)
+          @lists << list
+        end
+      end
     end
 
     @list = List.new
