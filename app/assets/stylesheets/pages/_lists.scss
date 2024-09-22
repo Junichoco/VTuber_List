@@ -104,6 +104,8 @@
 }
 
 .vtuber-card-pic:hover {
+  // transform: scale(1.2);
+  // transition: transform 0.3s ease-in-out;
   // height: 120%;
   // width: 120%;
   // // display: flex;
@@ -111,8 +113,12 @@
   // // align-items: center;
   // transition: 0.5s ease;
 }
+.vtuber-pic:hover {
+  // transform: scale(1.2);
+}
 
 .vtuber-card-body {
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,7 +126,6 @@
   line-height: 99%;
 
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-  opacity: 0;
 
   height: 100%;
   width: 100%;
@@ -128,6 +133,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::before {
+    opacity:0;
+  }
 }
 
 .vtuber-card-body p {
@@ -148,19 +162,22 @@
   text-shadow: 0 0 20px rgba(255,255,255, 1);
   border-radius: 50%;
   padding: 3px;
-}
 
-.vtuber-card-body i:hover {
-  // text-shadow: 0 0 10px rgba(255,255,255, 1);
+  &:hover {
+    // text-shadow: 0 0 10px rgba(255,255,255, 1);
   background-color: white;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
+  }
 }
 
-.vtuber-card-body:hover {
-  opacity: 1;
-  transition: 0.5s ease;
+.vtuber-card-pic:hover {
+  // transform: scale(1.2);
+  // transition: 0.5s ease;
 }
-
+.zoom-in {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
 // .vtuber-card-body:hover::after {
 //   opacity: 0;
 // }

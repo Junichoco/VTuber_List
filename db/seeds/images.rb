@@ -40,7 +40,15 @@ images = [
   { name: "yayamugi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726899536/yayamugi_thumb_fi196y.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726899537/yayamugi_5_rjwwn1.png"},
   { name: "Figaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900299/figaro_thumb_tlpfty.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900298/figaro_lixgkv.jpg"},
   { name: "Hiiragi Youri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900604/youri_thumb_jkxxwg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900587/youri_uqsw24.jpg"},
-  { name: "Sorakana Ito", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900079/sorakana_thumb_zwy57t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900080/sorakana_zmqan9.png"}
+  { name: "Sorakana Ito", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900079/sorakana_thumb_zwy57t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900080/sorakana_zmqan9.png"},
+  { name: "Kanna Yanagi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964385/kanna_thumb_ezztjz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726963808/kanna_lv7pn8.png"},
+  { name: "Arisu Oshiro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964384/arisu_thumb_jne5mi.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964384/arisu_z96zgb.png"},
+  { name: "Chio Chompi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964384/chio_thumb_ny7zmf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726963807/chio_y4tjoy.png"},
+  { name: "Daiya Fortuna", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964385/daiya_thumb_wb7vrc.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726963808/daiya_kgbbqf.png"},
+  { name: "Miuna Usako", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726963808/daiya_kgbbqf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964830/miuna_p5c9a6.png"},
+  { name: "Chiaki Katsumi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964945/chiaki_thumb_sttook.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964830/chiaki_a2q8nw.png"},
+  { name: "MunMosh", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726966119/munmosh_thumb_zeaimu.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726966120/munmosh_4_kvamk4.jpg"},
+  { name: "Hoshifuri Iku", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726967387/iku_thumb_bprwdn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726967388/iku_3_rrd6bu.png"}
 ]
 
 images.each do |t|
