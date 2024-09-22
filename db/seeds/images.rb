@@ -20,6 +20,7 @@ images = [
   { name: "Tokino Sora", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726620184/sora_thumb_ks11n1.png" },
   { name: "Usada Pekora", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726635956/pekora_thumb_fizd7q.png"},
   { name: "Sakura Miko", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726636318/miko_thumb_bhmqda.png" },
+  { name: "Raki Kazuki", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726987847/raki_thumb_2_rhmnnq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726987996/raki_full_2_efv2ow.png"},
   { name: "Amelie Kanon", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726634057/amelie_thumb_m1gp5h.png"},
   { name: "Mori Calliope", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726638300/Mori_Calliope_Portrait_xy8t3l.webp"},
   { name: "Gavis Bettel", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726638498/bettel_thumb_taac2a.png"},

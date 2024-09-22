@@ -6,4 +6,7 @@ class PagesController < ApplicationController
     end
     @list = List.new
   end
+
+  def about
+    @list = []
 end
