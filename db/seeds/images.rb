@@ -41,7 +41,8 @@ images = [
   { name: "Hoshifuri Iku", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726967387/iku_thumb_bprwdn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726967388/iku_3_rrd6bu.png"},
   { name: "Mochizuki Naco", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727074588/naco_thumb_lnymk0.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727074588/naco_tcn8fg.jpg"},
   { name: "Kou Mariya", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727074990/mariya_thumb_v8syso.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727074991/mariya_2_mcqw5w.png"},
-  { name: "Pina Pengin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727077107/pina_thumb_r5asov.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727077108/pina_2_el2bgh.png"}
+  { name: "Pina Pengin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727077107/pina_thumb_r5asov.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727077108/pina_2_el2bgh.png"},
+  { name: "RIM", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727080080/rim_thumb_orxbvn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727080080/rim_p0myof.jpg"}
 ]
 
 images.each do |t|

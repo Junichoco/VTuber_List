@@ -28,8 +28,10 @@
     <div class="navbar-user">
     <% if user_signed_in? %>
           <div class="username">
-            <i class="fa-solid fa-user-large"></i>
-            <%= current_user.username %>
+            <%= link_to user_path(current_user) do %>
+              <i class="fa-solid fa-user-large"></i>
+              <%= current_user.username %>
+            <% end %>
           </div>
           <div style="align-self: flex-end;">
             <%= link_to "Log out", destroy_user_session_path, data: { turbo_method: :delete }, class: "main-button" %>
