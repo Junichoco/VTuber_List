@@ -2,3 +2,6 @@
 @pixellink = Agency.find_by_name("PixelLink")
 @holostars = Agency.find_by_name("Holostars")
 @univirtual = Agency.find_by_name("UniVIRTUAL")
+@vebop = Agency.find_by_name("Vebop Project")
+@varium = Agency.find_by_name("Varium")
+@v4mirai = Agency.find_by_name("V4Mirai")

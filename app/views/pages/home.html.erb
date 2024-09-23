@@ -49,9 +49,4 @@
       </div>
     <% end %>
   <% end %>
-  <% if user_signed_in? && current_user.role == "admin" %>
-    <h4>Admin only</h4>
-    <%= link_to "Add VTuber Entry", new_vtuber_path, class: "main-button" %>
-    <%= link_to "Add Agency Entry", new_agency_path, class: "main-button" %>
-  <% end %>
 </div>

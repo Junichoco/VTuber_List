@@ -14,6 +14,13 @@
   // justify-content: center;
   // align-items: center;
 
+  display: flex;
+  justify-content: center;
+  // height: 100%;
+  // width: 100%;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // background-color: white;
+
   h2 {
     height: 100%;
     width: 100%;
@@ -28,10 +35,10 @@
     // transform: translate(-50%, -50%);
     vertical-align: middle;
 
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.3);
     color: white;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 3px 5px 5px rgba(0,0,0,0.7);
     margin-bottom: 0;
   }
 }
@@ -51,4 +58,26 @@
 
 
   // align-self: flex-end;
+}
+
+.about-vtuber-card {
+  // background-size: cover;
+  // background-position: center;
+  position: relative;
+
+
+  height: 200px;
+  width: 20%px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border-radius: 5px;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  overflow: hidden;
+
+  .vtuber-card-pic {
+    height: 200px;
+  }
 }
