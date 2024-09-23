@@ -6,4 +6,15 @@ class PagesController < ApplicationController
     end
     @list = List.new
   end
+
+  def about
+    @vtubers = []
+
+    while @vtubers.length < 10
+      vtuber = Vtuber.get_random_vtuber
+        if !@vtubers.include?(vtuber) && (vtuber.thumbnail.attached?)
+          @vtubers << vtuber
+        end
+      end
+    end
 end

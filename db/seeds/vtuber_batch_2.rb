@@ -4,14 +4,8 @@ require_relative "agency_names"
 #   rake db:seed:vtuber_batch_2
 # To run all the seeds file in the db/seeds folder, run this command
 #   rake db:seed:all
-
-# indie = Agency.find_by_name("indie")
-# pixellink = Agency.find_by_name("pixellink")
-# @holostars = Agency.find_by_name("@holostars")
-# @univirtual = Agency.find_by_name("@univirtual")
-
-if (!Vtuber.find_by_name("Non Anon"))
-  non = Vtuber.create!(
+[
+  {
     name: "Non Anon",
     jp_name: "亜音ノン",
     description: "No description available.",
@@ -20,14 +14,7 @@ if (!Vtuber.find_by_name("Non Anon"))
     main_language: "English",
     yt_channel: "https://www.youtube.com/@NonAnon",
     twitch_channel: "twitch.tv/notnonanon"
-  )
-  ["singer", "comedian", "ASMR"].each do |tag|
-    non.add_tag(tag)
-  end
-  puts "#{non.name} created"
-end
-
-[
+  },
   {
     name: "Chiaki Katsumi",
     jp_name: "千秋 勝美",
@@ -148,7 +135,109 @@ end
     birthday: "2020/04/01",
     debut_date: "2021/06/23",
     yt_channel: "https://www.youtube.com/@DaiyaFortuna"
+  },
+  {
+    name: "Sparkle Kirara",
+    jp_name: "閃 キララ",
+    description: "A goddess cyborg and member of Vebop Project's Maboroshi Tomodachi Club.",
+    agency: @vebop,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/01/31",
+    debut_date: "2024/08/11",
+    yt_channel: "https://www.youtube.com/@kirara_brdc"
+  },
+  {
+    name: "Sango",
+    jp_name: "さんご。",
+    description: "A VTuber and illustrator who drew her own VTuber model. She does drawing and karaoke streams. She is also a member of the VTuber idol group SugaRy Ribb♡n.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@35sangosan"
+  },
+  {
+    name: "Hasuki Rui",
+    jp_name: "蓮希るい",
+    description: "A Siberian husky puppy.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/11/01",
+    yt_channel: "https://www.youtube.com/@HasukiCh"
+  },
+  {
+    name: "Momose Hibana",
+    jp_name: "百瀬ヒバナ",
+    description: "A Virtual singer who lives on the other side of the world and sings songs that breathe life into the dead (those who have fallen).\n\nEmpty existence living in the other world. She not only sings, but also participates in writing lyrics, and is working to make her songs and voice resonate.\n\nCurrently has 10 cover songs and 3 original songs. She won the Grand Prix in an audition for a song by \"Grenge\" author Kayoko Kusano. She has also been selected as a member of the \"Ruminations Singing Project\" organized by Vocaloid P Reruriri.\n(Source: YouTube page)",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@hibanamomose"
+  },
+  {
+    name: "Serenade Oxblood",
+    jp_name: "セレナーデ・オックスブラッド",
+    description: "A minotaur and member of Varium's 2nd generation.",
+    agency: @varium,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/11/29",
+    yt_channel: "https://www.youtube.com/@SerenadeOxblood"
+  },
+  {
+    name: "Shinotsuki Lupi",
+    jp_name: "紫月るぴ",
+    description: "An otaku vampire idol.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2024/08/02",
+    yt_channel: "https://www.youtube.com/@Shinotsuki_Lupi"
+  },
+  {
+    name: "Mochizuki Naco",
+    jp_name: "餅月なこ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/10/10",
+    debut_date: "2022/03/13",
+    yt_channel: "https://www.youtube.com/@naco_mochizuki"
+  },
+  {
+    name: "Kou Mariya",
+    description: "A vampire who accidentally overslept for a few too many thousands of years, Kou Mariya navigates an unknown colorful world full of magic and mystery every single evening. Otaku to her core, Mariya dreams of creating an idol stage of her very own, one that beckons to fans from every world and realm with her songs!\n(Source: V4Mirai website)",
+    agency: @v4mirai,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/06/09",
+    yt_channel: "https://www.youtube.com/@Kou_Mariya",
+    twitch_channel: "twitch.tv/mariya"
+  },
+  {
+    name: "Serina Maiko",
+    description: "Far from her home Kingdom \"LeProphis\", Serina Maiko comes to us as a Princess abroad. She's far more invested in pursuing her love of dance and song than carrying out her royal duties. With her fiery passion to entertain, she will convince you why she belongs on stages, not in castles!\n(Source: V4Mirai website)",
+    agency: @v4mirai,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/05/23",
+    yt_channel: "https://www.youtube.com/@SerinaMaiko",
+    twitch_channel: "twitch.tv/serinamaiko"
+  },
+  {
+    name: "Pina Pengin",
+    jp_name: "辺銀ピナ",
+    description: "A harpy-penguin healer and former member of PRISM Project. After the dissolution of PRISM Project, Pina and the other members of its 3rd generation became known as Requiem. She enjoys singing and writing and mixing songs.",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/11/06",
+    debut_date: "2021/06/27",
+    yt_channel: "https://www.youtube.com/@PinaPengin"
   }
+
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
     puts "#{vtuber[:name]} created" if Vtuber.create!(vtuber)

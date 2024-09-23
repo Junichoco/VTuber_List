@@ -54,6 +54,10 @@
   margin: 0 10px 10px 10px;
 }
 
+.list-show-subheader {
+  display: flex;
+  justify-content: space-between;
+}
 .vtuber-delete {
   position: absolute;
   font-size: 2rem;

@@ -8,6 +8,7 @@
 
         <% if @vtuber.vertical_picture.attached? %>
           <%= cl_image_tag @vtuber.vertical_picture.key, class: "vtuber-tall-picture" %>
+
         <% elsif @vtuber.photo_url %>
           <%= image_tag @vtuber.photo_url, class: "vtuber-tall-picture" %>
         <% end %>

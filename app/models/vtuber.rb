@@ -89,6 +89,10 @@ class Vtuber < ApplicationRecord
     return count
   end
 
+  def self.get_random_vtuber
+    Vtuber.all.sample
+  end
+
   def set_thumbnail(url)
     file = URI.parse(url).open
     thumbnail.attach(
