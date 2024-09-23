@@ -29,6 +29,12 @@
   flex-direction: column;
 }
 
+@media (max-width: 767px) {
+  .navbar-search {
+    display: none;
+  }
+}
+
 .navbar-searchbar {
   line-height: 1rem;
 }

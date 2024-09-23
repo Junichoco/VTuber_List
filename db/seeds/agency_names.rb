@@ -1,4 +1,5 @@
 @indie = Agency.find_by_name("Indie")
+@hololive = Agency.find_by_name("Hololive")
 @pixellink = Agency.find_by_name("PixelLink")
 @holostars = Agency.find_by_name("Holostars")
 @univirtual = Agency.find_by_name("UniVIRTUAL")

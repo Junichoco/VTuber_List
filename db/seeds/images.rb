@@ -42,7 +42,11 @@ images = [
   { name: "Mochizuki Naco", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727074588/naco_thumb_lnymk0.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727074588/naco_tcn8fg.jpg"},
   { name: "Kou Mariya", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727074990/mariya_thumb_v8syso.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727074991/mariya_2_mcqw5w.png"},
   { name: "Pina Pengin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727077107/pina_thumb_r5asov.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727077108/pina_2_el2bgh.png"},
-  { name: "RIM", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727080080/rim_thumb_orxbvn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727080080/rim_p0myof.jpg"}
+  { name: "RIM", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727080080/rim_thumb_orxbvn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727080080/rim_p0myof.jpg"},
+  { name: "Hoshimachi Suisei", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101194/suisei_thumb_nfkc1r.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101195/Hoshimachi-Suisei_pr-img_01-734x1440_rj2ivh.png"},
+  { name: "Banzoin Hakka", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101195/Hoshimachi-Suisei_pr-img_01-734x1440_rj2ivh.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101420/Banzoin-Hakka_pr-img_02_ckn6xb.png"},
+  { name: "Nianyan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727102261/nianyan_thumb_ki5l7j.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1725179087/development/ndskd6dhqk362w5gcxd75ej6kdpg.jpg"},
+  { name: "Mari Yume", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727103125/mari_yume_thumb_bfauwx.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727103127/mari_yume_oq6cbc.png" }
 ]
 
 images.each do |t|

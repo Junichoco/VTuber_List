@@ -236,6 +236,37 @@ require_relative "agency_names"
     birthday: "2020/11/06",
     debut_date: "2021/06/27",
     yt_channel: "https://www.youtube.com/@PinaPengin"
+  },
+  {
+    name: "Hoshimachi Suisei",
+    jp_name: "星街すいせい",
+    description: "A virtual idol with an exceptional love for songs and idols.\n\nShe puts endless amounts of hard work and energy into her dream of performing at the Budokan one day.\n\n(Source: Hololive website)",
+    agency: @hololive,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/03/22",
+    debut_date: "2018/03/22",
+    yt_channel: "https://www.youtube.com/@HoshimachiSuisei"
+  },
+  {
+    name: "Nianyan",
+    jp_name: "にあにゃん",
+    description: "A cat-human teahouse owner who loves tea.",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/12/03",
+    debut_date: "2022/04/22",
+    yt_channel: "https://www.youtube.com/@nianyanch"
+  },
+  {
+    name: "Mari Yume",
+    description: "Cat girl and personification of dreams. She is a VTuber model rigger and does tutorials on growing a VTuber channel. Her favorite saying is, \"Everything reminds you of something\"",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@MariYumeCh",
+    twitch_channel: "twitch.tv/mariyume"
   }
 
 ].each do |vtuber|
