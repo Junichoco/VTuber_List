@@ -43,7 +43,7 @@ class VtubersController < ApplicationController
 
   def edit
     @vtuber = Vtuber.find(params[:id])
-    @agencies = Agency.all
+    @agencies = Agency.all.order('LOWER(name)')
   end
 
   def update
