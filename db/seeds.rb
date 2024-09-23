@@ -242,17 +242,6 @@ roboco = Vtuber.create!(
   roboco.add_tag(tag)
 end
 
-suisei = Vtuber.create!(
-  name: "Hoshimachi Suisei",
-  description: "monkey",
-  agency: hololive,
-  gender: "female",
-  main_language: "Japanese"
-)
-["singer", "small chest"].each do |tag|
-  suisei.add_tag(tag)
-end
-
 mel = Vtuber.create!(
   name: "Yozora Mel",
   description: "monkey",
