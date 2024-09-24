@@ -78,13 +78,15 @@
           <h5><%= link_to "Make a new list", new_list_path, class: "main-button" %> to add this VTuber</h5>
         <% else %>
           <h4>Add this VTuber to a list</h4>
-          <%= simple_form_for @marker do |f| %>
-            <%= f.hidden_field :vtuber_id, value: Vtuber.find(params[:id]).id %>
-            <%= f.association :list, collection: @lists %>
-            <div class="form-actions">
-            <%= f.button :submit, value: "Add VTuber", class: "btn submit-button" %>
-            </div>
-          <% end %>
+          <div style="width: 50%;">
+            <%= simple_form_for @marker do |f| %>
+              <%= f.hidden_field :vtuber_id, value: Vtuber.find(params[:id]).id %>
+              <%= f.association :list, collection: @lists %>
+              <div class="form-actions">
+              <%= f.button :submit, value: "Add VTuber", class: "btn submit-button" %>
+              </div>
+            <% end %>
+          </div>
         <% end %>
       </div>
     </div>

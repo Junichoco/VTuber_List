@@ -23,6 +23,20 @@
     description: "A VTuber agency owned by Brave Group.",
     website: "https://v4mirai.com/",
     yt_channel: "https://www.youtube.com/@V4Mirai"
+  },
+  {
+    name: "V-Dere",
+    location: "United States",
+    description: "No description available.",
+    website: "https://www.v-dere.moe/",
+    yt_channel: "https://www.youtube.com/@V-Dere"
+  },
+  {
+    name: "Phase Connect",
+    location: "Canada",
+    description: "A Canada-based VTuber agency. Also known as the \"sad girl company\". The CEO, Sakana, is known for pushing the talent to sell Phase Connect's proprietary coffee."
+    website: "https://phase-connect.com/",
+    yt_channel: "https://www.youtube.com/@PhaseConnect"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

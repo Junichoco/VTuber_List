@@ -2,7 +2,14 @@
   width: 100%;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  // width: 100%;
+}
+
 .navbar-container {
+  width: 100%;
   padding-top: 1rem;
   display: flex;
   justify-content: space-around;
@@ -33,6 +40,10 @@
   .navbar-search {
     display: none;
   }
+}
+
+.navbar-collapse {
+
 }
 
 .navbar-searchbar {

@@ -267,6 +267,75 @@ require_relative "agency_names"
     main_language: "English",
     yt_channel: "https://www.youtube.com/@MariYumeCh",
     twitch_channel: "twitch.tv/mariyume"
+  },
+  {
+    name: "Elia Stellaria",
+    description: "No description available.",
+    agency: @vdere,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@EliaStellaria",
+    twitch_channel: "twitch.tv/eliastellaria"
+  },
+  {
+    name: "Remilia Nephys",
+    jp_name: "レミリア・ネフィス",
+    description: "No description available.",
+    agency: @phase,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@RemiliaNephys",
+    twitch_channel: "https://www.twitch.tv/remilianephys"
+  },
+  {
+    name: "Amanogawa Shiina",
+    jp_name: "天ノ川 しいな",
+    description: "A celestial seamstress and member of Phase Connect's 2nd generation, Alias. She is famous for buying a Yu-Gi-Oh! doujinshi revolving around Obelisk the Tormentor.",
+    agency: @phase,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@AmanogawaShiina",
+    twitch_channel: "twitch.tv/amanogawashiina"
+  },
+  {
+    name: "Himemiya Rie",
+    jp_name: "姫宮りえ",
+    description: "The princess of the Regalia kingdom and member of Phase Connect's 2nd generation, Alias.",
+    agency: @phase,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@HimemiyaRie",
+    twitch_channel: "twitch.tv/himemiyarie"
+  },
+  {
+    name: "Komachi Panko",
+    jp_name: "小町ぱんこ",
+    description: "A red panda who is a member of Phase Connect's 2nd generation, Alias.",
+    agency: @phase,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@komachipanko",
+    twitch_channel: "twitch.tv/komachipanko"
+  },
+  {
+    name: "Chisaka Airi",
+    jp_name: "千坂 アイリ",
+    description: "A wolf and Lieutenant General of the Phase Army. She is a member of Phase Connect's 2nd generation, Alias.",
+    agency: @phase,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@ChisakaAiri",
+    twitch_channel: "twitch.tv/chisakaairi"
+  },
+  {
+    name: "Erina Makina",
+    jp_name: "エリナ・マキナ",
+    description: "A cyborg tiger with no memories of her past life. She is a member of Phase Connect's 2nd generation, Alias.",
+    agency: @phase,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@ErinaMakina",
+    twitch_channel: "twitch.tv/erinamakina"
   }
 
 ].each do |vtuber|
