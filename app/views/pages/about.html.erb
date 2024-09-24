@@ -1,3 +1,4 @@
+
 <div class="container col-12 col-lg-6">
   <div class="about-top">
 
@@ -5,14 +6,15 @@
       <% @vtubers[0,5].each do |vtuber| %>
         <div class="about-vtuber-card">
           <div class="vtuber-card-pic">
-              <%= render "shared/vtuber_picture", vtuber: vtuber %>
+              <%= cl_image_tag vtuber.thumbnail.key, crop: :thumb, gravity: :face, class: "vtuber-pic" %>
           </div>
         </div>
       <% end %>
+      <br>
       <% @vtubers[5,5].each do |vtuber| %>
         <div class="about-vtuber-card">
           <div class="vtuber-card-pic">
-              <%= render "shared/vtuber_picture", vtuber: vtuber %>
+              <%= cl_image_tag vtuber.thumbnail.key, crop: :thumb, gravity: :face, class: "vtuber-pic" %>
           </div>
         </div>
       <% end %>

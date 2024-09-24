@@ -41,9 +41,6 @@
     text-shadow: 3px 5px 5px rgba(0,0,0,0.7);
     margin-bottom: 0;
   }
-  .vtuber-pic {
-    vertical-align: middle;
-  }
 }
 
 .about-top-gradient {
@@ -79,8 +76,14 @@
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
 
   overflow: hidden;
+}
 
-  .vtuber-card-pic {
-    height: 200px;
-  }
+.vtuber-card-pic {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.vtuber-pic {
+
 }
