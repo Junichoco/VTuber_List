@@ -9,7 +9,13 @@
           </div>
         </div>
       <% end %>
-      <% @vtuber %>
+      <% @vtubers[5,5].each do |vtuber| %>
+        <div class="about-vtuber-card">
+          <div class="vtuber-card-pic">
+              <%= render "shared/vtuber_picture", vtuber: vtuber %>
+          </div>
+        </div>
+      <% end %>
     <% end %>
 
       <h2>Welcome to VTuber List</h2>

@@ -34,9 +34,16 @@
   {
     name: "Phase Connect",
     location: "Canada",
-    description: "A Canada-based VTuber agency. Also known as the \"sad girl company\". The CEO, Sakana, is known for pushing the talent to sell Phase Connect's proprietary coffee."
+    description: "A Canada-based VTuber agency. Also known as the \"sad girl company\". The CEO, Sakana, is known for pushing the talent to sell Phase Connect's proprietary coffee.",
     website: "https://phase-connect.com/",
     yt_channel: "https://www.youtube.com/@PhaseConnect"
+  },
+  {
+    name: "Specialite",
+    location: "Japan",
+    description: "A VTuber agency owned by REALITY Studios with both Japanese- and English-speaking talent who mainly stream games.",
+    website: "https://specialite.games/en/",
+    yt_channel: "https://www.youtube.com/@Specialite_official"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

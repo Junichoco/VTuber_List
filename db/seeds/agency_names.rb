@@ -8,3 +8,4 @@
 @v4mirai = Agency.find_by_name("V4Mirai")
 @vdere = Agency.find_by_name("V-Dere")
 @phase = Agency.find_by_name("Phase Connect")
+@specialite = Agency.find_by_name("Specialite")

@@ -336,7 +336,86 @@ require_relative "agency_names"
     main_language: "English",
     yt_channel: "https://www.youtube.com/@ErinaMakina",
     twitch_channel: "twitch.tv/erinamakina"
+  },
+  {
+    name: "Pipkin Pippa",
+    jp_name: "ピップキン・ピッパ",
+    description: "The cutest rabbit in the universe - or so she would like you to thin- \"PIPIPIPI!\"\n(Source: Phase Connect website)",
+    agency: @phase,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@PipkinPippa",
+    twitch_channel: "https://www.twitch.tv/pippa"
+  },
+  {
+    name: "Aki Rosenthal",
+    jp_name: "アキ・ローゼンタール",
+    description: "A half-elf from another world, she has an insatiable curiosity and cannot resist exploring anything that piques her interest. Her trademark pigtails float due to some sort of supernatural power.\n(Source: Hololive website)",
+    agency: @hololive,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/02/17",
+    debut_date: "2018/06/01",
+    yt_channel: "https://www.youtube.com/@AkiRosenthal"
+  },
+  {
+    name: "Akai Haato",
+    jp_name: "赤井はあと",
+    description: "A sassy kouhai. She is often prickly, but she'll try to get a lot of attention from those who have made friends with her. She loves red ribbons and heart shapes, and she'll wear them often in her hair and on her clothes.\n(Source: Hololive website)",
+    agency: @hololive,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/08/10",
+    debut_date: "2018/06/02",
+    yt_channel: "https://www.youtube.com/@AkaiHaato"
+  },
+  {
+    name: "Hitsugi Miki",
+    jp_name: "火継みき",
+    description: "An anime and game enthusiast with a shy and sweet, yet naive personality. She has a chuunibyou persona where she believes she's the Spirit of Fire, although she lacks actual powers.\n(Source: Specialite website)",
+    agency: @specialite,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/10/14",
+    debut_date: "2023/12/03",
+    yt_channel: "https://www.youtube.com/@MikiHitsugi"
+  },
+  {
+    name: "Akumiya Miu",
+    jp_name: "あくみゃみう",
+    description: "A student council president who comes off as cold and strict due to rumors about her background, but is not all true. Her secret hobby is gaming and making witty roasts with a straight face after school.\n(Source: Specialite website)",
+    agency: @specialite,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/02/22",
+    debut_date: "2023/12/03",
+    yt_channel: "https://www.youtube.com/@MiuAkumiya"
+  },
+  {
+    name: "Utahime Mochizuki",
+    jp_name: "望月歌姫",
+    description: "The daughter of powerful mages who controlled the sun and moon, strives to become a mage capable of controlling weather with the help of her loyal chimera friend.\n(Source: Specialite website)",
+    agency: @specialite,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/08/26",
+    debut_date: "2023/12/03",
+    yt_channel: "https://www.youtube.com/@UtahimeMochizuki",
+    twitch_channel: "twitch.tv/utahime_mochi"
+  },
+  {
+    name: "Victoria Valerie",
+    jp_name: "ヴィクトリア・ヴァレリー",
+    description: "A government agent overseeing the supernatural and extraterrestrial. Recently promoted, she's now responsible for training new recruits.\n(Source: Specialite website)",
+    agency: @specialite,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/04/18",
+    debut_date: "2023/12/03",
+    yt_channel: "https://www.youtube.com/@Victoria-Valerie",
+    twitch_channel: "twitch.tv/victoria_valerie"
   }
+
 
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
