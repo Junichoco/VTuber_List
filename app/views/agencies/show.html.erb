@@ -1,7 +1,9 @@
 <div class="container col-6">
   <%#= link_to "Go back", :back %>
   <h2><%= @agency.name %></h2>
-  <p>Country: <%= @agency.location %></p>
+  <% if @agency.name != "Indie" %>
+    <p>Country: <%= @agency.location %></p>
+  <% end %>
   <% if @agency.website %>
     <%= link_to "Website", @agency.website, target: :blank %>
   <% end %>

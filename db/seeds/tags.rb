@@ -6,7 +6,6 @@
 [
   {
     name: "Chiaki Katsumi",
-    tags: ["singer"]
   },
   {
     name: "Miuna Usako",
@@ -15,6 +14,10 @@
   {
     name: "Elia Stellaria",
     tags: ["British"]
+  },
+  {
+    name: "Shirakawa Shirase",
+    tags: ["singer", "guitar"]
   }
 ].each do |hash|
   vtuber = Vtuber.find_by_name(hash[:name])

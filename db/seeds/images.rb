@@ -25,7 +25,7 @@ images = [
   { name: "Enma Ruri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726766448/ruri_thumb_mvku03.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726766447/ruri_a1p7ni.jpg"},
   { name: "Aoi Neno", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726855112/neno_thumb_yjtw0v.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726855207/neno_full_loia75.png"},
   { name: "Misora Sora", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726855799/misora_sora_thumb_fkiooi.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726855799/misora_sora_2_kdsmtd.jpg" },
-  { name: "Ririsya", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726856589/ririsya_thumb_qri0yb.png"},
+  { name: "Ririsya", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726856589/ririsya_thumb_qri0yb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727268745/ririsya2_goejdx.png"},
   { name: "Iguchi Sun", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726898642/iguchi_thumb_ruvnev.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726898642/iguchi_sun_wlnjzn.jpg"},
   { name: "yayamugi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726899536/yayamugi_thumb_fi196y.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726899537/yayamugi_5_rjwwn1.png"},
   { name: "Figaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900299/figaro_thumb_tlpfty.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900298/figaro_lixgkv.jpg"},
@@ -59,9 +59,17 @@ images = [
   { name: "Hitsugi Miki", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727191694/miki_thumb_2_b0xm5t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727191692/miki_fr3rdq.jpg"},
   { name: "Akumiya Miu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727191692/miu_thumb_eqbiu4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727192007/miu_main_f15ca1.png"},
   { name: "Utahime Mochizuki", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727191694/utahime_thumb_qgedk9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727191692/utahime_tec8ab.jpg"},
-  { name: "Victoria Valerie", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727192335/victoria_thumb_ygpgh3.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727192007/victoria_main_sndqh1.png"}
+  { name: "Victoria Valerie", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727192335/victoria_thumb_ygpgh3.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727192007/victoria_main_sndqh1.png"},
+  { name: "Lucien Lunaris", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727252282/lucien_thumb_pkxfko.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727252283/lucien_rjumpu.png"},
+  { name: "Rosco Graves", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727252532/rosco_thumb_qlserz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727252532/rosco_2_bv1fls.png"},
+  { name: "Zander Netherbrand", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727269366/zander_ykv6lt.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727269366/zander_ykv6lt.jpg"},
+  { name: "Shirakawa Shirase", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727267611/shirase_thumb_2_vb9wkq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727267610/shirase_oghmc9.png"},
+  { name: "Matsunaga Iori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727267611/iori_thumb_rsmyq2.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727267613/iori2_pc_aabqdq.png"},
+  { name: "Raifa", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727270412/raifa_thumb_yr0nxz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727270422/raifa_3_yydnue.png"},
+  { name: "Kai Saikota", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277530/kai_thumb_canbix.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277531/EC__9_Kai_20240426_whokof.png"},
+  { name: "Kotoha", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277721/kotoha_thumb_ejzjb4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277720/kotoha_2_yvb0uq.jpg"},
+  { name: "Ibara Muan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277661/muan_thumb_obwkaf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277660/muan_xltlgo.jpg"}
 ]
-
 images.each do |t|
   vtuber = Vtuber.find_by_name(t[:name])
   if !vtuber

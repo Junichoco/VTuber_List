@@ -44,6 +44,41 @@
     description: "A VTuber agency owned by REALITY Studios with both Japanese- and English-speaking talent who mainly stream games.",
     website: "https://specialite.games/en/",
     yt_channel: "https://www.youtube.com/@Specialite_official"
+  },
+  {
+    name: "First Stage Production",
+    location: "Japan",
+    description: "A VTuber agency owned by REALITY Studios. It has an English branch that focuses on male VTubers.",
+    website: "https://https://firststage-pro.com/",
+    yt_channel: "https://www.youtube.com/@1stpro_official"
+  },
+  {
+    name: "First Stage Production EN",
+    location: "Japan",
+    description: "The English branch of First Stage Production, a VTuber agency owned by REALITY Studios. It focuses on male VTubers.",
+    website: "https://https://firststage-pro.com/en/",
+    yt_channel: "https://www.youtube.com/@fsp_english"
+  },
+  {
+    name: "Riot Music",
+    location: "Japan",
+    description: "A music label owned by Brave Group.",
+    website: "https://riot-music.com/",
+    yt_channel: "https://www.youtube.com/@RIOTMUSIC_OFFICIAL"
+  },
+  {
+    name: "Aice Class",
+    location: "Japan",
+    description: "Aice Class (pronounced \"Ice Class\") is a VTuber agency organized by the Vocaloid group HoneyWorks. It has a school theme, and members are grouped into a music artist, idol, and illustrator department.",
+    website: "https://aiceclass.com/",
+    yt_channel: "https://www.youtube.com/@aiceclass"
+  },
+  {
+    name: "vα-liv",
+    location: "Japan",
+    description: "vα-liv (pronounced \"via-live\" or \"vee-alive\") is an idol project part of the Idolm@ster franchise.",
+    website: "https://idolmaster-official.jp/va-liv",
+    yt_channel: "https://www.youtube.com/@project_imas_va-liv"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

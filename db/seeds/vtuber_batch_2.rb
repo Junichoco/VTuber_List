@@ -414,6 +414,154 @@ require_relative "agency_names"
     debut_date: "2023/12/03",
     yt_channel: "https://www.youtube.com/@Victoria-Valerie",
     twitch_channel: "twitch.tv/victoria_valerie"
+  },
+  {
+    name: "Lucien Lunaris",
+    jp_name: "ルシエン・ルナリス",
+    description: "A vampire who has lived for hundreds of years, he has somehow lost his memories and can only vaguely remember his past. He wanders the world searching for peace and a place to call home.\n\n(Source: FSP EN website)",
+    agency: @fspen,
+    gender: "male",
+    main_language: "English",
+    birthday: "2020/10/19",
+    debut_date: "2024/01/28",
+    yt_channel: "https://www.youtube.com/@LucienLunaris"
+  },
+  {
+    name: "Rosco Graves",
+    jp_name: "ロスコ・グレイヴス",
+    description: "A zombie boy who was thrust into a new world near the start of his undeath. Even though he’s a corpse, his rowdiness and quick-wit would convince you otherwise.\n\n(Source: FSP EN website)",
+    agency: @fspen,
+    gender: "male",
+    main_language: "English",
+    birthday: "2020/07/08",
+    debut_date: "2024/01/28",
+    yt_channel: "https://www.youtube.com/@roscograves"
+  },
+  {
+    name: "Zander Netherbrand",
+    jp_name: "ザンダー・ネザーブランド",
+    description: "An alluring incubus who seeks freedom, power, and to live as he desires. No matter the consequences.\n\n(Source: FSP EN website)",
+    agency: @fspen,
+    gender: "male",
+    main_language: "English",
+    birthday: "2020/04/07",
+    debut_date: "2024/01/28",
+    yt_channel: "https://www.youtube.com/@ZanderNetherbrand"
+  },
+  {
+    name: "Gale Galleon",
+    jp_name: "ゲイル・ガレオン",
+    description: "A charismatic captain and leader of the most feared pirate crew of his time. During the Age of Discovery, he was a wanted man who crossed swords with many dangerous pirates and amassed bountiful treasures.\n\n(Source: FSP EN website)",
+    agency: @fspen,
+    gender: "male",
+    main_language: "English",
+    birthday: "2020/12/09",
+    debut_date: "2024/01/28",
+    yt_channel: "https://www.youtube.com/@galegalleon",
+    twitch_channel: "twitter.com/GaleGalleon"
+  },
+  {
+    name: "Cassian Floros",
+    jp_name: "ゲイル・ガレオン",
+    description: "A narcissistic elf whose strength lies in combat and magic. He seeks for a greater destiny in life and is willing to associate himself with lower beings to pursue such a purpose.\n\n(Source: FSP EN website)",
+    agency: @fspen,
+    gender: "male",
+    main_language: "English",
+    birthday: "2020/11/19",
+    debut_date: "2024/01/28",
+    yt_channel: "https://www.youtube.com/@CassianFloros"
+  },
+  {
+    name: "Shirakawa Shirase",
+    jp_name: "白河しらせ",
+    description: "A VTuber part of the group Blitz Wing from Riot Music.",
+    agency: @riot,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/11/28",
+    debut_date: "2023/06/24",
+    yt_channel: "https://www.youtube.com/@SHIRASESHIRAKAWA"
+  },
+  {
+    name: "Matsunaga Iori",
+    jp_name: "松永依織",
+    description: "A VTuber part of the group Blitz Wing from Riot Music. She joined Riot Music in November 2020 after passing the Riot Music Artist Audition Vol. 1.",
+    agency: @riot,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/02/02",
+    yt_channel: "https://www.youtube.com/@IORIMATSUNAGA"
+  },
+  {
+    name: "Raifa",
+    jp_name: "ライファ",
+    description: "A shy cat with a fish plushie named Zane-kun. Loves noodles.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/12/07",
+    yt_channel: "https://www.youtube.com/@Raifa_ch"
+  },
+  {
+    name: "Kotoha",
+    jp_name: "ライファ",
+    description: "A supporting member of the Vocaloid group HoneyWorks and part of the vocal unit Hakoniwa Lily.",
+    agency: @aice,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/06/10",
+    yt_channel: "https://www.youtube.com/@Kotoha_ktnh",
+    twitch_channel: "twitch.tv/kotoha_hkll"
+  },
+  {
+    name: "Ibara Muan",
+    jp_name: "茨むあん",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2021/05/02",
+    yt_channel: "https://www.youtube.com/@ibaramuan"
+  },
+  {
+    name: "Tomori Manaka",
+    jp_name: "灯里愛夏",
+    description: "No description available.",
+    agency: @valiv,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/07/01",
+    yt_channel: "https://www.youtube.com/@TomoriManaka"
+  },
+  {
+    name: "mei",
+    jp_name: "芽唯",
+    description: "The princess of the chickens. Likes fried chicken.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/07/27",
+    debut_date: "2021/05/02",
+    yt_channel: "https://www.youtube.com/@-mei-9020"
+  },
+  {
+    name: "Aimee",
+    description: "A plague doctor.",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@Aimee_exe"
+  },
+  {
+    name: "Kai Saikota",
+    description: "A dragon god.",
+    agency: @idolen,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/07/27",
+    debut_date: "2021/05/02",
+    yt_channel: "https://www.youtube.com/@KaiSaikota",
+    twitch_channel: "twitch.tv/kaisaikota"
   }
 
 

@@ -91,7 +91,7 @@ vshojo = Agency.create!(
 )
 
 idol = Agency.create!(
-  name: "idol",
+  name: "idol-EN",
   location: "Japan"
 )
 
