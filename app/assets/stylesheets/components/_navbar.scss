@@ -40,10 +40,17 @@
   display: flex;
   flex-direction: column;
 }
-
 @media (max-width: 991px) {
+  .toggle-button-container {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
   .navbar-search {
     display: none;
+  }
+  .toggle-button-container {
+    display: block;
   }
 }
 
