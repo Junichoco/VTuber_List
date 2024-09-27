@@ -44,7 +44,7 @@ images = [
   { name: "Pina Pengin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727077107/pina_thumb_r5asov.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727077108/pina_2_el2bgh.png"},
   { name: "RIM", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727080080/rim_thumb_orxbvn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727080080/rim_p0myof.jpg"},
   { name: "Hoshimachi Suisei", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101194/suisei_thumb_nfkc1r.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101195/Hoshimachi-Suisei_pr-img_01-734x1440_rj2ivh.png"},
-  { name: "Banzoin Hakka", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101195/Hoshimachi-Suisei_pr-img_01-734x1440_rj2ivh.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101420/Banzoin-Hakka_pr-img_02_ckn6xb.png"},
+  { name: "Banzoin Hakka", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101419/hakka_thumb_yudosm.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727101420/Banzoin-Hakka_pr-img_02_ckn6xb.png"},
   { name: "Nianyan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727102261/nianyan_thumb_ki5l7j.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1725179087/development/ndskd6dhqk362w5gcxd75ej6kdpg.jpg"},
   { name: "Mari Yume", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727103125/mari_yume_thumb_bfauwx.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727103127/mari_yume_oq6cbc.png" },
   { name: "Amanogawa Shiina", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727176935/shiina_thumb_inxuq3.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727176936/shiina_re3af8.png"},
@@ -62,13 +62,16 @@ images = [
   { name: "Victoria Valerie", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727192335/victoria_thumb_ygpgh3.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727192007/victoria_main_sndqh1.png"},
   { name: "Lucien Lunaris", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727252282/lucien_thumb_pkxfko.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727252283/lucien_rjumpu.png"},
   { name: "Rosco Graves", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727252532/rosco_thumb_qlserz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727252532/rosco_2_bv1fls.png"},
-  { name: "Zander Netherbrand", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727269366/zander_ykv6lt.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727269366/zander_ykv6lt.jpg"},
+  { name: "Zander Netherbrand", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727269368/zander_thumb_mjq9uv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727269366/zander_ykv6lt.jpg"},
   { name: "Shirakawa Shirase", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727267611/shirase_thumb_2_vb9wkq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727267610/shirase_oghmc9.png"},
   { name: "Matsunaga Iori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727267611/iori_thumb_rsmyq2.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727267613/iori2_pc_aabqdq.png"},
   { name: "Raifa", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727270412/raifa_thumb_yr0nxz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727270422/raifa_3_yydnue.png"},
   { name: "Kai Saikota", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277530/kai_thumb_canbix.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277531/EC__9_Kai_20240426_whokof.png"},
   { name: "Kotoha", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277721/kotoha_thumb_ejzjb4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277720/kotoha_2_yvb0uq.jpg"},
-  { name: "Ibara Muan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277661/muan_thumb_obwkaf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277660/muan_xltlgo.jpg"}
+  { name: "Ibara Muan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277661/muan_thumb_obwkaf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727277660/muan_xltlgo.jpg"},
+  { name: "Nova Aokami", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727448403/nova_thumb_qjpikd.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727448117/Nova-Transparent-637x1024_mk3uti.png"},
+  { name: "Maisaki Berry", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727448404/berry_thumb_ru9atk.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727448207/berry_tcamk6.png"},
+  { name: "Sakusu Mayo", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727449460/sakusu_thumb_zwolob.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727449461/sakusu_5_rcxr4z.png"}
 ]
 images.each do |t|
   vtuber = Vtuber.find_by_name(t[:name])

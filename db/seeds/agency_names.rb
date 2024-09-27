@@ -15,3 +15,6 @@
 @aice = Agency.find_by_name("Aice Class")
 @valiv = Agency.find_by_name("vα-liv")
 @idolen = Agency.find_by_name("idol-EN")
+@noripro = Agency.find_by_name("NoriPro")
+@vreverie = Agency.find_by_name("VReverie")
+@idoles = Agency.find_by_name("idol-ES")

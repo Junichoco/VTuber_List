@@ -557,13 +557,77 @@ require_relative "agency_names"
     description: "A dragon god.",
     agency: @idolen,
     gender: "female",
-    main_language: "Japanese",
+    main_language: "English",
     birthday: "2020/07/27",
     debut_date: "2021/05/02",
     yt_channel: "https://www.youtube.com/@KaiSaikota",
     twitch_channel: "twitch.tv/kaisaikota"
+  },
+  {
+    name: "Amiya Aranha",
+    description: "A spider VTuber and former member of Tsunderia.",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@AmiyaAranha",
+    twitch_channel: "twitch.tv/amiyaaranha"
+  },
+  {
+    name: "Sukitou Luccica",
+    jp_name: "透々ルチカ",
+    description: "No description available.",
+    agency: @noripro,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@SukitouLuccica",
+  },
+  {
+    name: "Nova Aokami",
+    description: "A frost dragon who does a lot of Yu-Gi-Oh! TCG streams, including many collabs with other VTubers.",
+    agency: @vreverie,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@NovaAokami",
+    twitch_channel: "twitch.tv/novaaokami"
+  },
+  {
+    name: "Taiga Toragami",
+    description: "A white tiger.",
+    agency: @idoles,
+    gender: "female",
+    main_language: "Spanish",
+    yt_channel: "https://www.youtube.com/@TaigaToragami",
+    twitch_channel: "twitch.tv/TaigaToragami"
+  },
+  {
+    name: "FalseEyeD",
+    description: "The host of Things VTubers Say, a channel that covers VTubers news and drama.",
+    agency: @indie,
+    gender: "male",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@FalseEyeD",
+    twitch_channel: "twitch.tv/falseeyed"
+  },
+  {
+    name: "Maisaki Berry",
+    jp_name: "苺咲べりぃ",
+    description: "An idol VTuber from Strawberry Land.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/08/15",
+    debut_date: "2020/09/05",
+    yt_channel: "https://www.youtube.com/@MaisakiBerry"
+  },
+  {
+    name: "Sakusu Mayo",
+    jp_name: "朔栖まよ",
+    description: "A VTuber who plays the saxophone on livestreams. She plays songs of various genres, including jazz and vocaloid songs.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@asaxmayo"
   }
-
 
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

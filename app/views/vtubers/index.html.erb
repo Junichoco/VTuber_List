@@ -3,7 +3,10 @@
   <%# <%= link_to "Go back", :back %>
   <% if @vtubers.empty? %>
     <p>No VTubers matched your search</p>
+  <% elsif @vtubers.length == 1 %>
+    <p><span class="search-result-number">1</span> search result</p>
   <% else %>
+    <p><span class="search-result-number"><%= @vtubers.length %></span> search results</p>
     <div class="list-cards">
       <% @vtubers.order('LOWER(name)').each do |vtuber| %>
         <div class="vtuber-card">

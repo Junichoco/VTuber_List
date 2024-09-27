@@ -36,12 +36,20 @@
   flex-direction: column;
 }
 
+.search-toggle-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 991px) {
   .navbar-search {
     display: none;
   }
 }
 
+.toggle-button-container {
+  height: 2rem;
+}
 .navbar-collapse {
 
 }

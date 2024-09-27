@@ -1,33 +1,37 @@
 <div class="container col-12 col-lg-12" style="width: 100%">
   <nav class="navbar navbar-expand-lg">
-    <div class="navbar-container">
+    <div class="navbar-container" data-controller="dropdown">
       <div class="navbar-logo">
         <%= link_to "VTuber List", :home, class: "navbar-logo" %>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggler" style="display: flex; justify-content: center">
-        <div class="navbar-nav">
-          <div class="nav-item dropdown">
-            <div class="navbar-search">
-              <div class="navbar-searchbar">
-                <%= form_with url: vtubers_path, method: :get do %>
-                  <%= text_field_tag :query,
-                    params[:query],
-                    class: "form",
-                    placeholder: "Look for a VTuber"
-                    %>
-                  <%= submit_tag "Search", name: "", class:"search-button" %>
-                <% end %>
-              </div>
-              <div class="search-buttons">
-                <%= link_to agencies_path do %>
-                  <span class="main-button"><i class="fa-solid fa-building"></i> Search by agency</span>
-                <% end %>
-                <%= link_to tags_path do %>
-                  <span class="main-button"><i class="fa-solid fa-hashtag"></i> Search by tag</span>
-                <% end %>
+      <div class="search-toggle-button-container">
+        <div class="toggle-button-container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" data-action="click->dropdown#toggle">
+            <span class="navbar-toggler-icon toggle-button"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarToggler" style="display: flex; justify-content: center">
+          <div class="navbar-nav">
+            <div class="nav-item dropdown">
+              <div class="navbar-search" data-dropdown-target="menu">
+                <div class="navbar-searchbar">
+                  <%= form_with url: vtubers_path, method: :get do %>
+                    <%= text_field_tag :query,
+                      params[:query],
+                      class: "form",
+                      placeholder: "Look for a VTuber"
+                      %>
+                    <%= submit_tag "Search", name: "", class:"search-button" %>
+                  <% end %>
+                </div>
+                <div class="search-buttons">
+                  <%= link_to agencies_path do %>
+                    <span class="main-button"><i class="fa-solid fa-building"></i> Search by agency</span>
+                  <% end %>
+                  <%= link_to tags_path do %>
+                    <span class="main-button"><i class="fa-solid fa-hashtag"></i> Search by tag</span>
+                  <% end %>
+                </div>
               </div>
             </div>
           </div>

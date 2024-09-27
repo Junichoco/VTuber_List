@@ -9,6 +9,11 @@
   margin-bottom: 5px;
 }
 
+.list-show-delete {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .list-show-delete p {
   padding-bottom: 0;
   margin-bottom: 0;

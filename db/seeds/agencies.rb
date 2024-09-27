@@ -79,6 +79,32 @@
     description: "vα-liv (pronounced \"via-live\" or \"vee-alive\") is an idol project part of the Idolm@ster franchise.",
     website: "https://idolmaster-official.jp/va-liv",
     yt_channel: "https://www.youtube.com/@project_imas_va-liv"
+  },
+  {
+    name: "NoriPro",
+    location: "Japan",
+    description: "A VTuber agency created by the mangaka Tsukudani Norio.",
+    website: "https://noripro.jp/"
+  },
+  {
+    name: "Neo-Porte",
+    location: "Japan",
+    description: "A virtual talent agency founded by the Crazy Raccoon CEO CR Ojiji, the utaite soraru and mafumafu, and the VTuber Shibuya HAL.
+    ",
+    website: "https://neo-porte.jp/",
+    yt_channel: "https://www.youtube.com/@neoporte-office"
+  },
+  {
+    name: "VReverie",
+    location: "Singapore",
+    description: "A Singapore-based VTuber agency founded in 2021.",
+    website: "https://v-reverie.com/"
+  },
+  {
+    name: "idol-ES",
+    location: "United States",
+    description: "The Spanish-speaking branch of Idol Corp.",
+    website: "https://idol-company.com/"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])
