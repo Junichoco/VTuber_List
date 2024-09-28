@@ -6,6 +6,7 @@
 [
   {
     name: "Chiaki Katsumi",
+    tags: []
   },
   {
     name: "Miuna Usako",
@@ -18,14 +19,18 @@
   {
     name: "Shirakawa Shirase",
     tags: ["singer", "guitar"]
+  },
+  {
+    name: "MiCosmiC baby",
+    tags: ["singer", "Indonesian"]
   }
+
 ].each do |hash|
   vtuber = Vtuber.find_by_name(hash[:name])
   if vtuber
     hash[:tags].each do |tag_name|
       if !vtuber.has_tag?(tag_name)
-        vtuber.add_tag(tag_name)
-        puts "#{tag_name} added to #{vtuber.name}"
+        puts "#{tag_name} added to #{vtuber.name}" if vtuber.add_tag(tag_name)
       end
     end
   else

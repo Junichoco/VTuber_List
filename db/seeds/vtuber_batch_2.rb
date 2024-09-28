@@ -627,7 +627,73 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@asaxmayo"
+  },
+  {
+    name: "Washu Asuka",
+    jp_name: "鷲羽アスカ",
+    description: "No description available.",
+    agency: @noripro,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/08/11",
+    debut_date: "2024/03/07",
+    yt_channel: "https://www.youtube.com/@WashuAsuka"
+  },
+  {
+    name: "Huejima Kotori",
+    jp_name: "笙嶋ことり",
+    description: "No description available.",
+    agency: @noripro,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/08/13",
+    debut_date: "2024/04/23",
+    yt_channel: "https://www.youtube.com/@huejimakotori"
+  },
+  {
+    name: "Inuyama Tamaki",
+    jp_name: "犬山たまき",
+    description: "An otoko no ko (crossdressing boy) VTuber.",
+    agency: @noripro,
+    gender: "male",
+    main_language: "Japanese",
+    birthday: "2020/06/01",
+    debut_date: "2018/09/22",
+    yt_channel: "https://www.youtube.com/@noripro",
+    twitch_channel: "https://www.twitch.tv/noripro_"
+  },
+  {
+    name: "Tsukudani Norio",
+    jp_name: "佃煮のりお",
+    description: "A manga artist and the president of NoriPro.",
+    agency: @noripro,
+    gender: "male",
+    main_language: "Japanese",
+    birthday: "2020/04/16",
+    debut_date: "2011/11/25",
+    yt_channel: "https://www.youtube.com/@noripro",
+  },
+  {
+    name: "Aoi Sui",
+    jp_name: "蒼星すい",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/11/03",
+    debut_date: "2023/02/25",
+    yt_channel: "https://www.youtube.com/@aoisui_",
+  },
+  {
+    name: "MiCosmiC baby",
+    jp_name: "ミコズミック ベイビー",
+    description: "The princess of the Panipani Kingdom.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@micosmicbaby3173",
   }
+
 
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

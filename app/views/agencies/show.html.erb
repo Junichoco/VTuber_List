@@ -24,7 +24,7 @@
     <% elsif @vtubers.length == 1 %>
       <p><span class="search-result-number">1</span> VTuber from this agency in this database.</p>
     <% else %>
-    <p><span class="search-result-number"><%= @vtubers.length %></span> VTubers from this agency in this database.</p>
+      <p><span class="search-result-number"><%= @vtubers.length %></span> VTubers from this agency in this database.</p>
     <% end %>
     <%= render "shared/vtuber_grid_display", vtubers: @vtubers %>
   <% end %>
