@@ -20,7 +20,7 @@ tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
-        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon"]
+        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "Thai"]
 
 tags.each do |tag|
   Tag.create!(

@@ -691,9 +691,41 @@ require_relative "agency_names"
     agency: @indie,
     gender: "female",
     main_language: "Japanese",
-    yt_channel: "https://www.youtube.com/@micosmicbaby3173",
+    yt_channel: "https://www.youtube.com/@micosmicbaby3173"
+  },
+  {
+    name: "Nyamakumo Fuwari",
+    jp_name: "若魔雲ふわり",
+    description: "A Norwegian cat.",
+    agency: @nyantasia,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/01/23",
+    debut_date: "2023/12/01",
+    yt_channel: "https://www.youtube.com/@nyamakumofuwari",
+  },
+  {
+    name: "Nyamafuji Anzu",
+    jp_name: "若魔藤あんず",
+    description: "A calico cat.",
+    agency: @nyantasia,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/04/19",
+    debut_date: "2024/05/24",
+    yt_channel: "https://www.youtube.com/@nyamafujianzu",
+  },
+  {
+    name: "dtto.",
+    description: "A Thai VTuber part of the esports organization REJECT.",
+    agency: @reject,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/08/19",
+    debut_date: "2022/07/03",
+    yt_channel: "https://www.youtube.com/@dttodot",
+    twitch_channel: "twitch.tv/dttodot"
   }
-
 
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

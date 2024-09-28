@@ -89,8 +89,7 @@
   {
     name: "Neo-Porte",
     location: "Japan",
-    description: "A virtual talent agency founded by the Crazy Raccoon CEO CR Ojiji, the utaite soraru and mafumafu, and the VTuber Shibuya HAL.
-    ",
+    description: "A virtual talent agency founded by the Crazy Raccoon CEO CR Ojiji, the utaite soraru and mafumafu, and the VTuber Shibuya HAL.",
     website: "https://neo-porte.jp/",
     yt_channel: "https://www.youtube.com/@neoporte-office"
   },
@@ -105,6 +104,20 @@
     location: "United States",
     description: "The Spanish-speaking branch of Idol Corp.",
     website: "https://idol-company.com/"
+  },
+  {
+    name: "Nyantasia!",
+    location: "Japan",
+    description: "A VTuber project created by Sanrio and ClaN. The VTubers are cats that live with a magical girl and turned into VTubers with the power of magic.",
+    website: "https://clan-entertainment.com/nyantasia/",
+    yt_channel: "https://www.youtube.com/@Nyantasia_v"
+  },
+  {
+    name: "REJECT",
+    location: "Japan",
+    description: "A Japan-based esports organization.",
+    website: "https://reject.jp/",
+    yt_channel: "https://www.youtube.com/c/REJECTesports"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

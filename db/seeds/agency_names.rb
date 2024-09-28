@@ -18,3 +18,5 @@
 @noripro = Agency.find_by_name("NoriPro")
 @vreverie = Agency.find_by_name("VReverie")
 @idoles = Agency.find_by_name("idol-ES")
+@nyantasia = Agency.find_by_name("Nyantasia!")
+@reject = Agency.find_by_name("REJECT")
