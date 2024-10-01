@@ -20,3 +20,8 @@
 @idoles = Agency.find_by_name("idol-ES")
 @nyantasia = Agency.find_by_name("Nyantasia!")
 @reject = Agency.find_by_name("REJECT")
+@haconect = Agency.find_by_name("Haconect")
+@globie = Agency.find_by_name("globie")
+@lapis = Agency.find_by_name("Lapis Live")
+@envision = Agency.find_by_name("EnVision")
+@meridian = Agency.find_by_name("Meridian Project")

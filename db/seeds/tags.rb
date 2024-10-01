@@ -8,7 +8,8 @@ tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
-        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "Thai"]
+        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "Thai",
+        "esports", "gamer"]
 
 tags.each do |tag|
   if !Tag.find_by_name(tag)
@@ -45,12 +46,29 @@ end
   {
     name: "dtto.",
     tags: ["singer", "FPS", "esports", "Thai"]
+  },
+  {
+    name: "Urameshi Conta",
+    tags: ["singer", "VTuber artist", "VTuber rigger"]
+  },
+  {
+    name: "Aoi",
+    tags: ["not anime", "singer", "art", "guitar", "piano"]
+  },
+  {
+    name: "Uchi Fifi",
+    tags: ["singer", "Chinese", "ASMR"]
   }
 
 ].each do |hash|
   vtuber = Vtuber.find_by_name(hash[:name])
   if vtuber
     hash[:tags].each do |tag_name|
+      if !Tag.find_by_name(tag_name)
+        puts "#{tag_name} was not added to #{vtuber.name}"
+        abort
+      end
+
       if !vtuber.has_tag?(tag_name)
         puts "#{tag_name} added to #{vtuber.name}" if vtuber.add_tag(tag_name)
       end

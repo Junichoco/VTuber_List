@@ -725,7 +725,284 @@ require_relative "agency_names"
     debut_date: "2022/07/03",
     yt_channel: "https://www.youtube.com/@dttodot",
     twitch_channel: "twitch.tv/dttodot"
+  },
+  {
+    name: "Amami Kurine",
+    jp_name: "天海くりね",
+    description: "The weakest angel VTuber. She can control cleones.",
+    agency: @haconect,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/08/27",
+    yt_channel: "https://www.youtube.com/@kurine"
+  },
+  {
+    name: "Tachibana Shiena",
+    jp_name: "橘シエナ",
+    description: "An idol in training.",
+    agency: @haconect,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/11/03",
+    yt_channel: "https://www.youtube.com/@shienaJP"
+  },
+  {
+    name: "Urameshi Conta",
+    jp_name: "うら飯紺汰",
+    description: "A 170-year-old half-Jiangshi, half-fox VTuber straddling the border of this world and the next.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/10/30",
+    debut_date: "2023/06/24",
+    yt_channel: "https://www.youtube.com/@urameshi_conta"
+  },
+  {
+    name: "Mochi Hiyoko",
+    jp_name: "もちひよこ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2018/01/05",
+    yt_channel: "https://www.youtube.com/@mochi8hiyoko"
+  },
+  {
+    name: "Rokuri Shao",
+    jp_name: "緑李しゃお",
+    description: "A dragon whose dream is to be the No. 1 in the dragon world.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/11/20",
+    yt_channel: "https://www.youtube.com/@syaorkr"
+  },
+  {
+    name: "Kouzuki Miya",
+    jp_name: "神月都",
+    description: "A Kaguyahime who descended from the moon.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/11/25",
+    yt_channel: "https://www.youtube.com/@miya_czk"
+  },
+  {
+    name: "Ci-chan",
+    jp_name: "Ciちゃん",
+    description: "The former vocalist of the music duo BOOGEY VOXX.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/11/13",
+    yt_channel: "https://www.youtube.com/@cichanofficial"
+  },
+  {
+    name: "Kumanui Miel",
+    jp_name: "熊縫ミエル",
+    description: "A French otaku bear who can speak French, English, Japanese, Southern Vietnamese, Mandarin Chinese, and Latin American Spanish.",
+    agency: @globie,
+    gender: "female",
+    main_language: "English",
+    debut_date: "2023/11/01",
+    yt_channel: "https://www.youtube.com/@KumanuiMiel"
+  },
+  {
+    name: "Pippa Pebblesworth",
+    jp_name: "ピッパ　ペブルスワース",
+    description: "A hungry penguin.",
+    agency: @globie,
+    gender: "female",
+    main_language: "English",
+    debut_date: "2023/11/17",
+    yt_channel: "https://www.youtube.com/@PippaPebblesworth"
+  },
+  {
+    name: "Gaochan",
+    jp_name: "ガオちゃん",
+    description: "A 5-year-old monster child from Tokyo.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/02/09",
+    debut_date: "2024/08/11",
+    yt_channel: "https://www.youtube.com/@gaochan-vtuber"
+  },
+  {
+    name: "Inuzuki Ren",
+    jp_name: "戌月れん",
+    description: "A dog idol VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/09/23",
+    debut_date: "2024/03/03",
+    yt_channel: "https://www.youtube.com/@inuzuki_vt"
+  },
+  {
+    name: "Nagino Mashiro",
+    jp_name: "凪乃ましろ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/04/06",
+    debut_date: "2022/09/10",
+    yt_channel: "https://www.youtube.com/@naginomashiro",
+    twitch_channel: "twitch.tv/nagino_mashiro"
+  },
+  {
+    name: "Nanami Urara",
+    jp_name: "七海うらら",
+    description: "A parallel singer who travels between the real and virtual worlds.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@773urara"
+  },
+  {
+    name: "Mashiro Meronya",
+    jp_name: "愛白めろにゃ",
+    description: "No description available.",
+    agency: @lapis,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/06/25",
+    yt_channel: "https://www.youtube.com/@mashiro_meronya"
+  },
+  {
+    name: "Aoi",
+    jp_name: "蒼",
+    description: "A rabbit that likes drawing and playing piano and guitar. She does acoustic singing streams.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@nemgorochan"
+  },
+  {
+    name: "Mirea Sheltzs",
+    jp_name: "ミレア・シェルツ",
+    description: "A snow fairy/long-tailed tit VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@MireaSheltzs"
+  },
+  {
+    name: "Uchi Fifi",
+    jp_name: "羽芝扉扉",
+    description: "A wifi fairy and member of Nekumo Project, now a part of EnVision. She does singing and ASMR streams.",
+    agency: @envision,
+    gender: "female",
+    main_language: "Chinese",
+    yt_channel: "https://www.youtube.com/@uchififi",
+    twitch_channel: "https://www.twitch.tv/uchififi"
+  },
+  {
+    name: "YOSHIKA",
+    description: "A VTuber-in-training aiming to be a singing sweet potato idol.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2021/03/14",
+    yt_channel: "https://www.youtube.com/@YOSHIKA-Ch"
+  },
+  {
+    name: "Samui",
+    jp_name: "冬雲凜",
+    description: "No description available.",
+    agency: Agency.find_by_name("CY Future"),
+    gender: "female",
+    main_language: "Chinese",
+    yt_channel: "https://www.youtube.com/@Samui_vtuberTW",
+    twitch_channel: "https://www.twitch.tv/samui_cyfuture"
+  },
+  {
+    name: "Echigoya Tokina",
+    jp_name: "越後屋ときな",
+    description: "A crested ibis VTuber born and raised in Niigata.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@tokinachannel5478"
+  },
+  {
+    name: "Amahane Miran",
+    jp_name: "天羽音みらん",
+    description: "A unicorn utahime from the astral world.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/12/09",
+    yt_channel: "https://www.youtube.com/@AmahaneMiran"
+  },
+  {
+    name: "Mizuki",
+    jp_name: "浠",
+    description: "No description available.",
+    agency: @meridian,
+    gender: "female",
+    main_language: "Chinese",
+    yt_channel: "https://www.youtube.com/@%E6%B5%A0Mizuki"
+  },
+  {
+    name: "Rima Evenstar",
+    description: "A VTuber who does deep dives on VTubers and VTuber drama.",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@rimaevenstar",
+    twitch_channel: "twitch.tv/rima_evenstar"
+  },
+  {
+    name: "Shairu",
+    jp_name: "しゃいる",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Shairu.ch_0801"
+  },
+  {
+    name: "Miyamori Yuri",
+    jp_name: "宮守ゆり",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2023/07/07",
+    yt_channel: "https://www.youtube.com/@Miyavi_udon",
+    twitch_channel: "twitch.tv/miyamori_yuri/about"
+  },
+  {
+    name: "Berry-chan",
+    jp_name: "ベリーちゃん",
+    agency: @indie,
+    description: "A 5-year-old penguin who came to Japan from the Penguin World. She lives in an aquarium in Ikebukuro.",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Berrych0623"
+  },
+  {
+    name: "nyaruchuuu",
+    agency: @indie,
+    description: "No description available.",
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@nyaruchuuu",
+    twitch_channel: "twitch.tv/nyaruchuuu"
+  },
+  {
+    name: "Anya Kumori",
+    jp_name: "杏夜くもり",
+    agency: @indie,
+    description: "No description available.",
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/08/13",
+    yt_channel: "https://www.youtube.com/@anyakumori"
   }
+
 
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

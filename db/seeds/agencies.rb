@@ -118,6 +118,45 @@
     description: "A Japan-based esports organization.",
     website: "https://reject.jp/",
     yt_channel: "https://www.youtube.com/c/REJECTesports"
+  },
+  {
+    name: "Haconect",
+    location: "Japan",
+    description: "No description available.",
+    website: "https://haconect.com/",
+    yt_channel: "https://www.youtube.com/@haconect"
+  },
+  {
+    name: "globie",
+    location: "England",
+    description: "A European VTuber agency owned by Brave group Europe.",
+    website: "https://globie.net/",
+    yt_channel: "https://www.youtube.com/@globieofficial"
+  },
+  {
+    name: "Lapis Live",
+    location: "Japan",
+    description: "No description available.",
+    website: "https://lapislive.com/",
+  },
+  {
+    name: "EnVision",
+    location: "Taiwan",
+    description: "A Taiwan-based VTuber agency formerly part of M.Entertainment.",
+    website: "https://www.envisionvtuber.com.tw/",
+    yt_channel: "https://www.youtube.com/@EnVisionVtuber"
+  },
+  {
+    name: "CY Future",
+    location: "Taiwan",
+    description: "No description available.",
+    yt_channel: "https://www.youtube.com/@CYFuture_vtstudio"
+  },
+  {
+    name: "Meridian Project",
+    location: "Taiwan",
+    description: "No description available.",
+    yt_channel: "https://www.youtube.com/@meridianproject_tw"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])
