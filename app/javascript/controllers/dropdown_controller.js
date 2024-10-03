@@ -8,6 +8,6 @@ export default class extends Controller {
   toggle(event) {
     console.log("dropdown toggled");
     // this.menuTarget.classList.toggle("display");
-    this.menuTarget.classList.toggle("navbar-search");
+    this.menuTarget.classList.toggle("hidden");
   }
 }

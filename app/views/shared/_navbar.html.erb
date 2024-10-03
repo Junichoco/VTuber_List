@@ -4,55 +4,59 @@
       <div class="navbar-logo">
         <%= link_to "VTuber List", :home, class: "navbar-logo" %>
       </div>
-      <div class="search-toggle-button-container">
-        <div class="toggle-button-container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" data-action="click->dropdown#toggle">
+
+
+      <div class="navbar-container-right">
+        <div class="navbar-button">
+          <button class="navbar-toggler" type="button" data-action="click->dropdown#toggle">
             <span class="navbar-toggler-icon toggle-button"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="navbarToggler" style="display: flex; justify-content: center">
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <div class="navbar-search" data-dropdown-target="menu">
-                <div class="navbar-searchbar">
-                  <%= form_with url: vtubers_path, method: :get do %>
-                    <%= text_field_tag :query,
-                      params[:query],
-                      class: "form",
-                      placeholder: "Look for a VTuber"
-                      %>
-                    <%= submit_tag "Search", name: "", class:"search-button" %>
-                  <% end %>
-                </div>
-                <div class="search-buttons">
-                  <%= link_to agencies_path do %>
-                    <span class="main-button"><i class="fa-solid fa-building"></i> Search by agency</span>
-                  <% end %>
-                  <%= link_to tags_path do %>
-                    <span class="main-button"><i class="fa-solid fa-hashtag"></i> Search by tag</span>
-                  <% end %>
-                </div>
-              </div>
+
+        <div class="navbar-search-user hidden" data-dropdown-target="menu">
+          <div class="navbar-search" id="navbarToggler">
+
+            <div class="navbar-searchbar">
+              <%= form_with url: vtubers_path, method: :get do %>
+                <%= text_field_tag :query,
+                  params[:query],
+                  class: "form",
+                  placeholder: "Look for a VTuber"
+                  %>
+                <%= submit_tag "Search", name: "", class:"search-button" %>
+              <% end %>
+            </div>
+            <div class="search-buttons">
+              <%= link_to agencies_path do %>
+                <span class="main-button"><i class="fa-solid fa-building"></i> Search by agency</span>
+              <% end %>
+              <%= link_to tags_path do %>
+                <span class="main-button"><i class="fa-solid fa-hashtag"></i> Search by tag</span>
+              <% end %>
+              <%= link_to :random do %>
+                <span class="main-button"><i class="fa-solid fa-hashtag"></i> Get random VTubers</span>
+              <% end %>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="navbar-user">
-        <% if user_signed_in? %>
-          <div class="username">
-            <%= link_to user_path(current_user) do %>
-              <i class="fa-solid fa-user-large"></i>
-              <%= current_user.username %>
+        <div class="navbar-user">
+          <% if user_signed_in? %>
+            <div class="username">
+              <%= link_to user_path(current_user) do %>
+                <i class="fa-solid fa-user-large"></i>
+                <%= current_user.username %>
+              <% end %>
+            </div>
+            <div style="align-self: flex-end;">
+              <%= link_to "Log out", destroy_user_session_path, data: { turbo_method: :delete }, class: "main-button" %>
+            </div>
+            <% else %>
+              <%= link_to "Log in", new_user_session_path, class: "main-button" %>
             <% end %>
-          </div>
-          <div style="align-self: flex-end;">
-            <%= link_to "Log out", destroy_user_session_path, data: { turbo_method: :delete }, class: "main-button" %>
-          </div>
-          <% else %>
-            <%= link_to "Log in", new_user_session_path, class: "main-button" %>
-          <% end %>
         </div>
       </div>
+
+      </div>
+
     </div>
   </div>
 </div>

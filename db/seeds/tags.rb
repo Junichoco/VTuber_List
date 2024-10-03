@@ -3,13 +3,13 @@
 # To run all the seeds file in the db/seeds folder, run this command
 #   rake db:seed:all
 
-tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
+tags = ["singer", "rap", "guitar", "FPS", "League of Legends", "big chest", "deep singing voice",
         "baby girl failure", "baby", "violin", "flute", "small chest", "heavy metal", "thighs", "piano", "cooking",
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
-        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "Thai",
-        "esports", "gamer"]
+        "furry", "R18 content", "short", "tall", "drama", "alcohol", "menhera", "pon", "Thai",
+        "esports", "gamer", "ojou-sama", "mole"]
 
 tags.each do |tag|
   if !Tag.find_by_name(tag)
@@ -58,6 +58,38 @@ end
   {
     name: "Uchi Fifi",
     tags: ["singer", "Chinese", "ASMR"]
+  },
+  {
+    name: "Nemupipi",
+    tags: ["piano"]
+  },
+  {
+    name: "Banzoin Hakka",
+    tags: ["singer", "Spanish", "heavy metal"]
+  },
+  {
+    name: "Morino Merun",
+    tags: ["singer", "Spanish"]
+  },
+  {
+    name: "Arisu Oshiro",
+    tags: ["singer", "Spanish", "short"]
+  },
+  {
+    name: "Rosco Graves",
+    tags: ["singer", "rap", "Spanish", "short", "small chest"]
+  },
+  {
+    name: "Kotomiya Iori",
+    tags: ["gamer", "FPS", "ojou-sama", "mole"]
+  },
+  {
+    name: "Pippa Pebblesworth",
+    tags: ["singer", "British", "small chest", "short"]
+  },
+  {
+    name: "Misora Sora",
+    tags: ["singer", "mole"]
   }
 
 ].each do |hash|

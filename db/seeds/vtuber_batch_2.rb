@@ -1001,8 +1001,119 @@ require_relative "agency_names"
     main_language: "Japanese",
     debut_date: "2022/08/13",
     yt_channel: "https://www.youtube.com/@anyakumori"
+  },
+  {
+    name: "Akama Azato",
+    jp_name: "赤魔アザト",
+    agency: @airy,
+    description: "No description available.",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@AzatoAkama"
+  },
+  {
+    name: "Nekome Milk",
+    jp_name: "猫目ミルク",
+    agency: @indie,
+    description: "A cat idol from Virtual Cat Island.",
+    gender: "female",
+    birthday: "2020/09/03",
+    debut_date: "2022/11/22",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@nekomemilk"
+  },
+  {
+    name: "Mao Ura",
+    jp_name: "舞弦ウラ",
+    agency: @indie,
+    description: "A member of the musician team Riot Blue.",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@maoura_RB",
+    twitch_channel: "twitch.tv/maoura_rb"
+  },
+  {
+    name: "Usahane Mia",
+    jp_name: "うさ羽みあ",
+    agency: @indie,
+    description: "A gaming angel VTuber.",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@usahane_mia430",
+    twitch_channel: "twitch.tv/miia_angel_"
+  },
+  {
+    name: "Sakura Rina",
+    jp_name: "サクラリナ",
+    agency: @indie,
+    description: "An anthropomorphic meat VTuber. Loves singing and eating.",
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/02/09",
+    debut_date: "2023/07/14",
+    yt_channel: "https://www.youtube.com/@v_sakurarina",
+    twitch_channel: "twitch.tv/sakurarina_v"
+  },
+  {
+    name: "Island Fox",
+    jp_name: "シマハイイロギツネ",
+    agency: @kemov,
+    description: "Island Fox from Japari Park.",
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2021/12/05",
+    yt_channel: "https://www.youtube.com/@islandfox6864"
+  },
+  {
+    name: "Abyss Song Syndrome",
+    jp_name: "アビス ソング シンドローム",
+    agency: @trillion,
+    description: "A kraken whose goal is to captivate all of humanity with her singing and turn them into her underlings.",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@A_S_Syndrome"
+  },
+  {
+    name: "Sakune Shion",
+    jp_name: "咲音しおん",
+    agency: @indie,
+    description: "A singing bunny-eared VTuber",
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2023/06/29",
+    yt_channel: "https://www.youtube.com/@sakune_shion"
+  },
+  {
+    name: "Yuzuki Risa",
+    description: "A singer and voice actress who has released albums and recorded songs for several rhythm games.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/02/16",
+    yt_channel: "https://www.youtube.com/@Yuzurisa"
+  },
+  {
+    name: "Nemupipi",
+    jp_name: "ねむぴぴ",
+    description: "A fluffy VTuber who plays piano and games.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/05/15",
+    birthday: "2020/07/31",
+    yt_channel: "https://www.youtube.com/@nemupipi"
+  },
+  {
+    name: "Morino Merun",
+    jp_name: "森野めるん",
+    description: "A little red riding hood. She is studying Spanish and has many Spanish-speaking fans.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/07/23",
+    yt_channel: "https://www.youtube.com/@MerunCh",
+    twitch_channel: "twitch.tv/merunmorino"
   }
-
 
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

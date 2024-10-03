@@ -157,6 +157,25 @@
     location: "Taiwan",
     description: "No description available.",
     yt_channel: "https://www.youtube.com/@meridianproject_tw"
+  },
+  {
+    name: "Airy Production",
+    location: "Japan",
+    description: "No description available.",
+    website: "https://airypro.jp/",
+    yt_channel: "https://www.youtube.com/@airypro"
+  },
+  {
+    name: "KemoV",
+    location: "Japan",
+    description: "The Kemono Friends VTuber project.",
+    website: "https://en.kemov-project.com/"
+  },
+  {
+    name: "TRILLIONSTAGE",
+    location: "Japan",
+    description: "No description available.",
+    website: "https://trillionstage.jp/"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

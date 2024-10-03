@@ -25,3 +25,6 @@
 @lapis = Agency.find_by_name("Lapis Live")
 @envision = Agency.find_by_name("EnVision")
 @meridian = Agency.find_by_name("Meridian Project")
+@airy = Agency.find_by_name("Airy Production")
+@kemov = Agency.find_by_name("KemoV")
+@trillion = Agency.find_by_name("TRILLIONSTAGE")
