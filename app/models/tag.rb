@@ -9,4 +9,8 @@ class Tag < ApplicationRecord
     TagMarker.where(tag_id: id).length
   end
 
+  def find_by_name(name)
+    Tag.where(name: name).first
+  end
+
 end

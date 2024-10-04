@@ -1,7 +1,9 @@
 <div class="container col-6">
   <%#= link_to "Go back", :back %>
   <h2><%= @agency.name %></h2>
-  <p>Country: <%= @agency.location %></p>
+  <% if @agency.name != "Indie" %>
+    <p>Country: <%= @agency.location %></p>
+  <% end %>
   <% if @agency.website %>
     <%= link_to "Website", @agency.website, target: :blank %>
   <% end %>
@@ -19,6 +21,8 @@
   <% else %>
     <% if @agency.name == "Indie" %>
       <p><span class="search-result-number"><%= @vtubers.length %></span> indie VTubers in this database.</p>
+    <% elsif @vtubers.length == 1 %>
+      <p><span class="search-result-number">1</span> VTuber from this agency in this database.</p>
     <% else %>
       <p><span class="search-result-number"><%= @vtubers.length %></span> VTubers from this agency in this database.</p>
     <% end %>

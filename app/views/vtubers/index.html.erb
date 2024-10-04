@@ -4,13 +4,18 @@
   <% if @vtubers.empty? %>
     <p>No VTubers matched your search</p>
   <% else %>
+    <% if @vtubers.length == 1 %>
+      <p><span class="search-result-number">1</span> search result</p>
+    <% else %>
+      <p><span class="search-result-number"><%= @vtubers.length %></span> search results</p>
+    <% end %>
     <div class="list-cards">
       <% @vtubers.order('LOWER(name)').each do |vtuber| %>
         <div class="vtuber-card">
 
-        <div class="vtuber-card-pic">
-        <%= render "shared/vtuber_picture", vtuber: vtuber %>
-    </div>
+          <div class="vtuber-card-pic">
+            <%= render "shared/vtuber_picture", vtuber: vtuber %>
+          </div>
 
           <div class="vtuber-card-body">
             <p><%= vtuber.name %></p>

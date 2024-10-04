@@ -81,3 +81,4 @@ gem "pg_search"
 
 gem "cloudinary"
 gem "flatpickr"
+gem 'jquery-rails'

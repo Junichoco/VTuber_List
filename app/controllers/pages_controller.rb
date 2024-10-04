@@ -12,9 +12,20 @@ class PagesController < ApplicationController
 
     while @vtubers.length < 10
       vtuber = Vtuber.get_random_vtuber
-        if !@vtubers.include?(vtuber) && (vtuber.thumbnail.attached?)
-          @vtubers << vtuber
-        end
+      if !@vtubers.include?(vtuber) && (vtuber.thumbnail.attached?)
+        @vtubers << vtuber
       end
     end
+  end
+
+  def random
+    @vtubers = []
+    while @vtubers.length < 100
+      vtuber = Vtuber.get_random_vtuber
+      if !@vtubers.include?(vtuber)
+        @vtubers << vtuber
+      end
+    end
+  end
+
 end

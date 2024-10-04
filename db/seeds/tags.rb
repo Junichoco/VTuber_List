@@ -3,10 +3,29 @@
 # To run all the seeds file in the db/seeds folder, run this command
 #   rake db:seed:all
 
+tags = ["singer", "rap", "guitar", "FPS", "League of Legends", "big chest", "deep singing voice",
+        "baby girl failure", "baby", "violin", "flute", "small chest", "heavy metal", "thighs", "piano", "cooking",
+        "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
+        "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
+        "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
+        "furry", "R18 content", "short", "tall", "drama", "alcohol", "menhera", "pon", "Thai",
+        "esports", "gamer", "ojou-sama", "mole"]
+
+tags.each do |tag|
+  if !Tag.find_by_name(tag)
+  Tag.create!(
+    name: tag
+  )
+  puts "#{tag} created"
+  end
+end
+
+
+
 [
   {
     name: "Chiaki Katsumi",
-    tags: ["singer"]
+    tags: []
   },
   {
     name: "Miuna Usako",
@@ -15,14 +34,75 @@
   {
     name: "Elia Stellaria",
     tags: ["British"]
+  },
+  {
+    name: "Shirakawa Shirase",
+    tags: ["singer", "guitar"]
+  },
+  {
+    name: "MiCosmiC baby",
+    tags: ["singer", "Indonesian"]
+  },
+  {
+    name: "dtto.",
+    tags: ["singer", "FPS", "esports", "Thai"]
+  },
+  {
+    name: "Urameshi Conta",
+    tags: ["singer", "VTuber artist", "VTuber rigger"]
+  },
+  {
+    name: "Aoi",
+    tags: ["not anime", "singer", "art", "guitar", "piano"]
+  },
+  {
+    name: "Uchi Fifi",
+    tags: ["singer", "Chinese", "ASMR"]
+  },
+  {
+    name: "Nemupipi",
+    tags: ["piano"]
+  },
+  {
+    name: "Banzoin Hakka",
+    tags: ["singer", "Spanish", "heavy metal"]
+  },
+  {
+    name: "Morino Merun",
+    tags: ["singer", "Spanish"]
+  },
+  {
+    name: "Arisu Oshiro",
+    tags: ["singer", "Spanish", "short"]
+  },
+  {
+    name: "Rosco Graves",
+    tags: ["singer", "rap", "Spanish", "short", "small chest"]
+  },
+  {
+    name: "Kotomiya Iori",
+    tags: ["gamer", "FPS", "ojou-sama", "mole"]
+  },
+  {
+    name: "Pippa Pebblesworth",
+    tags: ["singer", "British", "small chest", "short"]
+  },
+  {
+    name: "Misora Sora",
+    tags: ["singer", "mole"]
   }
+
 ].each do |hash|
   vtuber = Vtuber.find_by_name(hash[:name])
   if vtuber
     hash[:tags].each do |tag_name|
+      if !Tag.find_by_name(tag_name)
+        puts "#{tag_name} was not added to #{vtuber.name}"
+        abort
+      end
+
       if !vtuber.has_tag?(tag_name)
-        vtuber.add_tag(tag_name)
-        puts "#{tag_name} added to #{vtuber.name}"
+        puts "#{tag_name} added to #{vtuber.name}" if vtuber.add_tag(tag_name)
       end
     end
   else
