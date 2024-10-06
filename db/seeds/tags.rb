@@ -90,6 +90,10 @@ end
   {
     name: "Misora Sora",
     tags: ["singer", "mole"]
+  },
+  {
+    name: "Tokiwa Aino",
+    tags: "Singer"
   }
 
 ].each do |hash|

@@ -1113,6 +1113,35 @@ require_relative "agency_names"
     debut_date: "2022/07/23",
     yt_channel: "https://www.youtube.com/@MerunCh",
     twitch_channel: "twitch.tv/merunmorino"
+  },
+  {
+    name: "Tokiwa Aino",
+    jp_name: "時羽あいの",
+    description: "An observer of time from the future and a spy from a secret society.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/06/07",
+    yt_channel: "https://www.youtube.com/@tokiwaaino"
+  },
+  {
+    name: "Azumalim",
+    jp_name: "アズマリム",
+    description: "A motorcycler and motoblogger VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Azumalim"
+  },
+  {
+    name: "Usatama Amyu",
+    jp_name: "兎彷魂あみゅ",
+    description: "An Angora rabbit and shinigami idol VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2023/06/02",
+    yt_channel: "https://www.youtube.com/@UsatamaAmyu"
   }
 
 ].each do |vtuber|
