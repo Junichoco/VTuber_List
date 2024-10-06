@@ -70,3 +70,11 @@
   border: 1px solid black;
   transition: all 0.5s;
 }
+
+.btn-create {
+  background-color: $vtuber-purple;
+}
+.btn-create:hover {
+  border: 1px solid black;
+  transition: all 0.3s;
+}
