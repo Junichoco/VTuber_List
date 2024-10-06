@@ -8,6 +8,12 @@ export default class extends Controller {
   toggle(event) {
     console.log("dropdown toggled");
     // this.menuTarget.classList.toggle("display");
-    this.menuTarget.classList.toggle("hidden");
+    if(this.menuTarget.classList.contains("d-none")){
+      this.menuTarget.classList.remove("d-none");
+      console.log("toggle on");
+    }else{
+      this.menuTarget.classList.add("d-none");
+      console.log("toggle off");
+    }
   }
 }

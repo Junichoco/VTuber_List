@@ -1142,7 +1142,28 @@ require_relative "agency_names"
     main_language: "Japanese",
     debut_date: "2023/06/02",
     yt_channel: "https://www.youtube.com/@UsatamaAmyu"
+  },
+  {
+    name: "Mizushiro Akua",
+    jp_name: "水城あくあ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2020/06/06"
+    yt_channel: "https://www.youtube.com/@ch.9857"
+  },
+  {
+    name: "Rina Asteria",
+    description: "The Royal of Rebellion Raised by the chains of nobility and a thirst for freedom, Rina became The Royal of Rebellion.\n\n(Source: OshiLink website)",
+    agency: @oshilink,
+    gender: "female",
+    main_language: "English",
+    debut_date: "2024/05/10",
+    yt_channel: "https://www.youtube.com/@RinaAstera",
+    twitch_channel: "twitch.tv/rinaastera"
   }
+
 
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
