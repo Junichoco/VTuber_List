@@ -102,6 +102,9 @@
   flex-direction: column;
   z-index: 1;
 }
+.dropdown-hidden {
+  display: none;
+}
 .dropdown-user a {
   text-decoration: bold;
   color: black;
@@ -109,9 +112,6 @@
 @media (max-width: 767px) {
   .navbar-search-user {
     display: none;
-  }
-  .hidden {
-    display: block;
   }
 }
 
@@ -124,5 +124,8 @@
   }
   .navbar-user {
     display: none;
+  }
+  .dropdown-hidden {
+    display: flex;
   }
 }

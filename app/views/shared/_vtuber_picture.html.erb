@@ -2,4 +2,9 @@
   <%= cl_image_tag vtuber.thumbnail.key, crop: :thumb, gravity: :face, class: "vtuber-pic" %>
 <% elsif vtuber.photo_url && vtuber.photo_url != ""%>
   <%= image_tag vtuber.photo_url, class: "vtuber-pic" %>
+<% else %>
+  <div class="default-picture">
+    <p><%= vtuber.name %></p>
+  </div>
+
 <% end %>

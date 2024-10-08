@@ -1,7 +1,7 @@
 require "open-uri"
 
 # Type this to run this file
-#   rake db:seed:images
+# rake db:seed:images
 # To run all the seeds file in the db/seeds folder, run this command
 #   rake db:seed:all
 
@@ -97,7 +97,22 @@ images = [
   { name: "Morino Merun", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727963113/merun_thumb_haqnic.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727963114/merun_4_eldfbk.jpg"},
   { name: "Kotomiya Iori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727966461/kotomiya_iori_thumb_kiu9la.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727966555/kotomiya_iori_i9drlo.png"},
   { name: "Tokiwa Aino", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728104954/tokiwa_thumb_bqfubo.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728104955/tokiwa_d3dguu.jpg"},
-  { name: "Azumalim", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728106049/azumalim_thumb_vbr6a2.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728106063/azumalim_2_ifpwxd.jpg"}
+  { name: "Azumalim", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728106049/azumalim_thumb_vbr6a2.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728106063/azumalim_2_ifpwxd.jpg"},
+  { name: "Takanashi Kobato", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728262764/kobato_thumb_qhhqbs.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728262764/kobato_6_ylee7i.png"},
+  { name: "Eva Ananova", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728265056/eva_thumb_uywpsr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728265057/eva_x2hmdr.png"},
+  { name: "Majokko Meimi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728321324/meimi_thumb_b3kkg9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728321325/meimi_jwnwnc.png"},
+  { name: "Noa Polaris", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728321954/noa_polaris_thumb_tau9pv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728321954/noa_polaris_5_ara5j0.jpg"},
+  { name: "Takanashi Rara", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728322478/takanashi_rara_thumb_fm1w2b.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728322378/takanashi_rara_2_asastc.png"},
+  { name: "Fairy Rilm", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728351213/rilm_thumb_vo8spe.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728351213/rilm_owdji1.jpg"},
+  { name: "Immy Bisou", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728376919/immy_thumb_ezyfxk.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728376919/immy_cabhpf.jpg"},
+  { name: "Usahane Mia", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728377481/usahane_mia_thumb_2_otfrh4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728377481/usahane_mia_2_kgxjxm.png"},
+  { name: "Inugami Korone", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728377776/korone_thumb_d8befx.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728377761/Inugami-Korone_pr-img_02_ghregy.png"},
+  { name: "Nekomata Okayu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728377783/okayu_thumb_ydn1m7.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728377784/Nekomata-Okayu_pr-img_02-743x1440_rhhkom.png"},
+  { name: "Murasaki Shion", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728377984/shion_thumb_qxpdem.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728377987/Murasaki-Shion_pr-img_02-960x1440_yog33o.png"},
+  { name: "Robocosan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378124/roboco_thumb_ebuz4j.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378125/roboco-san_pr-img_06_y0oyjc.png"},
+  { name: "Nikoniko Pona", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378672/pona_thumb_o8rmte.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378878/poni_xglm8h.jpg"},
+  { name: "Rin Penrose", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405645/Rin_thumb_zvzrs9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405645/Rin_2_syki2y.png"},
+  { name: "Kakushaku Rin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405777/kakushaku_rin_thumb_ift4at.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405776/kakushaku_rin_d85fdg.jpg"}
 ]
 
 puts "Thumbnails"
