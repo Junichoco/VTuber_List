@@ -7,7 +7,7 @@ tags = ["singer", "rap", "guitar", "FPS", "League of Legends", "big chest", "dee
         "baby girl failure", "baby", "violin", "flute", "small chest", "heavy metal", "thighs", "piano", "cooking",
         "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
-        "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
+        "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
         "furry", "R18 content", "short", "tall", "drama", "alcohol", "menhera", "pon", "Thai",
         "esports", "gamer", "ojou-sama", "mole"]
 
@@ -93,7 +93,11 @@ end
   },
   {
     name: "Tokiwa Aino",
-    tags: "Singer"
+    tags: ["singer"]
+  },
+  {
+    name: "Rin Penrose",
+    tags: ["British"]
   }
 
 ].each do |hash|

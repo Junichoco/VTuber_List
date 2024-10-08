@@ -1150,7 +1150,7 @@ require_relative "agency_names"
     agency: @indie,
     gender: "female",
     main_language: "Japanese",
-    debut_date: "2020/06/06"
+    debut_date: "2020/06/06",
     yt_channel: "https://www.youtube.com/@ch.9857"
   },
   {
@@ -1162,8 +1162,79 @@ require_relative "agency_names"
     debut_date: "2024/05/10",
     yt_channel: "https://www.youtube.com/@RinaAstera",
     twitch_channel: "twitch.tv/rinaastera"
+  },
+  {
+    name: "Takanashi Kobato",
+    jp_name: "小鳥遊こばと",
+    description: "A maid idol.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/04/30",
+    yt_channel: "https://www.youtube.com/@TakanashiKobato"
+  },
+  {
+    name: "Eva Ananova",
+    description: "A computer virus digital oni VTuber.",
+    agency: @vyvid,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/12/12",
+    debut_date: "2024/05/11",
+    yt_channel: "https://www.youtube.com/@EvaAnanova",
+    twitch_channel: "https://www.twitch.tv/evaananova"
+  },
+  {
+    name: "Noa Polaris",
+    jp_name: "ノア・ポラリス",
+    description: "An angel that controls the north star and guides wandering travelers.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/04/30",
+    yt_channel: "https://www.youtube.com/@noa_polaris",
+    twitch_channel: "https://www.twitch.tv/noa_polaris"
+  },
+  {
+    name: "Takanashi Rara",
+    jp_name: "小鳥遊らら",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@RaraTakanashi"
+  },
+  {
+    name: "Fairy Rilm",
+    jp_name: "春風りるむ",
+    description: "A fairy VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@rilmu"
+  },
+  {
+    name: "Kakushaku Rin",
+    jp_name: "赫灼燐",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/01/22",
+    debut_date: "2021/06/21",
+    yt_channel: "https://www.youtube.com/@KakushakuRin"
+  },
+  {
+    name: "Rin Penrose",
+    description: "A prince who loves sharks.",
+    agency: @idolen,
+    gender: "female",
+    main_language: "English",
+    birthday: "2020/02/04",
+    debut_date: "2022/11/20",
+    yt_channel: "https://www.youtube.com/@rinpenrose",
+    twitch_channel: "twitch.tv/rinpenrose"
   }
-
 
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

@@ -36,6 +36,7 @@
 }
 
 .vtuber-card {
+  padding: 0;
   // background-size: cover;
   // background-position: center;
   position: relative;
@@ -105,7 +106,31 @@
 
 }
 
+.default-picture {
+  margin: 0;
+  line-height: 99%;
+  position: relative;
+  text-align: center;
 
+  background-color: $vtuber-purple;
+  width: 200px;
+  height: 100%;
+
+  // background-image: url("dessert-on-a-plate.jpg");
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.vtuber-card-pic {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
 
 .vtuber-card:hover {
   // background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));

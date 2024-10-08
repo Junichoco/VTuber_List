@@ -29,3 +29,4 @@
 @kemov = Agency.find_by_name("KemoV")
 @trillion = Agency.find_by_name("TRILLIONSTAGE")
 @oshilink = Agency.find_by_name("OshiLink")
+@vyvid = Agency.find_by_name("VyVid")

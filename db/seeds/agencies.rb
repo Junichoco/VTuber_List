@@ -183,6 +183,10 @@
     description: "No description available.",
     website: "https://oshilink.com/",
     yt_channel: "https://www.youtube.com/@oshilink"
+  },
+  {
+    name: "VyVid",
+    description: "No description available.",
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

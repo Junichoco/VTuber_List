@@ -24,7 +24,7 @@
             <span class="main-button"><i class="fa-solid fa-hashtag"></i> Search by tag</span>
           <% end %>
           <%= link_to :random do %>
-            <span class="main-button"><i class="fa-solid fa-hashtag"></i> Get random VTubers</span>
+            <span class="main-button"><i class="fa-solid fa-dice"></i> Get random VTubers</span>
           <% end %>
         </div>
       </div>
@@ -52,7 +52,7 @@
       </div>
 
 
-      <div class="navbar-dropdown-menu d-none" data-dropdown-target="menu">
+      <div class="navbar-dropdown-menu dropdown-hidden d-none" data-dropdown-target="menu">
         <div class="dropdown-searchbar">
           <%= form_with url: vtubers_path, method: :get do %>
             <%= text_field_tag :query,
@@ -70,7 +70,7 @@
           <span class="main-button"><i class="fa-solid fa-hashtag"></i> Search by tag</span>
         <% end %>
         <%= link_to :random do %>
-          <span class="main-button"><i class="fa-solid fa-hashtag"></i> Get random VTubers</span>
+          <span class="main-button"><i class="fa-solid fa-dice"></i> Get random VTubers</span>
         <% end %>
 
         <div class="dropdown-user">
