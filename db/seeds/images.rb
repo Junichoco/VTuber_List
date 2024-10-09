@@ -112,7 +112,9 @@ images = [
   { name: "Robocosan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378124/roboco_thumb_ebuz4j.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378125/roboco-san_pr-img_06_y0oyjc.png"},
   { name: "Nikoniko Pona", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378672/pona_thumb_o8rmte.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378878/poni_xglm8h.jpg"},
   { name: "Rin Penrose", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405645/Rin_thumb_zvzrs9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405645/Rin_2_syki2y.png"},
-  { name: "Kakushaku Rin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405777/kakushaku_rin_thumb_ift4at.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405776/kakushaku_rin_d85fdg.jpg"}
+  { name: "Kakushaku Rin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405777/kakushaku_rin_thumb_ift4at.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405776/kakushaku_rin_d85fdg.jpg"},
+  { name: "Jyangarian", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728493394/jangarian_thumb_a7rdjz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728493395/jangarian_3_xcbawg.png"},
+  { name: "HaNaTan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494227/hanatan_thumb_dyzjgg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494226/hanatan_kmz6ar.png"}
 ]
 
 puts "Thumbnails"
