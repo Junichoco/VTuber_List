@@ -4,6 +4,20 @@
 #   rake db:seed:all
 
 [
+  {
+    name: "Hololive",
+    location: "Japan",
+    description: "A VTuber agency owned by Cover.",
+    website: "https://hololive.hololivepro.com/",
+    yt_channel: "https://www.youtube.com/@hololive"
+  },
+  {
+    name: "Hololive EN",
+    location: "Japan",
+    description: "The English-speaking division of Hololive.",
+    website: "https://hololive.hololivepro.com/",
+    yt_channel: "https://www.youtube.com/@hololiveEnglish"
+  },
   { name: "Vebop Project",
     location: "Japan",
     description: "A VTuber agency owned by REALITY Studios.",
