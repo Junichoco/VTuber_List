@@ -1234,6 +1234,16 @@ require_relative "agency_names"
     debut_date: "2022/11/20",
     yt_channel: "https://www.youtube.com/@rinpenrose",
     twitch_channel: "twitch.tv/rinpenrose"
+  },
+  {
+    name: "Ayunda Risu",
+    description: "A squirrel girl from a magical forest.\nShe was lost in the human world, but due to certain circumstances, she ends up living in the home of a kind older sister.\nTo return the favor, she decides to become a VTuber.\nRisu act, most of the time, just like a squirrel she is. She loves to do subtle pranks on people, shy with new people, and love to tease her viewer. Her laugh is also one of her unique characterictic.\n\n(Source: Hololive website)",
+    agency: @holoid,
+    gender: "female",
+    main_language: "Indonesian",
+    birthday: "2020/01/15",
+    debut_date: "2020/04/10",
+    yt_channel: "https://www.youtube.com/@AyundaRisu"
   }
 
 ].each do |vtuber|

@@ -114,7 +114,9 @@ images = [
   { name: "Rin Penrose", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405645/Rin_thumb_zvzrs9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405645/Rin_2_syki2y.png"},
   { name: "Kakushaku Rin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405777/kakushaku_rin_thumb_ift4at.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405776/kakushaku_rin_d85fdg.jpg"},
   { name: "Jyangarian", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728493394/jangarian_thumb_a7rdjz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728493395/jangarian_3_xcbawg.png"},
-  { name: "HaNaTan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494227/hanatan_thumb_dyzjgg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494226/hanatan_kmz6ar.png"}
+  { name: "HaNaTan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494227/hanatan_thumb_dyzjgg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494226/hanatan_kmz6ar.png"},
+  { name: "Nakiri Ayame", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728519402/ayame_thumb_n1iijo.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728519402/Nakiri-Ayame_pr-img_02-2-960x1440_gkogfv.png"},
+  { name: "Ayunda Risu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728520188/risu_thumb_tix4rr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728520188/Ayunda-Risu_pr-img_02-960x1440_m2ey0i.png"}
 ]
 
 puts "Thumbnails"
