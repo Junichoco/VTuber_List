@@ -116,7 +116,12 @@ images = [
   { name: "Jyangarian", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728493394/jangarian_thumb_a7rdjz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728493395/jangarian_3_xcbawg.png"},
   { name: "HaNaTan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494227/hanatan_thumb_dyzjgg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494226/hanatan_kmz6ar.png"},
   { name: "Nakiri Ayame", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728519402/ayame_thumb_n1iijo.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728519402/Nakiri-Ayame_pr-img_02-2-960x1440_gkogfv.png"},
-  { name: "Ayunda Risu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728520188/risu_thumb_tix4rr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728520188/Ayunda-Risu_pr-img_02-960x1440_m2ey0i.png"}
+  { name: "Ayunda Risu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728520188/risu_thumb_tix4rr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728520188/Ayunda-Risu_pr-img_02-960x1440_m2ey0i.png"},
+  { name: "Moona Hoshinova", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728547229/moona_thumb_bzllna.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728547229/Moona-Hoshinova_pr-img_02_mlbfc9.png"},
+  { name: "Airani Iofifteen", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728547229/iofi_thumb_enwngz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728547229/Airani-Iofifteen_pr-img_02_kepo4q.png"},
+  { name: "Metorial", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728549160/metorial_thumb_p5tpxx.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728549160/metorial_bejplo.png"},
+  { name: "Hoshimiya Choco", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728658168/hoshimiya_choco_thumb_rw2jxy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728658168/choco_2_qw7mh1.jpg"},
+  { name: "Igasaki Ayaka", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728659018/ayakasan_thumb_d0cbqc.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728658920/ayakasan_yewnrr.jpg"}
 ]
 
 puts "Thumbnails"

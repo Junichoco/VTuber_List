@@ -131,11 +131,6 @@ vallure = Agency.create!(
   location: "United States"
 )
 
-hasu = Agency.create!(
-  name: "Hasu no Sora Jogakuin",
-  location: "Japan"
-)
-
 univirtual = Agency.create!(
   name: "UniVIRTUAL",
   location: "Japan",

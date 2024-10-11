@@ -201,6 +201,13 @@
   {
     name: "VyVid",
     description: "No description available.",
+  },
+  {
+    name: "Hasunosora Girls' High School Idol Club",
+    description: "A fictional idol group part of the Love Live! franchise that does livestreams solely through the Link! Like! Love Live! mobile app, with VODs uploaded on the Hasunora Girls' High School YouTube channel. Unlike most VTubers, the members do casual talking streams that are 20-30 minutes long.",
+    location: "Japan",
+    website: "https://www.lovelive-anime.jp/hasunosora/",
+    yt_channel: "https://www.youtube.com/@lovelive_hasu"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

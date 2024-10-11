@@ -13,7 +13,6 @@
       <%= f.input :main_language %>
       <%= f.input :yt_channel, label: "YouTube channel" %>
       <%= f.input :twitch_channel %>
-      <%= f.input :photo_url %>
       <%= f.input :active, as: :boolean %>
       <%= f.input :thumbnail, as: :file %>
       <%= f.input :vertical_picture, as: :file %>
@@ -22,7 +21,7 @@
 
       <%#= f.input :photos, as: :file, input_html: { multiple: true } %>
       <div class="form-actions">
-        <%= f.button :submit, class:"btn btn-info my-3" %>
+        <%= f.button :submit, class:"btn-create" %>
       </div>
     <% end %>
   <% end %>
