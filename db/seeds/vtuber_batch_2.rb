@@ -1237,6 +1237,7 @@ require_relative "agency_names"
   },
   {
     name: "Ayunda Risu",
+    jp_name: "アユンダ・リス",
     description: "A squirrel girl from a magical forest.\nShe was lost in the human world, but due to certain circumstances, she ends up living in the home of a kind older sister.\nTo return the favor, she decides to become a VTuber.\nRisu act, most of the time, just like a squirrel she is. She loves to do subtle pranks on people, shy with new people, and love to tease her viewer. Her laugh is also one of her unique characterictic.\n\n(Source: Hololive website)",
     agency: @holoid,
     gender: "female",
@@ -1244,6 +1245,47 @@ require_relative "agency_names"
     birthday: "2020/01/15",
     debut_date: "2020/04/10",
     yt_channel: "https://www.youtube.com/@AyundaRisu"
+  },
+  {
+    name: "Airani Iofifteen",
+    jp_name: "アイラニ・イオフィフティーン",
+    description: "An alien princess who ran away from home and come to the earth and fell in love with earth’s culture, sometimes like to tease the viewers and being a nice iomama if her fans needs it. Sometimes got crazy over gacha game.\n\n(Source: Hololive website)",
+    agency: @holoid,
+    gender: "female",
+    main_language: "Indonesian",
+    birthday: "2020/07/15",
+    debut_date: "2020/04/12",
+    yt_channel: "https://www.youtube.com/@AiraniIofifteen"
+  },
+  {
+    name: "Moona Hoshinova",
+    jp_name: "ムーナ・ホシノヴァ",
+    description: "A college girl who works as a model and idol, but later got interested to become a VTuber too.\nOn some rare occasion, Moona’s stream might be visited by Moona’s “another personality,”Hoshinova. That has deeper big sister-like voices and sadistic tendesion. Pay attention to her streams to meet Hoshinova!\n\n(Source: Hololive website)",
+    agency: @holoid,
+    gender: "female",
+    main_language: "Indonesian",
+    birthday: "2020/02/15",
+    debut_date: "2020/04/11",
+    yt_channel: "https://www.youtube.com/@MoonaHoshinova"
+  },
+  {
+    name: "Metorial",
+    description: "A siren reborn as a lotus goddess.",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    debut_date: "2024/05/26",
+    yt_channel: "https://www.youtube.com/@Metorial",
+    twitch_channel: "twitch.tv/metorial"
+  },
+  {
+    name: "Hinoshita Kaho",
+    description: "A member of the Hasunosora Girls' High School Idol Club. Like the other members of Hasunosora, she does livestreams via the Link! Like! Love Live! mobile app.",
+    agency: @hasunosora,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/05/22",
+    yt_channel: "https://www.youtube.com/@lovelive_hasu"
   }
 
 ].each do |vtuber|
