@@ -22,6 +22,19 @@ class AgenciesController < ApplicationController
     @vtubers = Vtuber.where(agency: @agency)
   end
 
+  def edit
+    @agency = Agency.find(params[:id])
+  end
+
+  def update
+    @agency = Agency.find(params[:id])
+    if @agency.update(agency_params)
+      redirect_to agency_path(@agency)
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
   private
 
   def agency_params

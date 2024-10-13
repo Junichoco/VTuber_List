@@ -30,7 +30,7 @@ images = [
   { name: "yayamugi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726899536/yayamugi_thumb_fi196y.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726899537/yayamugi_5_rjwwn1.png"},
   { name: "Figaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900299/figaro_thumb_tlpfty.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900298/figaro_lixgkv.jpg"},
   { name: "Hiiragi Youri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900604/youri_thumb_jkxxwg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900587/youri_uqsw24.jpg"},
-  { name: "Sorakana Ito", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900079/sorakana_thumb_zwy57t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900080/sorakana_zmqan9.png"},
+  { name: "Sorakana Ito", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726900079/sorakana_thumb_zwy57t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820636/ito_2_gonwgn.png"},
   { name: "Kanna Yanagi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964385/kanna_thumb_ezztjz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726963808/kanna_lv7pn8.png"},
   { name: "Arisu Oshiro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964384/arisu_thumb_jne5mi.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964384/arisu_z96zgb.png"},
   { name: "Chio Chompi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726964384/chio_thumb_ny7zmf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726963807/chio_y4tjoy.png"},
@@ -139,7 +139,11 @@ images = [
   { name: "Yukishiro Qalu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820590/qalu_thumb_yk1wkr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820608/qalu_kvtpdv.png"},
   { name: "Hoshino Rimu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728821104/rimu_thumb_cpgots.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820605/rimu_njb3zf.png"},
   { name: "Narumi Myao", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820587/myao_thumb_nsgghy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820603/amabuki_s5ucdd.png"},
-  { name: "Amabuki San", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820588/amabuki_thumb_ld5uyz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820603/amabuki_s5ucdd.png"}
+  { name: "Amabuki San", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820588/amabuki_thumb_ld5uyz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820603/amabuki_s5ucdd.png"},
+  { name: "Gale Galleon", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728823834/gale_thumb_py43qy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728823835/gale_galeon_kfisne.png"},
+  { name: "Aida Rikako", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824479/aidarikako_vtuber_thumb_ane8rb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824481/aidarikako_vtuber_t57gh2.png"},
+  { name: "Narumi Koko", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824793/narumi_coco_thumb_r8bzyw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824793/narumi_coco_kwtjor.jpg"},
+  { name: "Goho Batsuko Chan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728825611/batsuko_thumb_2_s2ywrn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728825613/batsuko_rvbebq.jpg"}
 ]
 
 puts "Thumbnails"

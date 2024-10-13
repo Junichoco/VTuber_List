@@ -1,7 +1,8 @@
-<div class="container col-12 col-lg-6"">
+<div class="container col-12 col-lg-6">
   <%#= link_to "Go back", :back %>
+  <div style="position: relative;">
   <% if user_signed_in? && current_user.role == "admin" %>
-    <%= link_to "Edit VTuber info", edit_vtuber_path %>
+    <div class="edit-button"><%= link_to "Edit VTuber info", edit_vtuber_path %></div>
   <% end %>
   <div class="vtuber-show-container">
       <div class="vtuber-show-picture-card">
@@ -90,4 +91,5 @@
         <% end %>
       </div>
     </div>
+  </div>
 </div>

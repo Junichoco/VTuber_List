@@ -1307,6 +1307,33 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@Tousui_Yayu"
+  },
+  {
+    name: "Goho Batsuko Chan",
+    jp_name: "合法‼バツ子ﾁｬﾝ",
+    description: "A legal drug VTuber ingested by seeing and hearing.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Batsuko825"
+  },
+  {
+    name: "rurudoLION",
+    jp_name: "るるどらいおん",
+    description: "A mysterious lion that appears when you can't get motivated.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@rurudo_LION"
+  },
+  {
+    name: "Tokusari Kukuri",
+    jp_name: "戸鎖くくり",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@tokusari_kukuri"
   }
 
 ].each do |vtuber|
