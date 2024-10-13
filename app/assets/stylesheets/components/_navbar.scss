@@ -91,12 +91,14 @@
 }
 
 .navbar-dropdown-menu {
+  width: 100%;
   background-color: beige;
   padding: 10px;
   border-radius: 5px;
+  border: solid;
 
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   right: 5px;
   display: flex;
   flex-direction: column;

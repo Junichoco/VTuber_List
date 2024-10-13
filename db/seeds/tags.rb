@@ -98,6 +98,10 @@ end
   {
     name: "Rin Penrose",
     tags: ["British"]
+  },
+  {
+    name: "Tokusari Kukuri",
+    tags: ["singer", "ASMR"]
   }
 
 ].each do |hash|
