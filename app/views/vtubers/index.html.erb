@@ -11,13 +11,13 @@
     <% end %>
     <div class="list-cards">
       <% @vtubers.order('LOWER(name)').each do |vtuber| %>
-        <div class="vtuber-card">
+        <div class="vtuber-card" data-controller="zoom-in">
 
-          <div class="vtuber-card-pic">
+          <div class="vtuber-card-pic" data-zoom-in-target="image">
             <%= render "shared/vtuber_picture", vtuber: vtuber %>
           </div>
 
-          <div class="vtuber-card-body">
+          <div class="vtuber-card-body" data-action="mouseover->zoom-in#zoom_in mouseout->zoom-in#zoom_out">
             <p><%= vtuber.name %></p>
             <%= link_to vtuber_path(vtuber) do %>
               <div class="click-box">

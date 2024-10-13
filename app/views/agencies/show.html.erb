@@ -2,7 +2,7 @@
   <%#= link_to "Go back", :back %>
   <h2><%= @agency.name %></h2>
   <% if @agency.name != "Indie" %>
-    <p>Country: <%= @agency.location %></p>
+    <p style="margin-bottom: 5px;">Country: <%= @agency.location %></p>
   <% end %>
   <% if @agency.website %>
     <%= link_to "Website", @agency.website, target: :blank %>
@@ -15,9 +15,9 @@
   <% if !@agency.active %>
     <p><%= @agency.name %> is not active.</p>
   <% end %>
-  <p><%= @agency.description %></p>
+  <p style="margin-bottom: 5px;"><%= @agency.description %></p>
   <% if !@vtubers %>
-    <p>This agency has no VTubers</p>
+    <p>This database has no VTubers from this agency.</p>
   <% else %>
     <% if @agency.name == "Indie" %>
       <p><span class="search-result-number"><%= @vtubers.length %></span> indie VTubers in this database.</p>

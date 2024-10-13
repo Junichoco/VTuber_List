@@ -1280,12 +1280,33 @@ require_relative "agency_names"
   },
   {
     name: "Hinoshita Kaho",
+    jp_name: "日野下花帆",
     description: "A member of the Hasunosora Girls' High School Idol Club. Like the other members of Hasunosora, she does livestreams via the Link! Like! Love Live! mobile app.",
     agency: @hasunosora,
     gender: "female",
     main_language: "Japanese",
     birthday: "2020/05/22",
     yt_channel: "https://www.youtube.com/@lovelive_hasu"
+  },
+  {
+    name: "Miyanaga Nonoka",
+    jp_name: "宮永ののか",
+    description: "Plays guitar in Mugendai Mewtype.",
+    agency: @mugendai,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2023/11/19",
+    birthday: "2020/04/17",
+    yt_channel: "https://www.youtube.com/@nonoka_yumemita"
+  },
+  {
+    name: "Tousui Yayu",
+    jp_name: "透睡やゆ",
+    description: "A jiraikei joshi VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Tousui_Yayu"
   }
 
 ].each do |vtuber|

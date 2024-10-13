@@ -32,3 +32,4 @@
 @oshilink = Agency.find_by_name("OshiLink")
 @vyvid = Agency.find_by_name("VyVid")
 @hasunosora = Agency.find_by_name("Hasunosora Girls' High School Idol Club")
+@mugendai = Agency.find_by_name("Mugendai MewType")

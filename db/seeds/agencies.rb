@@ -208,6 +208,13 @@
     location: "Japan",
     website: "https://www.lovelive-anime.jp/hasunosora/",
     yt_channel: "https://www.youtube.com/@lovelive_hasu"
+  },
+  {
+    name: "Mugendai MewType",
+    description: "A virtual band part of the BanG Dream! franchise. Also known as Yumemita.",
+    location: "Japan",
+    website: "https://bang-dream.com/yumemita",
+    yt_channel: "https://www.youtube.com/@BDP_yumemita/streams"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])
