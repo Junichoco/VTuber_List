@@ -13,7 +13,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@NonAnon",
-    twitch_channel: "twitch.tv/notnonanon"
+    twitch_channel: "https://twitch.tv/notnonanon"
   },
   {
     name: "Chiaki Katsumi",
@@ -46,7 +46,7 @@ require_relative "agency_names"
     main_language: "Japanese",
     debut_date: "2023/01/07",
     yt_channel: "https://www.youtube.com/@Nijyuuu7",
-    twitch_channel: "twitch.tv/nijyuna"
+    twitch_channel: "https://twitch.tv/nijyuna"
   },
   {
     name: "Vesper Noir",
@@ -214,7 +214,7 @@ require_relative "agency_names"
     main_language: "English",
     birthday: "2020/06/09",
     yt_channel: "https://www.youtube.com/@Kou_Mariya",
-    twitch_channel: "twitch.tv/mariya"
+    twitch_channel: "https://twitch.tv/mariya"
   },
   {
     name: "Serina Maiko",
@@ -224,7 +224,7 @@ require_relative "agency_names"
     main_language: "English",
     birthday: "2020/05/23",
     yt_channel: "https://www.youtube.com/@SerinaMaiko",
-    twitch_channel: "twitch.tv/serinamaiko"
+    twitch_channel: "https://twitch.tv/serinamaiko"
   },
   {
     name: "Pina Pengin",
@@ -266,7 +266,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@MariYumeCh",
-    twitch_channel: "twitch.tv/mariyume"
+    twitch_channel: "https://twitch.tv/mariyume"
   },
   {
     name: "Elia Stellaria",
@@ -275,7 +275,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@EliaStellaria",
-    twitch_channel: "twitch.tv/eliastellaria"
+    twitch_channel: "https://twitch.tv/eliastellaria"
   },
   {
     name: "Remilia Nephys",
@@ -295,7 +295,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@AmanogawaShiina",
-    twitch_channel: "twitch.tv/amanogawashiina"
+    twitch_channel: "https://twitch.tv/amanogawashiina"
   },
   {
     name: "Himemiya Rie",
@@ -305,7 +305,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@HimemiyaRie",
-    twitch_channel: "twitch.tv/himemiyarie"
+    twitch_channel: "https://twitch.tv/himemiyarie"
   },
   {
     name: "Komachi Panko",
@@ -315,7 +315,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@komachipanko",
-    twitch_channel: "twitch.tv/komachipanko"
+    twitch_channel: "https://twitch.tv/komachipanko"
   },
   {
     name: "Chisaka Airi",
@@ -325,7 +325,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@ChisakaAiri",
-    twitch_channel: "twitch.tv/chisakaairi"
+    twitch_channel: "https://twitch.tv/chisakaairi"
   },
   {
     name: "Erina Makina",
@@ -335,7 +335,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@ErinaMakina",
-    twitch_channel: "twitch.tv/erinamakina"
+    twitch_channel: "https://twitch.tv/erinamakina"
   },
   {
     name: "Pipkin Pippa",
@@ -401,7 +401,7 @@ require_relative "agency_names"
     birthday: "2020/08/26",
     debut_date: "2023/12/03",
     yt_channel: "https://www.youtube.com/@UtahimeMochizuki",
-    twitch_channel: "twitch.tv/utahime_mochi"
+    twitch_channel: "https://twitch.tv/utahime_mochi"
   },
   {
     name: "Victoria Valerie",
@@ -413,7 +413,7 @@ require_relative "agency_names"
     birthday: "2020/04/18",
     debut_date: "2023/12/03",
     yt_channel: "https://www.youtube.com/@Victoria-Valerie",
-    twitch_channel: "twitch.tv/victoria_valerie"
+    twitch_channel: "https://twitch.tv/victoria_valerie"
   },
   {
     name: "Lucien Lunaris",
@@ -457,8 +457,7 @@ require_relative "agency_names"
     main_language: "English",
     birthday: "2020/12/09",
     debut_date: "2024/01/28",
-    yt_channel: "https://www.youtube.com/@galegalleon",
-    twitch_channel: "twitter.com/GaleGalleon"
+    yt_channel: "https://www.youtube.com/@galegalleon"
   },
   {
     name: "Cassian Floros",
@@ -511,7 +510,7 @@ require_relative "agency_names"
     main_language: "Japanese",
     birthday: "2020/06/10",
     yt_channel: "https://www.youtube.com/@Kotoha_ktnh",
-    twitch_channel: "twitch.tv/kotoha_hkll"
+    twitch_channel: "https://twitch.tv/kotoha_hkll"
   },
   {
     name: "Ibara Muan",
@@ -561,7 +560,7 @@ require_relative "agency_names"
     birthday: "2020/07/27",
     debut_date: "2021/05/02",
     yt_channel: "https://www.youtube.com/@KaiSaikota",
-    twitch_channel: "twitch.tv/kaisaikota"
+    twitch_channel: "https://twitch.tv/kaisaikota"
   },
   {
     name: "Amiya Aranha",
@@ -570,7 +569,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@AmiyaAranha",
-    twitch_channel: "twitch.tv/amiyaaranha"
+    twitch_channel: "https://twitch.tv/amiyaaranha"
   },
   {
     name: "Sukitou Luccica",
@@ -588,7 +587,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@NovaAokami",
-    twitch_channel: "twitch.tv/novaaokami"
+    twitch_channel: "https://twitch.tv/novaaokami"
   },
   {
     name: "Taiga Toragami",
@@ -597,7 +596,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Spanish",
     yt_channel: "https://www.youtube.com/@TaigaToragami",
-    twitch_channel: "twitch.tv/TaigaToragami"
+    twitch_channel: "https://twitch.tv/TaigaToragami"
   },
   {
     name: "FalseEyeD",
@@ -606,7 +605,7 @@ require_relative "agency_names"
     gender: "male",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@FalseEyeD",
-    twitch_channel: "twitch.tv/falseeyed"
+    twitch_channel: "https://twitch.tv/falseeyed"
   },
   {
     name: "Maisaki Berry",
@@ -724,7 +723,7 @@ require_relative "agency_names"
     birthday: "2020/08/19",
     debut_date: "2022/07/03",
     yt_channel: "https://www.youtube.com/@dttodot",
-    twitch_channel: "twitch.tv/dttodot"
+    twitch_channel: "https://twitch.tv/dttodot"
   },
   {
     name: "Amami Kurine",
@@ -849,7 +848,7 @@ require_relative "agency_names"
     birthday: "2020/04/06",
     debut_date: "2022/09/10",
     yt_channel: "https://www.youtube.com/@naginomashiro",
-    twitch_channel: "twitch.tv/nagino_mashiro"
+    twitch_channel: "https://twitch.tv/nagino_mashiro"
   },
   {
     name: "Nanami Urara",
@@ -952,7 +951,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@rimaevenstar",
-    twitch_channel: "twitch.tv/rima_evenstar"
+    twitch_channel: "https://twitch.tv/rima_evenstar"
   },
   {
     name: "Shairu",
@@ -972,7 +971,7 @@ require_relative "agency_names"
     main_language: "Japanese",
     debut_date: "2023/07/07",
     yt_channel: "https://www.youtube.com/@Miyavi_udon",
-    twitch_channel: "twitch.tv/miyamori_yuri/about"
+    twitch_channel: "https://twitch.tv/miyamori_yuri/about"
   },
   {
     name: "Berry-chan",
@@ -990,7 +989,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "English",
     yt_channel: "https://www.youtube.com/@nyaruchuuu",
-    twitch_channel: "twitch.tv/nyaruchuuu"
+    twitch_channel: "https://https://twitch.tv/nyaruchuuu"
   },
   {
     name: "Anya Kumori",
@@ -1030,7 +1029,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@maoura_RB",
-    twitch_channel: "twitch.tv/maoura_rb"
+    twitch_channel: "https://twitch.tv/maoura_rb"
   },
   {
     name: "Usahane Mia",
@@ -1040,7 +1039,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@usahane_mia430",
-    twitch_channel: "twitch.tv/miia_angel_"
+    twitch_channel: "https://twitch.tv/miia_angel_"
   },
   {
     name: "Sakura Rina",
@@ -1052,7 +1051,7 @@ require_relative "agency_names"
     birthday: "2020/02/09",
     debut_date: "2023/07/14",
     yt_channel: "https://www.youtube.com/@v_sakurarina",
-    twitch_channel: "twitch.tv/sakurarina_v"
+    twitch_channel: "https://twitch.tv/sakurarina_v"
   },
   {
     name: "Island Fox",
@@ -1112,7 +1111,7 @@ require_relative "agency_names"
     main_language: "Japanese",
     debut_date: "2022/07/23",
     yt_channel: "https://www.youtube.com/@MerunCh",
-    twitch_channel: "twitch.tv/merunmorino"
+    twitch_channel: "https://twitch.tv/merunmorino"
   },
   {
     name: "Tokiwa Aino",
@@ -1161,7 +1160,7 @@ require_relative "agency_names"
     main_language: "English",
     debut_date: "2024/05/10",
     yt_channel: "https://www.youtube.com/@RinaAstera",
-    twitch_channel: "twitch.tv/rinaastera"
+    twitch_channel: "https://twitch.tv/rinaastera"
   },
   {
     name: "Takanashi Kobato",
@@ -1233,7 +1232,7 @@ require_relative "agency_names"
     birthday: "2020/02/04",
     debut_date: "2022/11/20",
     yt_channel: "https://www.youtube.com/@rinpenrose",
-    twitch_channel: "twitch.tv/rinpenrose"
+    twitch_channel: "https://twitch.tv/rinpenrose"
   },
   {
     name: "Ayunda Risu",
@@ -1276,7 +1275,7 @@ require_relative "agency_names"
     main_language: "English",
     debut_date: "2024/05/26",
     yt_channel: "https://www.youtube.com/@Metorial",
-    twitch_channel: "twitch.tv/metorial"
+    twitch_channel: "https://twitch.tv/metorial"
   },
   {
     name: "Hinoshita Kaho",
@@ -1334,6 +1333,90 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@tokusari_kukuri"
+  },
+  {
+    name: "Nebasei Cocoro",
+    jp_name: "根羽清ココロ",
+    description: "The official VTuber of Rohto Pharmaceutical.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@cocoroch0610"
+  },
+  {
+    name: "Kugumi Rui",
+    jp_name: "久々湊るい",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@kugumirui/streams"
+  },
+  {
+    name: "shin",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@shingames7857",
+    twitch_channel: "https://twitch.tv/shin1616"
+  },
+  {
+    name: "Gomapurin",
+    jp_name: "ごまぷりん",
+    description: "A clown doll and circus ringleader who came to the human world from Toyland.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@GOMAPURIN_CIRCUS_SHOW"
+  },
+  {
+    name: "Amatsuna Sasaha",
+    jp_name: "天絆ささは",
+    description: "A clumsy maid VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/10/27",
+    debut_date: "2023/05/27",
+    yt_channel: "https://www.youtube.com/@AmatsunaSasaha"
+  },
+  {
+    name: "Somaru",
+    jp_name: "水縹そまる",
+    description: "A hikikomori princess.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Chinese",
+    yt_channel: "https://www.youtube.com/channel/UC3rmrlimhWzTsJ1BxY6-p1w",
+    twitch_channel: "https://twitch.tv/somaruriro"
+  },
+  {
+    name: "Omakirara",
+    jp_name: "逢魔きらら",
+    description: "A baby devil VTuber",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel:"https://www.youtube.com/channel/@omakirara"
+  },
+  {
+    name: "Sakurane Kotori",
+    jp_name: "桜音ことり",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/channel/@KotoriSakurane"
+  },
+  {
+    name: "Lumin Tsukiboshi",
+    description: "A supernova-prone celestial VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@LuminTsukiboshi"
+
   }
 
 ].each do |vtuber|
