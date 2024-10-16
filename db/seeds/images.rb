@@ -150,7 +150,12 @@ images = [
   { name: "Somaru", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728954965/somaru_thumb_sk5gfy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728954965/somaru_hkk0ag.jpg"},
   { name: "Mao Ura", thumb:"https://res.cloudinary.com/dpvghmrgw/image/upload/v1728957959/mao_ura_thumb_ds9z11.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728957922/mao_ura_u8dpmh.jpg"},
   { name: "HACHI", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012240/hachi_thumb_o8cfb2.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012240/picture-HACHI-large_wxtf5t.png"},
-  { name: "Rina Asteria", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012711/rina_asteria_thumb_pmpwu4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012711/rina_asteria_hcez63.jpg"}
+  { name: "Rina Asteria", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012711/rina_asteria_thumb_pmpwu4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012711/rina_asteria_hcez63.jpg"},
+  { name: "Samayoi Suzu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729045945/samayoi_thumb_mhr1kd.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729045945/Samayoi_Suzu_v3ut0c.jpg"},
+  { name: "Josuiji Shinri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729046156/shinri_thumb_grjnj4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729046149/Josuiji-Shinri_pr-img_02_d5v0ea.png"},
+  { name: "Washu Asuka", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729053336/washu_thumb_cavde7.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729053287/washu_2_fsqkwb.jpg"},
+  { name: "Aitsuki Nakuru", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729087204/nakuru_thumb_alqjcz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729087206/nakuru_mdlvxt.png"},
+  { name: "Quon Tama", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729097783/quontama_thumb_sddabv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729097783/GUnzbyrWIAEi_a0_vn81bx.jpg"}
 ]
 
 puts "Thumbnails"

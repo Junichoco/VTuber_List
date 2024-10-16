@@ -1416,7 +1416,36 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@LuminTsukiboshi"
-
+  },
+  {
+    name: "Tanaka Hime",
+    jp_name: "田中ヒメ",
+    description: "A member of the duo HIMEHINA.",
+    agency: @himehina,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2018/03/18",
+    yt_channel: "https://www.youtube.com/@HimeHina/"
+  },
+  {
+    name: "Suzuki Hina",
+    jp_name: "鈴木ヒナ",
+    description: "A member of the duo HIMEHINA.",
+    agency: @himehina,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2018/05/26",
+    yt_channel: "https://www.youtube.com/@HimeHina/"
+  },
+  {
+    name: "Quon Tama",
+    jp_name: "久遠たま",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2020/08/22",
+    yt_channel: "https://www.youtube.com/@QuonTama"
   }
 
 ].each do |vtuber|

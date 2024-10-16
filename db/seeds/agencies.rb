@@ -215,6 +215,13 @@
     location: "Japan",
     website: "https://bang-dream.com/yumemita",
     yt_channel: "https://www.youtube.com/@BDP_yumemita/streams"
+  },
+  {
+    name: "HIMEHINA",
+    description: "The agency formed by Tanaka Hime and Suzuki Hina. It is managed by Studio LaRa, which was acquired by Brave Group.",
+    location: "Japan",
+    website: "https://himehina.jp/",
+    yt_channel: "https://www.youtube.com/@HimeHina"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

@@ -9,7 +9,7 @@ tags = ["singer", "rap", "guitar", "FPS", "League of Legends", "big chest", "dee
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
         "furry", "R18 content", "short", "tall", "drama", "alcohol", "menhera", "pon", "Thai",
-        "esports", "gamer", "ojou-sama", "mole", "boomer"]
+        "esports", "gamer", "ojou-sama", "mole", "boomer", "deep voice"]
 
 tags.each do |tag|
   if !Tag.find_by_name(tag)
@@ -122,6 +122,14 @@ end
   {
     name: "Mao Ura",
     tags: ["singer","violin", "guitar"]
+  },
+  {
+    name: "Josuiji Shinri",
+    tags: ["deep voice", "big chest"]
+  },
+  {
+    name: "Quon Tama",
+    tags: ["singer"]
   }
 
 ].each do |hash|
