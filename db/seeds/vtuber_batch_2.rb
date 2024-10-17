@@ -1404,10 +1404,10 @@ require_relative "agency_names"
     name: "Sakurane Kotori",
     jp_name: "桜音ことり",
     description: "No description available.",
-    agency: @indie,
+    agency: @parareal,
     gender: "female",
     main_language: "Japanese",
-    yt_channel: "https://www.youtube.com/channel/@KotoriSakurane"
+    yt_channel: "https://www.youtube.com/@KotoriSakurane"
   },
   {
     name: "Lumin Tsukiboshi",
@@ -1446,6 +1446,17 @@ require_relative "agency_names"
     main_language: "Japanese",
     debut_date: "2020/08/22",
     yt_channel: "https://www.youtube.com/@QuonTama"
+  },
+  {
+    name: "Shushu Hikari",
+    jp_name: "朱々ヒカリ",
+    description: "The official VTuber of esports Challenger's Park.",
+    gender: "female",
+    agency: @indie,
+    main_language: "Japanese",
+    debut_date: "2023/07/29",
+    yt_channel: "https://www.youtube.com/@ShushuHikari",
+    twitch_channel: "https://twitch.tv/shushu_hikari"
   }
 
 ].each do |vtuber|

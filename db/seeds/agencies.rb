@@ -222,7 +222,14 @@
     location: "Japan",
     website: "https://himehina.jp/",
     yt_channel: "https://www.youtube.com/@HimeHina"
+  },
+  {
+    name: "Parareal",
+    description: "A parallel artist production agency.",
+    location: "Japan",
+    website: "https://parareal.jp/"
   }
+
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])
     puts "#{agency[:name]} created" if Agency.create!(agency)

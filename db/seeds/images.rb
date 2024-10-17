@@ -155,7 +155,9 @@ images = [
   { name: "Josuiji Shinri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729046156/shinri_thumb_grjnj4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729046149/Josuiji-Shinri_pr-img_02_d5v0ea.png"},
   { name: "Washu Asuka", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729053336/washu_thumb_cavde7.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729053287/washu_2_fsqkwb.jpg"},
   { name: "Aitsuki Nakuru", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729087204/nakuru_thumb_alqjcz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729087206/nakuru_mdlvxt.png"},
-  { name: "Quon Tama", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729097783/quontama_thumb_sddabv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729097783/GUnzbyrWIAEi_a0_vn81bx.jpg"}
+  { name: "Quon Tama", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729097783/quontama_thumb_sddabv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729097783/GUnzbyrWIAEi_a0_vn81bx.jpg"},
+  { name: "Shushu Hikari", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729126324/shushu_thumb_ws0ysi.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729126324/shushu_2_rgij9c.png"},
+  { name: "Sakurane Kotori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729128841/sakurane_thumb_rnmwdu.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729128842/sakurane_kotori_uzqia2.jpg"}
 ]
 
 puts "Thumbnails"
