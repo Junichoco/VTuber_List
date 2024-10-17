@@ -8,10 +8,10 @@
     <% if @agency.name != "Indie" %>
       <p style="margin-bottom: 5px;">Country: <%= @agency.location %></p>
     <% end %>
-    <% if @agency.website %>
+    <% if @agency.has_website? %>
       <%= link_to "Website", @agency.website, target: :blank %>
     <% end %>
-    <% if @agency.yt_channel%>
+    <% if @agency.has_yt_channel? %>
       <h4><%= link_to @agency.yt_channel, target: :blank do %>
           <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
         <% end %></h4>

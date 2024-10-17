@@ -75,6 +75,18 @@ class Vtuber < ApplicationRecord
     (jp_name && jp_name != "")
   end
 
+  def has_website?
+    website && !website.blank?
+  end
+
+  def has_yt_channel?
+    yt_channel && !yt_channel.blank?
+  end
+
+  def has_twitch_channel?
+    twitch_channel && !twitch_channel.blank?
+  end
+
   def num_of_people_tagged
     count = 0
     arr = []

@@ -368,7 +368,7 @@ ami = Vtuber.create!(
   gender: "female",
   main_language: "English",
   yt_channel: "https://www.youtube.com/@amamiAmi",
-  twitch_channel: "twitch.tv/amiamami",
+  twitch_channel: "https://twitch.tv/amiamami",
   photo_url: "https://vtubernewsdrop.com/content/images/2023/04/Ami-Amami.jpg",
   debut_date: "2023/04/29",
   birthday: "2023/04/03"
@@ -1200,7 +1200,7 @@ samayoi = Vtuber.create!(
   gender: "female",
   main_language: "Japanese",
   yt_channel: "https://www.youtube.com/@SamayoiSuzu",
-  twitch_channel: "twitch.tv/samayoisuzu",
+  twitch_channel: "https://twitch.tv/samayoisuzu",
   photo_url: "https://pbs.twimg.com/media/F3jr-0_a8AAm58f?format=jpg&name=large"
 )
 ["singer"].each do |tag|

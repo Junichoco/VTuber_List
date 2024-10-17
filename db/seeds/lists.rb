@@ -52,7 +52,8 @@ singers = List.create!(
   "Hiiragi Youri",
   "Jyangarian",
   "HaNaTan",
-  "Nikoniko Pona"
+  "Nikoniko Pona",
+  "Sakurane Kotori"
 ].each do |name|
   if singers.add_vtuber(Vtuber.find_by_name(name))
     puts "Added #{name} to #{singers.name}"

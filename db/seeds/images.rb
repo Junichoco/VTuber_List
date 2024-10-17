@@ -21,7 +21,7 @@ images = [
   { name: "Non Anon", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728793123/non_thumb_2_avpthw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726760261/non_full_au8o67.png" },
   { name: "Kohaku Nuino", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726760762/nuino_thumb_gz4w5m.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726760761/nuino_lijspg.jpg"},
   { name: "Amana Nia", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726857470/nia_thumb_iv9vli.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726857469/nia_full_2_wdhcwt.png"},
-  { name: "Takanashi Yutoha", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726762518/yutoha_thumb_m3iduc.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728192388/yutoha_ou17j4.png"},
+  { name: "Takanashi Yutoha", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729129716/yutoha_thumb_vnb3iq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728192388/yutoha_ou17j4.png"},
   { name: "Enma Ruri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726766448/ruri_thumb_mvku03.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726766447/ruri_a1p7ni.jpg"},
   { name: "Aoi Neno", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726855112/neno_thumb_yjtw0v.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726855207/neno_full_loia75.png"},
   { name: "Misora Sora", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726855799/misora_sora_thumb_fkiooi.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726855799/misora_sora_2_kdsmtd.jpg" },
@@ -143,7 +143,23 @@ images = [
   { name: "Gale Galleon", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728823834/gale_thumb_py43qy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728823835/gale_galeon_kfisne.png"},
   { name: "Aida Rikako", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824479/aidarikako_vtuber_thumb_ane8rb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824481/aidarikako_vtuber_t57gh2.png"},
   { name: "Narumi Koko", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824793/narumi_coco_thumb_r8bzyw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824793/narumi_coco_kwtjor.jpg"},
-  { name: "Goho Batsuko Chan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728825611/batsuko_thumb_2_s2ywrn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728825613/batsuko_rvbebq.jpg"}
+  { name: "Goho Batsuko Chan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728825611/batsuko_thumb_2_s2ywrn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728825613/batsuko_rvbebq.jpg"},
+  { name: "Nebasei Cocoro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728885512/cocoro_thumb_w6jxoq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728885512/cocoro_01_fse9hb.png"},
+  { name: "Amatsuna Sasaha", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728919246/amatsuna_thumb_2_yhu8yg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728919035/amatsuna_zy5opv.png"},
+  { name: "Gomapurin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728919481/gomapurin_thumb_anu13b.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728919479/gomapurin_dvfzje.png"},
+  { name: "Somaru", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728954965/somaru_thumb_sk5gfy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728954965/somaru_hkk0ag.jpg"},
+  { name: "Mao Ura", thumb:"https://res.cloudinary.com/dpvghmrgw/image/upload/v1728957959/mao_ura_thumb_ds9z11.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728957922/mao_ura_u8dpmh.jpg"},
+  { name: "HACHI", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012240/hachi_thumb_o8cfb2.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012240/picture-HACHI-large_wxtf5t.png"},
+  { name: "Rina Asteria", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012711/rina_asteria_thumb_pmpwu4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729012711/rina_asteria_hcez63.jpg"},
+  { name: "Samayoi Suzu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729045945/samayoi_thumb_mhr1kd.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729045945/Samayoi_Suzu_v3ut0c.jpg"},
+  { name: "Josuiji Shinri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729046156/shinri_thumb_grjnj4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729046149/Josuiji-Shinri_pr-img_02_d5v0ea.png"},
+  { name: "Washu Asuka", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729053336/washu_thumb_cavde7.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729053287/washu_2_fsqkwb.jpg"},
+  { name: "Aitsuki Nakuru", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729087204/nakuru_thumb_alqjcz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729087206/nakuru_mdlvxt.png"},
+  { name: "Quon Tama", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729097783/quontama_thumb_sddabv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729097783/GUnzbyrWIAEi_a0_vn81bx.jpg"},
+  { name: "Shushu Hikari", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729126324/shushu_thumb_ws0ysi.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729126324/shushu_2_rgij9c.png"},
+  { name: "Sakurane Kotori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729128841/sakurane_thumb_rnmwdu.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729128842/sakurane_kotori_uzqia2.jpg"},
+  { name: "Tokusari Kukuri", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729171301/kukuri_thumb_dzkg1u.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729171300/tokusari_xrtei1.png"},
+  { name: "Kugumi Rui", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729171649/kugumi_rui_thumb_tgo2ti.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1729171650/kugumi_rui_ycvavt.jpg"}
 ]
 
 puts "Thumbnails"
