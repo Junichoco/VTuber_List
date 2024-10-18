@@ -1,1 +1,5 @@
 // Specific CSS for your home-page
+.card:hover {
+  background-color: purple;
+  transition: all 0.5s ease;
+}

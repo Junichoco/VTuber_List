@@ -480,9 +480,10 @@ puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 tags = ["singer", "rap", "guitar", "Minecraft", "Apex", "League of Legends", "big boobs", "deep singing voice",
         "baby girl failure", "baby", "saxophone", "loli", "flat chest", "heavy metal", "thighs", "French",
         "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
-        "hag", "bald", "kusogaki", "fluffy", "animal ears", "southern accent", "mom", "violin", "ASMR",
-        "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
-        "singing voice completely different from normal voice", "furry"]
+        "Filipino", "hag", "boomer", "bald", "kusogaki", "fluffy", "animal ears", "southern accent", "mom", "violin", "ASMR",
+        "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "comedian",
+        "singing voice completely different from normal voice", "furry", "English-Japanese bilingual", "aquatic",
+        "demon species", "witch", "gunpla", "cooking"]
 
 tags.each do |tag|
   Tag.create!(
