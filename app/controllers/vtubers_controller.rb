@@ -26,16 +26,24 @@ class VtubersController < ApplicationController
   def show
     @vtuber = Vtuber.find(params[:id])
     # current user's lists that do not include VTuber
-    @lists = List.all
+    @lists = []
+    if user_signed_in?
+      current_user.lists.each do |list|
+        if !list.has_vtuber?(@vtuber)
+          @lists << list
+        end
+      end
+    end
+
     @list = List.new
     @marker = VtuberMarker.new
-    @tag = Tag.new
-    @tags = Tag.all
+    # @tag = Tag.new
+    # @tags = Tag.all
   end
 
   def edit
     @vtuber = Vtuber.find(params[:id])
-    @agencies = Agency.all
+    @agencies = Agency.all.order('LOWER(name)')
   end
 
   def update
@@ -77,6 +85,8 @@ class VtubersController < ApplicationController
       :debut_date,
       :main_language,
       :active,
+      :thumbnail,
+      :vertical_picture,
       photos: []
     )
   end
