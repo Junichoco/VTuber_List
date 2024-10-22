@@ -1,4 +1,9 @@
 class AgenciesController < ApplicationController
+
+  def index
+    @agencies = Agency.all.order('LOWER(name)')
+  end
+
   def new
     @agency = Agency.new
   end
@@ -14,6 +19,20 @@ class AgenciesController < ApplicationController
 
   def show
     @agency = Agency.find(params[:id])
+    @vtubers = Vtuber.where(agency: @agency)
+  end
+
+  def edit
+    @agency = Agency.find(params[:id])
+  end
+
+  def update
+    @agency = Agency.find(params[:id])
+    if @agency.update(agency_params)
+      redirect_to agency_path(@agency)
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   private
