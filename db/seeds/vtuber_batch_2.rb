@@ -1457,6 +1457,45 @@ require_relative "agency_names"
     debut_date: "2023/07/29",
     yt_channel: "https://www.youtube.com/@ShushuHikari",
     twitch_channel: "https://twitch.tv/shushu_hikari"
+  },
+  {
+    name: "nah",
+    jp_name: "ナー",
+    description: "A VSinger part of the indie VTuber group Asuiro Project.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/channel/UCZlj_hp57CuyacF5d7K0VMg"
+  },
+  {
+    name: "Hitona Kohigashi",
+    jp_name: "小東ひとな",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@kohigashihitona"
+  },
+  {
+    name: "Berue Pokku",
+    jp_name: "べるえぽっく",
+    description: "A grave keeper.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/06/18",
+    debut_date: "2023/06/16",
+    yt_channel: "https://www.youtube.com/@berue_pokku/streams"
+  },
+  {
+    name: "Hoshinone Koron",
+    jp_name: "星ノ音コロン",
+    description: "No description available.",
+    agency: @haconect,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@HoshinoneKoron",
+    twitch_channel: "twitch.tv/koron_hoshinone"
   }
 
 ].each do |vtuber|
