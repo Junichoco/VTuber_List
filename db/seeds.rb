@@ -1526,6 +1526,7 @@ lm.save
 puts "List marker created: #{lm.user.username}, #{lm.list.name}"
 
 
+
 # raki.thumbnail.attach(
 #   io: File.open(Rails.root.join('app', 'assets', 'images', 'avatars', 'sunjun_avatar.png')),
 #   filename: 'sunjun_avatar.png',

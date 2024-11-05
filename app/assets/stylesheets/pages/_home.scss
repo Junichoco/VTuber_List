@@ -23,6 +23,8 @@
   width: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   background-color: white;
+
+
   // grid-template-columns: 1fr 1fr 1fr 1fr;
   // grid-gap: 6px;
   // justify-items: center;
@@ -40,6 +42,8 @@
   position: relative;
   // text-align: center;
   background-color: white;
+
+  transition: all 0.5s ease;
 
   &:hover {
     background-color: $vtuber-purple;
