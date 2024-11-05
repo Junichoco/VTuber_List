@@ -23,7 +23,7 @@ oshis = List.create!(
   "Mori Calliope",
   "Axel Syrios",
   "Gavis Bettel",
-  "KAF"
+  "Yuuki Sakuna"
 ].each do |name|
   if oshis.add_vtuber(Vtuber.find_by_name(name))
     puts "Added #{name} to #{oshis.name}"

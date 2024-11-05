@@ -134,6 +134,9 @@
   height: 200px;
   display: flex;
   align-items: center;
+
+  transform: scale(1.0);
+  transition: all 0.5s;
 }
 
 .vtuber-card:hover {
@@ -171,6 +174,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: all 0.3s ease;
 
   &:hover {
     opacity: 1;

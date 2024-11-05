@@ -130,6 +130,22 @@ end
   {
     name: "Quon Tama",
     tags: ["singer"]
+  },
+  {
+    name: "Yuuki Sakuna",
+    tags: ["singer", "animal ears"]
+  },
+  {
+    name: "Hanamiya Rica",
+    tags: ["singer", "ASMR"]
+  },
+  {
+    name: "Kousaka Mayu",
+    tags: ["cooking"]
+  },
+  {
+    name: "Takanashi Hotori",
+    tags: ["art", "VTuber rigger", "VTuber artist"]
   }
 
 ].each do |hash|

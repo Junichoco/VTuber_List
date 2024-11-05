@@ -1459,45 +1459,291 @@ require_relative "agency_names"
     twitch_channel: "https://twitch.tv/shushu_hikari"
   },
   {
-    name: "nah",
-    jp_name: "ナー",
-    description: "A VSinger part of the indie VTuber group Asuiro Project.",
+    name: "Yuuki Sakuna",
+    jp_name: "結城さくな",
+    description: "A cat maid. Formerly Minato Aqua of Hololive.",
+    gender: "female",
+    agency: @indie,
+    main_language: "Japanese",
+    birthday: "2020/12/02",
+    debut_date: "2024/10/27",
+    yt_channel: "https://www.youtube.com/@結城さくな"
+  },
+  {
+    name: "Aohi Kawara",
+    jp_name: "碧琲かわら",
+    description: "A fox who works at a cafe.",
+    gender: "female",
+    agency: @indie,
+    main_language: "Japanese",
+    debut_date: "2023/04/01",
+    yt_channel: "https://www.youtube.com/@kawara_Vtuber"
+  },
+  {
+    name: "Suimya",
+    jp_name: "すいみゃ",
+    description: "A VTuber and illustrator who likes drawing girls with twintails.",
+    gender: "female",
+    agency: @indie,
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@suimya"
+  },
+  {
+    name: "Miyuri Mei",
+    description: "An axolotl exorcist.",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@yurimouto"
+  },
+  {
+    name: "Noshime Mena",
+    jp_name: "熨斗目メナ",
+    description: "An ice witch VTuber.",
     agency: @indie,
     gender: "female",
     main_language: "Japanese",
-    yt_channel: "https://www.youtube.com/channel/UCZlj_hp57CuyacF5d7K0VMg"
+    yt_channel: "https://www.youtube.com/@noshime_mena",
+    twitch_channel: "https://twitch.tv/noshime_mena"
   },
   {
-    name: "Hitona Kohigashi",
-    jp_name: "小東ひとな",
+    name: "Hanamiya Rica",
+    jp_name: "花宮利香",
+    description: "A vampire VTuber. Formerly Yozora Mel from Hololive.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/07/28",
+    yt_channel: "https://www.youtube.com/@ricaaach.",
+  },
+  {
+    name: "Nekome Milk",
+    jp_name:"猫目ミルク",
+    description: "A cat idol VTuber from the Virtual Cat Island.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/09/03",
+    debut_date: "2022/11/22",
+    yt_channel: "https://www.youtube.com/@nekomemilk"
+  },
+  {
+    name: "Otoha Chihane",
+    jp_name: "乙葉ちはね",
+    description: "A serval cat.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@OtohaChihane"
+  },
+  {
+    name: "Habatake Pipi",
+    jp_name: "羽ばたけぴぴ",
     description: "No description available.",
     agency: @indie,
     gender: "female",
     main_language: "Japanese",
-    yt_channel: "https://www.youtube.com/@kohigashihitona"
+    yt_channel: "https://www.youtube.com/@hbtkpipi",
+    twitch_channel: "twitch.tv/hbtk_pipi"
   },
   {
-    name: "Berue Pokku",
-    jp_name: "べるえぽっく",
-    description: "A grave keeper.",
+    name: "Yumekayo Guu",
+    jp_name: "夢通ぐう",
+    description: "No description available.",
     agency: @indie,
     gender: "female",
     main_language: "Japanese",
-    birthday: "2020/06/18",
-    debut_date: "2023/06/16",
-    yt_channel: "https://www.youtube.com/@berue_pokku/streams"
+    yt_channel: "https://www.youtube.com/@ymky_zzz"
   },
   {
-    name: "Hoshinone Koron",
-    jp_name: "星ノ音コロン",
+    name: "Tsukishiro Cecil",
+    jp_name: "月城セシル",
     description: "No description available.",
-    agency: @haconect,
+    agency: @indie,
     gender: "female",
     main_language: "Japanese",
-    yt_channel: "https://www.youtube.com/@HoshinoneKoron",
-    twitch_channel: "twitch.tv/koron_hoshinone"
+    yt_channel: "https://www.youtube.com/@CecilCh"
+  },
+  {
+    name: "Sasaki Saku",
+    jp_name: "笹木咲",
+    description: "An 11th grade high schooler who loves video games and aquariums.",
+    agency: @niji,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/11/11",
+    debut_date: "2018/07/07",
+    yt_channel: "https://www.youtube.com/@SasakiSaku"
+  },
+  {
+    name: "Shiina Yuika",
+    jp_name: "椎名唯華",
+    description: "A 10th grade high schooler with a Kansai dialect who loves video games and is secretly a supernaturalist.",
+    agency: @niji,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/04/17",
+    debut_date: "2018/08/01",
+    yt_channel: "https://www.youtube.com/channel/UC_4tXjqecqox5Uc05ncxpxg"
+  },
+  {
+    name: "Koaku Mayo",
+    jp_name: "恋惡まよ",
+    description: "A little devil who was banished from the netherworld because her powers were too weak.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@koakumayo"
+  },
+  {
+    name: "Chudoku Hera",
+    jp_name: "中毒へら",
+    description: "A menhera VTuber who sometimes does webcam streams.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@ChudokuHera"
+  },
+  {
+    name: "Uichi Maho",
+    jp_name: "羽壱まほ",
+    description: "No description available.",
+    agency: @vjidai,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/06/28",
+    yt_channel: "https://www.youtube.com/@uichimaho"
+  },
+  {
+    name: "Kousaka Mayu",
+    jp_name: "香坂まゆ",
+    description: "The student council president of Sakura Gakuen.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@mayu_02_25"
+  },
+  {
+    name: "apriella",
+    description: "A VTuber and singer who also does IRL content.",
+    agency: @indie,
+    gender: "female",
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@apriella_",
+    twitch_channel: "twitch.tv/apriella"
+  },
+  {
+    name: "Konkon Tamashii",
+    jp_name: "魂〃たましぃ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@__3soul"
+  },
+  {
+    name: "Asakura Anko",
+    jp_name: "朝倉杏子",
+    description: "A 17-year-old member of Blitz Wing, a sublabel of RIOT MUSIC.",
+    agency: @riot,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/channel/UCbbiAbKAOszYbezcIYD4R3Q"
+  },
+  {
+    name: "Tabino Sora",
+    jp_name: "旅野そら",
+    description: "A cooking hunter aiming to be the number 1 super idol cooking hunter.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@tabino_sora_"
+  },
+  {
+    name: "Sakurami Mao",
+    jp_name: "桜巳マオ",
+    description: "A half-human, half-snake god VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@sakuramimao/streams"
+  },
+  {
+    name: "Mikagura Suzume",
+    jp_name: "御神楽すずめ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@suzume_mikagura",
+    twitch_channel: "https://twitch.tv/suzume_mikagura"
+  },
+  {
+    name: "Takanashi Hotori",
+    jp_name: "小鳥遊ほとり",
+    description: "An antlered VTuber, illustrator, and fujoshi.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@takanashi_hotori"
+  },
+  {
+    name: "Inaba Haneru",
+    jp_name: "因幡はねる",
+    description: "No description available.",
+    agency: @nanashi,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2018/06/09",
+    yt_channel: "https://www.youtube.com/@Inaba_Haneru"
+  },
+  {
+    name: "Suzumi Nemo",
+    jp_name: "涼海ネモ",
+    description: "No description available.",
+    agency: @nanashi,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Nemo_Suzumi"
+  },
+  {
+    name: "Musubime Yui",
+    jp_name: "結目ユイ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@musubimeyui"
+  },
+  {
+    name: "Manase Yua",
+    jp_name: "真名瀬ゆあ",
+    description: "No description available.",
+    agency: @problu,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@yua_manase"
+  },
+  {
+    name: "Hinamori Rabi",
+    jp_name: "雛森菈比",
+    description: "No description available.",
+    agency: @silva,
+    gender: "female",
+    main_language: "Chinese",
+    yt_channel: "https://www.youtube.com/@HinamoriRABI",
+    twitch_channel: "https://twitch.tv/hinamorirabi/about"
+  },
+  {
+    name: "Asumi Inori",
+    jp_name: "明澄祈",
+    description: "No description available.",
+    agency: @indie,
+    gender: "neutral",
+    main_language: "Japanese",
+    birthday: "2020/12/07",
+    yt_channel: "https://www.youtube.com/@Inori_Asumi"
   }
-
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
     puts "#{vtuber[:name]} created" if Vtuber.create!(vtuber)
