@@ -1743,6 +1743,129 @@ require_relative "agency_names"
     main_language: "Japanese",
     birthday: "2020/12/07",
     yt_channel: "https://www.youtube.com/@Inori_Asumi"
+  },
+  {
+    name: "Hizuki Kanon",
+    jp_name: "緋月かのん",
+    description: "A demon who missed her train stop and got lost in the human world.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@kanonhiz"
+  },
+  {
+    name:"Kannagi Tenri",
+    jp_name: "巫てんり",
+    description: "A 16-year-old from Shin Tokyo.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@KannagiTenri"
+  },
+  {
+    name: "Nachoneko",
+    description: "An illustrator. Also known as Amashiro Natsuki.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/10/11",
+    yt_channel: "https://www.youtube.com/@Nachoneko_dayo",
+    twitch_channel: "https://twitch.tv/nacho_dayo"
+  },
+  {
+    name: "Kaname Mahiro",
+    jp_name: "奏天まひろ",
+    description: "A VTuber otaku aiming to be one of the best virtual artists in the universe.",
+    agency: @marinasu,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/04/27",
+    yt_channel: "https://www.youtube.com/@MaRiNaSu/streams"
+  },
+  {
+    name: "Mioli Luka",
+    jp_name: "実栞るか",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@miloilka"
+  },
+  {
+    name: "Amari Mei",
+    jp_name: "あまりめい",
+    description: "A cleaning maid VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Amari_Mei"
+  },
+  {
+    name: "Yu-yu Yura",
+    jp_name: "幽々ゆら",
+    description: "No description available.",
+    agency: @fsp,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Yu-yu-Yura_fsp"
+  },
+  {
+    name: "Momoruri Seiran",
+    jp_name: "百瑠璃せいらん",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Momoruri_Seiran"
+  },
+  {
+    name: "Havelami Agne",
+    jp_name: "ハーヴェラミアーニャ",
+    description: "A demon lord whose body was destroyed who has taken the form of a human girl. In order to regain her magical energy, she became a streamer.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@havelamiagne/streams"
+  },
+  {
+    name: "Tsukinowa Noa",
+    jp_name: "月ノ輪乃愛",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Tsukinowa_Noa",
+    twitch_channel: "https://twitch.tv/tsukinowa_noa"
+  },
+  {
+    name: "Yokyu Akeru",
+    jp_name: "宵吸あけル",
+    description: "A vampire VTuber who dreams of reincarnating as a human.",
+    agency: @akapro,
+    debut_date: "2024/05/24",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@YokyuAkeru"
+  },
+  {
+    name: "Nekomata Nyan",
+    jp_name: "猫又にゃん",
+    description: "A catgirl VTuber.",
+    agency: @akapro,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/02/22",
+    debut_date: "2024/05/24",
+    yt_channel: "https://www.youtube.com/@NekomataNyann"
+  },
+  {
+    name: "Misono Yui",
+    description: "No description available.",
+    agency: @indie,
+    debut_date: "2020/12/11",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@ymisono_ch"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
