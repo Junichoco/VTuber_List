@@ -1,0 +1,40 @@
+.project-card {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-description {
+  width: 50%;
+  margin-right: 10px;
+}
+.project-pictures {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  // flex-direction: column;
+}
+.project-photo {
+  max-width: 100%;
+  max-height: 500px;
+  margin: 20px;
+  border: 0.5rem solid #4760ff;
+  border-radius: 5px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+
+  // justify-self: center;
+}
+
+.project-card-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+#vtuberlist-photo-home {
+  // width: 75%;
+}
