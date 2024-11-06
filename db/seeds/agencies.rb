@@ -253,6 +253,20 @@
     name: "SilvaLive",
     description: "No description available.",
     location: "Taiwan"
+  },
+  {
+    name: "Marinasu",
+    description: "A virtual artist group produced by avex.",
+    location: "Japan",
+    website: "https://avex.jp/marinasu/",
+    yt_channel: "https://www.youtube.com/@MaRiNaSu/streams"
+  },
+  {
+    name: "Akashic Production",
+    description: "An urban legend-themed VTuber group.",
+    location: "Japan",
+    website: "https://akashicproduction.com/",
+    yt_channel: "https://www.youtube.com/@AkashicPro"
   }
 
 ].each do |agency|

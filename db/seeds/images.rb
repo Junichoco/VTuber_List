@@ -138,7 +138,7 @@ images = [
   { name: "Nagisawa Shichi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820591/shichi_thumb_r3c9sh.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820610/shichi_m7uu4w.png"},
   { name: "Yukishiro Qalu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820590/qalu_thumb_yk1wkr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820608/qalu_kvtpdv.png"},
   { name: "Hoshino Rimu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728821104/rimu_thumb_cpgots.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820605/rimu_njb3zf.png"},
-  { name: "Narumi Myao", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820587/myao_thumb_nsgghy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820603/amabuki_s5ucdd.png"},
+  { name: "Narumi Myao", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820587/myao_thumb_nsgghy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820607/myao_l7vd6c.png"},
   { name: "Amabuki San", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820588/amabuki_thumb_ld5uyz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728820603/amabuki_s5ucdd.png"},
   { name: "Gale Galleon", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728823834/gale_thumb_py43qy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728823835/gale_galeon_kfisne.png"},
   { name: "Aida Rikako", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824479/aidarikako_vtuber_thumb_ane8rb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728824481/aidarikako_vtuber_t57gh2.png"},

@@ -146,6 +146,14 @@ end
   {
     name: "Takanashi Hotori",
     tags: ["art", "VTuber rigger", "VTuber artist"]
+  },
+  {
+    name: "Amari Mei",
+    tags: ["VTuber rigger", "VTuber artist"]
+  },
+  {
+    name: "Havelami Agne",
+    tags: ["ASMR", "gamer"]
   }
 
 ].each do |hash|

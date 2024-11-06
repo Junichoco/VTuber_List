@@ -39,3 +39,5 @@
 @nanashi = Agency.find_by_name("774inc.")
 @problu = Agency.find_by_name("ProjectBLUE")
 @silva = Agency.find_by_name("SilvaLive")
+@marinasu = Agency.find_by_name("Marinasu")
+@akapro = Agency.find_by_name("Akashic Production")
