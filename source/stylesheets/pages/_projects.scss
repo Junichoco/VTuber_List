@@ -38,3 +38,16 @@
 #vtuberlist-photo-home {
   // width: 75%;
 }
+
+.secret-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#password {
+  width: 150px;
+}
+
+#enter-button {
+  width: 50px;
+}
