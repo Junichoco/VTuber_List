@@ -1866,6 +1866,54 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@ymisono_ch"
+  },
+  {
+    name: "Berue Pokku",
+    jp_name: "べるえぽっく",
+    description: "A grave keeper VTuber.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@berue_pokku"
+  },
+  {
+    name: "Shuu",
+    jp_name: "柊羽",
+    description: "A mage who travels between the worlds of fantasy and reality.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2024/10/26",
+    yt_channel: "https://www.youtube.com/@Shuu___3"
+  },
+  {
+    name: "Hariyama Latte",
+    jp_name: "針山らて",
+    description: "A hedgehog VTuber who love caffe latte.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/04/20",
+    yt_channel: "https://www.youtube.com/@hariyama_latte"
+  },
+  {
+    name: "Yuzuki Ruina",
+    jp_name: "癒月るいな",
+    description: "A doll master from another world.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2022/06/12",
+    yt_channel: "https://www.youtube.com/@Yuzuki_Ruina"
+  },
+  {
+    name: "Shiduki Sena",
+    jp_name: "紫槻セナ",
+    description: "A planet from the Andromeda Galaxy. While traveling through space, she collided with space trash and crashed into Earth. When she awakened, she had turned into a girl.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@shidukisenach.1853"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
