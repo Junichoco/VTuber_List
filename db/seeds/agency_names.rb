@@ -41,3 +41,7 @@
 @silva = Agency.find_by_name("SilvaLive")
 @marinasu = Agency.find_by_name("Marinasu")
 @akapro = Agency.find_by_name("Akashic Production")
+@attractors = Agency.find_by_name("Attractors")
+@lovvebox = Agency.find_by_name("LoVVebox")
+@linkstudio = Agency.find_by_name("Link Studio-V")
+@neoporte = Agency.find_by_name("Neo-Porte")

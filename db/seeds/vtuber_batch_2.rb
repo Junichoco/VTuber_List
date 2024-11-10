@@ -1914,6 +1914,124 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@shidukisenach.1853"
+  },
+  {
+    name: "Mikumo Mui",
+    jp_name: "三雲むい︎︎︎︎︎︎",
+    description: "No description available.",
+    agency: @attractors,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/08/28",
+    debut_date: "2024/02/24",
+    yt_channel: "https://www.youtube.com/@mikumo_mui"
+  },
+  {
+    name: "Nilim Snowmelt",
+    jp_name: "ニリム・スノーメルト",
+    description: "No description available.",
+    agency: @fsp,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@nilim_fsp/streams"
+  },
+  {
+    name: "Komomo Tama",
+    jp_name: "狐桃たま",
+    description: "A fox child.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2023/03/03",
+    yt_channel: "https://www.youtube.com/@KomomoTama",
+    twitch_channel: "https://twitch.tv/komomotama"
+  },
+  {
+    name: "Sakura Ribbon",
+    jp_name: "咲愛りぼん",
+    description: "No description available.",
+    agency: @lovvebox,
+    gender: "female",
+    main_language: "Japanese",
+    birthday: "2020/04/08",
+    debut_date: "2023/01/05",
+    yt_channel: "https://www.youtube.com/@ribbon_lvv"
+  },
+  {
+    name: "Amayui Hiiro",
+    jp_name: "天結ひいろ",
+    description: "An angel",
+    agency: @linkstudio,
+    debut_date: "2024/02/17",
+    birthday: "11/05",
+    yt_channel: "https://www.youtube.com/@amayuihiiro/featured"
+  },
+  {
+    name: "Misono Yui",
+    jp_name: "御園結唯",
+    description: "A voice actress VTuber.",
+    agency: @indie,
+    debut_date: "2020/12/11",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@ymisono_ch"
+  },
+  {
+    name: "Amari Ari",
+    jp_name: "甘味あり",
+    description: "An ant girl who came from underground.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2024/02/14",
+    yt_channel: "https://www.youtube.com/@Amami_Ari"
+  },
+  {
+    name: "Inumori Yomogi",
+    jp_name: "狗森よもぎ",
+    description: "No description available.",
+    agency: @lovvebox,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@yomogi_lvv"
+  },
+  {
+    name: "Lulebel",
+    jp_name: "ルルベル",
+    description: "An assassin wolf who loves music and freedom.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    debut_date: "2023/08/27",
+    yt_channel: "https://www.youtube.com/@lulebel",
+    twitch_channel: "https://www.twitch.tv/lulebel_"
+  },
+  {
+    name: "Mutou Shio",
+    jp_name: "無糖しお",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@shio_mutou"
+  },
+  {
+    name: "Shirona Shizuku",
+    jp_name: "白那しずく",
+    description: "No description available.",
+    agency: @neoporte,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@ShironaShizuku"
+  },
+  {
+    name: "Buimaru",
+    jp_name: "ぶいまる",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@bui-bui-buimaru"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

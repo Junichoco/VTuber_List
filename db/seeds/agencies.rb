@@ -267,8 +267,26 @@
     location: "Japan",
     website: "https://akashicproduction.com/",
     yt_channel: "https://www.youtube.com/@AkashicPro"
+  },
+  {
+    name: "Attractors",
+    description: "No description available.",
+    location: "Japan",
+    website: "https://attractors.jp/#1"
+  },
+  {
+    name: "LoVVebox",
+    description: "A production agency with the concept of \"Idols that you can go meet.\"",
+    location: "Japan",
+    website: "https://lovvebox.com/",
+    yt_channel: "https://www.youtube.com/@lovvebox"
+  },
+  {
+    name: "Link Studio-V",
+    description: "A VTuber agency managed by Unison Arts.",
+    location: "Japan",
+    website: "https://unison-arts.co.jp/"
   }
-
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])
     puts "#{agency[:name]} created" if Agency.create!(agency)
