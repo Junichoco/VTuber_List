@@ -11,6 +11,10 @@
 .project-description {
   width: 50%;
   margin-right: 10px;
+
+  i {
+    font-size: 20px;
+  }
 }
 .project-pictures {
   width: 50%;
@@ -20,14 +24,22 @@
   // flex-direction: column;
 }
 .project-photo {
-  max-width: 100%;
-  max-height: 500px;
+  // max-width: 650px;
+  // max-height: 500px;
   margin: 20px;
   border: 0.5rem solid #4760ff;
   border-radius: 5px;
   box-shadow: 0 3px 7px rgba(0,0,0,0.5);
 
   // justify-self: center;
+}
+.photo-medium {
+  max-width: 650px;
+  max-height: 500px;
+}
+.photo-large {
+  width: 100%;
+  max-height: 500px;
 }
 
 .project-card-bottom {
@@ -40,8 +52,19 @@
 }
 
 .secret-form {
+  // width: 200px;
   display: flex;
   flex-direction: column;
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.password-box {
+  width: 200px;
+  margin-bottom: 5px;
+  margin-top: 0px;
 }
 
 #password {
@@ -49,5 +72,36 @@
 }
 
 #enter-button {
-  width: 50px;
+  width: 75px;
+  border-radius: 5px;
+  border: none;
+  background-color: #246DFF;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.link-button {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: purple;
+
+  transition: all 0.2s;
+}
+
+.link-button:hover {
+  text-decoration: none;
+  background-color: #246DFF;
+  transform: scale(120%);
+  color: white;
+
+  transition: all 0.2s;
+
+}
+
+.soundcloud {
+  margin-top: 10px;
 }

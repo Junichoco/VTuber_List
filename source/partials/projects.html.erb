@@ -12,9 +12,12 @@
                 <p>This project is based on the movie watchlist assignment from Le Wagon and was built using Ruby on Rails and a template from Le Wagon. I did all of the coding and design.</p>
                 <p>I made this app because I like discovering new, small VTubers, and I kept getting random VTubers recommended to me every time I opened up YouTube. At first, I kept saving their VODs to my playlists on YouTube, but after I had three playlists full of VTubers, I lost track of which ones I already added and which VTuber I put in which playlist.</p>
                 <p>So then I decided to make this app so I could keep track of the VTubers I found.</p>
+                <p>I entered all of the entries manually and picked out and cropped all of the pictures myself.</p>
+
+
               </div>
               <div class="project-pictures">
-                <%= image_tag "vtuber_list_1.png", class: "project-photo", id: "vtuberlist-photo-home" %>
+                <%= image_tag "vtuber_list_1.png", class: "project-photo photo-medium", id: "vtuberlist-photo-home" %>
               </div>
             </div>
             <div class="project-card-bottom">
@@ -29,14 +32,19 @@
               <div class="project-description">
                 <h3>Crok'</h3>
                 <p>A dog fitness management app. Make a log of your dog's body composition and exercise level, and the app will keep track of its fitness over time so you can make adjustments to its exercise and diet. Make reminders to feed your dog, take them for a walk, or take them to the vet. You can also have your family use the app and assign them tasks.</p>
+
+                  <% link_to "https://www.crokapp.com/home", target: :blank do %>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <% end %>
+
               </div>
               <div class="project-pictures">
               </div>
             </div>
             <div class="project-card-bottom">
-              <%= image_tag "crok_1.png", class: "project-photo" %>
-              <%= image_tag "crok_2.png", class: "project-photo" %>
-              <%= image_tag "crok_3.png", class: "project-photo" %>
+              <%= image_tag "crok_1.png", class: "project-photo photo-medium" %>
+              <%= image_tag "crok_2.png", class: "project-photo photo-medium" %>
+              <%= image_tag "crok_3.png", class: "project-photo photo-medium" %>
             </div>
           </div>
 
@@ -47,22 +55,26 @@
                 <p>A marketplace web app for renting suits, cars, watches, and other luxury items. Made with a team of four people as part of the Le Wagon coding bootcamp.</p>
               </div>
               <div class="project-pictures">
-                <%= image_tag 'luxehaven.png', class: 'project-photo' %>
+                <%= image_tag 'luxehaven.png', class: 'project-photo photo-medium' %>
               </div>
             </div>
           </div>
 
           <h2 class="rubik-dirt-regular">Boring Stuff</h2>
           <form class="secret-form">
-            <label for="password">Enter password</label>
-            <input type="text" id="password">
-            <input type="submit" value="Enter" id="enter-button">
+            <p>Enter password</p>
+            <p id="message"></p>
+            <div class="password-box"><input type="text" id="password-box"></div>
+            <button id="enter-button">Enter</button>
           </form>
-          <div class="secret">
+          <div id="secret" class="d-none">
             <p>I sing karaoke badly</p>
-            <%= link_to "Karaoke 1", "https://soundcloud.com/taro-yamada-463193864/shika-iro-days/s-msclygbtbGl?si=92f924fd2ae34fce8a713b0ad7f7993f", target: :blank %>
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1820513697%3Fsecret_token%3Ds-xJIgIkxpUoI&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/taro-yamada-463193864" title="Taro Yamada" target="_blank" style="color: #cccccc; text-decoration: none;">Taro Yamada</a> · <a href="https://soundcloud.com/taro-yamada-463193864/raktober-8/s-xJIgIkxpUoI" title="RAKTOBER  8" target="_blank" style="color: #cccccc; text-decoration: none;">RAKTOBER  8</a></div>
-            <p>I make VTuber clips and have my own YouTube channel.</p>
+            <%= link_to "Karaoke 1", "https://soundcloud.com/taro-yamada-463193864/shika-iro-days/s-msclygbtbGl?si=92f924fd2ae34fce8a713b0ad7f7993f", target: :blank, class: "link-button" %>
+            <div class="soundcloud">
+              <iframe width="50%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1820513697%3Fsecret_token%3Ds-xJIgIkxpUoI&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/taro-yamada-463193864" title="Taro Yamada" target="_blank" style="color: #cccccc; text-decoration: none;">Taro Yamada</a> · <a href="https://soundcloud.com/taro-yamada-463193864/raktober-8/s-xJIgIkxpUoI" title="RAKTOBER  8" target="_blank" style="color: #cccccc; text-decoration: none;">RAKTOBER  8</a></div>
+            </div>
+            <p>I have been making VTuber clips for years. At first, I made clips for a large channel that is now inactive. Now, I have my own channel where I make clips occasionally.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zghQqIcIwt4?si=rjHlHTQXHZzTVnnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/2AhDSWmOWQ0?si=_VlwaLGrYpyDBQFr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 

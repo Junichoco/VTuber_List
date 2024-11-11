@@ -1,4 +1,17 @@
 .title-main {
   padding-top: 10px;
   font-size: 7rem;
+  text-align: center;
+  color: white;
+  text-shadow: white 0 0 50px;
+  background-color: black;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  transition: all 0.5s;
 }
+
+// .title-main:hover {
+//   text-shadow: white 0 0 80px;
+// }
