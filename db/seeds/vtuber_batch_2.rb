@@ -2032,6 +2032,69 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     yt_channel: "https://www.youtube.com/@bui-bui-buimaru"
+  },
+  {
+    name: "Amatsuka Eru",
+    jp_name: "天使エル",
+    description: "An angel-in-training who works at a concept cafe.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2023/07/16",
+    birthday: "2020/11/25",
+    yt_channel: "https://www.youtube.com/@Ama_Eru"
+  },
+  {
+    name: "Aokage Kasegi",
+    jp_name: "青景カセギ",
+    description: "A deer dullahan VTuber who runs a teahouse.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/09/19",
+    debut_date: "2024/10/12",
+    yt_channel: "https://www.youtube.com/@%E9%9D%92%E6%99%AF%E3%82%AB%E3%82%BB%E3%82%AE/streams"
+  },
+  {
+    name: "Ritorun",
+    jp_name: "りとるん",
+    description: "A VTuber with a Tsugaru dialect.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@ritorun_ch",
+    twitch_channel: "https://twitch.tv/ritorunvt"
+  },
+  {
+    name: "Mirumame",
+    jp_name: "みるまめ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2022/10/29",
+    yt_channel: "https://www.youtube.com/@mirumame5485"
+  },
+  {
+    name: "Kohaku Runa",
+    jp_name: "恋白 るな恋白 るな",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2023/05/26",
+    yt_channel: "https://www.youtube.com/@kohakuruna/streams"
+  },
+  {
+    name: "Amakusa Fran",
+    jp_name: "天草フラン",
+    description: "A cake shop owner.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/03/03",
+    debut_date: "2022/03/13",
+    yt_channel: "https://www.youtube.com/@Amakusa_Fran"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

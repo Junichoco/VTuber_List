@@ -174,7 +174,10 @@ images = [
   { name: "Abyss Song Syndrome", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731247613/abyss_thumb_ncwtfm.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731247613/abyss_qyuarj.jpg"},
   { name: "Nilim Snowmelt", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731247896/snowmelt_thumb_hj8kfv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731247896/snowmelt_jcasv1.jpg"},
   { name: "Amayui Hiiro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249589/hiiro_thumb_bi0ijz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249590/hiiro_2_oahf1j.jpg"},
-  { name: "Misono Yui", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249940/misono_thumb_fvy2ze.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249893/misono_3_ozynbs.jpg"}
+  { name: "Misono Yui", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249940/misono_thumb_fvy2ze.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249893/misono_3_ozynbs.jpg"},
+  { name: "Aokage Kasegi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731256081/aokage_thumb_rv2vv0.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731256186/aokage_2_dhn63z.png"},
+  { name: "Mirumame", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731341594/mirumame_thumb_lbhu2t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731341594/mirumame_oblmwa.jpg"},
+  { name: "Amakusa Fran", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731421813/amakusa_thumb_hmm0ks.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731421813/amakusa_bga5pk.jpg"}
 ]
 
 puts "Thumbnails"
