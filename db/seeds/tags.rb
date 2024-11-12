@@ -154,6 +154,10 @@ end
   {
     name: "Havelami Agne",
     tags: ["ASMR", "gamer"]
+  },
+  {
+    name: "Shiduki Sena",
+    tags: ["singer", "Chinese"]
   }
 
 ].each do |hash|

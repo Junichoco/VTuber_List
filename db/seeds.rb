@@ -535,7 +535,8 @@ ray = Vtuber.create!(
   description: "A mom VTuber",
   agency: indie,
   gender: "female",
-  main_language: "Japanese"
+  main_language: "Japanese",
+  yt_channel: "https://www.youtube.com/@OtsukaRay"
 )
 ["singer", "mom", "baby"].each do |tag|
   ray.add_tag(tag)

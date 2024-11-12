@@ -166,7 +166,15 @@ images = [
   { name: "Uichi Maho", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730594774/maho_thumb_e6ycjj.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730594774/maho_ixd6hq.jpg"},
   { name: "Ami Amami", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1726589164/development/dn64agp889fwsfa5ky9z4tl5tgj4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730633553/ami_2_tx82pa.png"},
   { name: "Tabino Sora", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730759966/tabino_thumb_u4pbcf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730759966/tabino_gylyaa.jpg"},
-  { name: "Asumi Inori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730765235/inori_thumb_tmu4rm.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730765235/asumi_inori_d5euth.jpg"}
+  { name: "Asumi Inori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730765235/inori_thumb_tmu4rm.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1730765235/asumi_inori_d5euth.jpg"},
+  { name: "Hariyama Latte", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731159430/latte_thumb_avxdyp.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731159430/latte_ncnizk.jpg"},
+  { name: "Shiduki Sena", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731159896/sena_thumb_hardv0.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731159896/sena_xnn14i.jpg"},
+  { name: "Otsuka Ray", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731161489/otsuka_ray_thumb_ajrycx.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731161333/otsuka_ray_ystym3.jpg"},
+  { name: "Mikumo Mui", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731198313/mikumomui_thumb_khbnum.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731198314/mikumi_mui_xkexm1.jpg"},
+  { name: "Abyss Song Syndrome", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731247613/abyss_thumb_ncwtfm.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731247613/abyss_qyuarj.jpg"},
+  { name: "Nilim Snowmelt", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731247896/snowmelt_thumb_hj8kfv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731247896/snowmelt_jcasv1.jpg"},
+  { name: "Amayui Hiiro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249589/hiiro_thumb_bi0ijz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249590/hiiro_2_oahf1j.jpg"},
+  { name: "Misono Yui", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249940/misono_thumb_fvy2ze.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731249893/misono_3_ozynbs.jpg"}
 ]
 
 puts "Thumbnails"
