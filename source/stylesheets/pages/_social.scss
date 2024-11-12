@@ -1,0 +1,27 @@
+.socials {
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  padding: 50px;
+  color: white;
+
+  i {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  transition: all 0.1s;
+}
+
+.button-social {
+  padding: 0px;
+  margin: 0 20px 0 20px;
+}
+
+.button-social:hover{
+  i{
+    color: skyblue;
+    font-size: 35px;
+    transition: all 0.1s;
+  }
+}

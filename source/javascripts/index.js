@@ -43,6 +43,8 @@ enter_button.addEventListener("click", (event) => {
         message.innerText = "You passed the test! Enjoy my boring stuff.";
         secret_section.classList.remove("d-none");
         passed = true;
+        password_box.classList.add("d-none");
+        enter_button.classList.add("d-none");
       } else{
         message.innerText = "What do you put in a toaster?\nWrong answer. Try again.";
         password_box.value = "";
