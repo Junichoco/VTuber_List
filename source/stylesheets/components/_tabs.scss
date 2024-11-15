@@ -42,3 +42,14 @@
   opacity: 1;
   transition: all 0.5s;
 }
+
+#click-here{
+  text-align: center;
+  height: 80vh;
+  p{
+    font-size: 3rem;
+  }
+  i{
+    font-size: 4rem;
+  }
+}
