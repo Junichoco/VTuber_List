@@ -5,3 +5,24 @@ body{
 h2, h3, h4, p, ul {
   color: white;
 }
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}

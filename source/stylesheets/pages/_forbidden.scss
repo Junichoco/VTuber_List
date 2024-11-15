@@ -1,0 +1,36 @@
+#forbidden {
+  min-height: 80vh;
+}
+
+.red {
+  color: $red;
+}
+
+.message-box {
+  height: 60px;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+#forbidden-button {
+  width: 75px;
+  border-radius: 5px;
+  border: solid red 2px;
+  background-color: black;
+  color: $red;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+
+  transition: all 0.5s;
+}
+
+#forbidden-button:hover {
+  box-shadow: red 0 0 20px;
+  text-shadow: red 0 0 20px;
+
+  transition: all 0.5s;
+}
