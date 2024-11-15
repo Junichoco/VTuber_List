@@ -158,6 +158,10 @@ end
   {
     name: "Shiduki Sena",
     tags: ["singer", "Chinese"]
+  },
+  {
+    name: "Fusako",
+    tags: ["art"]
   }
 
 ].each do |hash|

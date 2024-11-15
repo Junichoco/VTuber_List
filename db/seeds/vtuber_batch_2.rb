@@ -2095,6 +2095,73 @@ require_relative "agency_names"
     birthday: "2020/03/03",
     debut_date: "2022/03/13",
     yt_channel: "https://www.youtube.com/@Amakusa_Fran"
+  },
+  {
+    name: "Fusako",
+    jp_name: "ふさこ",
+    description: "A VTuber who plays games and does livestreams where she makes 3D models using Blendr.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@fusako_asobiba/streams"
+  },
+  {
+    name: "Otokagi Mero",
+    jp_name: "音鍵めろ",
+    description: "A VSinger who is a ghost in a school music room.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@otokagimero"
+  },
+  {
+    name: "Hakanai Ruby",
+    jp_name: "儚依るびぃ",
+    description: "No description available.",
+    agency: @fsp,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@RubyHakanai_fsp"
+  },
+  {
+    name: "Asakura Anko",
+    jp_name: "朝倉杏子",
+    description: "A VTuber part of the group Blitz Wing from Riot Music.",
+    agency: @riot,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/channel/UCbbiAbKAOszYbezcIYD4R3Q"
+  },
+  {
+    name: "Olilin",
+    jp_name: "おりりん",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2023/11/29",
+    yt_channel: "https://www.youtube.com/channel/UCbbiAbKAOszYbezcIYD4R3Q",
+    twitch_channel: "https://twitch.tv/olilin628"
+  },
+  {
+    name: "Yadoku Keroru",
+    jp_name: "矢毒けろる",
+    description: "The fairy of strawberry poison frogs.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@keroruch"
+  },
+  {
+    name: "Nureba Shua",
+    jp_name: "濡羽しゅあ",
+    description: "A demon who fell to the human world after drinking too much.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/03/19",
+    yt_channel: "https://www.youtube.com/@ShuaNureba/streams"
+
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
