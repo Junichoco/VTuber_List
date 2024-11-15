@@ -1,0 +1,44 @@
+.tab-bar {
+  // text-align: center;
+  // align-items: center;
+  margin: 10px 0 10px 0;
+  padding-bottom: 10px;
+}
+
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.tabs-underlined .tab-underlined {
+  color: white;
+  padding: 8px;
+  margin: 8px;
+  opacity: .6;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+
+  text-shadow: white 0 0 0px;
+
+  transition: all 0.5s;
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  // border-bottom: 3px solid #555555;
+  text-shadow: white 0 0 20px;
+  transition: all 0.5s;
+}
+
+.tab-underlined:hover{
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.tab-section{
+  opacity: 1;
+  transition: all 0.5s;
+}

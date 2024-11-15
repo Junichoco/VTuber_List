@@ -18,8 +18,7 @@ const password = document.querySelector("#password");
 // const enter_button = document.getElementById("enter-button");
 const enter_button = document.querySelector("#enter-button");
 
-const number = document.querySelector("#number");
-number.innerText = 5;
+// const number = document.querySelector("#number");
 
 // if(enter_button) {
 //   console.log("enter button");
