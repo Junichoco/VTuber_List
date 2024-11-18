@@ -188,7 +188,15 @@ images = [
   { name: "mei", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731645239/mei_thumb_w0hxcb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731645239/mei_yzhdyb.png"},
   { name: "Himeno Ekopi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731646063/ekopi_thumb_aiebj9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731646063/ekopi_imrqku.jpg"},
   { name: "Stronny Cuttles", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731674911/stronny_thumb_vupuy2.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731674911/stronny_hyktz6.jpg"},
-  { name: "Harusame Yuni", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731684162/yuni_thumb_ck2gn7.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731684161/yuni_3_qnwkec.jpg"}
+  { name: "Harusame Yuni", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731684162/yuni_thumb_ck2gn7.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731684161/yuni_3_qnwkec.jpg"},
+  { name: "Komomo Tama", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731763688/komomo_thumb_2_bixflt.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731763689/komomo_a6y7zd.jpg"},
+  { name: "Sabashiro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731764341/sabashiro_thumb_cihls2.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731764342/sabashiro_vkjcoa.png"},
+  { name: "Mizuki Riumu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731860191/riumu_thumb_jbtghc.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731860191/riumu_rygkcp.jpg"},
+  { name: "Hoshino Supika", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731861623/supika_thumb_hmqbkv.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731861623/supika_2_wwcdty.png"},
+  { name: "Shirogane Noel", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731899050/noel_thumb_yoeei0.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731899050/noel_x6eyqh.png"},
+  { name: "Nui Sociere", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731902426/nui_yj28hx.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731902426/nui_2_cy7yqy.png"},
+  { name: "Hanabatake Chaika", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731901153/chaika_q2iefn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731901154/chaika_2_irl1v1.png"},
+  { name: "Amano Nene", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731903671/nene_thumb_mteysb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731903672/nene_3_g8rtql.jpg"}
 ]
 
 puts "Thumbnails"

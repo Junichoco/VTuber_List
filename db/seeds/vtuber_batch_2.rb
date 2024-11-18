@@ -1780,7 +1780,7 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     birthday: "2020/04/27",
-    yt_channel: "https://www.youtube.com/@MaRiNaSu/streams"
+    yt_channel: "https://www.youtube.com/@MaRiNaSu"
   },
   {
     name: "Mioli Luka",
@@ -1825,7 +1825,7 @@ require_relative "agency_names"
     agency: @indie,
     gender: "female",
     main_language: "Japanese",
-    yt_channel: "https://www.youtube.com/@havelamiagne/streams"
+    yt_channel: "https://www.youtube.com/@havelamiagne"
   },
   {
     name: "Tsukinowa Noa",
@@ -1933,7 +1933,7 @@ require_relative "agency_names"
     agency: @fsp,
     gender: "female",
     main_language: "Japanese",
-    yt_channel: "https://www.youtube.com/@nilim_fsp/streams"
+    yt_channel: "https://www.youtube.com/@nilim_fsp"
   },
   {
     name: "Komomo Tama",
@@ -1964,7 +1964,7 @@ require_relative "agency_names"
     agency: @linkstudio,
     debut_date: "2024/02/17",
     birthday: "11/05",
-    yt_channel: "https://www.youtube.com/@amayuihiiro/featured"
+    yt_channel: "https://www.youtube.com/@amayuihiiro"
   },
   {
     name: "Misono Yui",
@@ -2053,7 +2053,7 @@ require_relative "agency_names"
     gender: "female",
     birthday: "2020/09/19",
     debut_date: "2024/10/12",
-    yt_channel: "https://www.youtube.com/@%E9%9D%92%E6%99%AF%E3%82%AB%E3%82%BB%E3%82%AE/streams"
+    yt_channel: "https://www.youtube.com/@%E9%9D%92%E6%99%AF%E3%82%AB%E3%82%BB%E3%82%AE"
   },
   {
     name: "Ritorun",
@@ -2083,7 +2083,7 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     debut_date: "2023/05/26",
-    yt_channel: "https://www.youtube.com/@kohakuruna/streams"
+    yt_channel: "https://www.youtube.com/@kohakuruna"
   },
   {
     name: "Amakusa Fran",
@@ -2103,7 +2103,7 @@ require_relative "agency_names"
     agency: @indie,
     main_language: "Japanese",
     gender: "female",
-    yt_channel: "https://www.youtube.com/@fusako_asobiba/streams"
+    yt_channel: "https://www.youtube.com/@fusako_asobiba"
   },
   {
     name: "Otokagi Mero",
@@ -2140,7 +2140,7 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     debut_date: "2023/11/29",
-    yt_channel: "https://www.youtube.com/channel/UCbbiAbKAOszYbezcIYD4R3Q",
+    yt_channel: "https://www.youtube.com/@olilin",
     twitch_channel: "https://twitch.tv/olilin628"
   },
   {
@@ -2160,8 +2160,90 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     birthday: "2020/03/19",
-    yt_channel: "https://www.youtube.com/@ShuaNureba/streams"
-
+    yt_channel: "https://www.youtube.com/@ShuaNureba"
+  },
+  {
+    name: "Komomo Tama",
+    jp_name: "狐桃たま",
+    description: "A fox girl.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2023/03/03",
+    yt_channel: "https://www.youtube.com/@KomomoTama",
+    twitch_channel: "https://twitch.tv/komomotama"
+  },
+  {
+    name: "Sabashiro",
+    jp_name: "さばしろ",
+    description: "A cat VTuber and jazz singer.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@jazzvocal_NaokoAbe"
+  },
+  {
+    name: "Mizuki Riumu",
+    jp_name: "水月りうむ",
+    description: "An alien VTuber who came to Earth in search of aquatic creatures. She is a member of Lily*planet and likes to do anime watchalongs.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@mizukiriumu"
+  },
+  {
+    name: "Hoshino Supika",
+    jp_name: "星乃すぴか",
+    description: "A maid VTuber who does sexy webcam ASMR streams.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@supixsupi"
+  },
+  {
+    name: "Shirogane Noel",
+    jp_name: "白銀ノエル",
+    description: "As much as this fluffy, meatheaded knight may be easy-going, she has the dangerous habit of attempting to muscle her way through her problems. Hungering for power, she came to train to the VTuber world where all the stronk people are.\n\n(Source: Hololive website)",
+    agency: @hololive,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/11/24",
+    debut_date: "2019/08/08",
+    yt_channel: "https://www.youtube.com/@ShiroganeNoel"
+  },
+  {
+    name: "Hanabatake Chaika",
+    jp_name: "花畑チャイカ",
+    description: "An elf who was a tavern owner in another world and now owns a cafe.",
+    agency: @niji,
+    main_language: "Japanese",
+    gender: "male",
+    birthday: "2020/06/27",
+    debut_date: "2018/06/06",
+    yt_channel: "https://www.youtube.com/@HanabatakeChaika"
+  },
+  {
+    name: "Nui Sociere",
+    jp_name: "ニュイ・ソシエール",
+    description: "A witch who came to this world by coincidence and is searching for a way back to her original world.",
+    agency: @niji,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/10/31",
+    debut_date: "2019/06/25",
+    yt_channel: "https://www.youtube.com/@NuiSociere"
+  },
+  {
+    name: "Amano Nene",
+    jp_name: "天野寧々",
+    description: "An angel who does ASMR. Formerly a member of Production kawaii.",
+    agency: @indie,
+    main_language: "English",
+    gender: "female",
+    birthday: "2020/10/04",
+    debut_date: "2021/04/28",
+    yt_channel: "https://www.youtube.com/@NeneAmanoCh",
+    twitch_channel: "https://https://www.twitch.tv/amano_nene"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

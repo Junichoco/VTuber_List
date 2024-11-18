@@ -124,10 +124,6 @@ end
     tags: ["singer","violin", "guitar"]
   },
   {
-    name: "Josuiji Shinri",
-    tags: ["deep voice", "big chest"]
-  },
-  {
     name: "Quon Tama",
     tags: ["singer"]
   },
@@ -162,6 +158,38 @@ end
   {
     name: "Fusako",
     tags: ["art"]
+  },
+  {
+    name: "Shirogane Noel",
+    tags: ["ASMR", "big chest"]
+  },
+  {
+    name: "Abyss Song Syndrome",
+    tags: ["singer", "deep voice", "big chest"]
+  },
+  {
+    name: "Chisaka Airi",
+    tags: ["Korean", "animal ears", "big chest"]
+  },
+  {
+    name: "Takanashi Yutoha",
+    tags: ["singer", "big chest"]
+  },
+  {
+    name: "Amano Nene",
+    tags: ["singer", "ASMR", "big chest"]
+  },
+  {
+    name: "Nui Sociere",
+    tags: ["gamer", "big chest"]
+  },
+  {
+    name: "Josuiji Shinri",
+    tags: ["deep voice", "big chest"]
+  },
+  {
+    name: "Hanabatake Chaika",
+    tags: ["big chest"]
   }
 
 ].each do |hash|
