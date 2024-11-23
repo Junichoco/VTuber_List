@@ -9,7 +9,7 @@ tags = ["singer", "rap", "guitar", "FPS", "League of Legends", "big chest", "dee
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
         "furry", "R18 content", "short", "tall", "drama", "alcohol", "menhera", "pon", "Thai",
-        "esports", "gamer", "ojou-sama", "mole", "boomer", "deep voice"]
+        "esports", "gamer", "ojou-sama", "mole", "boomer", "deep voice", "dance"]
 
 tags.each do |tag|
   if !Tag.find_by_name(tag)
@@ -23,6 +23,10 @@ end
 
 
 [
+  {
+    name: "Raki Kazuki",
+    tags: ["singer", "ASMR", "animal ears", "heavy metal", "pon", "baby girl failure"]
+  },
   {
     name: "Chiaki Katsumi",
     tags: ["gamer"]
@@ -190,6 +194,10 @@ end
   {
     name: "Hanabatake Chaika",
     tags: ["big chest"]
+  },
+  {
+    name: "Sabita Hagane",
+    tags: ["art"]
   }
 
 ].each do |hash|

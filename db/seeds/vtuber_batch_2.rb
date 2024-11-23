@@ -2244,6 +2244,172 @@ require_relative "agency_names"
     debut_date: "2021/04/28",
     yt_channel: "https://www.youtube.com/@NeneAmanoCh",
     twitch_channel: "https://https://www.twitch.tv/amano_nene"
+  },
+  {
+    name: "Koito Amuno",
+    jp_name: "小愛あむの",
+    description: "A cat idol-in-training aiming to be the top idol in the cat world.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@KoitoAmuno/streams"
+  },
+  {
+    name: "Wakuse Ito",
+    jp_name: "惑世いと",
+    description: "An alien VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@wakuse_ito",
+    twitch_channel: "https://twitch.tv/wakuseito"
+  },
+  {
+    name: "Aglio Olio e Peperoncino",
+    jp_name: "アーリオ オーリオ エ ペペロンチーノ",
+    description: "The king of the pasta kingdom. Has released singles under Sony Music, including \"Natchatta!\", the ending theme of the second season of The Café Terrace and Its Goddesses.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/07/08",
+    yt_channel: "https://www.youtube.com/@pp_aldente1027"
+  },
+  {
+    name: "Soreyuke Yumeko",
+    jp_name: "それゆけゆめこ",
+    description: "A tomboy unicorn VTuber aiming to be an idol.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@soreyukeyumeko"
+  },
+  {
+    name: "Endoluphy",
+    jp_name: "えんどるふぃ",
+    description: "No description available.",
+    agency: @fsp,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Endoluphy_fsp"
+  },
+  {
+    name: "Shirahoshi Awawa",
+    jp_name: "白星あわわ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@SirahosiAwawa"
+  },
+  {
+    name: "Utadori Mii",
+    jp_name: "歌鳥みい",
+    description: "A little sister VTuber who likes ryousan-kei and jirai-kei clothes. Can sing soprano.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@mii_utadori"
+  },
+  {
+    name: "Amagami Suu",
+    jp_name: "甘神すう",
+    description: "A nurse from the deep web who is secretly a vampire.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Su_Amagami"
+  },
+  {
+    name: "Murano Sayaka",
+    jp_name: "村野さやか",
+    description: "A member of the Hasunosora Girls' High School Idol Club. Like the other members of Hasunosora, she does livestreams via the Link! Like! Love Live! mobile app. She has an serious personality and always takes care of other people, especially Tsudzuri.",
+    agency: @hasunosora,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/01/13",
+    yt_channel: "https://www.youtube.com/@lovelive_hasu"
+  },
+  {
+    name: "Otomune Kozue",
+    jp_name: "乙宗梢",
+    description: "A member of the Hasunosora Girls' High School Idol Club. Like the other members of Hasunosora, she does livestreams via the Link! Like! Love Live! mobile app. She is the club president and is adept at academics and sports, but is bad with electronics.",
+    agency: @hasunosora,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/06/15",
+    yt_channel: "https://www.youtube.com/@lovelive_hasu"
+  },
+  {
+    name: "Regis Altaire",
+    jp_name: "リージス・アルテア",
+    description: "The founder of Adventurer's Guild TEMPUS.\nThe first-ever adventurer to set foot in Elysium, he dislikes stagnation and the status quo.\n\nHe is childish at heart and generally bungles everything he touches, and yet he is inexplicably popular among his peers.\n\nHis earnest straightforwardness may well lead to him being called a \"hero\" one day.\n\n(Source: Holostars website)",
+    agency: @holostars,
+    main_language: "English",
+    gender: "male",
+    birthday: "2020/01/29",
+    debut_date: "2022/07/23",
+    yt_channel: "https://www.youtube.com/@RegisAltare"
+  },
+  {
+    name: "Magni Dezmond",
+    jp_name: "マグニ・デズモンド",
+    description: "Adventurer's Guild TEMPUS's Public Relations.\nHe proclaims himself an alchemist, but nobody has ever seen him in action.\nMuddling the waters even further are his business ventures which take him all around Elysium.\nNobody knows what his actual profession is.\n\nWhat does his \"alchemy\" even consist of… making potions?\n\nThe type of person who stares right into the abyss.\nRumors say he will do anything it takes to uncover the truth behind the world, and that he's hiding a dark side to him.\n\n(Source: Holostars website)",
+    agency: @holostars,
+    main_language: "English",
+    gender: "male",
+    birthday: "2020/10/21",
+    debut_date: "2022/07/23",
+    yt_channel: "https://www.youtube.com/@MagniDezmond/shorts"
+  },
+  {
+    name: "Suou Patra",
+    jp_name: "周防パトラ",
+    description: "A demon queen who came to the human world to do otaku things. Formerly a member of 774 inc.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/08/10",
+    debut_date: "2018/07/14",
+    yt_channel: "https://www.youtube.com/@Patra_Suou"
+  },
+  {
+    name: "Tulsi-Nightmare",
+    jp_name: "トゥルシー・ナイトメア・マッドネス・4世",
+    description: "A 100,019-year-old otaku demon lord. Her full name is Tulsi-Nightmare Madness IV.",
+    agency: @vee,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/11/24",
+    debut_date: "2022/05/23",
+    yt_channel: "https://www.youtube.com/@Tulsi_Nightmare"
+  },
+  {
+    name: "Sabita Hagane",
+    jp_name: "錆多はがね",
+    description: "A professional artist and idol VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@aruminsuko/streams"
+  },
+  {
+    name: "Mirumika Utsutsu",
+    jp_name: "ミルミカ映々",
+    description: "No description available.",
+    agency: @vebop,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@utsutsu_brdc"
+  },
+  {
+    name: "Amamiya Rome",
+    jp_name: "甘宮ろめ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2024/07/24",
+    yt_channel: "https://www.youtube.com/@amamiyarome"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
