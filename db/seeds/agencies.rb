@@ -293,6 +293,12 @@
     website: "https://siragamico.com/siroproduction/",
     yt_channel: "https://www.youtube.com/@siro_pro",
     description: "A VTuber agency operated by siragami."
+  },
+  { name:"VEE",
+    location: "Japan",
+    website: "https://vee-official.jp/",
+    yt_channel: "https://www.youtube.com/@VEE_official",
+    description: "A virtual talent development and management project managed by Sony Music."
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

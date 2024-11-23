@@ -69,6 +69,14 @@ class Vtuber < ApplicationRecord
     end
   end
 
+  def remove_all_tags
+    puts("Removing #{name}'s tags}")
+    TagMarker.where(vtuber_id: id).each do |tm|
+      tm.destroy!
+      puts("Removed #{Tag.find(tm.tag_id).name}")
+    end
+  end
+
 
 
   def has_tag?(tag_name)

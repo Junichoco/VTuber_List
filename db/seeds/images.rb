@@ -196,7 +196,14 @@ images = [
   { name: "Shirogane Noel", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731899050/noel_thumb_yoeei0.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731899050/noel_x6eyqh.png"},
   { name: "Nui Sociere", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731902426/nui_yj28hx.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731902426/nui_2_cy7yqy.png"},
   { name: "Hanabatake Chaika", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731901153/chaika_q2iefn.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731901154/chaika_2_irl1v1.png"},
-  { name: "Amano Nene", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731903671/nene_thumb_mteysb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731903672/nene_3_g8rtql.jpg"}
+  { name: "Amano Nene", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731903671/nene_thumb_mteysb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1731903672/nene_3_g8rtql.jpg"},
+  { name: "Endoluphy", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732321298/endoluphy_thumb_zp5i0i.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732321301/endoluphy_3_ukyiuu.png"},
+  { name: "Amagami Suu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732322541/amagami_suu_thumb_wmbmpz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732322543/amagami_suu_fbzau1.jpg"},
+  { name: "Utadori Mii", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732322541/utadori_thumb_hte8b5.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732322541/utadori_2_ovj5zn.jpg"},
+  { name: "Otomune Kozue", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732323681/kozue_thumb_pn3bn3.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732323681/kozue_o71d8t.png"},
+  { name: "Tulsi-Nightmare", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732325415/tulsi_thumb_wjsgkp.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732325415/tulsi_gnbc9f.png"},
+  { name: "Sabita Hagane", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368843/sabita_thumb_sysfep.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368842/sabita_hagane_opkteu.jpg"},
+  { name: "Regis Altaire", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368966/altaire_thumb_igrlnu.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368998/altaire_cv2iji.png"}
 ]
 
 puts "Thumbnails"

@@ -45,3 +45,4 @@
 @lovvebox = Agency.find_by_name("LoVVebox")
 @linkstudio = Agency.find_by_name("Link Studio-V")
 @neoporte = Agency.find_by_name("Neo-Porte")
+@vee = Agency.find_by_name("VEE")
