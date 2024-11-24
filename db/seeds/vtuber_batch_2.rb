@@ -1344,15 +1344,6 @@ require_relative "agency_names"
     yt_channel: "https://www.youtube.com/@cocoroch0610"
   },
   {
-    name: "Kugumi Rui",
-    jp_name: "久々湊るい",
-    description: "No description available.",
-    agency: @indie,
-    gender: "female",
-    main_language: "Japanese",
-    yt_channel: "https://www.youtube.com/@kugumirui/streams"
-  },
-  {
     name: "shin",
     description: "No description available.",
     agency: @indie,
@@ -2359,7 +2350,8 @@ require_relative "agency_names"
     gender: "male",
     birthday: "2020/10/21",
     debut_date: "2022/07/23",
-    yt_channel: "https://www.youtube.com/@MagniDezmond/shorts"
+    yt_channel: "https://www.youtube.com/@MagniDezmond/shorts",
+    active: false
   },
   {
     name: "Suou Patra",
@@ -2410,6 +2402,193 @@ require_relative "agency_names"
     gender: "female",
     debut_date: "2024/07/24",
     yt_channel: "https://www.youtube.com/@amamiyarome"
+  },
+  {
+    name: "Gomafu Rokocha",
+    jp_name: "ごまふろこちゃ",
+    description: "An earless seal VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Gomafu_Rokocha/streams"
+  },
+  {
+    name: "Hinata Yuka",
+    jp_name: "陽向葵ゅか",
+    description: "A doujin voice actress who does ASMR and performs in R18 doujin voice works.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@yukanyan2525"
+  },
+  {
+    name: "Uno Sakura",
+    jp_name: "兎野さくら",
+    description: "A rabbit girl and member of the virtual relaxation salon KEMOMIMI REFLE. Also does voice acting for R18 doujin voice works.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2021/08/07",
+    yt_channel: "https://www.youtube.com/@UnoSakura"
+  },
+  {
+    name: "macoto.",
+    jp_name: "まこと。",
+    description: "A VTuber who does ASMR streams on YouTube and R18 webcam ASMR streams on her official fansite.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@rnqqU",
+    twitch_channel: "https://twitch.tv/rnqq"
+  },
+  {
+    name: "Nemui Shiina",
+    jp_name: "ねむいしいな",
+    description: "A loli dog searching for a master.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@nemuishiina"
+  },
+  {
+    name: "Hermia Odette",
+    jp_name: "ハーミア・オデット",
+    description: "A VTuber and cosplayer who posts pictures of her cosplay on Twitter.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2022/03/12",
+    yt_channel: "https://www.youtube.com/@HermiaOdette"
+  },
+  {
+    name: "Sata Nakia",
+    jp_name: "沙汰ナキア",
+    description: "A demon gyaru VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2021/10/09",
+    birthday: "2020/01/13",
+    yt_channel: "https://www.youtube.com/@nakia_sata"
+  },
+  {
+    name: "Koinoya Mai",
+    jp_name: "恋乃夜まい",
+    description: "A 240,000-year-old love witch who came from another world.",
+    agency: @propro,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/01/07",
+    yt_channel: "https://www.youtube.com/@koinoyamaich"
+  },
+  {
+    name: "Asami Yui",
+    jp_name: "浅見ゆい",
+    description: "A doujin voice actress who is also a VTuber who does ASMR streams.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@asamiyui"
+  },
+  {
+    name: "Tenshi Nano",
+    jp_name: "天使なの",
+    description: "A VTuber who does R18 webcam streams on her official website.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@angelxxnano"
+  },
+  {
+    name: "Kurune Kokuri",
+    jp_name: "来音こくり",
+    description: "A fox spirite VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@KuruneKokuri",
+    twitch_channel: "https://twitch.tv/kurunekokuri"
+  },
+  {
+    name: "Komari Mayu",
+    jp_name: "子鞠まゆ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/11/26",
+    yt_channel: "https://www.youtube.com/@komari_mayu"
+  },
+  {
+    name: "Marika Matsurika",
+    jp_name: "マリカ・マツリカ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2020/09/05",
+    yt_channel: "https://www.youtube.com/@MarikaMatsurika"
+  },
+  {
+    name: "Jolly Estaa",
+    jp_name: "ジョリー・エスタ",
+    description: "A slime and princess from the Jelly Kingdom. She ran away from the castle to search for delicious food around the world.",
+    agency: @pixela,
+    main_language: "Thai",
+    gender: "female",
+    debut_date: "2022/01/25",
+    birthday: "2020/10/16",
+    yt_channel: "https://www.youtube.com/@JollyEstaa"
+  },
+  {
+    name:"Satou Anime",
+    jp_name: "佐藤あにめ",
+    description: "An angel cat who lost her memories.",
+    agency: @asla,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/06/30",
+    debut_date: "2024/10/04",
+    yt_channel: "https://www.youtube.com/@Satou_Anime_ASRB"
+  },
+  {
+    name: "Mayuru",
+    jp_name: "まゆる",
+    description: "A ninja.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2023/11/09",
+    yt_channel: "https://www.youtube.com/@mayuru_24"
+  },
+  {
+    name: "Kaneko Noka",
+    jp_name: "加猫のか",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@nokaneko23"
+  },
+  {
+    name: "Utamachi Shino",
+    jp_name: "唄街しの",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Utamachi_Shino"
+  },
+  {
+    name: "Kugumi Rui",
+    jp_name: "久々湊るい",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/06/01",
+    yt_channel: "https://www.youtube.com/@kugumirui",
+    twitch_channel: "https://twitch.tv/kugumirui"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

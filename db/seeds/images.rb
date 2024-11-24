@@ -203,7 +203,9 @@ images = [
   { name: "Otomune Kozue", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732323681/kozue_thumb_pn3bn3.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732323681/kozue_o71d8t.png"},
   { name: "Tulsi-Nightmare", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732325415/tulsi_thumb_wjsgkp.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732325415/tulsi_gnbc9f.png"},
   { name: "Sabita Hagane", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368843/sabita_thumb_sysfep.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368842/sabita_hagane_opkteu.jpg"},
-  { name: "Regis Altaire", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368966/altaire_thumb_igrlnu.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368998/altaire_cv2iji.png"}
+  { name: "Regis Altaire", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368966/altaire_thumb_igrlnu.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732368998/altaire_cv2iji.png"},
+  { name: "Hermia Odette", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732421829/hermia_thumb_rrz4ri.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732421829/hermia_2_d2wtp6.jpg"},
+  { name: "Jolly Estaa", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732428377/esta_thumb_mc6itt.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732428377/esta_2_gu7pt9.png"}
 ]
 
 puts "Thumbnails"

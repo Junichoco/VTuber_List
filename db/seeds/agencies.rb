@@ -299,6 +299,24 @@
     website: "https://vee-official.jp/",
     yt_channel: "https://www.youtube.com/@VEE_official",
     description: "A virtual talent development and management project managed by Sony Music."
+  },
+  {
+    name: "Propro Production",
+    location: "Japan",
+    website: "https://www.propro-production.com/",
+    yt_channel: "https://www.youtube.com/@propro-production",
+    description: "No description available."
+  },
+  {
+    name: "Pixela Project",
+    location: "Thailand",
+    website: "https://www.facebook.com/pixelaproject",
+    yt_channel: "https://www.youtube.com/@PixelaOfficial",
+  },
+  {
+    name: "Aslla beStar",
+    location: "Japan",
+    yt_channel: "https://www.youtube.com/@Aslla-be-Star"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

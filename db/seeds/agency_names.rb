@@ -46,3 +46,6 @@
 @linkstudio = Agency.find_by_name("Link Studio-V")
 @neoporte = Agency.find_by_name("Neo-Porte")
 @vee = Agency.find_by_name("VEE")
+@propro = Agency.find_by_name("Propro Production")
+@pixela = Agency.find_by_name("Pixela Project")
+@asla = Agency.find_by_name("Aslla beStar")
