@@ -49,3 +49,7 @@
 @propro = Agency.find_by_name("Propro Production")
 @pixela = Agency.find_by_name("Pixela Project")
 @asla = Agency.find_by_name("Aslla beStar")
+@millipro= Agency.find_by_name("MillionProduction")
+@vbox = Agency.find_by_name("VBOX")
+@unifee = Agency.find_by_name("Unifee")
+@springfish = Agency.find_by_name("SpringFish Studio")

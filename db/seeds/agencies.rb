@@ -317,6 +317,31 @@
     name: "Aslla beStar",
     location: "Japan",
     yt_channel: "https://www.youtube.com/@Aslla-be-Star"
+  },
+  {
+    name: "MillionProduction",
+    location: "Japan",
+    website: "https://milpr.com/",
+    yt_channel: "https://www.youtube.com/@Mil_Pro"
+  },
+  {
+    name: "VBOX",
+    location: "Japan",
+    website: "https://vbox-pro.jp/index.html",
+    yt_channel: "https://www.youtube.com/@_vbox_"
+  },
+  {
+    name: "Unifee",
+    location: "Japan",
+    website: "https://evestar.jp/unifeee/",
+    yt_channel: "https://www.youtube.com/@info_unifee",
+    description: "A VTuber agency with talent based on famous historical figures."
+  },
+  {
+    name: "SpringFish Studio",
+    location: "Taiwan",
+    website: "https://portaly.cc/springfish",
+    yt_channel: "https://www.youtube.com/@Springfish"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])
