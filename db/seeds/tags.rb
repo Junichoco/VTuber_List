@@ -9,7 +9,8 @@ tags = ["singer", "rap", "guitar", "FPS", "League of Legends", "big chest", "dee
         "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
         "furry", "R18 content", "short", "tall", "drama", "alcohol", "menhera", "pon", "Thai",
-        "esports", "gamer", "ojou-sama", "mole", "boomer", "deep voice", "dance"]
+        "esports", "gamer", "ojou-sama", "mole", "boomer", "deep voice", "dance", "sexy webcam",
+        "doujin art", "doujin voice"]
 
 tags.each do |tag|
   if !Tag.find_by_name(tag)
@@ -198,6 +199,22 @@ end
   {
     name: "Sabita Hagane",
     tags: ["art"]
+  },
+  {
+    name: "Hinata Yuka",
+    tags: ["ASMR", "voice actor", "doujin voice"]
+  },
+  {
+    name: "Uno Sakura",
+    tags: ["ASMR", "voice actor", "doujin voice"]
+  },
+  {
+    name: "macoto.",
+    tags: ["ASMR", "sexy webcam"]
+  },
+  {
+    name: "Komari Mayu",
+    tags: ["VTuber artist", "VTuber rigger", "singer"]
   }
 
 ].each do |hash|
