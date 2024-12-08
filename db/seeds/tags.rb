@@ -215,6 +215,10 @@ end
   {
     name: "Komari Mayu",
     tags: ["VTuber artist", "VTuber rigger", "singer"]
+  },
+  {
+    name: "Kuchinawa Yuyua",
+    tags: ["VTuber artist", "VTuber rigger"]
   }
 
 ].each do |hash|
