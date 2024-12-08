@@ -209,7 +209,8 @@ images = [
   { name: "Umitsuki Shell", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732792129/umitsuki_thumb_mlpiai.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732792129/umitsuki_ymm4a7.png"},
   { name: "Azarashi Shio", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732794032/azarashi_shio_thumb_bddjuw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732794031/azarashi_2_bmjnlo.jpg"},
   { name: "Tei-chan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732812416/teichan_thumb_nl1wn3.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732794132/teichan_kuahyi.png"},
-  { name: "Otonase Raco", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732800119/raco_thumb_mhgixf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732800119/raco_ijfmro.png"}
+  { name: "Otonase Raco", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732800119/raco_thumb_mhgixf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732800119/raco_ijfmro.png"},
+  { name: "Nonono Nono", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732981030/nono_thumb_2_jv7sp5.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732980713/nono_fxgygr.png"}
 ]
 
 puts "Thumbnails"

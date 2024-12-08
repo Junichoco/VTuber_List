@@ -342,6 +342,55 @@
     location: "Taiwan",
     website: "https://portaly.cc/springfish",
     yt_channel: "https://www.youtube.com/@Springfish"
+  },
+  {
+    name: "neo_fantasy",
+    location: "Japan"
+  },
+  {
+    name: "REPLAYLIVE",
+    location: "Japan",
+    website: "https://missiontime.jp/",
+    description: "A VTuber agency managed by Mission Time."
+  },
+  {
+    name: "Light Up",
+    location: "Japan",
+    website: "https://lightup-official.com/",
+    description: "A virtual liver project."
+  },
+  {
+    name: "GEMS COMPANY",
+    location: "Japan",
+    website: "https://gemscompany.jp/",
+    description: "A idol unit produced by Square Enix."
+  },
+  {
+    name: "Re.αLIVE",
+    location: "Japan"
+  },
+  {
+    name: "Seventh Happiness",
+    location: "Japan"
+  },
+  {
+    name: "Snack Nili",
+    location: "Japan",
+    website: "http://snacknili.com/",
+    yt_channel: "https://www.youtube.com/@vtubergroup1507"
+  },
+  {
+    name: "AKA Virtual",
+    location: "Japan",
+    website: "https://akavirtual.com/en",
+    yt_channel: "https://www.youtube.com/@AKAVirtualEN",
+    description: "A VTuber agency with branches in Japan, the United States, and Indonesia."
+  },
+  {
+    name: "Stellar Verse Productions",
+    location: "United States",
+    website: "https://www.stellarversepro.com/",
+    yt_channel: "https://www.youtube.com/@StellarVersePro"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

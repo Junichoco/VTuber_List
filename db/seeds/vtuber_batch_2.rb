@@ -2838,6 +2838,465 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     yt_channel: "https://www.youtube.com/@RngyoCh"
+  },
+  {
+    name: "Bluebell.EVE",
+    description: "No description available.",
+    agency: @specialite,
+    main_language: "English",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Bluebell_EVE",
+    twitch_channel: "https://twitch.tv/BluebellEVE"
+  },
+  {
+    name: "Kojime Chia",
+    jp_name: "紅〆ちあ",
+    description: "A little red riding hood. Is 17 years old and likes to drink.",
+    agency: @neofantasy,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/12/11",
+    debut_date: "2024/01/26",
+    yt_channel: "https://www.youtube.com/@Kojime_Chia"
+  },
+  {
+    name: "Konoka Sakuya",
+    jp_name: "木花サクヤ",
+    description: "A 3,980-year-old sake god.",
+    agency: @airy,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@SakuyaKonoka"
+  },
+  {
+    name: "Nonono Nono",
+    jp_name: "音ノ乃のの",
+    description: "No description available.",
+    agency: @millipro,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/05/04",
+    debut_date: "2023/06/03",
+    yt_channel: "https://www.youtube.com/@_nonono_nono"
+  },
+  {
+    name: "Tamenaga Homare",
+    jp_name: "為永ほまれ",
+    description: "No description available.",
+    agency: @replay,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Tamenaga_homare"
+  },
+  {
+    name: "Kumama Mayu",
+    jp_name: "熊間まゆ",
+    description: "No description available.",
+    agency: @lightup,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@KumamaMayu"
+  },
+  {
+    name: "Akechi Mitsuki",
+    jp_name: "明智光月",
+    description: "No description available.",
+    agency: @unifee,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Unifee_akechi"
+  },
+  {
+    name: "Kurosaki Kurumi",
+    jp_name: "黒咲くるみ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@kuru3lk_"
+  },
+  {
+    name: "Shirayuki Mishiro",
+    jp_name: "白雪みしろ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@shirayukimishiro"
+  },
+  {
+    name: "Utano Neru",
+    jp_name: "歌野ねる",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@neru_utano"
+  },
+  {
+    name: "Kagura Nana",
+    jp_name: "カグラナナ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Kagura_Nana",
+    twitch_channel: "https://twitch.tv/kagurananaaaaa"
+  },
+  {
+    name: "Ichinose Kyoka",
+    jp_name: "一ノ瀬響歌",
+    description: "A member of the YouTuber group AiB.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@kyoka0614"
+  },
+  {
+    name: "Fukumaki Yuka",
+    jp_name: "服巻有香",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@yfukumaki_ch"
+  },
+  {
+    name: "Leviatan",
+    jp_name: "漆黒のれゔぃあたん",
+    description: "A dark angel.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Levidazo"
+  },
+  {
+    name: "Yurino Many",
+    jp_name: "百合乃めに",
+    description: "A 16-year-old VSinger.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@LilyMany"
+  },
+  {
+    name: "Mikan Sensei",
+    jp_name: "みかん先生",
+    description: "A vocal training VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/channel/UC1JuhRTsFgZvi2ie2dTUxbg"
+  },
+  {
+    name: "Anshinin Misa",
+    jp_name: "安心院みさ",
+    description: "The nun with the cutest thighs. Moved to Tokyo from the countryside.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@AnshininMisa"
+  },
+  {
+    name: "Shigumano",
+    jp_name: "しぐまの",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Xx__sigma__xX",
+    twitch_channel: "https://twitch.tv/shigu_49"
+  },
+  {
+    name: "Usui Clear",
+    jp_name: "宇推くりあ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@clearusui"
+  },
+  {
+    name: "Naninu Nene",
+    jp_name: "奈日抽ねね",
+    description: "No description available.",
+    agency: @gems,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@naninunene"
+  },
+  {
+    name:"Kanzaki Meisa",
+    jp_name: "神崎メイサ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Kanzaki_Meisa",
+    twitch_channel: "https://twitch.tv/kanzaki_meisa"
+  },
+  {
+    name: "Zashiki Warabi",
+    jp_name: "座敷わらび",
+    description: "A quokka VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@ZashikiWarabi"
+  },
+  {
+    name: "Shiratori Rena",
+    jp_name: "白鳥怜奈",
+    description: "A VTuber who is also a professional voice actress, VTubing counselor, and certified mental psychology counselor. Is skilled in kendo and throwing axes.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/03/26",
+    yt_channel: "https://www.youtube.com/@shiratori-rena"
+  },
+  {
+    name: "Kirima Mieru",
+    jp_name: "霧間ミエル",
+    description: "No description available.",
+    agency: @realiv,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@kirimamieru_"
+  },
+  {
+    name: "Hinotori Mera",
+    jp_name: "火乃鳥めら",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@hinotorimerach.650"
+  },
+  {
+    name: "Kajika Mel",
+    jp_name: "花鹿 める",
+    description: "No description available.",
+    agency: @nanahapi,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@mel_samui"
+  },
+  {
+    name: "Aizawa Hina",
+    jp_name: "愛沢日南",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@AizawaHina"
+  },
+  {
+    name: "Saionji Mary",
+    jp_name: "西園寺メアリ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Mary_Saionji"
+  },
+  {
+    name: "Cybill",
+    jp_name: "シビル",
+    description: "No description available.",
+    agency: @snacknili,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@cybill_htar"
+  },
+  {
+    name: "Nyapupu Marina",
+    jp_name: "",
+    description: "A singing cat neohuman.",
+    agency: @fsp,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Nyapupu_fsp"
+  },
+  {
+    name: "Mochita Ren",
+    jp_name: "望田れん",
+    description: "A shut-in wolf.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@mochitaren"
+  },
+  {
+    name: "LiLY",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@lily_singmusic/streams"
+  },
+  {
+    name: "Kuchinawa Yuyua",
+    jp_name: "蛇ゆゆあ",
+    description: "A middle-school snake girl.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@KuchinawaYuyua"
+  },
+  {
+    name: "Shirato Kei",
+    jp_name: "白兎ケイ",
+    description: "A rabbit who loves drawing.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/04/6",
+    yt_channel: "https://www.youtube.com/@shiratokei"
+  },
+  {
+    name: "Yozuna Niu",
+    jp_name: "夜絆ニウ",
+    description: "No description available.",
+    agency: @neoporte,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@niu_yozuna"
+  },
+  {
+    name: "Hanashiro Arami",
+    jp_name: "華白あらみ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Hanashiroarami"
+  },
+  {
+    name: "Alba Hashiri",
+    jp_name: "明葉ハシリ",
+    description: "A 2.5D virtual artist and member of the vocal duo PashiRim.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/08/04",
+    yt_channel: "https://www.youtube.com/@atelier_hashiri"
+  },
+  {
+    name: "Rim",
+    jp_name: "梨夢",
+    description: "A singer and member of the vocal duo PashiRim.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/08/18",
+    yt_channel: "https://www.youtube.com/@Rim_chan"
+  },
+  {
+    name: "Mayoi Elena",
+    jp_name: "未宵エレナ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@mayoielena"
+  },
+  {
+    name: "Mashirone Mimiy",
+    jp_name: "真白猫ミミィ",
+    description: "A white cat with a Kansai dialect.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@mashi_rone"
+  },
+  {
+    name: "Yuimaru",
+    jp_name: "ゆいまる",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@yuimaru_1031",
+    twitch_channel: "https://twitch.tv/yuimaru1031"
+  },
+  {
+    name: "Vierra Vanilla",
+    description: "No description available.",
+    agency: @akavirtual,
+    main_language: "English",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@VierraVanilla"
+  },
+  {
+    name: "Hoshigasaki Marry",
+    jp_name: "星ヶ咲まりぃ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@marry_hoshi"
+  },
+  {
+    name: "Minai Aruma",
+    jp_name: "薬袋アルマ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@ArumaCh"
+  },
+  {
+    name: "Kitsune Udon",
+    jp_name: "輝常うどん",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@udon0922"
+  },
+  {
+    name: "ayu",
+    description: "An octopus VTuber and VSinger.",
+    agency: @indie,
+    main_language: "English",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@allayucaneat"
+  },
+  {
+    name: "Perry Winkleton",
+    description: "A worm.",
+    agency: @svp,
+    main_language: "English",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@WinkletonPerry"
+  },
+  {
+    name: "Natsume Eri",
+    jp_name: "なつめえり",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@natsumeeri"
+  },
+  {
+    name: "JELEE",
+    description: "A group of four high school girl content creators from the anime Jellyfish Don't Swim in the Night.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@jelee_official"
+  },
+  {
+    name: "Hinata Pokari",
+    jp_name: "日向ぽかり",
+    description: "A golden hamster aiming to take over the world using song.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/02/16",
+    debut_date: "2023/07/23",
+    yt_channel: "https://www.youtube.com/@hm_pkr"
   }
 
 ].each do |vtuber|
