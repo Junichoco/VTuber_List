@@ -3297,6 +3297,108 @@ require_relative "agency_names"
     birthday: "2020/02/16",
     debut_date: "2023/07/23",
     yt_channel: "https://www.youtube.com/@hm_pkr"
+  },
+  {
+    name: "Watanuki Beleth",
+    jp_name: "四月一日べレト",
+    description: "The Internet Virtual Elite Maid.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Watanuki_Beleth"
+  },
+  {
+    name: "Aoi Sizuku",
+    jp_name: "葵井詩雫",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@aoisizukuV"
+  },
+  {
+    name: "Hinamori Anthea",
+    jp_name: "雛森 アンシア",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/10/23",
+    debut_date: "2023/06/13",
+    yt_channel: "https://www.youtube.com/channel/UCgRm3fdPH4n6FiT3WrXJ74g"
+  },
+  {
+    name: "Noruju Uemine",
+    jp_name: "植峰ノルジュ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@UemineNoruju"
+  },
+  {
+    name: "Hanamori Natsumi",
+    jp_name: "花守なつみ",
+    description: "A VTuber who lives in a forest with her grandmother, who is a witch.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@FlowerguardNatsumi"
+  },
+  {
+    name: "Setono Toto",
+    jp_name: "瀬戸乃とと",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Setono_Toto"
+  },
+  {
+    name: "Mikazuki Chiyuru",
+    jp_name: "三日月ちゆる",
+    description: "No description available.",
+    agency: @univirtual,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Chiyuru_Mikazuki/streams"
+  },
+  {
+    name: "Hizuki Rurufu",
+    jp_name: "陽月るるふ",
+    description: "A wolf girl VSinger.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/04/08",
+    yt_channel: "https://www.youtube.com/@RurufuHizuki"
+  },
+  {
+    name: "Kanehira Ame",
+    jp_name: "金平あめ",
+    description: "An oni who lives on Virtual Onigashima.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@ame_kanehira"
+  },
+  {
+    name: "Aomiya Yozuri",
+    jp_name: "蒼宮よづり",
+    description: "No description available.",
+    agency: @vee,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@AomiyaYozuri"
+  },
+  {
+    name: "Chacha Pulamumu",
+    jp_name: "茶々プラムム",
+    description: "An apprentice musclebrain healer fox.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@chacha_pulamumu/streams"
   }
 
 ].each do |vtuber|
