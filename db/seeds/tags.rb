@@ -219,6 +219,14 @@ end
   {
     name: "Kuchinawa Yuyua",
     tags: ["VTuber artist", "VTuber rigger"]
+  },
+  {
+    name: "Sabashiro",
+    tags: ["singer","not anime"]
+  },
+  {
+    name: "Kanaut Nishe",
+    tags: ["art", "not anime"]
   }
 
 ].each do |hash|

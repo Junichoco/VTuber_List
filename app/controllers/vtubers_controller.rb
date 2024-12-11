@@ -77,6 +77,7 @@ class VtubersController < ApplicationController
   def vtuber_params
     params.require(:vtuber).permit(
       :name,
+      :jp_name,
       :description,
       :agency_id,
       :yt_channel,

@@ -3399,6 +3399,91 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     yt_channel: "https://www.youtube.com/@chacha_pulamumu/streams"
+  },
+  {
+    name: "Amatsuki Imu",
+    jp_name: "天使イム",
+    description: "An angel-in-training VTuber and VSinger.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@AmatsukaImu"
+  },
+  {
+    name: "yuimelo",
+    jp_name: "ゆいめろ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/11/13",
+    yt_channel: "https://www.youtube.com/@yuimelogames"
+  },
+  {
+    name: "Nadeshiro Luna",
+    jp_name: "撫白ルナ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@lunanadeshiroch.1569"
+  },
+  {
+    name: "Kotose",
+    jp_name: "小都世",
+    description: "A singing dragon VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@KOTOSE"
+  },
+  {
+    name: "Ellise",
+    jp_name: "エリス",
+    description: "An elf who loves singing and sleeping.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Ellise_nemui"
+  },
+  {
+    name: "Aoba Ria",
+    jp_name: "碧葉リア",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    birthday: "2020/02/05",
+    yt_channel: "https://www.youtube.com/@riaaoba1749"
+  },
+  {
+    name: "Kanaut Nishe",
+    jp_name: "銀海渡ニシェ",
+    description: "A VTuber also known as the professional illustrator Ukai Saki.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@ukaisaki"
+  },
+  {
+    name: "Kokuhou Maria",
+    jp_name: "黒宝まりあ",
+    description: "An eternal ojou-sama.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2024/12/08",
+    yt_channel: "https://www.youtube.com/@kokuhoumaria/streams"
+  },
+  {
+    name: "Soyogi Setsune",
+    jp_name: "梵雪音",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2020/05/04",
+    yt_channel: "https://www.youtube.com/@setsunekoCH/streams"
   }
 
 ].each do |vtuber|
