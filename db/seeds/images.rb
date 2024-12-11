@@ -113,7 +113,7 @@ images = [
   { name: "Nikoniko Pona", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378672/pona_thumb_o8rmte.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728378878/poni_xglm8h.jpg"},
   { name: "Rin Penrose", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405645/Rin_thumb_zvzrs9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405645/Rin_2_syki2y.png"},
   { name: "Kakushaku Rin", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405777/kakushaku_rin_thumb_ift4at.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728405776/kakushaku_rin_d85fdg.jpg"},
-  { name: "Jyangarian", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728493394/jangarian_thumb_a7rdjz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728493395/jangarian_3_xcbawg.png"},
+  { name: "Jyangarian", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733912473/jyangarian_thumb_j0ep2h.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733912474/jangarian_5_f1v4mt.jpg"},
   { name: "HaNaTan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494227/hanatan_thumb_dyzjgg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728494226/hanatan_kmz6ar.png"},
   { name: "Nakiri Ayame", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728519402/ayame_thumb_n1iijo.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728519402/Nakiri-Ayame_pr-img_02-2-960x1440_gkogfv.png"},
   { name: "Ayunda Risu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728520188/risu_thumb_tix4rr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1728520188/Ayunda-Risu_pr-img_02-960x1440_m2ey0i.png"},
@@ -210,7 +210,18 @@ images = [
   { name: "Azarashi Shio", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732794032/azarashi_shio_thumb_bddjuw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732794031/azarashi_2_bmjnlo.jpg"},
   { name: "Tei-chan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732812416/teichan_thumb_nl1wn3.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732794132/teichan_kuahyi.png"},
   { name: "Otonase Raco", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732800119/raco_thumb_mhgixf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732800119/raco_ijfmro.png"},
-  { name: "Nonono Nono", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732981030/nono_thumb_2_jv7sp5.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732980713/nono_fxgygr.png"}
+  { name: "Nonono Nono", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732981030/nono_thumb_2_jv7sp5.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1732980713/nono_fxgygr.png"},
+  { name: "Watanuki Beleth", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733746198/beleth_thumb_nrjguy.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733746198/beleth_r6utm4.jpg"},
+  { name: "Hizuki Rurufu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733765028/rurufu_thumb_cr3gh9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733765027/rurufu_2_nssfd0.jpg"},
+  { name: "yuimelo", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733807348/yumelo_thumb_eachmi.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733807348/yumelo_lkhqhb.jpg"},
+  { name: "Kotose", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733807986/kotose_thumb_p31ei0.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733807986/kotose_4_szc3qr.jpg"},
+  { name: "Cybill", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733813378/cybill_thumb_hkc3dk.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733813377/cybill_2_v2r0lr.jpg"},
+  { name: "Kanaut Nishe", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733813485/kanaut_thumb_nbreid.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733813485/kanaut_lpo3bl.jpg"},
+  { name: "Aoba Ria", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733813770/aoba_ria_thumb_qvqhmk.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733813770/aoba_ria_ahuf1e.jpg"},
+  { name: "Earendel", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733821894/earendel_thumb_ozh7tt.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733821893/earendel_6_zem48y.png"},
+  { name: "Kokuhou Maria", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733828611/kokuhou_thumb_eebp7h.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733828611/kokuhou_uczioq.jpg"},
+  { name: "Usui Yura", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832722/usui_yura_thumb_2_egpndb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733833192/usui_yura_6_k2ldn5.jpg"},
+  { name: "Hinata Natori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832722/natori_thumb_2_g6bvk4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832952/hinata_natori_lflcn6.jpg"}
 ]
 
 puts "Thumbnails"

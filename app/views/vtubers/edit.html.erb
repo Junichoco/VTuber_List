@@ -5,6 +5,7 @@
     <h2>Edit VTuber</h2>
     <%= simple_form_for(@vtuber) do |f| %>
       <%= f.input :name %>
+      <%= f.input :jp_name %>
       <%= f.association :agency, collection: @agencies %>
       <%= f.input :gender, collection: ["female", "male", "neutral"] %>
       <%= f.input :birthday, discard_year: true, discard_time: true %>
@@ -24,7 +25,7 @@
         <%= f.button :submit, class:"btn-create" %>
       </div>
 
-      <h2>Add tags</h2>
+      <%# <h2>Add tags</h2> %>
 
     <% end %>
   <% end %>
