@@ -3484,6 +3484,33 @@ require_relative "agency_names"
     gender: "female",
     debut_date: "2020/05/04",
     yt_channel: "https://www.youtube.com/@setsunekoCH/streams"
+  },
+  {
+    name: "hatyati",
+    jp_name: "はちゃち",
+    description: "A long-tailed tit VTuber, Live2D designer, illustrator, web novelist. Won the Live2D Creative Awards 2020 Grand Prix.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "male",
+    yt_channel: "https://www.youtube.com/@hatyati"
+  },
+  {
+    name: "Rui Colchique",
+    jp_name: "ルイ＝コルシック",
+    description: "A member of the gothic twin VSinger unit Guillotine la poupee, also known as GiyoDoll.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@guillotinelapoupee"
+  },
+  {
+    name: "Marie Colchique",
+    jp_name: "マリー＝コルシック",
+    description: "A member of the gothic twin VSinger unit Guillotine la poupee, also known as GiyoDoll.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@guillotinelapoupee"
   }
 
 ].each do |vtuber|

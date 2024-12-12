@@ -1,19 +1,28 @@
 <div class="container col-12 col-lg-8" data-controller="delete-button">
   <div class="list-show-header">
-    <h2><%= @list.name %></h2>
-  </div>
-  <div>
-    <div class="list-show-subheader">
+    <div class="list-show-name">
+      <h2><%= @list.name %></h2>
       <p>Made by <%= @list.user.username %></p>
-      <div class="list-show-delete">
+    </div>
+    <div class="list-show-options">
+      <%= link_to edit_list_path, class:"main-button" do %>
+        <i class="fa-solid fa-pencil"></i> Rename this list
+      <% end %>
+      <br>
       <%= link_to list_path(@list),
         data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?" },
         class: "main-button" do
         %>
           <i class="fa-solid fa-eraser"></i> Delete this list
         <% end %>
+        <br>
         <a class="main-button noselect" data-action="click->delete-button#trigger"><i class="fa-solid fa-square-xmark"></i> Remove a VTuber</a>
-      </div>
+    </div>
+  </div>
+  <div>
+    <div class="list-show-subheader">
+
+
     </div>
   <div class="list-cards">
     <% if @list.get_vtubers.empty? %>
