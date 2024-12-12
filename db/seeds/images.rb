@@ -221,7 +221,9 @@ images = [
   { name: "Earendel", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733821894/earendel_thumb_ozh7tt.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733821893/earendel_6_zem48y.png"},
   { name: "Kokuhou Maria", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733828611/kokuhou_thumb_eebp7h.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733828611/kokuhou_uczioq.jpg"},
   { name: "Usui Yura", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832722/usui_yura_thumb_2_egpndb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733833192/usui_yura_6_k2ldn5.jpg"},
-  { name: "Hinata Natori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832722/natori_thumb_2_g6bvk4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832952/hinata_natori_lflcn6.jpg"}
+  { name: "Hinata Natori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832722/natori_thumb_2_g6bvk4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832952/hinata_natori_lflcn6.jpg"},
+  { name: "Marie Colchique", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015959/mari_colchique_thumb_rrdbwg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015958/mari_colchique_eaxvmd.jpg"},
+  { name: "Rui Colchique", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015959/rui_colchique_thumb_rwczuq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015959/rui_colchique_dnbx5c.jpg"}
 ]
 
 puts "Thumbnails"
