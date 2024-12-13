@@ -23,14 +23,22 @@ class User < ApplicationRecord
 
   validate :validate_username
 
-def validate_username
-  if User.where(email: username).exists?
-    errors.add(:username, :invalid)
+  def validate_username
+    if User.where(email: username).exists?
+      errors.add(:username, :invalid)
+    end
   end
-end
 
-def lists
-  List.where(user_id: id)
-end
+  def lists
+    List.where(user_id: id)
+  end
+
+  def new_list_num
+    List.where(user_id: id).length + 1
+  end
+
+  def self.find_by_name(name)
+    User.where(username: name).first
+  end
 
 end

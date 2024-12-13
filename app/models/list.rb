@@ -11,6 +11,10 @@ class List < ApplicationRecord
   validates :name, presence: true
   validates_length_of :name, maximum: 35
 
+  def new_list_num
+    vtuber_markers.length + 1
+  end
+
   def add_vtuber(vtuber)
     vm = VtuberMarker.new
     vm.list_id = id

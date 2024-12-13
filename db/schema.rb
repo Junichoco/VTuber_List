@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_09_04_064246) do
+ActiveRecord::Schema[7.1].define(version: 2024_12_13_150438) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -44,7 +44,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_04_064246) do
 
   create_table "agencies", force: :cascade do |t|
     t.string "name"
-    t.string "country"
     t.string "website"
     t.boolean "active", default: true
     t.text "description"
@@ -102,6 +101,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_04_064246) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "order_num"
     t.index ["user_id"], name: "index_lists_on_user_id"
   end
 
@@ -156,6 +156,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_04_064246) do
     t.bigint "list_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "order_num"
     t.index ["list_id"], name: "index_vtuber_markers_on_list_id"
     t.index ["vtuber_id"], name: "index_vtuber_markers_on_vtuber_id"
   end
