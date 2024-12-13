@@ -32,17 +32,18 @@ lists =[
       "Kohaku Nuino",
       "Amana Nia",
       "Takanashi Yutoha",
-      "Ruri Enma",
+      "Enma Ruri",
       "Aoi Neno",
       "Misora Sora",
       "Ririsya",
-      "Iguchi-san",
+      "Iguchi Sun",
       "yayamugi",
       "Sorakana Ito",
       "Figaro",
       "Hiiragi Youri",
       "Jyangarian",
       "HaNaTan",
+      "Nijyuna",
       "Nikoniko Pona",
       "Sakurane Kotori"
     ]
@@ -65,9 +66,9 @@ lists =[
       "Kotomiya Iori",
       "Amabuki San",
       "Non Anon",
-      "Uchida Shuu",
+      "Uchida Shu",
       "Momose Nina",
-      "nyaruchuu",
+      "nyaruchuuu",
       "Miyuri Mei"
     ]
   },
@@ -86,12 +87,13 @@ lists =[
   }
 ]
 
-lists.each do |hash|
-  newList = List.create!{
-    name: hash[:name],
+
+lists.each do |list|
+  newList = List.create!(
+    name: list[:name],
     user: user,
-    order_num: user.new_list_num
-  }
+    order_num: user.next_num
+  )
 
   if newList
     puts "#{newList.name} created"
@@ -100,11 +102,14 @@ lists.each do |hash|
     break
   end
 
-  hash[:vtubers].each do |vtuber|
-    if newList.add_vtuber(Vtuber.find_by_name(vtuber.name))
+  list[:vtubers].each do |vtuber|
+    if newList.add_vtuber(Vtuber.find_by_name(vtuber))
       puts "Added #{vtuber} to #{newList.name}"
+      puts "#{newList.next_num}"
     else
-      puts task.errors.full_messages
+      puts "#{vtuber} not found"
+      abort
+    end
   end
 end
 

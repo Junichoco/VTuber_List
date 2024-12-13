@@ -12,7 +12,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     @list.user = current_user
-    @list.order_num = current_user.new_list_num
+    @list.order_num = current_user.next_num
 
     if @list.save
       redirect_to list_path(@list)

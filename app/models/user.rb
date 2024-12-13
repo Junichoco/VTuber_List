@@ -33,7 +33,7 @@ class User < ApplicationRecord
     List.where(user_id: id)
   end
 
-  def new_list_num
+  def next_num
     List.where(user_id: id).length + 1
   end
 
