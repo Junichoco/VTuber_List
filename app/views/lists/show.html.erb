@@ -24,11 +24,12 @@
 
 
     </div>
-  <div class="list-cards">
-    <% if @list.get_vtubers.empty? %>
-      <p>There are no VTubers in this list</p>
-    <% else %>
-      <%= render "shared/list_display", list: @list %>
-    <% end %>
+    <div class="list-cards">
+      <% if @list.get_vtubers.empty? %>
+        <p>There are no VTubers in this list</p>
+      <% else %>
+        <%= render "shared/list_display", list: @list %>
+      <% end %>
+    </div>
   </div>
 </div>
