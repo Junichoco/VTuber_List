@@ -43,6 +43,7 @@ lists =[
       "Hiiragi Youri",
       "Jyangarian",
       "HaNaTan",
+      "Ibara Muan",
       "Nijyuna",
       "Nikoniko Pona",
       "Sakurane Kotori"
@@ -83,6 +84,15 @@ lists =[
       "Hiiragi Youri",
       "Azumalim",
       "Amabuki San"
+    ]
+  },
+  {
+    name: "Interesting Artists",
+    vtubers: [
+      "Fusako",
+      "hatyati",
+      "Kuchinawa Yuyua",
+      "Takanashi Hotori"
     ]
   }
 ]
