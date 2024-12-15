@@ -56,7 +56,13 @@ class User < ApplicationRecord
         end
       end
       target_list.update(order_num: new_num)
-
     end
   end
+
+  def order
+    lists.each do |list|
+      puts "#{list.name}: #{list.order_num}"
+    end
+  end
+
 end

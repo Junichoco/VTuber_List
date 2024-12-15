@@ -238,6 +238,25 @@
   transition: 0.2s;
 }
 
+.vtuber-card-footer {
+  .fa-twitch {
+    color: white;
+    transition: all 0.3s ease;
+  }
+  .fa-twitch:hover {
+    color: #7d52ff;
+    transition: all 0.3s ease;
+  }
+
+  .fa-youtube {
+    color: white;
+    transition: all 0.3s ease;
+  }
+  .fa-youtube:hover {
+    color: #ff0000;
+    transition: all 0.3s ease;
+  }
+}
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

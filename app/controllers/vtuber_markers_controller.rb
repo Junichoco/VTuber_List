@@ -25,9 +25,9 @@ class VtuberMarkersController < ApplicationController
   end
 
   def update
-    @marker = VtuberMarker.new(marker_params)
+    @marker = VtuberMarker.find(marker_params[:id])
 
-    if !@marker.save
+    if !@marker.update
       raise
     end
   end

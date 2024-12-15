@@ -10,7 +10,7 @@ tags = ["singer", "rap", "guitar", "FPS", "League of Legends", "big chest", "dee
         "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime",
         "furry", "R18 content", "short", "tall", "drama", "alcohol", "menhera", "pon", "Thai",
         "esports", "gamer", "ojou-sama", "mole", "boomer", "deep voice", "dance", "sexy webcam",
-        "doujin art", "doujin voice"]
+        "doujin art", "doujin voice", "twins"]
 
 tags.each do |tag|
   if !Tag.find_by_name(tag)
@@ -227,6 +227,14 @@ end
   {
     name: "Kanaut Nishe",
     tags: ["art", "not anime"]
+  },
+  {
+    name: "Rui Colchique",
+    tags: ["twins"]
+  },
+  {
+    name: "Marie Colchique",
+    tags: ["twins"]
   }
 
 ].each do |hash|

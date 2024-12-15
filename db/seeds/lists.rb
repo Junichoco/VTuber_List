@@ -46,6 +46,7 @@ lists =[
       "Ibara Muan",
       "Nijyuna",
       "Nikoniko Pona",
+      "MunMosh",
       "Sakurane Kotori"
     ]
   },
@@ -93,6 +94,14 @@ lists =[
       "hatyati",
       "Kuchinawa Yuyua",
       "Takanashi Hotori"
+    ]
+  },
+  {
+    name: "Interesting Concepts",
+    vtubers: [
+      "Otsuka Ray",
+      "Azumalim",
+      "Tabino Sora"
     ]
   }
 ]
