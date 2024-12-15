@@ -223,7 +223,11 @@ images = [
   { name: "Usui Yura", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832722/usui_yura_thumb_2_egpndb.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733833192/usui_yura_6_k2ldn5.jpg"},
   { name: "Hinata Natori", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832722/natori_thumb_2_g6bvk4.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1733832952/hinata_natori_lflcn6.jpg"},
   { name: "Marie Colchique", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015959/mari_colchique_thumb_rrdbwg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015958/mari_colchique_eaxvmd.jpg"},
-  { name: "Rui Colchique", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015959/rui_colchique_thumb_rwczuq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015959/rui_colchique_dnbx5c.jpg"}
+  { name: "Rui Colchique", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015959/rui_colchique_thumb_rwczuq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734015959/rui_colchique_dnbx5c.jpg"},
+  { name: "Dennou Shojo Siro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734241856/shiro_thumb_iz1nyf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734241856/dennou_shiro_ijerxq.png"},
+  { name: "Yumekayo Guu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734242604/yumekawa_thumb_az4luq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734242604/yumekawa_ns8uio.jpg"},
+  { name: "Leviatan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243153/leviatan_6_nzbw4k.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243154/leviatan_2_faenlu.jpg"},
+  { name: "Hanabasami Kyo", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243714/hanabasami_thumb_josahd.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243715/hanabasami_kyo_nfssry.png"}
 ]
 
 puts "Thumbnails"

@@ -94,6 +94,14 @@ lists =[
       "Kuchinawa Yuyua",
       "Takanashi Hotori"
     ]
+  },
+  {
+    name: "Interesting Concepts",
+    vtubers: [
+      "Otsuka Ray",
+      "Azumalim",
+      "Tabino Sora"
+    ]
   }
 ]
 

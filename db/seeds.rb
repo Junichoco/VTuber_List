@@ -716,7 +716,7 @@ amagami = Vtuber.create!(
 end
 
 shiro = Vtuber.create!(
-  name: "Dennou Shojo Shiro",
+  name: "Dennou Shojo Siro",
   jp_name: "電脳少女シロ",
   description: "No description available.",
   agency: dotlive,
