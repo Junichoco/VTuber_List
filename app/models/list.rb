@@ -55,23 +55,33 @@ class List < ApplicationRecord
   def move_vtuber(old_num, new_num)
     if old_num != new_num && old_num > 0 && old_num <= vtuber_markers.length && new_num > 0 && new_num <= vtuber_markers.length
 
-      ordered_markers[old_num - 1].update(order_num: new_num)
-      # target_vm = ordered_markers[old_num - 1]
+      markers =  VtuberMarker.where(list_id: id).order("order_num ASC")
+      target_vm = markers[old_num - 1]
+      # puts "#{old_num} #{markers[old_num-1].vtuber.name}"
 
-      # if new_num < old_num
-      #   markers[new_num - 1..old_num - 2].each do |vm|
-      #     vm.update(order_num: vm.order_num + 1)
-      #   end
-      # elsif new_num > old_num
-      #   markers[old_num..new_num - 1].each do |vm|
-      #     vm.update(order_num: vm.order_num - 1)
+      # markers[old_num-1].update(order_num: new_num)
 
-      #     puts "#{vm.vtuber.name} moved to #{vm.order_num}"
-      #   end
-      # end
+      # puts "#{old_num} #{markers[old_num-1].vtuber.name}"
 
-      # target_vm.update(order_num: new_num)
-      puts "#{ordered_markers[old_num - 1].vtuber.name} moved to #{ordered_markers[old_num - 1].order_num}: #{new_num}"
+
+      # ordered_markers[old_num - 1].update(order_num: new_num)
+
+
+      if new_num < old_num
+        markers[new_num - 1..old_num - 2].each do |vm|
+          vm.update(order_num: vm.order_num + 1)
+        end
+      elsif new_num > old_num
+        markers[old_num..new_num - 1].each do |vm|
+          vm.update(order_num: vm.order_num - 1)
+
+          # puts "#{vm.vtuber.name} moved to #{vm.order_num}"
+        end
+      end
+
+      target_vm.update(order_num: new_num)
+      # puts "#{ordered_markers[old_num - 1].vtuber.name} moved to #{ordered_markers[old_num - 1].order_num}: #{new_num}"
+      puts "#{target_vm.vtuber.name} moved to #{new_num}"
 
     end
   end
@@ -115,9 +125,12 @@ class List < ApplicationRecord
 
   # methods used only for debugging
   def order
-    vtuber_markers.each do |vm|
+    VtuberMarker.where(list_id: id).each do |vm|
       puts "#{vm.vtuber.name}: #{vm.order_num}"
     end
+    # vtuber_markers.each do |vm|
+    #   puts "#{vm.vtuber.name}: #{vm.order_num}"
+    # end
   end
 
   def reset_order

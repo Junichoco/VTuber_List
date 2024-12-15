@@ -3538,6 +3538,88 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     yt_channel: "https://www.youtube.com/@honehonegaburi"
+  },
+  {
+    name: "Hibiki Ao",
+    jp_name: "響木アオ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@HibikiAo"
+  },
+  {
+    name: "Hanaki Yuno",
+    jp_name: "華鬼結望",
+    description: "A half-oni oiran VTuber.",
+    agency: @indie,
+    main_language: "English",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@yunohanaki"
+  },
+  {
+    name: "Amakawa Hano",
+    jp_name: "天川はの",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@amakawa_hano"
+  },
+  {
+    name: "nah",
+    jp_name: "なー",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@nah_Vsinger"
+  },
+  {
+    name: "Hoshimi Madoka",
+    jp_name: "星見まどか",
+    description: "A constellation scientist VTuber.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@Madoka_Hoshimi"
+  },
+  {
+    name: "Kitami Rikka",
+    jp_name: "北見六花",
+    description: "A VTuber and voice actress.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@%E5%8C%97%E8%A6%8B%E5%85%AD%E8%8A%B1"
+  },
+  {
+    name: "Tororo Toto",
+    jp_name: "とろろとと",
+    description: "An owl.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2024/08/31",
+    yt_channel: "https://www.youtube.com/@TororoToto"
+  },
+  {
+    name: "Awayuki Yuri",
+    jp_name: "沫雪ゆうり",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@YuriAwayuki"
+  },
+  {
+    name: "Hakanai Neko",
+    jp_name: "儚依ねこ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@HakanaiNeko"
   }
 
 ].each do |vtuber|

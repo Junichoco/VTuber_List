@@ -227,7 +227,8 @@ images = [
   { name: "Dennou Shojo Siro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734241856/shiro_thumb_iz1nyf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734241856/dennou_shiro_ijerxq.png"},
   { name: "Yumekayo Guu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734242604/yumekawa_thumb_az4luq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734242604/yumekawa_ns8uio.jpg"},
   { name: "Leviatan", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243153/leviatan_6_nzbw4k.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243154/leviatan_2_faenlu.jpg"},
-  { name: "Hanabasami Kyo", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243714/hanabasami_thumb_josahd.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243715/hanabasami_kyo_nfssry.png"}
+  { name: "Hanabasami Kyo", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243714/hanabasami_thumb_josahd.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243715/hanabasami_kyo_nfssry.png"},
+  { name: "Kitami Ricca", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734277635/kitami_ricca_thumb_xaggcr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734277636/kitami_2_sns53g.png"}
 ]
 
 puts "Thumbnails"
