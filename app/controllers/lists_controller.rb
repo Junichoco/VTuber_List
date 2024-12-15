@@ -12,6 +12,8 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     @list.user = current_user
+    @list.order_num = current_user.next_num
+
     if @list.save
       redirect_to list_path(@list)
     else
@@ -42,6 +44,6 @@ class ListsController < ApplicationController
   private
 
   def list_params
-    params.require(:list).permit(:name, :photo)
+    params.require(:list).permit(:name, :order_num, :photo)
   end
 end

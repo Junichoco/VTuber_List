@@ -62,3 +62,4 @@
 @snacknili = Agency.find_by_name("Snack Nili")
 @akavirtual = Agency.find_by_name("AKA Virtual")
 @svp = Agency.find_by_name("Stellar Verse Productions")
+@kira = Agency.find_by_name("Kirakira production")

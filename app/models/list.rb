@@ -11,10 +11,15 @@ class List < ApplicationRecord
   validates :name, presence: true
   validates_length_of :name, maximum: 35
 
+  def next_num
+    VtuberMarker.where(list_id: id).length + 1
+  end
+
   def add_vtuber(vtuber)
     vm = VtuberMarker.new
     vm.list_id = id
     vm.vtuber = vtuber
+    vm.order_num = next_num
 
     return vm.save
   end
@@ -60,7 +65,11 @@ class List < ApplicationRecord
     end
 
     if pic_count <= 5
-      return get_vtubers
+      vtubers = []
+        vtuber_markers.each do |vm|
+          vtubers << vm.vtuber if vm.vtuber.thumbnail.attached?
+        end
+      return vtubers
     else
       while vtubers.length < 5
         vtuber = get_random_vtuber

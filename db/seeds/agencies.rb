@@ -391,6 +391,11 @@
     location: "United States",
     website: "https://www.stellarversepro.com/",
     yt_channel: "https://www.youtube.com/@StellarVersePro"
+  },
+  {
+    name: "Kirakira production",
+    location: "Japan",
+    website: "https://kirakira20221001.wixsite.com/vtuber",
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

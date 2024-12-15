@@ -21,6 +21,17 @@ class VtuberMarkersController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @marker = VtuberMarker.new(marker_params)
+
+    if !@marker.save
+      raise
+    end
+  end
+
   def destroy
     # raise
     @marker = VtuberMarker.find(params[:id])
@@ -32,6 +43,6 @@ class VtuberMarkersController < ApplicationController
   private
 
   def marker_params
-    params.require(:vtuber_marker).permit(:list_id, :vtuber_id)
+    params.require(:vtuber_marker).permit(:list_id, :vtuber_id, :order_num)
   end
 end
