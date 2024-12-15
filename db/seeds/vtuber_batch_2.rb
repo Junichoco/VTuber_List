@@ -3249,7 +3249,7 @@ require_relative "agency_names"
     name: "Kitsune Udon",
     jp_name: "輝常うどん",
     description: "No description available.",
-    agency: @indie,
+    agency: @kira,
     main_language: "Japanese",
     gender: "female",
     yt_channel: "https://www.youtube.com/@udon0922"
@@ -3511,6 +3511,33 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     yt_channel: "https://www.youtube.com/@guillotinelapoupee"
+  },
+  {
+    name: "Aikami Lise",
+    jp_name: "愛守海りせ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@AikamiLise"
+  },
+  {
+    name: "Daki Scarlet",
+    jp_name: "ダキ・スカーレット",
+    description: "No description available.",
+    agency: @kira,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@DakiScarlet"
+  },
+  {
+    name: "Honehone Gaburi",
+    jp_name: "ほねほね がぶり",
+    description: "A zombie maid VTuber.",
+    agency: @kira,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@honehonegaburi"
   }
 
 ].each do |vtuber|
