@@ -22,7 +22,7 @@
   <% else %>
 
     <% @lists.each do |list| %>
-      <div class="home-list-card">
+      <div class="home-list-card" data-controller="home-options">
         <div class="home-list-vtuber-row">
 
           <% list.get_vtuber_row.each do |vtuber| %>
@@ -38,7 +38,13 @@
           <h4><%= list.name %></h4>
         </div>
         <div class="home-list-count">
-          <p><i class="fa-solid fa-chalkboard-user" style="color: #ffffff;"></i> <%= list.vtuber_markers.length %></p>
+          <p><i class="fa-solid fa-chalkboard-user" ></i> <%= list.vtuber_markers.length %></p>
+        </div>
+        <div class="home-list-options" data-action="click->home-options#toggle">
+          <i class="fa-solid fa-bars" ></i>
+        </div>
+        <div class="home-options-menu d-none" data-home-options-target="button">
+          Move up/down
         </div>
 
 

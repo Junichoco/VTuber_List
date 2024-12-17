@@ -2425,7 +2425,7 @@ require_relative "agency_names"
     name: "Uno Sakura",
     jp_name: "兎野さくら",
     description: "A rabbit girl and member of the virtual relaxation salon KEMOMIMI REFLE. Also does voice acting for R18 doujin voice works.",
-    agency: @indie,
+    agency: @kemomimi,
     main_language: "Japanese",
     gender: "female",
     debut_date: "2021/08/07",
@@ -3620,6 +3620,45 @@ require_relative "agency_names"
     main_language: "Japanese",
     gender: "female",
     yt_channel: "https://www.youtube.com/@HakanaiNeko"
+  },
+  {
+    name: "Inami Yoki",
+    description: "A yokai VTuber.",
+    agency: @indie,
+    main_language: "English",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@InamiYokiCh",
+    twitch_channel: "https://twitch.tv/inamiyoki"
+  },
+  {
+    name: "Omdom Anzu",
+    jp_name: "おむだむ杏",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    debut_date: "2023/06/02",
+    yt_channel: "https://www.youtube.com/@OmdomAnzu"
+  },
+  {
+    name: "Misu Kisumi",
+    jp_name: "みすきすみ",
+    description: "No description available.",
+    agency: @indie,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@misskissmi_ch",
+    twitch_channel: "https://twitch.tv/misskissmi"
+  },
+  {
+    name: "Isumi Sia",
+    jp_name: "依澄しあ",
+    description: "A jellyfish VTuber.",
+    agency: @mahoroba,
+    main_language: "Japanese",
+    gender: "female",
+    yt_channel: "https://www.youtube.com/@sia_kurage",
+    twitch_channel: "https://www.twitch.tv/siakurage"
   }
 
 ].each do |vtuber|

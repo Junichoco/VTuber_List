@@ -396,6 +396,39 @@
     name: "Kirakira production",
     location: "Japan",
     website: "https://kirakira20221001.wixsite.com/vtuber",
+  },
+  {
+    name: "KEMOMIMI-REFLE",
+    location: "Japan",
+    description: "A virtual relaxation salon with kemonomimi girls.",
+    website: "https://www.kemomimirefle.com/home",
+    yt_channel: "https://www.youtube.com/@KemomimiRefle"
+  },
+  {
+    name: "MaHOROBA",
+    location: "Japan",
+    description: "A VTuber group managed by PRISMO Co., Ltd.",
+    website: "https://mahoroba.world/",
+    yt_channel: "https://www.youtube.com/@MaHOROBA_World/videos"
+  },
+  {
+    name: "MythosHQ",
+    description: "A VTuber agency with VTubers based on Greek Gods.",
+    website: "https://mythos.live/",
+    yt_channel: "https://www.youtube.com/@MythosHQ"
+  },
+  {
+    name: "VSPO!",
+    location: "Japan",
+    description: "A VTuber agency that focuses on eSports. The name is an abbreviation of \"Virtual esports Project.\"",
+    website: "https://vspo.jp/",
+    yt_channel: "https://www.youtube.com/@Vspo77"
+  },
+  {
+    name: "VOLs Pro",
+    location: "Singapore",
+    website: "https://volspro.com/",
+    yt_channel: "https://www.youtube.com/@VOLsOfficial"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

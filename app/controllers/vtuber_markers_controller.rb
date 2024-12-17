@@ -12,6 +12,7 @@ class VtuberMarkersController < ApplicationController
 
   def create
     @marker = VtuberMarker.new(marker_params)
+    @marker.order_num = List.find(marker_params[:list_id]).next_num
 
     if @marker.save
       redirect_to list_path(List.find(marker_params[:list_id]))
