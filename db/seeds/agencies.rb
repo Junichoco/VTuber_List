@@ -429,6 +429,12 @@
     location: "Singapore",
     website: "https://volspro.com/",
     yt_channel: "https://www.youtube.com/@VOLsOfficial"
+  },
+  {
+    name: "Aegis-Link",
+    location: "United States",
+    website: "https://aegis-l.ink/",
+    yt_channel: "https://www.youtube.com/@Aegis-Link"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])
