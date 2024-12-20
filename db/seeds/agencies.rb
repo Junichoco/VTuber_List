@@ -435,6 +435,12 @@
     location: "United States",
     website: "https://aegis-l.ink/",
     yt_channel: "https://www.youtube.com/@Aegis-Link"
+  },
+  {
+    name: "MEWLIVE",
+    location: "Japan",
+    website: "https://mewlive.jp/",
+    yt_channel: "https://www.youtube.com/@mewlive_official"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

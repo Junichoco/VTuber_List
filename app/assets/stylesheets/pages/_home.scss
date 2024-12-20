@@ -64,8 +64,6 @@
   border-radius: 0 0 5px 0;
   word-wrap: break-word;
   word-break: break-all;
-
-
 }
 
 .home-list-count {
@@ -129,6 +127,23 @@
   background-color: white;
   transition: all 0.3s;
   cursor: pointer;
+}
+
+.list-move-menu {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 150px;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+
+  border-radius: 5px 0 0 0;
+  padding: 6px 20px 6px 6px;
+  p{
+    margin-bottom: 3px;
+  }
+  .options-link {
+    width: 85%;
+  }
 }
 
 

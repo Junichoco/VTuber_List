@@ -2,12 +2,12 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="home-options"
 export default class extends Controller {
-  static targets = ["menu", "button"]
+  static targets = ["menu", "submenu1", "submenu2", "button"]
   connect() {
     console.log("home options controller connected");
   }
 
-  toggle() {
+  toggle_menu() {
     this.menuTarget.classList.toggle("d-none");
     this.buttonTarget.classList.toggle("options-button-toggled");
 
@@ -18,5 +18,10 @@ export default class extends Controller {
       this.buttonTarget.innerHTML = '<i class="fa-solid fa-bars" ></i>';
       console.log("button changed to bars");
     }
+  }
+
+  toggle_submenu() {
+    this.submenu1Target.classList.toggle("d-none");
+    this.submenu2Target.classList.toggle("d-none");
   }
 }

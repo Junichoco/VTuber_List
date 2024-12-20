@@ -3,6 +3,7 @@ class PagesController < ApplicationController
     @lists = []
     if user_signed_in?
       @lists = current_user.lists
+      @user = current_user
     end
     @list = List.new
   end

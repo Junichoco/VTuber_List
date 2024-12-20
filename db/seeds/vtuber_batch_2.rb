@@ -3659,6 +3659,124 @@ require_relative "agency_names"
     gender: "female",
     yt_channel: "https://www.youtube.com/@sia_kurage",
     twitch_channel: "https://www.twitch.tv/siakurage"
+  },
+  {
+    name: "Kotonoha Kotoha",
+    jp_name: "琴乃葉コトハ",
+    description: "An idol and mascot of a Japanese sweets shop.",
+    agency: @indie,
+    main_language: "Japanese",
+    debut_date: "2023/10/27",
+    yt_channel: "https://www.youtube.com/@user-kotonoha-kotoha"
+  },
+  {
+    name: "Nemesis",
+    jp_name: "涅默",
+    description: "No description available.",
+    agency: @springfish,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@NemesisXDFP",
+    twitch_channel: "https://twitch.tv/nemesisxdfp"
+  },
+  {
+    name: "Amausa Reimu",
+    jp_name: "甘兎れいむ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@amausareimu"
+  },
+  {
+    name: "Charm",
+    jp_name: "ちゃーむ",
+    description: "A snow fox VTuber",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Charm_Vtuber",
+    twitch_channel: "https://twitch.tv/charm_vtuber"
+  },
+  {
+    name: "Nanahoshi Milily",
+    jp_name: "七星みりり",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@MililyNanahoshi"
+  },
+  {
+    name: "Devilith Violustre",
+    description: "A devil who lives in the human world.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Chinese",
+    yt_channel: "https://www.youtube.com/@devilithviolustre"
+  },
+  {
+    name: "Minai Aruma",
+    jp_name: "薬袋アルマ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@ArumaCh"
+  },
+  {
+    name: "Koinuma Miya",
+    jp_name: "恋沼ミヤ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@koinumamiya",
+    twitch_channel: "https://twitch.tv/koinumamiya"
+  },
+  {
+    name:"Ichise Fuwa",
+    jp_name: "壱星ふわ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@ichi_fw"
+  },
+  {
+    name: "Nanase Nekepi",
+    jp_name: "七瀬ねけぴ",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@nanasenekepi"
+  },
+  {
+    name: "Kohaku Hinata",
+    jp_name: "琥珀ひなた",
+    description: "No description available.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@puucharou"
+  },
+  {
+    name: "Yousagi Kurone",
+    jp_name: "夜羽咲クロネ",
+    description: "An 11th-grader who likes yami-kawaii things and was held back a year.",
+    gender: "female",
+    main_languageJ: "Japanese",
+    birthday: "2020/09/06",
+    yt_channel: "https://www.youtube.com/@Kurone_Yousagi"
+  },
+  {
+    name: "Kumonoue Yumemi",
+    jp_name: "くもの上ユメミ",
+    description: "No description available.",
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@YumemiChannel"
   }
 
 ].each do |vtuber|
