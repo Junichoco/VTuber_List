@@ -22,7 +22,7 @@
   <% else %>
 
     <% @lists.each do |list| %>
-      <div id="list-card-<%= list.order_num %>" class="home-list-card" data-controller="home-options">
+      <div id="list-card-<%= list.order_num %>" class="home-list-card" data-controller="home-options" >
         <div class="home-list-vtuber-row">
 
           <% list.get_vtuber_row.each do |vtuber| %>
@@ -64,7 +64,7 @@
             <%= form_with url: reorder_path, method: :patch do |f| %>
               <%= f.hidden_field :old_num, value: list.order_num %>
               <%= f.select :new_num, (1..@lists.length) %>
-              <%= f.button :submit %>
+              <%= f.button :submit, class: "list-move-menu-button" %>
             <% end %>
             <div class="options-link" data-action="click->home-options#toggle_submenu">
               Back

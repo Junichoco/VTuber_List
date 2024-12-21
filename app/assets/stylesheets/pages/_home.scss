@@ -103,10 +103,13 @@
   right: 10px;
   bottom: 10px;
   z-index: 2;
+  overflow:  hidden;
 
   border-radius: 5px 0 0 0;
 
   font-weight: bold;
+
+  user-select: none;
 }
 .home-options-menu {
   display: flex;
@@ -130,14 +133,14 @@
 }
 
 .list-move-menu {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
+
   width: 150px;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  // background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
 
   border-radius: 5px 0 0 0;
-  padding: 6px 20px 6px 6px;
+  // padding: 6px 20px 6px 6px;
+
+  transition: all 0.5s ease-in-out;
   p{
     margin-bottom: 3px;
   }
@@ -145,7 +148,9 @@
     width: 85%;
   }
 }
-
+.menu-toggled {
+  right: 0px;
+}
 
 .home-list-name p {
   margin-bottom: 0.0rem;

@@ -85,3 +85,15 @@
   top: 5px;
   right: 5px;
 }
+
+.list-move-menu-button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+.list-move-menu-button:hover{
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
