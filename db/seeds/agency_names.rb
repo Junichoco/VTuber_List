@@ -63,3 +63,6 @@
 @akavirtual = Agency.find_by_name("AKA Virtual")
 @svp = Agency.find_by_name("Stellar Verse Productions")
 @kira = Agency.find_by_name("Kirakira production")
+@kemomo = Agency.find_by_name("KEMOMIMI-REFLE")
+@mahoroba = Agency.find_by_name("MaHOROBA")
+@mewlive = Agency.find_by_name("MEWLIVE")

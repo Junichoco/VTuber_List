@@ -9,7 +9,7 @@ class List < ApplicationRecord
   has_one_attached :photo
 
   validates :name, presence: true
-  validates_length_of :name, maximum: 35
+  validates_length_of :name, maximum: 32
 
   def next_num
     VtuberMarker.where(list_id: id).length + 1

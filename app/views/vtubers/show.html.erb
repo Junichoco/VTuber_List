@@ -41,7 +41,9 @@
             <table>
               <tr>
                 <td><strong>Gender:</strong></td>
-                <td><%= @vtuber.gender.capitalize %></td>
+                <% if @vtuber.gender %>
+                  <td><%= @vtuber.gender.capitalize %></td>
+                <% end %>
               </tr>
               <tr>
                 <td><strong>Main language:</strong></td>

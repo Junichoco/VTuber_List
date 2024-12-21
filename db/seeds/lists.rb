@@ -47,6 +47,7 @@ lists =[
       "Nijyuna",
       "Nikoniko Pona",
       "MunMosh",
+      "Kugumi Rui",
       "Sakurane Kotori"
     ]
   },
@@ -71,7 +72,8 @@ lists =[
       "Uchida Shu",
       "Momose Nina",
       "nyaruchuuu",
-      "Miyuri Mei"
+      "Miyuri Mei",
+      "Earendel"
     ]
   },
   {
@@ -118,7 +120,7 @@ lists.each do |list|
     puts "#{newList.name} created"
   else
     puts task.errors.full_messages
-    break
+    abort
   end
 
   list[:vtubers].each do |vtuber|
