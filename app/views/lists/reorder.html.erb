@@ -1,0 +1,20 @@
+<div class="container col-12 col-lg-8">
+<div class="list-show-header">
+    <div class="list-show-name">
+      <h2><%= @list.name %></h2>
+      <p>Made by <%= @list.user.username %></p>
+
+      <ul >
+        <li>Pet the cat</li>
+        <li>Get the groceries</li>
+      </ul>
+
+      <div id="items" data-controller="sortable" >
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -27,7 +27,9 @@ Rails.application.routes.draw do
   # resources :lists do
   #  resources :vtuber_markers, only: [:new, :create, :destroy]
   # end
-  resources :lists
+  resources :lists do
+    get "reorder", to: "lists#reorder", as: :reorder
+  end
   resources :vtuber_markers
   resources :agencies
 

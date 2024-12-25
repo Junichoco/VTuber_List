@@ -40,6 +40,10 @@ class ListsController < ApplicationController
     redirect_to :home
   end
 
+  def reorder
+    @list = List.find(params[:list_id])
+  end
+
 
   private
 

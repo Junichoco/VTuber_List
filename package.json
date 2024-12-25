@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@stimulus-components/dropdown": "^3.0.0"
+    "@stimulus-components/dropdown": "^3.0.0",
+    "sortablejs": "^1.15.6"
   }
 }

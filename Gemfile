@@ -82,3 +82,6 @@ gem "pg_search"
 gem "cloudinary"
 gem "flatpickr"
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
+gem 'sortablejs-rails', '~> 1.10'

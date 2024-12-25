@@ -15,18 +15,27 @@
         %>
           <i class="fa-solid fa-eraser"></i> Delete this list
         <% end %>
-        <br>
-        <a class="main-button noselect" data-action="click->delete-button#trigger"><i class="fa-solid fa-square-xmark"></i> Remove a VTuber</a>
+      <br>
+      <a class="main-button noselect" data-action="click->delete-button#trigger"><i class="fa-solid fa-square-xmark"></i> Remove a VTuber</a>
+      <br>
+      <%= link_to list_reorder_path(@list), class: "main-button" do %>
+        <i class="fa-solid fa-up-down-left-right"></i> Move VTubers
+      <% end %>
     </div>
   </div>
   <div>
 
-    <div class="list-cards">
+    <div class="list-cards-container">
       <% if @list.get_vtubers.empty? %>
         <p>There are no VTubers in this list</p>
       <% else %>
-        <%= render "shared/list_display", list: @list %>
+        <div class="list-cards" data-controller="sortable">
+
+          <%= render "shared/list_display", list: @list %>
+
+        </div>
       <% end %>
     </div>
+
   </div>
 </div>
