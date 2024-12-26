@@ -1,6 +1,7 @@
 class List < ApplicationRecord
   acts_as_favoritable
   acts_as_favoritor
+  acts_as_list  top_of_list: 0
 
   belongs_to :user
   has_many :list_markers, dependent: :destroy
@@ -20,6 +21,7 @@ class List < ApplicationRecord
     vm.list_id = id
     vm.vtuber = vtuber
     vm.order_num = next_num
+    vm.position = vm.order_num
 
     return vm.save
   end
@@ -137,6 +139,14 @@ class List < ApplicationRecord
     n = 1
     vtuber_markers.each do |vm|
       vm.update(order_num: n)
+      n += 1
+    end
+  end
+
+  def reset_positions
+    n = 1
+    ordered_markers.each do |vm|
+      vm.update(position: n)
       n += 1
     end
   end

@@ -30,6 +30,9 @@ Rails.application.routes.draw do
   resources :lists do
     get "reorder", to: "lists#reorder", as: :reorder
   end
+  patch "lists/:id/sort", to: "lists#sort", as: :sort
+  patch "lists/:list_id/sort", to: "lists#sort", as: :list_id_sort
+
   resources :vtuber_markers
   resources :agencies
 

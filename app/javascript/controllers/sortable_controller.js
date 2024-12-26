@@ -21,10 +21,39 @@ export default class extends Controller {
   }
 
   onEnd(event) {
-    const { newIndex, item } = event;
-    const url = item.dataset["sortableUrl"]
-    put(url, {
-      body: JSON.stringify({ position: newIndex })
-    });
+    const { newIndex, oldIndex, item } = event;
+    // const url = item.dataset["sortableUrl"]
+    // // put(url, {
+    // //   body: JSON.stringify({ position: newIndex })
+    // // });
+
+    // console.log(item.dataset);
+    // console.log(event);
+
+    // // let id = event.item.dataset.id
+    // let data = new FormData()
+    // // data.append("position", event.newIndex + 1)
+    // console.log(this.data.get("url"));
+    // // Rails.ajax({
+    //   // url: this.data.get("url").replace(":id", id),
+    //   url:
+    //   type: 'PATCH',
+    //   data: data
+    // })
+
+    // const formData = new FormData();
+    // formData.append(newIndex, oldIndex);
+
+    // // console.log(formData);
+
+    // fetch(this.formTarget.action, {
+    //   method: "PATCH", // Could be dynamic with Stimulus values
+    //   headers: { "Accept": "application/json" },
+    //   body: new FormData(this.formTarget)
+    // })
+    //   .then(response => response.json())
+    //   .then((data) => {
+    //     console.log(data)
+    //   })
   }
 }

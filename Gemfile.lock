@@ -85,6 +85,9 @@ GEM
       tzinfo (~> 2.0)
     acts_as_favoritor (6.0.2)
       activerecord (>= 5.0)
+    acts_as_list (1.2.4)
+      activerecord (>= 6.1)
+      activesupport (>= 6.1)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     autoprefixer-rails (10.4.19.0)
@@ -324,6 +327,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_favoritor
+  acts_as_list
   autoprefixer-rails
   bootsnap
   bootstrap (~> 5.2)

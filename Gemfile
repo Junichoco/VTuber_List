@@ -85,3 +85,4 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 gem 'sortablejs-rails', '~> 1.10'
+gem "acts_as_list"

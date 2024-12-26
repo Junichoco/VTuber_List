@@ -21,6 +21,11 @@
       <%= link_to list_reorder_path(@list), class: "main-button" do %>
         <i class="fa-solid fa-up-down-left-right"></i> Move VTubers
       <% end %>
+      <%= form_with url: sort_path, method: :patch do |f| %>
+              <%= f.select :old_num, (1..@list.get_vtubers.length) %>
+              <%= f.select :new_num, (1..@list.get_vtubers.length) %>
+              <%= f.button :submit, class: "list-move-menu-button" %>
+            <% end %>
     </div>
   </div>
   <div>

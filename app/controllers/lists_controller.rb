@@ -42,6 +42,13 @@ class ListsController < ApplicationController
 
   def reorder
     @list = List.find(params[:list_id])
+    raise
+  end
+
+  def sort
+    list = List.find(params[:id])
+    list.move_vtuber(params[:old_num].to_i, params[:new_num].to_i)
+    redirect_to :list
   end
 
 
