@@ -1,4 +1,4 @@
-<% list.vtuber_markers.order(order_num: :asc).each do |marker| %>
+<% list.vtuber_markers.order(position: :asc).each do |marker| %>
   <div class="vtuber-card" data-controller="zoom-in" >
     <div class="vtuber-delete d-none" data-delete-button-target="button">
       <%= link_to vtuber_marker_path(marker),

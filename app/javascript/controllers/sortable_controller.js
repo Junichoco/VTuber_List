@@ -21,11 +21,13 @@ export default class extends Controller {
   }
 
   onEnd(event) {
-    const { newIndex, oldIndex, item } = event;
-    // const url = item.dataset["sortableUrl"]
-    // // put(url, {
-    // //   body: JSON.stringify({ position: newIndex })
-    // // });
+    const { newIndex, item } = event;
+    const url = item.dataset["sortableUrl"]
+    put(url, {
+      body: JSON.stringify({ position: newIndex + 1 })
+    });
+    console.log(newIndex + 1);
+
 
     // console.log(item.dataset);
     // console.log(event);
