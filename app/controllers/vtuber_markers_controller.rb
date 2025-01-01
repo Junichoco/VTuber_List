@@ -43,6 +43,11 @@ class VtuberMarkersController < ApplicationController
     redirect_to list_path(list)
   end
 
+  def insert
+    @marker = VtuberMarker.find(params[:id])
+    @marker.insert_at(params[:newIndex].to_i)
+  end
+
   private
 
   def marker_params

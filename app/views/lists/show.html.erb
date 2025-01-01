@@ -34,7 +34,7 @@
       <% if @list.get_vtubers.empty? %>
         <p>There are no VTubers in this list</p>
       <% else %>
-        <div class="list-cards" data-controller="sortable">
+        <div id="<%= @list.id %>" class="list-cards" data-controller="sortable" >
 
           <%= render "shared/list_display", list: @list %>
 

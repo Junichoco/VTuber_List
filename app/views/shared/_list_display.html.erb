@@ -1,5 +1,5 @@
 <% list.vtuber_markers.order(position: :asc).each do |marker| %>
-  <div class="vtuber-card" data-controller="zoom-in" >
+  <div id="<%= marker.id %>" class="vtuber-card" data-controller="zoom-in" >
     <div class="vtuber-delete d-none" data-delete-button-target="button">
       <%= link_to vtuber_marker_path(marker),
         data: { turbo_method: :delete, turbo_confirm: "Delete this VTuber from this list?" } do %>
@@ -28,7 +28,7 @@
             <i class="fa-brands fa-twitch"></i>
           <% end %>
         <% end %>
-        <%= marker.order_num %> <%= marker.position %>
+        <%= marker.order_num %> <%= marker.position %> <%= marker.id %>
       </div>
     </div>
   </div>

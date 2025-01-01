@@ -61,6 +61,7 @@ class List < ApplicationRecord
       markers =  VtuberMarker.where(list_id: id).order("position ASC")
       # target_vm = markers[position - 1]
       markers[old_num - 1].update(position: new_num)
+      markers[old_num - 1].update(order_num: new_num)
 
     #   if new_num < old_num
     #     markers[new_num - 1..old_num - 2].each do |vm|
