@@ -1,10 +1,12 @@
 <div class="container col-12 col-lg-8">
   <%#= link_to "Go back", :back %>
   <div style="position: relative;">
-  <% if user_signed_in? && current_user.role == "admin" %>
-    <div class="edit-button"><%= link_to "Edit VTuber info", edit_vtuber_path %></div>
-  <% end %>
-  <div class="vtuber-show-container">
+    <div class="edit-button-container">
+    <% if user_signed_in? && current_user.role == "admin" %>
+      <div class="edit-button"><%= link_to "Edit VTuber info", edit_vtuber_path %></div>
+    <% end %>
+    </div>
+    <div class="vtuber-show-container">
       <div class="vtuber-show-picture-card">
 
         <% if @vtuber.vertical_picture.attached? %>
@@ -13,9 +15,7 @@
         <% elsif @vtuber.photo_url %>
           <%= image_tag @vtuber.photo_url, class: "vtuber-tall-picture" %>
         <% end %>
-        <%#= image_tag @vtuber.photo_url, class: "vtuber-pic" if @vtuber.photo_url %>
       </div>
-
       <div class="vtuber-show-body">
         <div class="badge-group">
           <h3><span class="fw-bold show-card-name"><%= @vtuber.name %></span></h3>
@@ -74,7 +74,7 @@
         <% end %>
         </div>
       </div>
-      <div class="vtuber-show-add" style="width: 50%;">
+      <div class="vtuber-show-add" style="width: 45%;">
         <% if !user_signed_in? %>
           <h5><%= link_to "Log in", new_user_session_path, class: "main-button" %> to add this VTuber to a list</h5>
         <% elsif @lists.empty? %>
@@ -85,7 +85,7 @@
           <div class="add-vtuber-form">
             <%= simple_form_for @marker do |f| %>
               <%= f.hidden_field :vtuber_id, value: Vtuber.find(params[:id]).id %>
-              <%= f.association :list, collection: @lists %>
+              <%= f.association :list, collection: @lists, label: false %>
               <div class="form-actions">
               <%= f.button :submit, value: "Add VTuber", class: "btn submit-button" %>
               </div>

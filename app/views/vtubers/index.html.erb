@@ -13,9 +13,7 @@
       <% @vtubers.order('LOWER(name)').each do |vtuber| %>
         <div class="vtuber-card" data-controller="zoom-in">
 
-
-            <%= render "shared/vtuber_picture", vtuber: vtuber %>
-
+          <%= render "shared/vtuber_picture", vtuber: vtuber %>
 
           <div class="vtuber-card-body" data-action="mouseover->zoom-in#zoom_in mouseout->zoom-in#zoom_out">
             <p><%= vtuber.name %></p>
@@ -42,4 +40,4 @@
       <% end %>
     </div>
   <% end %>
-<div>
+</div>

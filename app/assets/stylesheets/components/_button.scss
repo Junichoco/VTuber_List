@@ -80,10 +80,13 @@
   transition: all 0.3s;
 }
 
+.edit-button-container{
+  text-align: right;
+}
 .edit-button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  // position: absolute;
+  // top: 5px;
+  // right: 5px;
 }
 
 .list-move-menu-button {
@@ -96,4 +99,10 @@
   background-color: white;
   color: black;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .edit-button{
+    position: relative;
+  }
 }

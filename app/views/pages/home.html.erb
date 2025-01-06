@@ -1,6 +1,6 @@
 <div class="container col-12 col-lg-6">
   <div class="home-top">
-    <h1 style="font-family: 'Patrick Hand';">VTuber List</h1>
+    <h1 class="navbar-logo">VTuber List</h1>
 
     <div class="home-top-links">
 
@@ -16,7 +16,7 @@
   </div>
 
   <% if !user_signed_in? %>
-    <h5>Log in to make a list!</h5>
+    <h5><%= link_to "Log in", new_user_session_path %> to make a list!</h5>
   <% elsif @lists.empty? %>
     <h5>You don't have any lists yet</h5>
   <% else %>

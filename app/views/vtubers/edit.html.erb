@@ -5,11 +5,11 @@
     <h2>Edit VTuber</h2>
     <%= simple_form_for(@vtuber) do |f| %>
       <%= f.input :name %>
-      <%= f.input :jp_name %>
+      <%= f.input :jp_name, label: "JP name" %>
       <%= f.association :agency, collection: @agencies %>
       <%= f.input :gender, collection: ["female", "male", "neutral"] %>
       <%= f.input :birthday, discard_year: true, discard_time: true %>
-      <%= f.input :debut_date, start_year: 2000 %>
+      <%= f.input :debut_date, start_year: 1970 %>
       <%= f.input :description, as: :text %>
       <%= f.input :main_language %>
       <%= f.input :yt_channel, label: "YouTube channel" %>
@@ -28,5 +28,11 @@
       <%# <h2>Add tags</h2> %>
 
     <% end %>
+    <div class="add-tags-container">
+      <h2>Add Tags</h2>
+      <%= form_with do |f| %>
+        <%= f.select :new_agency, Tag.all_tags %>
+      <% end %>
+    </div>
   <% end %>
 </div>

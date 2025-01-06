@@ -33,8 +33,10 @@
         <% if user_signed_in? %>
           <div class="username">
             <%= link_to user_path(current_user) do %>
+              <span class="main-button">
               <i class="fa-solid fa-user-large"></i>
               <%= current_user.username %>
+              </span>
             <% end %>
           </div>
           <div style="align-self: flex-end;">

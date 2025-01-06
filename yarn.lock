@@ -4,12 +4,22 @@
 
 "@stimulus-components/dropdown@^3.0.0":
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@stimulus-components/dropdown/-/dropdown-3.0.0.tgz#b85efa8ef06a94eac1a40e52ac920f5089789c8e"
+  resolved "https://registry.npmjs.org/@stimulus-components/dropdown/-/dropdown-3.0.0.tgz"
   integrity sha512-GY9Ez8T5Vbcad702seF4iuKZwv4f+VACtfO527l8vrFDFbGWWFyRljyK9FFXSPEkUC3/4PilVsYfPO2CMikkEg==
   dependencies:
     stimulus-use "^0.52.2"
 
+rails-ujs@^5.2.8-1:
+  version "5.2.8-1"
+  resolved "https://registry.yarnpkg.com/rails-ujs/-/rails-ujs-5.2.8-1.tgz#2ef0bb092b910121cf19d1464365f5bdcc730701"
+  integrity sha512-1Xfgv21r3Ira7sgepnvLD546q8hm/uIokK7Ocoi4uLsXkT0HHg8vJaxKfBqbjdb24YeOGBily+jxfcAle7dMWA==
+
+sortablejs@^1.15.6:
+  version "1.15.6"
+  resolved "https://registry.npmjs.org/sortablejs/-/sortablejs-1.15.6.tgz"
+  integrity sha512-aNfiuwMEpfBM/CN6LY0ibyhxPfPbyFeBTYJKCvzkJ2GkUpazIt3H+QIPAMHwqQ7tMKaHz1Qj+rJJCqljnf4p3A==
+
 stimulus-use@^0.52.2:
   version "0.52.2"
-  resolved "https://registry.yarnpkg.com/stimulus-use/-/stimulus-use-0.52.2.tgz#fc992fababe03f8d8bc2d9470c8cdb40bd075917"
+  resolved "https://registry.npmjs.org/stimulus-use/-/stimulus-use-0.52.2.tgz"
   integrity sha512-413+tIw9n6Jnb0OFiQE1i3aP01i0hhGgAnPp1P6cNuBbhhqG2IOp8t1O/4s5Tw2lTvSYrFeLNdaY8sYlDaULeg==

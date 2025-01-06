@@ -66,7 +66,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 
-  gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem "error_highlight", ">= 0.7.0", platforms: [:ruby]
 end
 
 group :test do
@@ -82,3 +82,8 @@ gem "pg_search"
 gem "cloudinary"
 gem "flatpickr"
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
+gem 'sortablejs-rails', '~> 1.10'
+gem "acts_as_list"
+gem 'requestjs-rails'

@@ -27,8 +27,15 @@ Rails.application.routes.draw do
   # resources :lists do
   #  resources :vtuber_markers, only: [:new, :create, :destroy]
   # end
-  resources :lists
-  resources :vtuber_markers
+  resources :lists do
+    get "reorder", to: "lists#reorder", as: :reorder
+  end
+  patch "lists/:id/sort", to: "lists#sort", as: :sort
+  # patch "lists/:list_id/sort", to: "lists#sort", as: :list_id_sort
+
+  resources :vtuber_markers do
+    # patch "lists/:list_id/insert", to: "vtuber_markers#insert", as: :insert
+  end
   resources :agencies
 
   # resources :vtuber_markers
