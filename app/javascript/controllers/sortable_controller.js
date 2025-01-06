@@ -25,34 +25,44 @@ export default class extends Controller {
 
   async onEnd(event) {
     const { newIndex, oldIndex, item } = event;
-    // const url = item.dataset["sortableUrl"]
+    const old_num = parseInt(event.oldIndex) + 1;
+    const new_num = parseInt(event.newIndex) + 1;
     const listId = parseInt(document.getElementsByClassName("list-cards")[0].id);
     const markerId = parseInt(document.getElementsByClassName("vtuber-card")[newIndex].id);
-    // put(url, {
+    // put(`/lists/${listId}/sort`, {
     //   body: JSON.stringify({ position: newIndex + 1 })
+    // });
+    // put(`/lists/${listId}/sort`, {
+    //   body: JSON.stringify({ id: listId,
+    //   old_num: old_num,
+    //   new_num: new_num })
     // });
     // console.log(newIndex + 1);
 
+    // const request = new FetchRequest('patch', `/lists/${listId}/sort`);
+    // const response = await request.perform();
+    // console.log(response);
+
     // console.log(listId);
     // Rails.ajax({
-    //   url: `lists/${listId}/sort`,
-    //   type: "patch"
-    //   // data: {
-    //   //   params: {
-    //   //     id: listId,
-    //   //     old_num: oldIndex,
-    //   //     new_num: newIndex
-    //   //   }
-    //   });
-    // // });
+    //   url: `/lists/${listId}/sort`,
+    //   type: "patch",
+    //   data: {
+    //     params: {
+    //       id: listId,
+    //       old_num: event.oldIndex + 1,
+    //       new_num: event.newIndex + 1
+    //     }
+    //   }
+    // });
+
     // const mydata = {
     //   params: {
     //     id: listId,
     //     old_num: oldIndex + 1,
     //     new_num: newIndex + 1
     //  }};
-    const old_num = parseInt(oldIndex) + 1;
-    const new_num = parseInt(newIndex) + 1;
+
     const mydata = {
       'id': listId,
       'old_num': JSON.stringify(old_num),
@@ -70,17 +80,22 @@ export default class extends Controller {
     // const response = await request.perform()
     // console.log(response)
 
-     Rails.ajax({
-      url: `/lists/${listId}/sort`,
-      type: "patch",
-      data: mydata
-    });
+    //  Rails.ajax({
+    //   url: `/lists/${listId}/sort`,
+    //   type: "patch",
+    //   data: mydata
+    // });
 
 
 
-    // fetch(`/lists/${listId}/sort` {
+    // fetch(`/lists/${listId}/sort`, {
     //   method: "POST",
-    // })
+    //   headers: { "Accept": "application/json" },
+    //   body: mydata
+    // }).then(response => response.json())
+    // .then((data) => {
+    //   console.log(data)
+    // });
 
     //  console.log(mydata.params.id);
 

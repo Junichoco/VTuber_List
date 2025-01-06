@@ -4,6 +4,7 @@
 // <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Patrick+Hand&family=Silkscreen:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
@@ -18,3 +19,11 @@ $headers-font: "Arial", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+.doto-bold {
+  font-family: "Doto", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 50;
+}

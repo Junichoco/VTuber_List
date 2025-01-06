@@ -3765,6 +3765,7 @@ require_relative "agency_names"
     name: "Yousagi Kurone",
     jp_name: "夜羽咲クロネ",
     description: "An 11th-grader who likes yami-kawaii things and was held back a year.",
+    agency: @indie,
     gender: "female",
     main_languageJ: "Japanese",
     birthday: "2020/09/06",
@@ -3774,9 +3775,28 @@ require_relative "agency_names"
     name: "Kumonoue Yumemi",
     jp_name: "くもの上ユメミ",
     description: "No description available.",
+    agency: @indie,
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@YumemiChannel"
+  },
+  {
+    name: "Aishiro Haruri",
+    jp_name: "藍白はるり",
+    description: "The princess of the Glass Kingdom. Because of a witch's curse, she lost the ability to use magic. She became a VTuber in order to find out how to break the curse.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@Aishiro_Haruri"
+  },
+  {
+    name: "Aizawa Nachu",
+    jp_name: "あいざわなちゅ",
+    description: "A doujin voice actress who does voice acting for doujin voice works.",
+    agency: @indie,
+    gender: "female",
+    main_language: "Japanese",
+    yt_channel: "https://www.youtube.com/@aizawanachu"
   }
 
 ].each do |vtuber|

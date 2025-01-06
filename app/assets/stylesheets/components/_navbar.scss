@@ -57,7 +57,7 @@
 }
 .search-button {
   // height: 1rem;
-  line-height: rem;
+  line-height: 1rem;
   background-color: black;
   color: white;
   border: 0;
@@ -93,10 +93,11 @@
 
 .navbar-dropdown-menu {
   width: 100%;
-  background-color: #cdefff;
+  background-color: #ede1f4;
   padding: 10px;
   border-radius: 5px;
   border: solid;
+  border-width: 2px;
 
   position: absolute;
   top: 4rem;

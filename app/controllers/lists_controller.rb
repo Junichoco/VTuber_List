@@ -49,16 +49,10 @@ class ListsController < ApplicationController
   end
 
   def sort
-    # respond_to do |format|
-    #   format.html
-    #   format.js
-    # end
-    @list = List.find(params[:id])
-    @list.move_vtuber(params[:old_num].to_i, params[:new_num].to_i)
-    # redirect_to :list
-    # puts params
+    list = List.find(params[:id])
+    list.move_vtuber(params[:old_num].to_i, params[:new_num].to_i)
 
-    # VtuberMarker.find(params[:id].to_i).insert_at(params[:new_num].to_i)
+    # redirect_to :list
 
     # @list = List.find(params[:id])
     # @list.ordered_markers[params[:old_num].to_i - 1].insert_at(params[:new_num].to_i)

@@ -55,13 +55,14 @@ class List < ApplicationRecord
   end
 
   def move_vtuber(old_num, new_num)
-
     # if old_num != new_num && old_num > 0 && old_num <= vtuber_markers.length && new_num > 0 && new_num <= vtuber_markers.length
 
-      markers =  VtuberMarker.where(list_id: id).order("position ASC")
-      # target_vm = markers[position - 1]
-      markers[old_num - 1].update(position: new_num)
-      markers[old_num - 1].update(order_num: new_num)
+    markers =  VtuberMarker.where(list_id: id).order("position ASC")
+    # target_vm = markers[position - 1]
+    # markers[old_num - 1].update(position: new_num)
+    markers[old_num - 1].insert_at(new_num)
+
+    # markers[old_num - 1].update(order_num: new_num)
 
     #   if new_num < old_num
     #     markers[new_num - 1..old_num - 2].each do |vm|

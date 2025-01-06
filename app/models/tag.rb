@@ -13,4 +13,12 @@ class Tag < ApplicationRecord
     Tag.where(name: name).first
   end
 
+  def self.all_tags
+    tags = []
+    Tag.all.order('LOWER(name)').each do |tag|
+      tags << tag.name
+    end
+    return tags
+  end
+
 end
