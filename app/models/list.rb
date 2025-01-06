@@ -59,28 +59,9 @@ class List < ApplicationRecord
 
     markers =  VtuberMarker.where(list_id: id).order("position ASC")
     # target_vm = markers[position - 1]
-    # markers[old_num - 1].update(position: new_num)
-    markers[old_num - 1].insert_at(new_num)
+    markers[old_num - 1].update(position: new_num)
+    # markers[old_num - 1].insert_at(new_num)
 
-    # markers[old_num - 1].update(order_num: new_num)
-
-    #   if new_num < old_num
-    #     markers[new_num - 1..old_num - 2].each do |vm|
-    #       vm.update(position: vm.position + 1)
-    #     end
-    #   elsif new_num > old_num
-    #     markers[old_num..new_num - 1].each do |vm|
-    #       vm.update(position: vm.position - 1)
-
-    #       # puts "#{vm.vtuber.name} moved to #{vm.order_num}"
-    #     end
-    #   end
-
-    #   target_vm.update(position: new_num)
-    #   # puts "#{ordered_markers[old_num - 1].vtuber.name} moved to #{ordered_markers[old_num - 1].order_num}: #{new_num}"
-    #   puts "#{target_vm.vtuber.name} moved to #{new_num}"
-
-    # end
   end
 
   def get_random_vtuber
