@@ -40,10 +40,23 @@ export default class extends Controller {
     console.log(listId);
     console.log(mydata);
 
-     Rails.ajax({
-      url: `/lists/${listId}/sort`,
-      type: "patch",
-      data: mydata
-    });
+    const csrfToken = document.head.querySelector("[name~=csrf-token][content]").content;
+
+    fetch(`/lists/${listId}/sort`, {
+      headers: {
+        "X-CSRF-Token": csrfToken,
+        "Content-Type": "application/json"
+      },
+      credentials: "same-origin",
+      method: "PATCH",
+      body: JSON.stringify(mydata)
+    })
+
+
+    //  Rails.ajax({
+    //   url: `/lists/${listId}/sort`,
+    //   type: "patch",
+    //   data: mydata
+    // });
   }
 }
