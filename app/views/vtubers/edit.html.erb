@@ -30,8 +30,20 @@
     <% end %>
     <div class="add-tags-container">
       <h2>Add Tags</h2>
-      <%= form_with do |f| %>
-        <%= f.select :new_agency, Tag.all_tags %>
+      <% if !@vtuber.addable_tags.empty? %>
+        <%= form_with url: :add_tag, method: :patch do |f| %>
+          <%= f.select :tag_name, @vtuber.addable_tags %>
+          <%= f.submit :submit, label: "Add tag" %>
+        <% end %>
+      <% end %>
+      <h2>Remove Tags</h2>
+      <% if @vtuber.tag_names.empty? %>
+        <p>This VTuber has no tags.</p>
+      <% else %>
+        <%= form_with url: :remove_tag, method: :patch do |f| %>
+          <%= f.select :tag_name, @vtuber.tag_names %>
+          <%= f.submit :submit, label: "Remove tag" %>
+        <% end %>
       <% end %>
     </div>
   <% end %>

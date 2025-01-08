@@ -15,22 +15,6 @@ User.destroy_all
 Tag.destroy_all
 # VtuberMarker.destroy_all
 
-tags = ["singer", "rap", "guitar", "Minecraft", "FPS", "League of Legends", "big chest", "deep singing voice",
-        "baby girl failure", "baby", "violin", "flute", "small chest", "heavy metal", "thighs", "piano", "cooking",
-        "French", "British", "Spanish", "Chinese", "Korean", "Italian", "Brazilian", "Indonesian", "German", "Australian",
-        "Filipino", "Malaysian", "hag", "kusogaki", "fluffy", "animal ears", "mom", "comedian", "fortune telling",
-        "ASMR", "art", "VTuber rigger", "VTuber artist", "voice actor", "cosplayer", "tutorials", "not anime", "scream",
-        "furry", "adult content", "short", "tall", "drama", "alcohol", "Japanese and English", "menhera", "pon", "Thai"]
-
-tags.each do |tag|
-  Tag.create!(
-    name: tag
-  )
-end
-
-puts "Tags created"
-
-
 indie = Agency.create!(
   name: "Indie"
 )

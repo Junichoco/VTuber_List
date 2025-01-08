@@ -86,9 +86,9 @@ class List < ApplicationRecord
 
     if pic_count <= 5
       vtubers = []
-        vtuber_markers.each do |vm|
-          vtubers << vm.vtuber if vm.vtuber.thumbnail.attached?
-        end
+      vtuber_markers.each do |vm|
+        vtubers << vm.vtuber if vm.vtuber.thumbnail.attached?
+      end
       return vtubers
     else
       while vtubers.length < 5

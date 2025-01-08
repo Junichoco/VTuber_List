@@ -22,13 +22,15 @@ Rails.application.routes.draw do
     # patch "reorder", to: "users#reorder", as: :reorder
   end
   resources :vtubers do
-    patch :add_tag
+    # patch :add_tag
   end
+  patch "vtubers/:id/edit/add_tag", to: "vtubers#add_tag", as: :add_tag
+  patch "vtubers/:id/edit/remove_tag", to: "vtubers#remove_tag", as: :remove_tag
   # resources :lists do
   #  resources :vtuber_markers, only: [:new, :create, :destroy]
   # end
   resources :lists do
-    get "reorder", to: "lists#reorder", as: :reorder
+    # get "reorder", to: "lists#reorder", as: :reorder
   end
   patch "lists/:id/sort", to: "lists#sort", as: :sort
   # patch "lists/:list_id/sort", to: "lists#sort", as: :list_id_sort

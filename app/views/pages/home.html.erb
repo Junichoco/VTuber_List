@@ -1,6 +1,6 @@
 <div class="container col-12 col-lg-6">
   <div class="home-top">
-    <h1 class="navbar-logo">VTuber List</h1>
+    <h1 class="home-logo">VTuber List</h1>
 
     <div class="home-top-links">
 
@@ -20,65 +20,67 @@
   <% elsif @lists.empty? %>
     <h5>You don't have any lists yet</h5>
   <% else %>
+    <div id="<%= current_user.id %>" class="home-list-container" data-controller="list-sortable" >
+      <% @lists.each do |list| %>
+        <div id="list-card-<%= list.order_num %>" class="home-list-card" data-controller="home-options" >
+          <div class="home-list-vtuber-row">
 
-    <% @lists.each do |list| %>
-      <div id="list-card-<%= list.order_num %>" class="home-list-card" data-controller="home-options" >
-        <div class="home-list-vtuber-row">
-
-          <% list.get_vtuber_row.each do |vtuber| %>
-            <div class="home-vtuber-card">
-              <div class="vtuber-card-pic">
-                  <%= render "shared/vtuber_picture", vtuber: vtuber %>
+            <% list.get_vtuber_row.each do |vtuber| %>
+              <div class="home-vtuber-card">
+                <div class="vtuber-card-pic">
+                    <%= render "shared/vtuber_picture", vtuber: vtuber %>
+                </div>
               </div>
+            <% end %>
+          </div>
+
+          <div class="home-list-name">
+            <h4><%= list.name %></h4>
+          </div>
+          <div class="home-list-count">
+            <p><i class="fa-solid fa-chalkboard-user" ></i> <%= list.vtuber_markers.length %></p>
+          </div>
+
+          <div class="options-button" data-home-options-target="button" data-action="click->home-options#toggle_menu" >
+            <i class="fa-solid fa-bars" ></i>
+          </div>
+          <div class="home-options-container d-none" data-home-options-target="menu">
+            <div class="home-options-menu" data-home-options-target="submenu1">
+              <%= link_to edit_list_path(list), class:"options-link" do %>
+                <i class="fa-solid fa-pencil"></i> Rename this list
+              <% end %>
+              <%= link_to list_path(list),
+              data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?" },
+              class: "options-link" do
+              %>
+                <i class="fa-solid fa-eraser"></i> Delete this list
+              <% end %>
+              <div class="options-link" data-action="click->home-options#toggle_submenu" >
+                <i class="fa-solid fa-up-down"></i> Move up/down
+              </div>
+            </div>
+            <div class="list-move-menu d-none" data-home-options-target="submenu2">
+              <p><i class="fa-solid fa-up-down"></i> Move this list</p>
+              <%= form_with url: "home/reorder", method: :patch do |f| %>
+                <%= f.hidden_field :id, value: current_user.id %>
+                <%= f.hidden_field :old_num, value: list.position %>
+                <%= f.select :new_num, (1..@lists.length) %>
+                <%= f.button :submit, class: "list-move-menu-button" %>
+              <% end %>
+              <div class="options-link" data-action="click->home-options#toggle_submenu">
+                Back
+              </div>
+            </div>
+          </div>
+
+
+
+          <%= link_to list do %>
+            <div class="click-box">
             </div>
           <% end %>
         </div>
-
-        <div class="home-list-name">
-          <h4><%= list.name %></h4>
-        </div>
-        <div class="home-list-count">
-          <p><i class="fa-solid fa-chalkboard-user" ></i> <%= list.vtuber_markers.length %></p>
-        </div>
-
-        <div class="options-button" data-home-options-target="button" data-action="click->home-options#toggle_menu" >
-          <i class="fa-solid fa-bars" ></i>
-        </div>
-        <div class="home-options-container d-none" data-home-options-target="menu">
-          <div class="home-options-menu" data-home-options-target="submenu1">
-            <%= link_to edit_list_path(list), class:"options-link" do %>
-              <i class="fa-solid fa-pencil"></i> Rename this list
-            <% end %>
-            <%= link_to list_path(list),
-            data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?" },
-            class: "options-link" do
-            %>
-              <i class="fa-solid fa-eraser"></i> Delete this list
-            <% end %>
-            <div class="options-link" data-action="click->home-options#toggle_submenu" >
-              <i class="fa-solid fa-up-down"></i> Move up/down
-            </div>
-          </div>
-          <div class="list-move-menu d-none" data-home-options-target="submenu2">
-            <p><i class="fa-solid fa-up-down"></i> Move this list</p>
-            <%= form_with url: reorder_path, method: :patch do |f| %>
-              <%= f.hidden_field :old_num, value: list.order_num %>
-              <%= f.select :new_num, (1..@lists.length) %>
-              <%= f.button :submit, class: "list-move-menu-button" %>
-            <% end %>
-            <div class="options-link" data-action="click->home-options#toggle_submenu">
-              Back
-            </div>
-          </div>
-        </div>
-
-
-
-        <%= link_to list do %>
-          <div class="click-box">
-          </div>
-        <% end %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   <% end %>
 </div>
