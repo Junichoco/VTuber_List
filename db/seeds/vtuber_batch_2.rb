@@ -3767,7 +3767,7 @@ require_relative "agency_names"
     description: "An 11th-grader who likes yami-kawaii things and was held back a year.",
     agency: @indie,
     gender: "female",
-    main_languageJ: "Japanese",
+    main_language: "Japanese",
     birthday: "2020/09/06",
     yt_channel: "https://www.youtube.com/@Kurone_Yousagi"
   },
@@ -3797,6 +3797,60 @@ require_relative "agency_names"
     gender: "female",
     main_language: "Japanese",
     yt_channel: "https://www.youtube.com/@aizawanachu"
+  },
+  {
+    name: "Miol Chat Noir Sorciere",
+    jp_name: "ミオル・シャ・ノワール・ソルシエール",
+    description: "A witch-in-training and former voice actress who is bad at acting.",
+    agency: @indie,
+    debut_date: "2024/5/15",
+    birthday: "2020/03/30",
+    yt_channel: "https://www.youtube.com/@miol_ch"
+  },
+  {
+    name: "Remyle",
+    jp_name: "レミュル",
+    description: "A child succubus VTuber. Her full name is Remyle Rabii Avec Tois Chocodonuts Popo Owldoll Lily Alternus Velouce.",
+    agency: @indie,
+    debut_date: "2023/02/25",
+    birthday: "2020/06/15",
+    yt_channel: "https://www.youtube.com/@kawaii_vtuber_"
+  },
+  {
+    name: "Hanamaru Hanami",
+    jp_name: "花丸はなみ",
+    description: "No description available.",
+    agency: @indie,
+    debut_date: "2024/06/24",
+    yt_channel: "https://www.youtube.com/@hanamaru_hanami"
+  },
+  {
+    name: "Hino Ageha",
+    jp_name: "緋ノあげは",
+    description: "A mage-in-training.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@agehach.8817"
+  },
+  {
+    name: "Akane Mary",
+    jp_name: "紅音メアリ",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@AkaneMary"
+  },
+  {
+    name: "Uten Hiyori",
+    jp_name: "羽天ひより",
+    description: "An angel bandman VTuber.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@UtenHiyori"
+  },
+  {
+    name: "erusha",
+    jp_name: "エルシャ",
+    description: "A freelance voice actress and translator.",
+    agency: @indie,
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@erusha"
   }
 
 ].each do |vtuber|

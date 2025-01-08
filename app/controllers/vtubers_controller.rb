@@ -44,7 +44,7 @@ class VtubersController < ApplicationController
   def edit
     @vtuber = Vtuber.find(params[:id])
     @agencies = Agency.all.order('LOWER(name)')
-    @tags = Tag.all.order('LOWER(name)')
+    @tags = @vtuber.addable_tags
     @current_tags = @vtuber.tags
   end
 
@@ -67,9 +67,19 @@ class VtubersController < ApplicationController
   end
 
   def add_tag
-    raise
+
     @vtuber = Vtuber.find(params[:id])
+    @vtuber.add_tag(params[:tag_name])
     # @vtuber.favorite()
+
+    redirect_to vtuber_path(@vtuber)
+  end
+
+  def remove_tag
+    @vtuber = Vtuber.find(params[:id])
+    @vtuber.remove_tag(params[:tag_name])
+
+    redirect_to vtuber_path(@vtuber)
   end
 
   private

@@ -53,6 +53,14 @@ class Vtuber < ApplicationRecord
     return arr
   end
 
+  def tag_names
+    arr = []
+    TagMarker.where(vtuber_id: id).each do |tm|
+      arr << Tag.find(tm.tag_id).name
+    end
+    return arr
+  end
+
   def add_tag(tag_name)
     tm = TagMarker.new
     tm.vtuber_id = id
@@ -77,6 +85,18 @@ class Vtuber < ApplicationRecord
     end
   end
 
+  def addable_tags
+    current_tags = tags
+    arr = []
+
+    Tag.all.order('LOWER(name)').each do |tag|
+      if !current_tags.include?(tag)
+        arr << tag.name
+      end
+    end
+
+    return arr
+  end
 
 
   def has_tag?(tag_name)

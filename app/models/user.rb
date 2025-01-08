@@ -30,7 +30,7 @@ class User < ApplicationRecord
   end
 
   def lists
-    List.where(user_id: id).order("order_num ASC")
+    List.where(user_id: id).order("position ASC")
   end
 
   def next_num
@@ -44,18 +44,19 @@ class User < ApplicationRecord
   def move_list(old_num, new_num)
     if old_num != new_num && old_num > 0 && old_num <= lists.length && new_num > 0 && new_num <= lists.length
 
-      target_list = lists[old_num - 1]
+      lists[old_num - 1].update(position: new_num)
+      # target_list = lists[old_num - 1]
 
-      if new_num < old_num
-        lists[new_num - 1..old_num - 2].each do |list|
-          list.update(order_num: list.order_num + 1)
-        end
-      elsif new_num > old_num
-        lists[old_num..new_num - 1].each do |list|
-          list.update(order_num: list.order_num - 1)
-        end
-      end
-      target_list.update(order_num: new_num)
+      # if new_num < old_num
+      #   lists[new_num - 1..old_num - 2].each do |list|
+      #     list.update(order_num: list.order_num + 1)
+      #   end
+      # elsif new_num > old_num
+      #   lists[old_num..new_num - 1].each do |list|
+      #     list.update(order_num: list.order_num - 1)
+      #   end
+      # end
+      # target_list.update(order_num: new_num)
     end
   end
 
