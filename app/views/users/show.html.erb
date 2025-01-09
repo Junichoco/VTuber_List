@@ -7,8 +7,18 @@
     <%= link_to "Add Agency Entry", new_agency_path, class: "main-button" %>
   <% end %>
 
+  <div class="your-lists-header" style="display: flex; justify-content: end;">
+    <% if user_signed_in? && current_user == @user %>
+      <%= link_to new_list_path do %>
+        <span class="main-button"><i class="fa-solid fa-file-circle-plus" style="align-self: center;"></i> Make a new list</span>
+      <% end %>
+    <% end %>
+  </div>
+
   <% if @lists.empty? %>
     <h5>This user has no lists</h5>
+  <% elsif user_signed_in? && current_user == @user %>
+    <%= render 'shared/current_user_lists', lists: @lists %>
   <% else %>
     <% @lists.each do |list| %>
       <% if !list.private || @user == current_user %>

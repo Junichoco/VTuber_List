@@ -230,7 +230,8 @@ images = [
   { name: "Hanabasami Kyo", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243714/hanabasami_thumb_josahd.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734243715/hanabasami_kyo_nfssry.png"},
   { name: "Kitami Ricca", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734277635/kitami_ricca_thumb_xaggcr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734277636/kitami_2_sns53g.png"},
   { name: "Misu Kisumi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734367818/misu_kisumi_thumb_dvjci9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734367819/misu_kisumi_2.jpg_v6eu1c.png"},
-  { name: "Isumi Sia", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734369393/asumi_sia_3_aozvyg.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734369398/asumi_sia_4_jrzxll.jpg"}
+  { name: "Isumi Sia", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734369393/asumi_sia_3_aozvyg.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734369398/asumi_sia_4_jrzxll.jpg"},
+  { name: "unitenmaru", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_thumb_ra24go.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_ojhspg.jpg"}
 ]
 
 puts "Thumbnails"

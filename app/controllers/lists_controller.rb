@@ -2,8 +2,6 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
-
-
   end
 
   def new
@@ -18,7 +16,7 @@ class ListsController < ApplicationController
     @list.position = current_user.next_num
 
     if @list.save
-      redirect_to list_path(@list)
+      redirect_to :home
     else
       render :new, status: :unprocessable_entity
     end

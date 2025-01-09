@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="home-options"
 export default class extends Controller {
-  static targets = ["menu", "submenu1", "submenu2", "button"]
+  static targets = ["menu", "submenu1", "button"]
   connect() {
     console.log("home options controller connected");
   }

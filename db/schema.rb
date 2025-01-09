@@ -166,15 +166,15 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_08_161735) do
 
   create_table "vtubers", force: :cascade do |t|
     t.string "name"
-    t.text "description"
+    t.text "description", default: "No description available."
     t.bigint "agency_id"
     t.string "yt_channel"
     t.string "twitch_channel"
     t.string "photo_url"
-    t.string "gender"
+    t.string "gender", default: "female"
     t.date "birthday"
     t.date "debut_date"
-    t.string "main_language"
+    t.string "main_language", default: "Japanese"
     t.boolean "active", default: true
     t.string "jp_name"
     t.datetime "created_at", null: false

@@ -12,6 +12,10 @@ class List < ApplicationRecord
   validates :name, presence: true
   validates_length_of :name, maximum: 32
 
+  def set_privacy(privacy)
+    List.find(id).update(private: privacy)
+  end
+
   def next_num
     VtuberMarker.where(list_id: id).length + 1
   end

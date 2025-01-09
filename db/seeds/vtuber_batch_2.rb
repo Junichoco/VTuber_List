@@ -3834,6 +3834,7 @@ require_relative "agency_names"
   {
     name: "Akane Mary",
     jp_name: "紅音メアリ",
+    description: "No description available.",
     agency: @indie,
     yt_channel: "https://www.youtube.com/@AkaneMary"
   },
@@ -3851,6 +3852,20 @@ require_relative "agency_names"
     agency: @indie,
     main_language: "English",
     yt_channel: "https://www.youtube.com/@erusha"
+  },
+  {
+    name: "unitenmaro",
+    jp_name: "雲丹天まろ",
+    description: "No description available.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@uni_tenmaro"
+  },
+  {
+    name: "ASU",
+    jp_name: "明透",
+    description: "No description available.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@ASU_virtual"
   }
 
 ].each do |vtuber|
