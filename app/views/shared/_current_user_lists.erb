@@ -37,6 +37,13 @@
               %>
                 <i class="fa-solid fa-eraser"></i> Delete this list
               <% end %>
+              <div class="private-button options-link">
+                <% if list.private %>
+                  <i class="fa-solid fa-lock"></i>
+                <% else %>
+                  <i class="fa-solid fa-lock-open"></i>
+                <% end %> Private
+              </div>
 
             </div>
 
