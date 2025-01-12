@@ -1,6 +1,6 @@
 <div id="<%= current_user.id %>" class="home-list-container" data-controller="list-sortable" >
       <% @lists.each do |list| %>
-        <div id="list-card-<%= list.order_num %>" class="home-list-card" data-controller="home-options" >
+        <div id="<%= list.id %>" class="home-list-card" data-controller="home-options" >
           <div class="home-list-vtuber-row">
 
             <% list.get_vtuber_row.each do |vtuber| %>
@@ -23,7 +23,7 @@
             </p>
           </div>
 
-          <div class="options-button" data-home-options-target="button" data-action="click->home-options#toggle_menu" >
+          <div class="options-button" data-home-options-target="toggle_button" data-action="click->home-options#toggle_menu" >
             <i class="fa-solid fa-bars" ></i>
           </div>
           <div class="home-options-container d-none" data-home-options-target="menu">
@@ -37,12 +37,17 @@
               %>
                 <i class="fa-solid fa-eraser"></i> Delete this list
               <% end %>
-              <div class="private-button options-link">
-                <% if list.private %>
-                  <i class="fa-solid fa-lock"></i>
-                <% else %>
-                  <i class="fa-solid fa-lock-open"></i>
-                <% end %> Private
+              <div class="options-link" data-home-options-target="private-button" data-action="click->home-options#private">
+                <%= form_with remote: true, url: :toggle_private, method: :patch do |f| %>
+                  <%= f.hidden_field :id, value: list.id %>
+                  <% if list.private %>
+                    <i class="fa-solid fa-lock"></i>
+                  <% else %>
+                    <i class="fa-solid fa-lock-open"></i>
+                  <% end %>
+                  <%= f.submit "Private", class: "private-button" %>
+                <% end %>
+
               </div>
 
             </div>

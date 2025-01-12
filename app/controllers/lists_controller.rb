@@ -56,6 +56,12 @@ class ListsController < ApplicationController
     # @list.ordered_markers[params[:old_num].to_i - 1].insert_at(params[:new_num].to_i)
   end
 
+  def toggle_private
+
+    @list = List.find(params[:id])
+    @list.toggle_private
+  end
+
 
   private
 
