@@ -37,15 +37,17 @@
               %>
                 <i class="fa-solid fa-eraser"></i> Delete this list
               <% end %>
-              <div class="options-link" data-home-options-target="private-button" data-action="click->home-options#private">
+              <div data-home-options-target="private-button" data-action="click->home-options#private">
                 <%= form_with remote: true, url: :toggle_private, method: :patch do |f| %>
                   <%= f.hidden_field :id, value: list.id %>
-                  <% if list.private %>
-                    <i class="fa-solid fa-lock"></i>
-                  <% else %>
-                    <i class="fa-solid fa-lock-open"></i>
+                  <%= button_tag class: "private-button" do %>
+                    <% if list.private %>
+                      <i class="fa-solid fa-lock"></i>
+                    <% else %>
+                      <i class="fa-solid fa-lock-open"></i>
+                    <% end %>
+                    Private
                   <% end %>
-                  <%= f.submit "Private", class: "private-button" %>
                 <% end %>
 
               </div>
