@@ -135,6 +135,7 @@
   background-color: white;
   transition: all 0.3s;
   cursor: pointer;
+
 }
 
 .list-move-menu {
@@ -157,6 +158,23 @@
   right: 0px;
 }
 
+.private-button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  text-align: left;
+
+  transition: all 0.5s ease-in-out
+}
+.private-button:hover{
+  color: black;
+  background-color: white;
+
+  transition: all 0.5s ease-in-out;
+}
+
 .home-list-name p {
   margin-bottom: 0.0rem;
   font-weight: 700;
@@ -177,10 +195,6 @@
 .home-list-count h4 {
   margin-bottom: 0.1rem;
   font-weight: bold;
-}
-
-.home-vtuber-pic {
-
 }
 
 .home-vtuber-card {

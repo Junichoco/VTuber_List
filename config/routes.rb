@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "about", to: "pages#about", as: :about
   get "random", to: "pages#random", as: :random
   patch "home/reorder", to: "users#reorder", as: :reorder
+  patch "/home/toggle_private", to: "lists#toggle_private", as: :toggle_private
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

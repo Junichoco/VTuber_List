@@ -2,8 +2,6 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
-
-
   end
 
   def new
@@ -18,7 +16,7 @@ class ListsController < ApplicationController
     @list.position = current_user.next_num
 
     if @list.save
-      redirect_to list_path(@list)
+      redirect_to :home
     else
       render :new, status: :unprocessable_entity
     end
@@ -56,6 +54,13 @@ class ListsController < ApplicationController
 
     # @list = List.find(params[:id])
     # @list.ordered_markers[params[:old_num].to_i - 1].insert_at(params[:new_num].to_i)
+  end
+
+  def toggle_private
+
+    @list = List.find(params[:id])
+    @list.toggle_private
+    redirect_back(fallback_location: root_path)
   end
 
 
