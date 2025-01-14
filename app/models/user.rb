@@ -62,7 +62,7 @@ class User < ApplicationRecord
 
   def order
     lists.each do |list|
-      puts "#{list.name}: #{list.order_num}"
+      puts "#{list.name}: #{list.position}"
     end
   end
 

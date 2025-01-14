@@ -25,6 +25,10 @@
   margin-bottom: 0;;
 }
 
+.vtuber-show-add{
+  width: 45%;
+}
+
 .show-card-name {
 
 }
@@ -96,6 +100,9 @@
     max-width: 100%;
   }
   .vtuber-show-body {
+    width: 100%;
+  }
+  .vtuber-show-add {
     width: 100%;
   }
 }

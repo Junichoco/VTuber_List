@@ -46,11 +46,10 @@
                       <%= f.hidden_field :id, value: list.id %>
                       <%= button_tag class: "private-button" do %>
                         <% if list.private %>
-                          <i class="fa-solid fa-lock"></i>
+                          <i class="fa-solid fa-lock"></i> Unprivate
                         <% else %>
-                          <i class="fa-solid fa-lock-open"></i>
+                          <i class="fa-solid fa-lock-open"></i> Private
                         <% end %>
-                        Private
                       <% end %>
                     <% end %>
 

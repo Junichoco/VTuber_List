@@ -74,7 +74,7 @@
         <% end %>
         </div>
       </div>
-      <div class="vtuber-show-add" style="width: 45%;">
+      <div class="vtuber-show-add">
         <% if !user_signed_in? %>
           <h5><%= link_to "Log in", new_user_session_path, class: "main-button" %> to add this VTuber to a list</h5>
         <% elsif @lists.empty? %>

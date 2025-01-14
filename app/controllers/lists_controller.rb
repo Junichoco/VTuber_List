@@ -12,7 +12,6 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     @list.user = current_user
-    @list.order_num = current_user.next_num
     @list.position = current_user.next_num
 
     if @list.save
@@ -67,6 +66,6 @@ class ListsController < ApplicationController
   private
 
   def list_params
-    params.require(:list).permit(:name, :order_num, :position, :photo)
+    params.require(:list).permit(:name, :position, :photo)
   end
 end

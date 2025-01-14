@@ -3585,7 +3585,7 @@ require_relative "agency_names"
     yt_channel: "https://www.youtube.com/@Madoka_Hoshimi"
   },
   {
-    name: "Kitami Rikka",
+    name: "Kitami Ricca",
     jp_name: "北見六花",
     description: "A VTuber and voice actress.",
     agency: @indie,
@@ -3866,6 +3866,13 @@ require_relative "agency_names"
     description: "No description available.",
     agency: @indie,
     yt_channel: "https://www.youtube.com/@ASU_virtual"
+  },
+  {
+    name: "Hinageshi",
+    jp_name: "氷夏至",
+    description: "No description available.",
+    agency: @grp,
+    yt_channel: "https://www.youtube.com/@hinageshi_grp/videos"
   }
 
 ].each do |vtuber|

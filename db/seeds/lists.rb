@@ -113,7 +113,7 @@ lists.each do |list|
   newList = List.create!(
     name: list[:name],
     user: user,
-    order_num: user.next_num
+    position: user.next_num
   )
 
   if newList
@@ -133,8 +133,4 @@ lists.each do |list|
       abort
     end
   end
-end
-
-List.all.each do |list|
-  list.reset_positions
 end

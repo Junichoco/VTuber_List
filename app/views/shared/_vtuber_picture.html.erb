@@ -7,6 +7,8 @@
     <%= image_tag vtuber.photo_url, class: "vtuber-pic" %>
   </div>
 <% else %>
+  <div data-zoom-in-target="image">
+  </div>
   <div class="default-picture">
     <p><%= vtuber.name %></p>
   </div>

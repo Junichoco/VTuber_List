@@ -441,6 +441,12 @@
     location: "Japan",
     website: "https://mewlive.jp/",
     yt_channel: "https://www.youtube.com/@mewlive_official"
+  },
+  {
+    name: "GIRLS REVOLUTION PROJECT",
+    location: "Japan",
+    website: "https://girlsrevolutionproject.jp/",
+    yt_channel: "https://www.youtube.com/@girls_rev_pj"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])
