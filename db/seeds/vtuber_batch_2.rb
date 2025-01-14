@@ -3872,7 +3872,14 @@ require_relative "agency_names"
     jp_name: "氷夏至",
     description: "No description available.",
     agency: @grp,
-    yt_channel: "https://www.youtube.com/@hinageshi_grp/videos"
+    yt_channel: "https://www.youtube.com/@hinageshi_grp"
+  },
+  {
+    name: "Mino Mieko",
+    jp_name: "みのみえこ",
+    agency: @indie,
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@MinoMieko"
   }
 
 ].each do |vtuber|

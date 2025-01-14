@@ -3,12 +3,28 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
+  <h3>VTuber Submissions</h3>
+  <p>Submit a new VTuber or suggest a change to an existing VTuber entry.<br>
+     If you want to suggest a change, enter the VTuber's name, put in whatever change you want, and leave the rest blank.</p>
   <div class="form-inputs">
+    <%= f.hidden_field :type, value: "VTuber" %>
     <%= f.input :name %>
-    <%= f.select :agency, @agencies %>
+    <%= f.input :agency %>
+    <p><%= f.radio_button :gender, 'female' %> Female
+      <%= f.radio_button :gender, 'male' %> Male
+      <%= f.radio_button :gender, 'other' %> Other</p>
+      <%= f.input :birthday, discard_year: true, discard_time: true %>
+      <%= f.input :debut_date, start_year: 1970 %>
+      <%= f.input :description, as: :text %>
+      <%= f.input :main_language %>
+      <%= f.input :yt_channel, label: "YouTube channel" %>
+      <%= f.input :twitch_channel %>
+      <%= f.input :active, as: :boolean, input_html: {checked: true} %>
+      <%= f.input :thumbnail, as: :file, input_html: { multiple: true } %>
+      <%= f.input :vertical_picture, as: :file, input_html: { multiple: true }, label: "Full Body Picture" %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class:"btn-create" %>
   </div>
 <% end %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
+ActiveRecord::Schema[7.1].define(version: 2025_01_14_171440) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -46,6 +46,17 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
     t.string "name"
     t.string "website"
     t.boolean "active", default: true
+    t.text "description"
+    t.string "location"
+    t.string "yt_channel"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "agency_submissions", force: :cascade do |t|
+    t.string "name"
+    t.string "website"
+    t.boolean "active"
     t.text "description"
     t.string "location"
     t.string "yt_channel"
@@ -121,13 +132,16 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
     t.string "twitch_channel"
     t.string "gender"
     t.date "birthday"
-    t.string "debut_date"
+    t.date "debut_date"
     t.string "main_language"
     t.boolean "active"
     t.string "jp_name"
     t.string "tags", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "type"
+    t.string "website"
+    t.text "comment"
   end
 
   create_table "tag_markers", force: :cascade do |t|

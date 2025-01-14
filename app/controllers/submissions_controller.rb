@@ -67,6 +67,23 @@ class SubmissionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def submission_params
-      params.fetch(:submission, {})
+      # params.fetch(:submission, {}
+      params.require(:vtuber).permit(
+        :type,
+        :name,
+        :jp_name,
+        :description,
+        :agency,
+        :description,
+        :yt_channel,
+        :twitch_channel,
+        :gender,
+        :birthday,
+        :debut_date,
+        :main_language,
+        :active,
+        thumbnail: [],
+        vertical_picture: []
+      )
     end
 end
