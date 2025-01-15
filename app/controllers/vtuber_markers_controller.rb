@@ -12,9 +12,7 @@ class VtuberMarkersController < ApplicationController
 
   def create
     @marker = VtuberMarker.new(marker_params)
-    @marker.order_num = List.find(marker_params[:list_id]).next_num
     @marker.position = List.find(marker_params[:list_id]).next_num
-    # @marker.position = @marker.order_num
 
     if @marker.save
       redirect_to list_path(List.find(marker_params[:list_id]))
@@ -51,6 +49,6 @@ class VtuberMarkersController < ApplicationController
   private
 
   def marker_params
-    params.require(:vtuber_marker).permit(:list_id, :vtuber_id, :order_num, :position)
+    params.require(:vtuber_marker).permit(:list_id, :vtuber_id, :position)
   end
 end

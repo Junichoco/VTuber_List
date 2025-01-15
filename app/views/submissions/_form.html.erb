@@ -1,0 +1,38 @@
+<div style="margin: 25px 0 25px 0;">
+  <p>I want to suggest a:
+    <%#= f.select :type, [["VTuber", "VTuber"], ["Agency", "Agency"], ["Tag", "Tag"]], selected: "VTuber" %>
+    <%= select_tag(:type, options_for_select([["VTuber", "VTuber"], ["Agency", "Agency"], ["Tag", "Tag"]])) %>
+  </p>
+</div>
+
+<%= simple_form_for(@submission) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <h3>VTuber Submissions</h3>
+  <p>Submit a new VTuber or suggest a change to an existing VTuber entry.<br>
+     If you want to suggest a change, enter the VTuber's name, put in whatever change you want, and leave the rest blank.</p>
+  <div class="form-inputs">
+
+    <%#= f.hidden_field :type, value: "VTuber" %>
+    <%= f.input :name %>
+    <%= f.input :agency %>
+    <p><%= f.radio_button :gender, 'female' %> Female
+      <%= f.radio_button :gender, 'male' %> Male
+      <%= f.radio_button :gender, 'other' %> Other</p>
+      <%= f.input :birthday, discard_year: true, discard_time: true %>
+      <%= f.input :debut_date, start_year: 1970 %>
+      <%= f.input :description, as: :text %>
+      <%= f.input :main_language %>
+      <%= f.input :yt_channel, label: "YouTube channel" %>
+      <%= f.input :twitch_channel %>
+      <%= f.input :active, as: :boolean, input_html: {checked: true} %>
+      <%= f.input :thumbnail, as: :file %>
+      <%= f.input :vertical_picture, as: :file, label: "Full Body Picture" %>
+      <%= f.input :comment %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class:"btn-create" %>
+  </div>
+<% end %>

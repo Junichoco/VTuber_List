@@ -19,4 +19,12 @@ class Agency < ApplicationRecord
   def self.find_by_name(name)
     Agency.where(name: name).first
   end
+
+  def self.names
+    arr = []
+    Agency.all.order("name ASC").each do |agency|
+      arr << agency.name
+    end
+    return arr
+  end
 end

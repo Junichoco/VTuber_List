@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
+ActiveRecord::Schema[7.1].define(version: 2025_01_14_171440) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -46,6 +46,17 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
     t.string "name"
     t.string "website"
     t.boolean "active", default: true
+    t.text "description"
+    t.string "location"
+    t.string "yt_channel"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "agency_submissions", force: :cascade do |t|
+    t.string "name"
+    t.string "website"
+    t.boolean "active"
     t.text "description"
     t.string "location"
     t.string "yt_channel"
@@ -99,11 +110,10 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
   create_table "lists", force: :cascade do |t|
     t.string "name"
     t.bigint "user_id"
+    t.boolean "private", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "order_num"
     t.integer "position"
-    t.boolean "private"
     t.index ["user_id"], name: "index_lists_on_user_id"
   end
 
@@ -122,12 +132,16 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
     t.string "twitch_channel"
     t.string "gender"
     t.date "birthday"
-    t.string "debut_date"
+    t.date "debut_date"
     t.string "main_language"
     t.boolean "active"
     t.string "jp_name"
+    t.string "tags", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "type"
+    t.string "website"
+    t.text "comment"
   end
 
   create_table "tag_markers", force: :cascade do |t|
@@ -174,7 +188,6 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
     t.bigint "list_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "order_num"
     t.integer "position"
     t.index ["list_id"], name: "index_vtuber_markers_on_list_id"
     t.index ["vtuber_id"], name: "index_vtuber_markers_on_vtuber_id"
@@ -182,15 +195,15 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_10_170213) do
 
   create_table "vtubers", force: :cascade do |t|
     t.string "name"
-    t.text "description"
+    t.text "description", default: "No description available."
     t.bigint "agency_id"
     t.string "yt_channel"
     t.string "twitch_channel"
     t.string "photo_url"
-    t.string "gender"
+    t.string "gender", default: "female"
     t.date "birthday"
     t.date "debut_date"
-    t.string "main_language"
+    t.string "main_language", default: "Japanese"
     t.boolean "active", default: true
     t.string "jp_name"
     t.datetime "created_at", null: false

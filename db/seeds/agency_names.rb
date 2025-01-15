@@ -66,3 +66,6 @@
 @kemomo = Agency.find_by_name("KEMOMIMI-REFLE")
 @mahoroba = Agency.find_by_name("MaHOROBA")
 @mewlive = Agency.find_by_name("MEWLIVE")
+@grp = Agency.find_by_name("GIRLS REVOLUTION PROJECT")
+@parareal = Agency.find_by_name("Parareal")
+@kemomimi = Agency.find_by_name("KEMOMIMI-REFLE")

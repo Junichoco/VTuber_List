@@ -30,7 +30,6 @@ class List < ApplicationRecord
     vm = VtuberMarker.new
     vm.list_id = id
     vm.vtuber = vtuber
-    vm.order_num = next_num
     vm.position = next_num
 
     return vm.save
@@ -116,9 +115,6 @@ class List < ApplicationRecord
     VtuberMarker.where(list_id: id).each do |vm|
       puts "#{vm.vtuber.name}: #{vm.position}"
     end
-    # vtuber_markers.each do |vm|
-    #   puts "#{vm.vtuber.name}: #{vm.order_num}"
-    # end
   end
 
   def reset_order

@@ -6,7 +6,9 @@ export default class extends Controller {
 
   }
   zoom_in(event) {
-    this.imageTarget.classList.add("zoom-in");
+    if(this.imageTarget){
+      this.imageTarget.classList.add("zoom-in");
+    }
     // this.nameTarget.classList.add("hidden");
 
     // this.linkTargets.forEach(link => {
@@ -18,7 +20,9 @@ export default class extends Controller {
     // });
   }
   zoom_out(event) {
-    this.imageTarget.classList.remove("zoom-in");
+    if(this.imageTarget) {
+      this.imageTarget.classList.remove("zoom-in");
+    }
     // this.nameTarget.classList.remove("hidden");
     // console.log("zoom out");
   }

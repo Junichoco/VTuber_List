@@ -12,6 +12,7 @@ class CreateSubmissions < ActiveRecord::Migration[7.1]
       t.string :main_language
       t.boolean :active
       t.string :jp_name
+      t.string :tags, array: true, default: []
 
       t.timestamps
     end
