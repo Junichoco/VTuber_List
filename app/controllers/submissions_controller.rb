@@ -8,6 +8,7 @@ class SubmissionsController < ApplicationController
 
   # GET /submissions/1 or /submissions/1.json
   def show
+    @submission = Submission.find(params[:id])
   end
 
   # GET /submissions/new
@@ -27,8 +28,8 @@ class SubmissionsController < ApplicationController
 
     respond_to do |format|
       if @submission.save
-        format.html { redirect_to submission_url(@submission), notice: "Submission was successfully created." }
-        format.json { render :show, status: :created, location: @submission }
+        format.html { redirect_to new_submission_path, notice: "Your submission was sent!" }
+        format.json { render :new, status: :created, location: @submission }
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @submission.errors, status: :unprocessable_entity }
@@ -67,14 +68,12 @@ class SubmissionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def submission_params
-      # params.fetch(:submission, {}
-      params.require(:vtuber).permit(
-        :type,
+      # params.fetch(:submission, {})
+      params.require(:submission).permit(
         :name,
         :jp_name,
         :description,
         :agency,
-        :description,
         :yt_channel,
         :twitch_channel,
         :gender,
@@ -82,8 +81,10 @@ class SubmissionsController < ApplicationController
         :debut_date,
         :main_language,
         :active,
-        thumbnail: [],
-        vertical_picture: []
+        :thumbnail,
+        :vertical_picture,
+        :comment,
+        tags: []
       )
     end
 end

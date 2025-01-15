@@ -1,14 +1,16 @@
-<p style="color: green"><%= notice %></p>
+<div class="container col-12 col-lg-6">
+  <p style="color: green"><%= notice %></p>
 
-<h1>Submissions</h1>
+  <h2>Submissions</h2>
 
-<div id="submissions">
-  <% @submissions.each do |submission| %>
-    <%= render submission %>
-    <p>
-      <%= link_to "Show this submission", submission %>
-    </p>
-  <% end %>
+  <div id="submissions">
+    <% @submissions.each do |submission| %>
+      <%= render submission %>
+      <p>
+        <%= link_to "Show this submission", submission %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New submission", new_submission_path %>
 </div>
-
-<%= link_to "New submission", new_submission_path %>
