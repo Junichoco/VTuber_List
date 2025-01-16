@@ -48,7 +48,8 @@ lists =[
       "Nikoniko Pona",
       "MunMosh",
       "Kugumi Rui",
-      "Sakurane Kotori"
+      "Sakurane Kotori",
+      "Quon Tama"
     ]
   },
   {

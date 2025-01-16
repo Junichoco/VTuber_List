@@ -84,6 +84,9 @@ class SubmissionsController < ApplicationController
         :thumbnail,
         :vertical_picture,
         :comment,
+        :website,
+        :location,
+        :submission_type,
         tags: []
       )
     end

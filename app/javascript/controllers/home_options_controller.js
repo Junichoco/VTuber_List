@@ -18,15 +18,15 @@ export default class extends Controller {
 
     if(this.toggle_buttonTarget.classList.contains("options-button-toggled")){
       this.toggle_buttonTarget.innerHTML = '<i class="fa-solid fa-square-xmark" ></i>';
-      console.log("button changed to X");
+      // console.log("button changed to X");
     } else {
       this.toggle_buttonTarget.innerHTML = '<i class="fa-solid fa-bars" ></i>';
-      this.submenuTarget.classList.remove("d-none");
+      // this.submenuTarget.classList.remove("d-none");
     }
   }
 
   toggle_submenu() {
-    this.submenuTarget.classList.toggle("d-none");
+    // this.submenuTarget.classList.toggle("d-none");
   }
 
   private(event) {

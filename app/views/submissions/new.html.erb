@@ -1,15 +1,37 @@
 <div class="container col-12 col-lg-6">
   <div>
-    <h2>Submit Your Changes Here</h2>
+    <h2>Want to Add a VTuber?</h2>
   </div>
   <p style="color: green"><%= notice %></p>
   <div>
-    <p>If there's a VTuber, agency, or tag that's not on VTuber List, submit them here.<br>
+    <p>If there's a VTuber or agency that's not on VTuber List, submit them here.<br>
     If there's a page that's missing information or a picture, submit them here.<br>
     If you want to suggest changes to a VTuber's page, submit them here.<br>
     Contribute to VTuber List, make your oshi known, and make my job easier.<br>
   </div>
-  <div>
-    <%= render "form" %>
+  <div data-controller="submission">
+
+    <div style="margin: 25px 0 25px 0;">
+      <p>I want to suggest a:</p>
+        <%#= f.select :type, [["VTuber", "VTuber"], ["Agency", "Agency"], ["Tag", "Tag"]], selected: "VTuber" %>
+        <%# <span data-submission-target="menu"><%= select_tag(:type, options_for_select([["VTuber", "VTuber"], ["Agency", "Agency"], ["Tag", "Tag"]])) %>
+        <div class="submission-tab-bar">
+          <div class="submission-tab submission-selected" data-submission-target="vtuber_tab">
+            <span class="tab-inner" data-action="click->submission#open_vtuber_form" >VTuber</span>
+          </div>
+          <div class="submission-tab" data-submission-target="agency_tab">
+            <span class="tab-inner" data-action="click->submission#open_agency_form" >Agency</span>
+          </div>
+          <%# <div class="submission-tab" data-submission-target="tag_tab">
+            <span class="tab-inner" data-action="click->submission#open_tag_form">Tag</span>
+          </div> %>
+        </div>
+    </div>
+    <div data-submission-target="vtuber_form">
+      <%= render "form" %>
+    </div>
+    <div data-submission-target="agency_form" class="d-none">
+      <%= render "agency_form" %>
+    </div id="agency_form">
   </div>
 </div>
