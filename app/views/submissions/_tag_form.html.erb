@@ -1,0 +1,17 @@
+<%= simple_form_for(@submission) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <h3>Tag Submissions</h3>
+  <p>Suggest a new tag that's not already here.</p>
+  <div class="form-inputs">
+
+    <%#= f.hidden_field :type, value: "VTuber" %>
+    <%= f.input :name %>
+    <%= f.input :comment, label: "Comments" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class:"btn-create" %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<div class="container col-6">
+  <% if !(user_signed_in? && current_user.role == "admin") %>
+    <%= render "shared/unauthorized" %>
+  <% else %>
+    <h2 style="margin-bottom: 10px;">Create Tag</h2>
+    <%= simple_form_for(@tag) do |f| %>
+      <%= f.input :name %>
+      <div class="form-actions">
+        <%= f.button :submit, class:"btn-create" %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

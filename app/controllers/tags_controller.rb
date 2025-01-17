@@ -4,6 +4,20 @@ class TagsController < ApplicationController
     @tags = Tag.all.order("LOWER(name)")
   end
 
+  def new
+    @tag = Tag.new
+  end
+
+  def create
+    @tag = Tag.new(tag_params)
+
+    if @tag.save
+      redirect_to user_path(current_user)
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
   def show
     @tag = Tag.find(params[:id])
     @vtubers = []
@@ -12,4 +26,11 @@ class TagsController < ApplicationController
     end
     @vtubers.sort
   end
+
+  private
+
+  def tag_params
+    params.require(:tag).permit(:name)
+  end
+
 end

@@ -1,0 +1,24 @@
+<%= simple_form_for(@submission) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <h3>Agency Submissions</h3>
+  <p>Submit a new agency or suggest a change to an existing agency entry.<br>
+     If you want to suggest a change, enter the agency's name, put in whatever change you want, and leave the rest blank.</p>
+  <div class="form-inputs">
+
+    <%#= f.hidden_field :type, value: "VTuber" %>
+    <%= f.hidden_field :submission_type, value: "agency" %>
+    <%= f.input :name %>
+    <%= f.input :description, as: :text %>
+    <%= f.input :location %>
+    <%= f.input :website %>
+    <%= f.input :yt_channel, label: "YouTube channel" %>
+    <%= f.input :active, as: :boolean, input_html: {checked: true} %>
+    <%= f.input :comment, label: "Comments" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class:"btn-create" %>
+  </div>
+<% end %>

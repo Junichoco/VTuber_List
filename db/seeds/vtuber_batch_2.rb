@@ -3880,6 +3880,12 @@ require_relative "agency_names"
     agency: @indie,
     main_language: "English",
     yt_channel: "https://www.youtube.com/@MinoMieko"
+  },
+  {
+    name: "Ushizawa Hishime",
+    jp_name: "うしざわ ひしめ",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@ushizawahishime"
   }
 
 ].each do |vtuber|
