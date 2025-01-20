@@ -21,7 +21,13 @@
                 <p><i class="fa-solid fa-chalkboard-user" ></i> <%= list.vtuber_markers.length %>
 
                   <% if list.private %>
-                    <i class="fa-solid fa-lock"></i>
+                    <span id="private-icon" data-home-options-target="left_private_icon">
+                      <i class="fa-solid fa-lock"></i>
+                    </span>
+                  <% else %>
+                    <span id="private-icon" class="d-none" data-home-options-target="left_private_icon">
+                      <i class="fa-solid fa-lock"></i>
+                    </span>
                   <% end %>
 
                 </p>
@@ -46,9 +52,13 @@
                       <%= f.hidden_field :id, value: list.id %>
                       <%= button_tag class: "private-button" do %>
                         <% if list.private %>
-                          <i class="fa-solid fa-lock"></i> Unprivate
+                          <span class="privated" data-home-options-target="right_private_icon">
+                            <i class="fa-solid fa-lock"></i> Unprivate
+                          </span>
                         <% else %>
-                          <i class="fa-solid fa-lock-open"></i> Private
+                          <span class="unprivated" data-home-options-target="right_private_icon">
+                            <i class="fa-solid fa-lock-open"></i> Private
+                          </span>
                         <% end %>
                       <% end %>
                     <% end %>
