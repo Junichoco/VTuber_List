@@ -49,7 +49,8 @@ lists =[
       "MunMosh",
       "Kugumi Rui",
       "Sakurane Kotori",
-      "Quon Tama"
+      "Quon Tama",
+      "Kumama Mayu"
     ]
   },
   {
@@ -88,6 +89,35 @@ lists =[
       "Hiiragi Youri",
       "Azumalim",
       "Amabuki San"
+    ]
+  },
+  {
+    name: "ASMR",
+    vtubers: [
+      "Raki Kazuki",
+      "Amabuki San",
+      "Igasaki Ayaka",
+      "EvE Varlaine",
+      "Hoshino Supika"
+    ]
+  },
+  {
+    name: "Professional Singers",
+    vtubers: [
+      "KAF",
+      "RIM",
+      "Mori Calliope",
+      "Tanaka Hime",
+      "Suzuki Hina",
+      "Tokino Sora"
+    ]
+  },
+  {
+    name: "My Graduated Oshis",
+    vtubers: [
+      "Minato Aqua",
+      "Vesper Noir",
+      "Iguchi Sun"
     ]
   },
   {

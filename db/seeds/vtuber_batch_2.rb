@@ -3886,6 +3886,12 @@ require_relative "agency_names"
     jp_name: "うしざわ ひしめ",
     agency: @indie,
     yt_channel: "https://www.youtube.com/@ushizawahishime"
+  },
+  {
+    name: "Yuno Mihanada",
+    jp_name: "ユノ・ミハナダ",
+    agency: @mewlive,
+    yt_channel: "https://www.youtube.com/@YunoMihanada"
   }
 
 ].each do |vtuber|

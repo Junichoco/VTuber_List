@@ -7,3 +7,4 @@ import "bootstrap"
 //= require jquery
 //= require sortable.min
 import "@rails/request.js"
+// import "stimulus-use"

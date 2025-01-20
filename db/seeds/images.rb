@@ -231,7 +231,8 @@ images = [
   { name: "Kitami Ricca", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734277635/kitami_ricca_thumb_xaggcr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734277636/kitami_2_sns53g.png"},
   { name: "Misu Kisumi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734367818/misu_kisumi_thumb_dvjci9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734367819/misu_kisumi_2.jpg_v6eu1c.png"},
   { name: "Isumi Sia", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734369393/asumi_sia_3_aozvyg.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734369398/asumi_sia_4_jrzxll.jpg"},
-  { name: "unitenmaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_thumb_ra24go.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_ojhspg.jpg"}
+  { name: "unitenmaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_thumb_ra24go.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_ojhspg.jpg"},
+  { name: "Itoi Toi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218021/itoi_toi_wneilw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218486/itoi_toi_2_buheds.png"}
 ]
 
 puts "Thumbnails"
