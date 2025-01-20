@@ -59,7 +59,7 @@ class ListsController < ApplicationController
 
     @list = List.find(params[:id])
     @list.toggle_private
-    redirect_back(fallback_location: root_path)
+    # redirect_back(fallback_location: root_path)
   end
 
 

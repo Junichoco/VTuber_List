@@ -3892,6 +3892,26 @@ require_relative "agency_names"
     jp_name: "ユノ・ミハナダ",
     agency: @mewlive,
     yt_channel: "https://www.youtube.com/@YunoMihanada"
+  },
+  {
+    name: "Amahane Shio",
+    jp_name: "甘羽しお",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@amahane_shio"
+  },
+  {
+    name: "Yamada Nano Utopia",
+    jp_name: "山田なのゆーとぴあ",
+    agency: @indie,
+    description: "An angel who lost her memories",
+    birthday: "2020/07/07",
+    yt_channel: "https://www.youtube.com/@nanoup77"
+  },
+  {
+    name: "Hoshikage Lapis",
+    jp_name: "星影ラピス",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@HoshikageLapis"
   }
 
 ].each do |vtuber|
