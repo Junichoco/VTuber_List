@@ -1,12 +1,17 @@
 <div class="container col-12 col-lg-6">
-  <p style="color: green"><%= notice %></p>
+  <% if !(user_signed_in? && current_user.role == "admin") %>
+    <%= render "shared/unauthorized" %>
+  <% else %>
 
-  <%= render @submission %>
+    <p style="color: green"><%= notice %></p>
 
-  <div>
-    <%= link_to "Edit this submission", edit_submission_path(@submission) %> |
-    <%= link_to "Back to submissions", submissions_path %>
+    <%= render @submission %>
 
-    <%= button_to "Destroy this submission", @submission, method: :delete %>
-  </div>
+    <div>
+      <%= link_to "Edit this submission", edit_submission_path(@submission) %> |
+      <%= link_to "Back to submissions", submissions_path %>
+
+      <%= button_to "Destroy this submission", @submission, method: :delete %>
+    </div>
+  <% end %>
 </div>

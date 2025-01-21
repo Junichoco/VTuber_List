@@ -3913,7 +3913,6 @@ require_relative "agency_names"
     agency: @indie,
     yt_channel: "https://www.youtube.com/@HoshikageLapis"
   }
-
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
     puts "#{vtuber[:name]} created" if Vtuber.create!(vtuber)
