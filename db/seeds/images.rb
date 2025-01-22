@@ -232,7 +232,9 @@ images = [
   { name: "Misu Kisumi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734367818/misu_kisumi_thumb_dvjci9.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734367819/misu_kisumi_2.jpg_v6eu1c.png"},
   { name: "Isumi Sia", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734369393/asumi_sia_3_aozvyg.jpg", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1734369398/asumi_sia_4_jrzxll.jpg"},
   { name: "unitenmaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_thumb_ra24go.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_ojhspg.jpg"},
-  { name: "Itoi Toi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218021/itoi_toi_wneilw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218486/itoi_toi_2_buheds.png"}
+  { name: "Itoi Toi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218021/itoi_toi_wneilw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218486/itoi_toi_2_buheds.png"},
+  { name: "Tenshi Nano", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737477851/tenshi_nano_thumb_g3ux7w.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737477852/tenshi_nano_5_qfseaw.png"},
+  { name: "Nekoda Pepero", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737478765/pepero_thumb_z6hnrc.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737478765/nekoda_pepero_z9trnz.jpg"}
 ]
 
 puts "Thumbnails"

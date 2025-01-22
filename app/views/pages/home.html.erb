@@ -1,25 +1,22 @@
-<div class="container col-12 col-lg-6">
+<div class="container col-12 col-lg-20">
   <div class="home-top">
-    <h1 class="home-logo">VTuber List</h1>
-
-    <div class="home-top-links">
-
+    <div class="home-header" >
+      <div style="display: flex; flex-direction: column;">
+        <h1 class="home-logo">VTuber List</h1>
+        <h2><strong>Your lists</strong></h2>
+      </div>
+      <% if user_signed_in? %>
+        <%= link_to new_list_path do %>
+          <span class="main-button"><i class="fa-solid fa-file-circle-plus" style="align-self: center;"></i> Make a new list</span>
+        <% end %>
+      <% end %>
     </div>
   </div>
-  <div class="your-lists-header" >
-    <h2><strong>Your lists</strong></h2>
-    <% if user_signed_in? %>
-      <%= link_to new_list_path do %>
-        <span class="main-button"><i class="fa-solid fa-file-circle-plus" style="align-self: center;"></i> Make a new list</span>
-      <% end %>
-    <% end %>
-  </div>
-
-  <% if !user_signed_in? %>
-    <h5><%= link_to "Log in", new_user_session_path %> to make a list!</h5>
-  <% elsif @lists.empty? %>
-    <h5>You don't have any lists yet</h5>
-  <% else %>
-    <%= render 'shared/current_user_lists', lists: @lists %>
-  <% end %>
 </div>
+<% if !user_signed_in? %>
+  <h5><%= link_to "Log in", new_user_session_path %> to make a list!</h5>
+<% elsif @lists.empty? %>
+  <h5>You don't have any lists yet</h5>
+<% else %>
+  <%= render 'shared/current_user_lists', lists: @lists %>
+<% end %>

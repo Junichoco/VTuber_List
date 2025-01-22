@@ -1,8 +1,12 @@
 // Specific CSS for your home-page
 .home-top{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  // width: 1020px;
+  justify-content: center;
+  align-items: center;
+  // justify-content: space-between;
+  // align-items: flex-end;
 }
 
 .home-logo {
@@ -13,12 +17,22 @@
 .home-top-links {
   display: flex;
   flex-direction: column;
+  width: 1020px;
 }
 
-.your-lists-header {
+
+.home-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  width: 80%;
+}
+
+.home-list-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-list-vtuber-row {
@@ -41,6 +55,7 @@
 
 .home-list-card {
   height: 200px;
+  width: 1020px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   padding: 10px;
   margin: 5px 0 5px 0;
@@ -216,3 +231,45 @@
 
   overflow: hidden;
 }
+
+@media (max-width: 1399px){
+  .home-header{
+    width: 90%;
+  }
+}
+@media (max-width: 1199px){
+  .home-header{
+    width: 100%;
+  }
+  .home-list-card{
+    width: 960px;
+  }
+}
+
+@media (max-width: 991px){
+  .list-show-header{
+    flex-direction: column;
+  }
+
+  .home-list-card{
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px){
+  .home-list-container{
+    background-color: white;
+  }
+}
+
+// @media (max-width: 767px){
+//   .home-list-card{
+//     width: 540px;
+//   }
+// }
+
+// @media (max-width: 767px){
+//   .home-list-card{
+//     width: 100%;
+//   }
+// }

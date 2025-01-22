@@ -10,9 +10,9 @@
 }
 
 .list-show-options {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .list-show-options p {
   padding-bottom: 0;
@@ -20,6 +20,9 @@
 }
 .list-show-options a {
   cursor: pointer;
+}
+.list-show-option-item {
+  margin: 0 3px 0 3px;
 }
 
 .list-cards-container{
@@ -251,6 +254,13 @@
     transition: all 0.3s ease;
   }
 }
+
+@media(max-width: 991px){
+  .list-show-options{
+    flex-direction: row;
+  }
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

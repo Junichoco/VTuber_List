@@ -26,27 +26,19 @@ export default class extends Controller {
 
   }
 
-  // clickOutside(event) {
-  //   // example to close a modal
-  //   event.preventDefault();
-  //   console.log("click outside");
-  // }
 
   toggle_menu(event) {
     // check if menu is already open for other list
-    // let openMenu;
-    // let openButton;
-
-    if(menuOpen && !event.currentTarget.classList.contains("options-button-toggled")){
-      // console.log(event.currentTarget.classList);
-      // console.log("toggled");
+      if(menuOpen && !event.currentTarget.classList.contains("options-button-toggled")){
       let openMenu = document.getElementsByClassName("menu-toggled")[0];
       let openButton = document.getElementsByClassName("options-button-toggled")[0];
 
-      openMenu.classList.remove("menu-toggled");
-      openMenu.classList.add("d-none");
-      openButton.classList.remove("options-button-toggled");
-      openButton.innerHTML = '<i class="fa-solid fa-bars" ></i>';
+      if(openMenu && openButton){
+        openMenu.classList.remove("menu-toggled");
+        openMenu.classList.add("d-none");
+        openButton.classList.remove("options-button-toggled");
+        openButton.innerHTML = '<i class="fa-solid fa-bars" ></i>';
+      }
     }
 
     this.menuTarget.classList.toggle("d-none");
@@ -56,11 +48,9 @@ export default class extends Controller {
     if(this.toggle_buttonTarget.classList.contains("options-button-toggled")){
       this.toggle_buttonTarget.innerHTML = '<i class="fa-solid fa-square-xmark" ></i>';
       menuOpen = true;
-      // console.log("button changed to X");
     } else {
       this.toggle_buttonTarget.innerHTML = '<i class="fa-solid fa-bars" ></i>';
       menuOpen = false;
-      // this.submenuTarget.classList.remove("d-none");
     }
 
   }
@@ -75,13 +65,12 @@ export default class extends Controller {
     this.right_private_iconTarget.classList.toggle("privated");
 
     if(this.right_private_iconTarget.classList.contains("unprivated")){
-      // console.log("unprivate");
       this.right_private_iconTarget.innerHTML = '<i class="fa-solid fa-lock-open"></i> Private';
     }
     if(this.right_private_iconTarget.classList.contains("privated")){
       this.right_private_iconTarget.innerHTML = '<i class="fa-solid fa-lock"></i> Unprivate';
     }
-    console.log(this.right_private_iconTarget);
+    // console.log(this.right_private_iconTarget);
 
     // if(this.right_private_iconTarget.innerHTML == '<i class="fa-solid fa-lock-open"></i> Private'){
     //   console.log("private");
