@@ -1,45 +1,47 @@
-<div class="container col-12 col-lg-8" data-controller="delete-button">
-  <div class="list-show-header">
-    <div class="list-show-name">
-      <h2><%= @list.name %></h2>
-      <p>Made by <%= @list.user.username %></p>
-    </div>
-
-    <% if user_signed_in? && current_user == @list.user %>
-      <div class="list-show-options">
-        <div class="list-show-option-item" >
-          <%= link_to edit_list_path, class:"main-button" do %>
-            <i class="fa-solid fa-pencil"></i> Rename this list
-          <% end %>
-        </div>
-        <div class="list-show-option-item" >
-          <%= link_to list_path(@list),
-            data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?" },
-            class: "main-button" do
-            %>
-              <i class="fa-solid fa-eraser"></i> Delete this list
-            <% end %>
-        </div>
-        <div class="list-show-option-item" >
-          <a class="main-button noselect" data-action="click->delete-button#trigger"><i class="fa-solid fa-square-xmark"></i> Remove a VTuber</a>
-        </div>
-
+<div style="display:flex; justify-content: center;">
+  <div class="list-show-container col-12 col-lg-8" data-controller="delete-button">
+    <div class="list-show-header">
+      <div class="list-show-name">
+        <h2><%= @list.name %></h2>
+        <p>Made by <%= @list.user.username %></p>
       </div>
-    <% end %>
-    </div>
-  <div>
 
-    <div class="list-cards-container">
-      <% if @list.get_vtubers.empty? %>
-        <p>There are no VTubers in this list</p>
-      <% else %>
-        <div id="<%= @list.id %>" class="list-cards" data-controller="sortable" >
-
-          <%= render "shared/list_display", list: @list %>
+      <% if user_signed_in? && current_user == @list.user %>
+        <div class="list-show-options">
+          <div class="list-show-option-item" >
+            <%= link_to edit_list_path, class:"main-button" do %>
+              <i class="fa-solid fa-pencil"></i> Rename this list
+            <% end %>
+          </div>
+          <div class="list-show-option-item" >
+            <%= link_to list_path(@list),
+              data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?" },
+              class: "main-button" do
+              %>
+                <i class="fa-solid fa-eraser"></i> Delete this list
+              <% end %>
+          </div>
+          <div class="list-show-option-item" >
+            <a class="main-button noselect" data-action="click->delete-button#trigger"><i class="fa-solid fa-square-xmark"></i> Remove a VTuber</a>
+          </div>
 
         </div>
       <% end %>
     </div>
+
+
+      <div class="list-cards-container">
+        <% if @list.get_vtubers.empty? %>
+          <p>There are no VTubers in this list</p>
+        <% else %>
+          <div id="<%= @list.id %>" class="list-cards" data-controller="sortable" >
+
+            <%= render "shared/list_display", list: @list %>
+
+          </div>
+        <% end %>
+      </div>
+
 
   </div>
 </div>

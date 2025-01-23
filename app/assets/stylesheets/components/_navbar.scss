@@ -13,13 +13,14 @@
 .navbar-container {
   background-color: white;
   width: 100%;
-  max-width: 1020px;
+  max-width: 1240px;
   // padding-top: 1rem;
   display: flex;
   justify-content: space-between;
 
   margin: 0;
-  padding: 20px;
+  padding: 20px 50px 20px 50px;
+  transition: all 0.5s;
 }
 
 .navbar-logo {
@@ -129,6 +130,12 @@
 //   }
 // }
 
+@media (max-width: 940px) {
+  .navbar-container{
+    padding: 20px;
+    transition: all 0.5s;
+  }
+}
 @media (max-width: 770px) {
   .navbar-button {
     display: block;
