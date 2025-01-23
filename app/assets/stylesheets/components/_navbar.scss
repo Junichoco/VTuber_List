@@ -13,7 +13,7 @@
 .navbar-container {
   background-color: white;
   width: 100%;
-  max-width: 1040px;
+  max-width: 1020px;
   // padding-top: 1rem;
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@
 
 @media (max-width: 576px) {
   .navbar-logo {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
   }
 }
 

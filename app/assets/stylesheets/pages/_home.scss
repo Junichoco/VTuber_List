@@ -1,8 +1,10 @@
 // Specific CSS for your home-page
 .home-top{
+  // background-color: white;
+  width: 100%;
+  // max-width: 1020px;
   display: flex;
-  flex-direction: column;
-  // width: 1020px;
+  // flex-direction: column;
   justify-content: center;
   align-items: center;
   // justify-content: space-between;
@@ -22,10 +24,13 @@
 
 
 .home-header {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 80%;
+  width: 100%;
+  max-width: 1020px;
+  padding: 0 10px 0 10px;
 }
 
 .home-list-container {
@@ -234,15 +239,20 @@
 
 @media (max-width: 1399px){
   .home-header{
-    width: 90%;
+    // width: 90%;
   }
 }
 @media (max-width: 1199px){
   .home-header{
-    width: 100%;
+    // width: 100%;
   }
   .home-list-card{
-    width: 960px;
+    // width: 100%;
+  }
+}
+@media (max-width: 1020px){
+  .home-list-card{
+    width: 100%;
   }
 }
 
