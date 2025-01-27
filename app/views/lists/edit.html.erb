@@ -1,13 +1,15 @@
-<div class="container col-12 col-lg-6">
-  <% if !(user_signed_in? && current_user == @list.user) %>
-    <%= render "shared/unauthorized" %>
-  <% else %>
-    <h2>Rename List</h2>
-    <%= simple_form_for(@list) do |f| %>
-      <%= f.input :name %>
-      <div class="form-actions">
-        <%= f.button :submit, class:"btn-create" %>
-      </div>
+<div class="page-container">
+  <div class="list-show-container" style="max-width: 780px; padding-bottom: 12px;">
+    <% if !(user_signed_in? && current_user == @list.user) %>
+      <%= render "shared/unauthorized" %>
+    <% else %>
+      <h2>Rename List</h2>
+      <%= simple_form_for(@list) do |f| %>
+        <%= f.input :name %>
+        <div class="form-actions">
+          <%= f.button :submit, class:"btn-create" %>
+        </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>

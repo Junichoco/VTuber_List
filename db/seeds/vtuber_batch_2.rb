@@ -3912,6 +3912,12 @@ require_relative "agency_names"
     jp_name: "星影ラピス",
     agency: @indie,
     yt_channel: "https://www.youtube.com/@HoshikageLapis"
+  },
+  {
+    name: "atlas anarchy",
+    agency: @indie,
+    yt_channel:"https://www.youtube.com/@sleepypaper",
+    twitch_channel: "https://www.twitch.tv/atlasanarchy_"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

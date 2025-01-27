@@ -234,7 +234,8 @@ images = [
   { name: "unitenmaro", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_thumb_ra24go.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1736441444/unitenmaru_ojhspg.jpg"},
   { name: "Itoi Toi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218021/itoi_toi_wneilw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218486/itoi_toi_2_buheds.png"},
   { name: "Tenshi Nano", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737477851/tenshi_nano_thumb_g3ux7w.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737477852/tenshi_nano_5_qfseaw.png"},
-  { name: "Nekoda Pepero", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737478765/pepero_thumb_z6hnrc.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737478765/nekoda_pepero_z9trnz.jpg"}
+  { name: "Nekoda Pepero", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737478765/pepero_thumb_z6hnrc.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737478765/nekoda_pepero_z9trnz.jpg"},
+  { name: "Kumama Mayu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737986207/kumama_thumb_2_s0ukzz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737986207/kumama_2_tzbhcq.jpg"}
 ]
 
 puts "Thumbnails"

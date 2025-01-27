@@ -88,7 +88,8 @@ lists =[
       "Mori Calliope",
       "Hiiragi Youri",
       "Azumalim",
-      "Amabuki San"
+      "Amabuki San",
+      "Kou Mariya"
     ]
   },
   {

@@ -83,21 +83,22 @@
   }
 
 
-@media (max-width: 576px) {
+
+@media (max-width: 770px) {
   .vtuber-show-picture-card {
     width: 60%;
   }
   .vtuber-tall-picture {
-    max-width: 100%;
-    max-height: 600px;
+    // max-width: 100%;
+    max-height: 500px;
+  }
+  .vtuber-show-picture-card {
+    width: 100%;
   }
   .vtuber-show-container {
     flex-direction: column;
     // justify-content: center;
     align-items: center;
-  }
-  .vtuber-show-picture-card {
-    max-width: 100%;
   }
   .vtuber-show-body {
     width: 100%;

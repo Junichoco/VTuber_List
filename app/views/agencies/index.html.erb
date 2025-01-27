@@ -1,9 +1,15 @@
-<div class="container col-6">
-  <h2 style="margin-bottom: 10px;">Agencies</h2>
-  <div class="agency-grid">
-    <% @agencies.each do |agency| %>
-      <p><span class="agency-button"><%= link_to agency.name, agency_path(agency) %></span> (<%= agency.vtuber_count %>)</p>
-      <% vtubers = Vtuber.where(agency: agency).order(name: :asc) %>
-    <% end %>
+<div class="page-container">
+  <div class="list-show-container">
+    <div class="search-header">
+      <h2>Agencies</h2>
+    </div>
+
+    <div class="agency-grid">
+      <% @agencies.each do |agency| %>
+        <p><span class="agency-button"><%= link_to agency.name, agency_path(agency) %></span> (<%= agency.vtuber_count %>)</p>
+        <% vtubers = Vtuber.where(agency: agency).order(name: :asc) %>
+      <% end %>
+
+    </div>
   </div>
 </div>
