@@ -1,4 +1,4 @@
-<div class="col-12">
+<div>
   <div class="home-top">
     <div class="home-header" >
       <div style="display: flex; flex-direction: column;">
@@ -14,9 +14,17 @@
   </div>
 </div>
 <% if !user_signed_in? %>
-  <h5><%= link_to "Log in", new_user_session_path %> to make a list!</h5>
+  <div style="display: flex; justify-content: center;">
+    <div class="home-empty-container">
+      <h5><%= link_to "Log in", new_user_session_path %> to make a list!</h5>
+    </div>
+  </div>
 <% elsif @lists.empty? %>
-  <h5>You don't have any lists yet</h5>
+  <div style="display: flex; justify-content: center;">
+    <div class="home-empty-container">
+      <h5>You don't have any lists yet</h5>
+    </div>
+  </div>
 <% else %>
   <%= render 'shared/current_user_lists', lists: @lists %>
 <% end %>

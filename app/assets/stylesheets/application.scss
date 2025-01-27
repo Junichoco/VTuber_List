@@ -24,6 +24,9 @@
 @import "components/grid";
 @import "pages/submissions";
 @import "pages/user";
+@import "pages/search";
+@import "pages/agency_tag";
+@import "pages/sign_up";
 // .vtuber-card {
 //   // border: 3px, black;
 //   // width: 100%;
@@ -40,7 +43,7 @@ body {
   background-image: url("block_background 1.png");
   height: 100vh;
   // width: 100vh;
-  background-size: cover;
+  // background-size: contain;
   background-repeat: repeat;
   // background-attachment: fixed;
 

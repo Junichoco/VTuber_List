@@ -1,36 +1,39 @@
-
-<div class="container col-12 col-lg-8">
-  <h2>You searched for random VTubers</h2>
+<div style="display:flex; justify-content:center">
+  <div class="list-show-container">
+    <div style="padding: 0 12px 0 12px;">
+      <h2>You searched for random VTubers</h2>
+    </div>
+    <div class="list-cards-container">
       <div class="list-cards">
-      <% @vtubers.each do |vtuber| %>
-        <div class="vtuber-card" data-controller="zoom-in">
-
+        <% @vtubers.each do |vtuber| %>
+          <div class="vtuber-card" data-controller="zoom-in">
 
             <%= render "shared/vtuber_picture", vtuber: vtuber %>
 
-
-          <div class="vtuber-card-body" data-action="mouseover->zoom-in#zoom_in mouseout->zoom-in#zoom_out">
-            <p><%= vtuber.name %></p>
-            <%= link_to vtuber_path(vtuber) do %>
-              <div class="click-box">
+            <div class="vtuber-card-body" data-action="mouseover->zoom-in#zoom_in mouseout->zoom-in#zoom_out">
+              <p><%= vtuber.name %></p>
+              <%= link_to vtuber_path(vtuber) do %>
+                <div class="click-box">
+                </div>
+              <% end %>
+              <div class="vtuber-card-footer">
+                <% if vtuber.yt_channel && vtuber.yt_channel != "" %>
+                  <%= link_to vtuber.yt_channel, target: :blank do %>
+                    <i class="fa-brands fa-youtube" ></i>
+                  <% end %>
+                <% end %>
+                <% if vtuber.twitch_channel && vtuber.twitch_channel != "" %>
+                  <%= link_to vtuber.twitch_channel, target: :blank do %>
+                    <i class="fa-brands fa-twitch"></i>
+                  <% end %>
+                <% end %>
               </div>
-            <% end %>
-            <div class="vtuber-card-footer">
-              <% if vtuber.yt_channel && vtuber.yt_channel != "" %>
-                <%= link_to vtuber.yt_channel, target: :blank do %>
-                  <i class="fa-brands fa-youtube" ></i>
-                <% end %>
-              <% end %>
-              <% if vtuber.twitch_channel && vtuber.twitch_channel != "" %>
-                <%= link_to vtuber.twitch_channel, target: :blank do %>
-                  <i class="fa-brands fa-twitch"></i>
-                <% end %>
-              <% end %>
             </div>
+
+
           </div>
-
-
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
+  </div>
 </div>

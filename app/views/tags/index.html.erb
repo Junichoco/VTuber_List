@@ -1,8 +1,12 @@
-<div class="container col-6">
-  <h2 style="margin-bottom: 10px;">Tags</h2>
-  <div class="grid">
-    <% @tags.each do |tag| %>
-      <p><span class="tag-button"><%= link_to tag.name, tag_path(tag) %></span> (<%= tag.vtuber_count %>)</p>
-    <% end %>
+<div class="page-container">
+  <div class="list-show-container">
+    <div class="search-header">
+      <h2>Tags</h2>
+    </div>
+    <div class="grid">
+      <% @tags.each do |tag| %>
+        <p><span class="tag-button"><%= link_to tag.name, tag_path(tag) %></span> (<%= tag.vtuber_count %>)</p>
+      <% end %>
+    </div>
   </div>
 </div>
