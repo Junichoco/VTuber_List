@@ -85,3 +85,45 @@
   height: 50px;
   background-color: rgba(0,0,0,0.3);
 }
+
+.about-vtubers{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-vtuber-row{
+  display: flex;
+  justify-content: center;
+
+  width: 50%;
+}
+
+@media(max-width: 600px){
+  .about-top{
+    // height: 120px;
+  }
+  // .about-vtuber-card{
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  //   .vtuber-card-pic{
+  //     height: 90px;
+  //   }
+  // }
+  .about-top{
+    flex-direction: column;
+    height: 200px;
+  }
+  .about-vtuber-row{
+    width: 100%;
+    height: 50%;
+  }
+  .about-vtuber-card {
+    // size: 50%;
+    height: 100%;
+    .vtuber-pic{
+      size: 25%;
+    }
+  }
+
+}
