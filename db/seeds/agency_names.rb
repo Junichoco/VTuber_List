@@ -69,3 +69,4 @@
 @grp = Agency.find_by_name("GIRLS REVOLUTION PROJECT")
 @parareal = Agency.find_by_name("Parareal")
 @kemomimi = Agency.find_by_name("KEMOMIMI-REFLE")
+@nexas = Agency.find_by_name("NEXAS")

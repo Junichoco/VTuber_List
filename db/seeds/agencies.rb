@@ -447,6 +447,13 @@
     location: "Japan",
     website: "https://girlsrevolutionproject.jp/",
     yt_channel: "https://www.youtube.com/@girls_rev_pj"
+  },
+  {
+    name: "NEXAS",
+    location: "Singapore",
+    description: "A virtual talent agency owned by forCreators PTE. Ltd. Also known as NEXAS: Virtual Talent Academia.",
+    website: "https://nexas.live/",
+    yt_channel: "https://www.youtube.com/@NEXAS_official"
   }
 ].each do |agency|
   if !Agency.find_by_name(agency[:name])

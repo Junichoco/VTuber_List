@@ -4,7 +4,9 @@
       <h2>Search results</h2>
       <div >
         <% if @vtubers.empty? %>
-          <p>No VTubers matched your search</p>
+          <div style="display: flex; justify-content: center">
+            <p>No VTubers matched your search</p>
+          </div>
         <% elsif @vtubers.length == 1 %>
           <p><span class="search-result-number">1</span> search result</p>
         <% else %>

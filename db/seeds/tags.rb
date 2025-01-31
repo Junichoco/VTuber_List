@@ -235,6 +235,14 @@ end
   {
     name: "Marie Colchique",
     tags: ["twins"]
+  },
+  {
+    name: "Yuki Astrea",
+    tags: ["twins"]
+  },
+  {
+    name: "Yuna Astrea",
+    tags: ["twins"]
   }
 
 ].each do |hash|
