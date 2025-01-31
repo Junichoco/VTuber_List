@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'home', to: 'pages#home', as: :home
   get "about", to: "pages#about", as: :about
   get "random", to: "pages#random", as: :random
+  get "search", to: "pages#search_form", as: :search
   patch "home/reorder", to: "users#reorder", as: :reorder
   patch "/home/toggle_private", to: "lists#toggle_private", as: :toggle_private
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

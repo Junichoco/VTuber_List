@@ -29,4 +29,12 @@ class PagesController < ApplicationController
     end
   end
 
+  def search
+    @vtubers = []
+    # raise
+    if params[:query].present?
+      @vtubers = Vtuber.search_by_name(params[:query])
+    end
+  end
+
 end

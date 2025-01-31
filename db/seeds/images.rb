@@ -235,7 +235,11 @@ images = [
   { name: "Itoi Toi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218021/itoi_toi_wneilw.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737218486/itoi_toi_2_buheds.png"},
   { name: "Tenshi Nano", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737477851/tenshi_nano_thumb_g3ux7w.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737477852/tenshi_nano_5_qfseaw.png"},
   { name: "Nekoda Pepero", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737478765/pepero_thumb_z6hnrc.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737478765/nekoda_pepero_z9trnz.jpg"},
-  { name: "Kumama Mayu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737986207/kumama_thumb_2_s0ukzz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737986207/kumama_2_tzbhcq.jpg"}
+  { name: "Kumama Mayu", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737986207/kumama_thumb_2_s0ukzz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1737986207/kumama_2_tzbhcq.jpg"},
+  { name: "Kurumizawa Ririka", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738082395/kurumizawathumb_g7vhkg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738082396/kurumizawa_ycvnuu.jpg"},
+  { name: "Rngyo", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738083369/rengyou_thumb_guuyrf.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738083324/rengyou_g8mirp.jpg"},
+  { name: "Esila Shephield", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738249094/esila_thumb_y8fycg.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738249361/esila_2_ogxkao.jpg"},
+  { name: "Amatsuka Mochina", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738249166/mochina_thumb_m208dm.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738249095/mochina_gd5460.jpg"}
 ]
 
 puts "Thumbnails"

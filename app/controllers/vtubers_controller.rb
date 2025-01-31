@@ -4,7 +4,7 @@ class VtubersController < ApplicationController
     @vtubers = []
     # raise
     if params[:query].present?
-      @vtubers = Vtuber.search_by_name_and_description(params[:query])
+      @vtubers = Vtuber.search_by_name(params[:query])
     end
   end
 
@@ -61,7 +61,7 @@ class VtubersController < ApplicationController
     @vtubers = []
     raise
     if params[:query].present?
-      @vtubers = Vtuber.search_by_name_and_description(:query)
+      @vtubers = Vtuber.search_by_name(:query)
     end
     raise
   end

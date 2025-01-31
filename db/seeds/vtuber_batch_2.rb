@@ -3918,6 +3918,93 @@ require_relative "agency_names"
     agency: @indie,
     yt_channel:"https://www.youtube.com/@sleepypaper",
     twitch_channel: "https://www.twitch.tv/atlasanarchy_"
+  },
+  {
+    name: "Kurumizawa Ririka",
+    jp_name: "胡桃沢りりか",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@Ririka_krmzw0707"
+  },
+  {
+    name: "Mano Mueru",
+    jp_name: "魔ノむえる",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@manomueru/streams"
+  },
+  {
+    name: "Esila Shephield",
+    description: "A sleepy sheep.",
+    agency: @nexas,
+    main_language: "English",
+    birthday: "2020/04/03",
+    debut_date: "2024/03/26",
+    yt_channel:"https://www.youtube.com/@EsilaShephield"
+  },
+  {
+    name: "Yuki Astrea",
+    agency: @indie,
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@DuoLeveling"
+  },
+  {
+    name: "Yuna Astrea",
+    agency: @indie,
+    main_language: "English",
+    yt_channel: "https://www.youtube.com/@DuoLeveling"
+  },
+  {
+    name: "Choma",
+    jp_name: "チョマ",
+    description: "An alien VTuber.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@ChomaChannel"
+  },
+  {
+    name: "Suzumura Uduki",
+    jp_name: "鈴村うづき",
+    description: "A cool oneesan who shares a YouTube channel with her girlfriend, Kisaragi Shiroru.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@udushiro"
+  },
+  {
+    name: "Kisaragi Shiroru",
+    jp_name: "如月しろる",
+    description: "A female kitten who shares a YouTube channel with her girlfriend, Kisaragi Shiroru.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@udushiro"
+  },
+  {
+    name: "Minato Misaki",
+    jp_name: "湊海咲",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@minato_M555",
+    twitch_channel: "https://twitch.tv/minamisa555"
+  },
+  {
+    name: "Mochizuki Hoguno",
+    jp_name: "望月ほぐの",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@Hoguno_Mochizuki"
+  },
+  {
+    name: "Nekone Ramu",
+    jp_name: "猫音らむ",
+    agency: @indie,
+    yt_channel: "https://youtube.com/@Ramu_Nekone"
+  },
+  {
+    name: "Hoshina Selene",
+    jp_name: "星七セレネ",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@Hoshina-selene",
+    twitch_channel: "https://twitch.tv/hoshina_selene"
+  },
+  {
+    name: "Moemi Dan",
+    jp_name: "萌水団",
+    description: "A NEET store manager.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@dantencho"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])
