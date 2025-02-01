@@ -3,7 +3,13 @@
     <div class="list-show-header">
       <h2>Advanced Search</h2>
     </div>
-    <%# <%= form_with url: :search, method: :get do %> %>
-
+    <%= form_with url: :search, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form",
+        placeholder: "Look for a VTuber"
+        %>
+        <%= submit_tag "Search", name: "", class:"search-button" %>
+      <% end %>
   </div>
 </div>

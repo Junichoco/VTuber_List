@@ -21,9 +21,20 @@ class Vtuber < ApplicationRecord
   include PgSearch::Model
   pg_search_scope :search_by_name,
   against: [ :name, :jp_name ],
+  associated_against: {
+    agency: [:name]
+  },
   using: {
-    tsearch: { prefix: true } # <-- now `superman batm` will return something!
+    tsearch: { prefix: true }
   }
+
+  include PgSearch::Model
+  pg_search_scope :search_by_gender,
+  against: [ :gender ],
+  using: {
+    tsearch: { prefix: true }
+  }
+
 
   def self.find_by_name(name)
     Vtuber.where(name: name).first

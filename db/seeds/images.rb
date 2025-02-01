@@ -50,7 +50,7 @@ images = [
   { name: "Amanogawa Shiina", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727498767/shiina_thumb_2_kkinyq.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727176936/shiina_re3af8.png"},
   { name: "Himemiya Rie", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727176935/rie_thumb_syuh8t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727176936/rie_ka7fuv.png"},
   { name: "Chisaka Airi", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727177069/Airi_thumb_ilko0w.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727177070/airi_arpxr4.png"},
-  { name: "Akai Haato", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187481/Aki_thumb_jbwdyr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187750/Akai-Haato_pr-img_01_eb4z2q.png"},
+  { name: "Akai Haato", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1738367178/Haachama_thumb_nhllor.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187750/Akai-Haato_pr-img_01_eb4z2q.png"},
   { name: "Aki Rosenthal", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187481/Aki_thumb_jbwdyr.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187482/aki_xzlzvv.png"},
   { name: "Remilia Nephys", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187905/remi_thumb_in233t.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187907/Remi-Character_wbkmhx.png"},
   { name: "Komachi Panko", thumb: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187990/panko_thumb_f0nlkz.png", vert: "https://res.cloudinary.com/dpvghmrgw/image/upload/v1727187990/Panko-Character_ugkvqb.png"},
