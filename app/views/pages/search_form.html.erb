@@ -11,6 +11,7 @@
           placeholder: "Look for a VTuber"
           %><br>
         <%= f.text_field :main_language %><br>
+        <%= f.select :active, ["active", "not active"] %><br>
         <%= f.select :gender, ["male", "female", "other"] %><br>
 
         <%= submit_tag "Search", name: "", class:"search-button" %>
