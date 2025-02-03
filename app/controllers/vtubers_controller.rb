@@ -1,5 +1,7 @@
 class VtubersController < ApplicationController
 
+
+
   def index
     @vtubers = []
     # raise

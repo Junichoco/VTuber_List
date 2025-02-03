@@ -4,6 +4,11 @@ class Vtuber < ApplicationRecord
   acts_as_favoritable
   acts_as_favoritor
 
+  scope :by_gender, -> gender { where(:gender => gender) }
+  scope :by_language, -> language { where(:main_language => language)}
+  scope :active, -> active { where(:active => active) }
+  # scope :by_birthday, -> started_at, ended_at { where("started_at = ? AND ended_at = ?", started_at, ended_at) }
+
   belongs_to :agency
   has_many :vtuber_markers, dependent: :destroy
   has_many :tag_markers, dependent: :destroy
@@ -20,7 +25,7 @@ class Vtuber < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :search_by_name,
-  against: [ :name, :jp_name ],
+  against: [ :name, :jp_name, :main_language ],
   associated_against: {
     agency: [:name]
   },
