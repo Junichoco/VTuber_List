@@ -15,6 +15,9 @@
               %>
             <%= submit_tag "Search", name: "", class:"search-button" %>
           <% end %>
+          <%= link_to :search do %>
+            <span class="main-button"><i class="fa-solid fa-magnifying-glass"></i> Advanced</span>
+          <% end %>
         </div>
         <div class="search-buttons">
           <%= link_to agencies_path do %>

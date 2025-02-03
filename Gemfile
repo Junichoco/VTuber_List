@@ -87,3 +87,5 @@ gem 'jquery-ui-rails'
 gem 'sortablejs-rails', '~> 1.10'
 gem "acts_as_list"
 gem 'requestjs-rails'
+
+gem "has_scope", "~> 0.8.2"

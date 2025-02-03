@@ -4005,6 +4005,21 @@ require_relative "agency_names"
     description: "A NEET store manager.",
     agency: @indie,
     yt_channel: "https://www.youtube.com/@dantencho"
+  },
+  {
+    name: "Sekai Hiyo",
+    jp_name: "せかいひよ",
+    description: "The most peaceful 141-cm cosplayer and VTuber.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@sekaihiyo"
+  },
+  {
+    name: "Onatsu no Nibitashi",
+    jp_name: "おなつのにびたし",
+    description: "A bakeneko VTuber.",
+    agency: @indie,
+    yt_channel: "https://www.youtube.com/@o72nonibitashi",
+    twitch_channel: "https://twitch.tv/o72nonibitashi"
   }
 ].each do |vtuber|
   if !Vtuber.find_by_name(vtuber[:name])

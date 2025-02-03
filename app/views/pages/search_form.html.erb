@@ -1,9 +1,21 @@
 <div class="page-container">
-  <div class="list-show-container">
+  <div class="devise-container">
     <div class="list-show-header">
       <h2>Advanced Search</h2>
     </div>
-    <%# <%= form_with url: :search, method: :get do %> %>
+    <div class="search-form">
+      <%= form_with url: :search, method: :get do |f| %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form",
+          placeholder: "Look for a VTuber"
+          %><br>
+        <%= f.text_field :main_language %><br>
+        <%= f.select :active, ["active", "not active"] %><br>
+        <%= f.select :gender, ["male", "female", "other"] %><br>
 
+        <%= submit_tag "Search", name: "", class:"search-button" %>
+      <% end %>
+    </div>
   </div>
 </div>
