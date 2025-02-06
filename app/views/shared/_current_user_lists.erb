@@ -1,4 +1,10 @@
-<div id="<%= current_user.id %>" class="home-list-container" data-controller="list-sortable" >
+<% if device =="desktop" %>
+  <div id="<%= current_user.id %>" class="home-list-container" data-controller="list-sortable" >
+  Desktop
+<% else %>
+  <div id="<%= current_user.id %>" class="home-list-container" >
+  Mobile
+<% end %>
       <% @lists.each do |list| %>
         <div id="<%= list.id %>" class="home-list-card" data-controller="home-options" >
 
