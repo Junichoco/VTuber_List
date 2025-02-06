@@ -14,7 +14,7 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("home options controller connected");
+    // console.log("home options controller connected");
     // useClickOutside(this);
   }
 
