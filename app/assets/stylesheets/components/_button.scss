@@ -63,12 +63,23 @@
 .submit-button {
   color: white;
   background-color: $vtuber-purple;
+
+  i{
+    padding-right: 5px;
+  }
 }
 .submit-button:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid black;
+  color: white;
+  background-color: $vtuber-purple-dark;
+  // border: 1px solid black;
   transition: all 0.5s;
+  i{
+    // font-weight: 200;
+    transform: scale(1.5);
+
+    transition: transform 0.3s;
+    // color: black;
+  }
 }
 
 .btn-create {

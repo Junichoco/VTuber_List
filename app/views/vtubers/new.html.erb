@@ -9,7 +9,7 @@
       <p><%= f.radio_button :gender, 'female' %> Female
       <%= f.radio_button :gender, 'male' %> Male</p>
       <%= f.input :birthday, discard_year: true, discard_time: true %>
-      <%= f.input :debut_date %>
+      <%= f.input :debut_date, start_year: 1970 %>
       <%= f.input :description, as: :text %>
       <%= f.input :main_language %>
       <%= f.input :yt_channel, label: "YouTube channel" %>

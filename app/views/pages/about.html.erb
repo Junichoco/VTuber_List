@@ -4,6 +4,7 @@
     <div class="about-top">
 
       <% if @vtubers.length == 10 %>
+
         <div class="about-vtuber-row">
           <% @vtubers[0,5].each do |vtuber| %>
             <div class="about-vtuber-card">
@@ -28,9 +29,9 @@
 
     </div>
     <div class="about-body" >
-      <p>Hi, I'm the Monkey, and I made VTuber List because I like VTubers.<br><br>
+      <p>Hi, I'm <%= link_to "monkey", user_path(User.find_by_name("monkey")) %>, and I made VTuber List because I like VTubers.<br><br>
       I like them so much, I keep getting recommended streams from random VTubers every time I go on YouTube, and I used to compulsively add them to one of my playlists.<br><br>
-      Eventually, I had so many VTubers saved, I forgot which ones I already saved, and every time I thought something like, "Who's that one Chinese VTuber with the sick cover of I Beg You?", I had to dig through all of my playlists just to look for that one VTuber (I never found that Chinese VTuber again, by the way).
+      Eventually, I had so saved many VTubers, I forgot which ones I had already saved, and every time I thought something like, "Who's that one Chinese VTuber with the sick cover of I Beg You?", I had to dig through all of my playlists just to look for that one VTuber (I never found that Chinese VTuber again, by the way).
       That's when I thought, "Screw it, I'll just make a web app for this." And that's how I made this website.<br><br>
       Make lists of your favorite VTubers, or VTubers that you found by coincidence and want to check out later. Or, you can make dumb lists about whatever.<br><br>
       Discover new VTubers. Share your lists with your friends so that you can support your oshis and your friends can find out about your oshis and roast your trash taste.</p>

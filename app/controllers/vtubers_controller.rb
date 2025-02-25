@@ -13,7 +13,7 @@ class VtubersController < ApplicationController
 
   def new
     @vtuber = Vtuber.new
-    @agencies = Agency.all
+    @agencies = Agency.all.order('LOWER(name)')
   end
 
   def create
