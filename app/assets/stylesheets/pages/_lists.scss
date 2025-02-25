@@ -99,20 +99,22 @@
   right: 0;
   // transform: translate(-50%, -50%);
   z-index: 1;
-
+  padding: 0;
 }
 .vtuber-delete a {
   border-radius: 50%;
   margin-right: 5px;
+  padding: 0;
 }
-.vtuber-delete i {
+.vtuber-delete i{
+  margin: 0;
+  padding: 0;
+}
+.delete-icon {
   color: black;
-  // background-color: white;
 }
-.vtuber-delete:hover i {
-  // background-color: black;
-  // color: rgb(0, 0, 0);
-  // transition: all 0.5s
+.delete-icon:hover{
+  color: red;
 }
 
 

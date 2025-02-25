@@ -87,7 +87,9 @@
                 <%= f.hidden_field :vtuber_id, value: Vtuber.find(params[:id]).id %>
                 <%= f.association :list, collection: @lists, label: false %>
                 <div class="form-actions">
-                <%= f.button :submit, value: "Add VTuber", class: "btn submit-button" %>
+                <%= button_tag type: "submit", class: "btn submit-button" do %>
+                  <i class="fa-solid fa-plus"></i> Add VTuber
+                <% end %>
                 </div>
               <% end %>
             </div>

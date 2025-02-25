@@ -56,10 +56,8 @@
 //   align-items: center;
 }
 
-.about-top-text {
-
-
-  // align-self: flex-end;
+.scroll-vtubers{
+  display: flex;
 }
 
 .about-vtuber-card {
@@ -69,7 +67,7 @@
 
 
   height: 180px;
-  width: 20%px;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;

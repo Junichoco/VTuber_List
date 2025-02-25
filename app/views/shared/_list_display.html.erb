@@ -3,7 +3,7 @@
     <div class="vtuber-delete d-none" data-delete-button-target="button">
       <%= link_to vtuber_marker_path(marker),
         data: { turbo_method: :delete, turbo_confirm: "Delete this VTuber from this list?" } do %>
-          <i class="fa-solid fa-square-xmark"></i>
+          <i class="fa-solid fa-square-xmark delete-icon"></i>
         <% end %>
     </div>
 
