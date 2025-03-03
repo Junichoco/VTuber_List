@@ -8,8 +8,8 @@
       <%= f.input :jp_name, label: "JP name" %>
       <%= f.association :agency, collection: @agencies %>
       <%= f.input :gender, collection: ["female", "male", "neutral"] %>
-      <%= f.input :birthday, discard_year: true, discard_time: true %>
-      <%= f.input :debut_date, start_year: 1970 %>
+      <%= f.input :birthday, discard_year: true, discard_time: true, include_blank: true %>
+      <%= f.input :debut_date, start_year: 1970, include_blank: true %>
       <%= f.input :description, as: :text %>
       <%= f.input :main_language %>
       <%= f.input :yt_channel, label: "YouTube channel" %>

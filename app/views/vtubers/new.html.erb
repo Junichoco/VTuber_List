@@ -5,16 +5,18 @@
     <h2>Make New VTuber Entry</h2>
     <%= simple_form_for(@vtuber) do |f| %>
       <%= f.input :name %>
+      <%= f.input :jp_name, label: "JP name" %>
       <%= f.association :agency, collection: @agencies %>
       <p><%= f.radio_button :gender, 'female' %> Female
       <%= f.radio_button :gender, 'male' %> Male</p>
-      <%= f.input :birthday, discard_year: true, discard_time: true %>
-      <%= f.input :debut_date, start_year: 1970 %>
+      <%= f.input :birthday, discard_year: true, discard_time: true, include_blank: true %>
+      <%= f.input :debut_date, start_year: 1970, include_blank: true %>
       <%= f.input :description, as: :text %>
       <%= f.input :main_language %>
       <%= f.input :yt_channel, label: "YouTube channel" %>
       <%= f.input :twitch_channel %>
-      <%= f.input :photo_url %>
+      <%= f.input :thumbnail, as: :file %>
+      <%= f.input :vertical_picture, as: :file %>
       <%= f.input :active, as: :boolean %>
       <%= f.input :photos, as: :file, input_html: { multiple: true } %>
 
