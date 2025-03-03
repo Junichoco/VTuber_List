@@ -33,7 +33,7 @@
         <% if @list.get_vtubers.empty? %>
           <p>There are no VTubers in this list</p>
         <% else %>
-          <% if device =="desktop" %>
+          <% if device =="desktop" && user_signed_in? && current_user == @list.user %>
             <div id="<%= @list.id %>" class="list-cards" data-controller="sortable" >
           <% else %>
             <div id="<%= @list.id %>" class="list-cards" >

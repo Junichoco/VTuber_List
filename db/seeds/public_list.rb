@@ -13,3 +13,5 @@ if !User.find_by_name("VTuber List")
   puts "#{user.username} created."
 
 end
+
+# lists
