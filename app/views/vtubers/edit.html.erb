@@ -28,6 +28,7 @@
       <%# <h2>Add tags</h2> %>
 
     <% end %>
+
     <div class="add-tags-container">
       <h2>Add Tags</h2>
       <% if !@vtuber.addable_tags.empty? %>
@@ -46,5 +47,13 @@
         <% end %>
       <% end %>
     </div>
+
+    <%# <div class="vtuber-delete"> %>
+      <%= link_to vtuber_path(@vtuber),
+      data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this VTuber?" }, class: "delete-btn" do %>
+      Delete this VTuber
+      <% end %>
+    <%# </div> %>
+
   <% end %>
 </div>

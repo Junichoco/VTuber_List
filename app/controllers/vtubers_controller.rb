@@ -84,6 +84,12 @@ class VtubersController < ApplicationController
     redirect_to vtuber_path(@vtuber)
   end
 
+  def destroy
+    @vtuber = Vtuber.find(params[:id])
+    @vtuber.destroy!
+    redirect_to :home
+  end
+
   private
 
   def vtuber_params
