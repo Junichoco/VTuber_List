@@ -4,15 +4,11 @@ class TagsController < ApplicationController
     @tags = Tag.all.order("LOWER(name)")
   end
 
-  def new
-    @tag = Tag.new
-  end
-
   def create
     @tag = Tag.new(tag_params)
 
     if @tag.save
-      redirect_to user_path(current_user)
+      redirect_to :tags_manage
     else
       render :new, status: :unprocessable_entity
     end
@@ -29,6 +25,7 @@ class TagsController < ApplicationController
 
   def manage
     @tags = Tag.all.order("LOWER(name)")
+    @tag = Tag.new
   end
 
   def destroy

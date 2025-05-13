@@ -3,8 +3,17 @@
     <% if !(user_signed_in? && current_user.role == "admin") %>
       <%= render "shared/unauthorized" %>
     <% else %>
+      <div class="create-tag" style="margin-bottom: 12px;">
+        <h2 style="margin-bottom: 10px;">Create Tag</h2>
+        <%= simple_form_for(@tag) do |f| %>
+          <%= f.input :name %>
+          <div class="form-actions">
+            <%= f.button :submit, class:"btn-create" %>
+          </div>
+        <% end %>
+      </div>
       <div class="search-header">
-        <h2>Tags</h2>
+        <h2>Delete Tags</h2>
       </div>
       <div class="grid">
         <% @tags.each do |tag| %>

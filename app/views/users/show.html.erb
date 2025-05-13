@@ -9,9 +9,8 @@
           <h4>Admin only</h4>
           <%= link_to "Add VTuber Entry", new_vtuber_path, class: "main-button" %>
           <%= link_to "Add Agency Entry", new_agency_path, class: "main-button" %>
-          <%= link_to "Add Tag", new_tag_path, class: "main-button" %>
+          <%= link_to "Manage Tags", :tags_manage, class: "main-button" %>
           <%= link_to "View Submissions", submissions_path, class: "main-button" %>
-          <%= link_to "Delete Tag", :tags_manage, class: "main-button" %>
         </div>
       <% end %>
     <% end %>
