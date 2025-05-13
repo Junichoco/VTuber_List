@@ -27,6 +27,16 @@ class TagsController < ApplicationController
     @vtubers.sort
   end
 
+  def manage
+    @tags = Tag.all.order("LOWER(name)")
+  end
+
+  def destroy
+    @tag = Tag.find(params[:id])
+    @tag.destroy!
+    redirect_to :tags_manage
+  end
+
   private
 
   def tag_params

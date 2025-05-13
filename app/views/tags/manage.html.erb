@@ -1,0 +1,25 @@
+<div class="page-container">
+  <div class="list-show-container">
+    <% if !(user_signed_in? && current_user.role == "admin") %>
+      <%= render "shared/unauthorized" %>
+    <% else %>
+      <div class="search-header">
+        <h2>Tags</h2>
+      </div>
+      <div class="grid">
+        <% @tags.each do |tag| %>
+          <div>
+            <p><span class="tag-button"><%= tag.name %></span>
+
+              <%= link_to tag_path(tag),
+                data: { turbo_method: :delete, turbo_confirm: "Delete this tag?" } do %>
+                  <span style="font-size: 1.5rem; margin: 0;"><i class="fa-solid fa-square-xmark delete-icon"></i></span>
+              <% end %>
+            </p>
+          </div>
+
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
