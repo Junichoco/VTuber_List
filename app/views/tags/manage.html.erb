@@ -6,15 +6,17 @@
       <div class="search-header">
         <h2>Tags</h2>
       </div>
-      <div>
+      <div class="grid">
         <% @tags.each do |tag| %>
-          <p><span class="tag-button"><%= tag.name %></span>
+          <div>
+            <p><span class="tag-button"><%= tag.name %></span>
 
-            <%= link_to tag_path(tag),
-              data: { turbo_method: :delete, turbo_confirm: "Delete this tag?" } do %>
-                <span style="font-size: 1.5rem; margin: 0;"><i class="fa-solid fa-square-xmark delete-icon"></i></span>
-            <% end %>
-          </p>
+              <%= link_to tag_path(tag),
+                data: { turbo_method: :delete, turbo_confirm: "Delete this tag?" } do %>
+                  <span style="font-size: 1.5rem; margin: 0;"><i class="fa-solid fa-square-xmark delete-icon"></i></span>
+              <% end %>
+            </p>
+          </div>
 
         <% end %>
       </div>
