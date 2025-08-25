@@ -5,12 +5,12 @@
     </div>
     <div class="search-form">
       <%= form_with url: :search, method: :get do |f| %>
-        <%= text_field_tag :query,
+        Name:<br><%= text_field_tag :query,
           params[:query],
           class: "form",
           placeholder: "Look for a VTuber"
           %><br>
-        <%= f.text_field :main_language %><br>
+        Main Language: <%= f.text_field :main_language %><br>
         <%= f.select :active, ["active", "not active"] %><br>
         <%= f.select :gender, ["male", "female", "other"] %><br>
 

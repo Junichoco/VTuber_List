@@ -89,3 +89,5 @@ gem "acts_as_list"
 gem 'requestjs-rails'
 
 gem "has_scope", "~> 0.8.2"
+
+gem "cssbundling-rails", "~> 1.4"
