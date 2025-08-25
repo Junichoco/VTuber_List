@@ -20,6 +20,7 @@ class TagsController < ApplicationController
     TagMarker.where(tag: @tag).each do |tm|
       @vtubers << tm.vtuber
     end
+    # TagMarker.where(tag: @tag).include(@vtuber).map
     @vtubers.sort
   end
 
