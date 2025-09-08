@@ -62,6 +62,10 @@ class ListsController < ApplicationController
     # redirect_back(fallback_location: root_path)
   end
 
+  def feed
+    @list = List.find(params[:list_id])
+  end
+
 
   private
 
