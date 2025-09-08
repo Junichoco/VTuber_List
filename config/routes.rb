@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   # end
   resources :lists do
     # get "reorder", to: "lists#reorder", as: :reorder
+    get "feed"
   end
   patch "lists/:id/sort", to: "lists#sort", as: :sort
   # patch "lists/:list_id/sort", to: "lists#sort", as: :list_id_sort
